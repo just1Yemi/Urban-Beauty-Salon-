@@ -40,7 +40,11 @@
   "booking": {
     "provider": "Phorest",
     "url": "https://phorest.com/book/salons/urbanbeautysalon",
-    "phorestSubdomain": "urbanbeautysalon"
+    "phorestSubdomain": "urbanbeautysalon",
+    "mode": "overlay",
+    "overlayOnPhones": true,
+    "widgetScript": "https://booking-widget.phorestcdn.com/obwidget.bundle.js",
+    "note": "mode is the ONE setting for every Book button. \"overlay\" (agreed in CLAUDE.md; panel tested loading on localhost, desktop and phone, 8 Nov 2026): Phorest's booking panel slides in on the page, on phones too while overlayOnPhones is true; without JavaScript, or if the panel cannot load, the button opens the booking page instead. \"newTab\": every Book button opens the Phorest booking page in a new tab. Stage 10 makes a test booking on the live domain (desktop and a real iPhone); if booking fails inside the panel, set overlayOnPhones false (phones only) or mode \"newTab\". See COMPONENTS.md, Booking."
   },
   "social": {
     "instagram": "https://www.instagram.com/urban_beauty_salon/",

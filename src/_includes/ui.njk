@@ -30,8 +30,11 @@
 {%- endmacro %}
 
 {#- Buttons: two styles only. style: solid | outline. book=true uses the ONE booking setting. -#}
+{#- Book buttons always render as the new-tab link (works without JS, and is the fallback):
+    the arrow turns to point out, and screen readers hear "(opens in a new tab)". With
+    site.booking.mode "overlay", site.js turns them into in-page panel buttons. -#}
 {% macro button(label, href="", style="solid", book=false, size="", arrow=true, sheen=false, cls="") -%}
-<a class="btn{% if style == 'outline' %} btn--outline{% endif %}{% if size %} btn--{{ size }}{% endif %}{% if cls %} {{ cls }}{% endif %}" href="{{ site.booking.url if book else href }}"{% if book %} data-book{% endif %}{% if sheen %} data-sheen{% endif %}><span>{{ label }}</span>{% if arrow %}{{ icon("arrow", "icon--arrow") }}{% endif %}</a>
+<a class="btn{% if style == 'outline' %} btn--outline{% endif %}{% if size %} btn--{{ size }}{% endif %}{% if cls %} {{ cls }}{% endif %}" href="{{ site.booking.url if book else href }}"{% if book %} data-book target="_blank" rel="noopener"{% endif %}{% if sheen %} data-sheen{% endif %}><span>{{ label }}</span>{% if book %}<span class="visually-hidden" data-book-note> (opens in a new tab)</span>{% endif %}{% if arrow %}{{ icon("arrow", "icon--arrow") }}{% elif book %}{{ icon("arrow", "icon--arrow icon--tab") }}{% endif %}</a>
 {%- endmacro %}
 
 {#- Quiet link with arrow: "Discover", "Get directions" -#}
@@ -89,22 +92,25 @@
 <span class="price{% if cls %} {{ cls }}{% endif %}">{% if from %}<span class="price__from">From</span>&nbsp;{% endif %}<span class="price__amt"><span class="price__cur">£</span>{{ amount }}</span></span>
 {%- endmacro %}
 
-{#- Luxury menu list with dot leaders. items: [{ name, price, mins }] (use the service filter) -#}
+{#- Luxury menu list with dot leaders. items: [{ name, price, mins }] (use the service filter),
+    or { name, note } for rows without a public price (offer filter: "Free consultation", TODO). -#}
 {% macro pricelist(items) -%}
 <ul class="pricelist" role="list">
-{%- for it in items %}{% if it %}<li><span class="pricelist__name">{{ it.name }}{% if it.mins %}<span class="pricelist__dur">{{ it.mins | duration }}</span>{% endif %}</span><span class="pricelist__lead" aria-hidden="true"></span>{{ price(it.price) }}</li>{% endif %}{% endfor -%}
+{%- for it in items %}{% if it %}<li><span class="pricelist__name">{{ it.name }}{% if it.mins %}<span class="pricelist__dur">{{ it.mins | duration }}</span>{% endif %}</span><span class="pricelist__lead" aria-hidden="true"></span>{% if it.price != null %}{{ price(it.price) }}{% else %}<span class="price price--note"><span class="price__from">{{ it.note | todo | safe }}</span></span>{% endif %}</li>{% endif %}{% endfor -%}
 </ul>
 {%- endmacro %}
 
-{#- Quick-facts strip. items: [{ icon, label, value }] or { icon, label, price } -#}
-{% macro facts(items) -%}
-<dl class="facts" data-reveal>
+{#- Quick-facts strip. items: [{ icon, label, value }] or { icon, label, price }.
+    reveal=false when it sits above the fold (page heads). -#}
+{% macro facts(items, reveal=true) -%}
+<dl class="facts"{% if reveal %} data-reveal{% endif %}>
 {%- for f in items %}<div class="facts__item">{{ icon(f.icon) }}<dt>{{ f.label }}</dt><dd>{% if f.price %}{{ price(f.price) }}{% else %}{{ f.value | todo | safe }}{% endif %}</dd></div>{% endfor -%}
 </dl>
 {%- endmacro %}
 
 {#- Treatment card. photo: room photo, detail: second photo shown on hover. from/mins from services.json -#}
-{% macro tcard(title, href, photo, detail="", eyebrow="", text="", from=false, mins=false, level=3) -%}
+{#- note: shown in place of the price ("Free consultation" for prescription services) -#}
+{% macro tcard(title, href, photo, detail="", eyebrow="", text="", from=false, mins=false, level=3, note="") -%}
 {%- set sizes = "(min-width: 64em) 30vw, (min-width: 40em) 45vw, 100vw" -%}
 <article class="tcard" data-reveal>
 <div class="tcard__media">{{ picture(photo, sizes=sizes, ratio="45") }}{% if detail %}{{ picture(detail, sizes=sizes, ratio="45", alt="") }}{% endif %}</div>
@@ -112,7 +118,7 @@
 {%- if eyebrow %}<p class="eyebrow">{{ eyebrow }}</p>{% endif %}
 <h{{ level }} class="tcard__title"><a class="tcard__link" href="{{ href }}">{{ title }}</a></h{{ level }}>
 {%- if text %}<p class="tcard__text">{{ text | todo | safe }}</p>{% endif %}
-{%- if from or mins %}<p class="tcard__meta">{% if from %}{{ price(from) }}{% endif %}{% if from and mins %}<span class="sep" aria-hidden="true">·</span>{% endif %}{% if mins %}<span>{{ mins | duration }}</span>{% endif %}</p>{% endif %}
+{%- if from or mins or note %}<p class="tcard__meta">{% if from %}{{ price(from) }}{% elif note %}<span class="price price--note"><span class="price__from">{{ note }}</span></span>{% endif %}{% if (from or note) and mins %}<span class="sep" aria-hidden="true">·</span>{% endif %}{% if mins %}<span>{{ mins | duration }}</span>{% endif %}</p>{% endif %}
 </div>
 </article>
 {%- endmacro %}

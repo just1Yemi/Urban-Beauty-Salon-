@@ -1,0 +1,4 @@
+{
+  "note": "Real Phorest reviews only, keyed by id (used by the reviews field on treatment pages). Rules (CLAUDE.md): first name and surname initial only; month and year; exclude any review that mentions a prescription medicine. Fields: text, name (\"Sarah K.\"), date (\"2026-03\"), page (treatment slug). Empty until Yemi supplies review texts.",
+  "items": {}
+}

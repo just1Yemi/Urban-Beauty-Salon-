@@ -1,5 +1,6 @@
 import fs from "node:fs";
 import crypto from "node:crypto";
+import { registerContent } from "./lib/content.js";
 
 // Design-system CSS lives in four source files; it is published as one bundle at
 // /assets/css/site.css by src/assets/css/site.11ty.js (see COMPONENTS.md).
@@ -21,6 +22,15 @@ export default function (eleventyConfig) {
 
   eleventyConfig.addGlobalData("assetVersion", assetVersion);
   eleventyConfig.addShortcode("year", () => String(new Date().getFullYear()));
+
+  // Markdown: curly quotes and dashes in page copy (premium details: typography).
+  eleventyConfig.amendLibrary("md", (md) => md.set({ typographer: true, quotes: "“”‘’" }));
+  // Content model (CONTENT_GUIDE.md): validated "content" collection, clean URLs, page filters.
+  registerContent(eleventyConfig);
+  // Front matter replaces global data of the same name instead of merging with it: treatment
+  // pages use `services` and `reviews` (lists of ids), which must not be merged with
+  // services.json and reviews.json.
+  eleventyConfig.setDataDeepMerge(false);
 
   // ---- typography helpers ----
   const esc = (s) => String(s ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");

@@ -1,0 +1,42 @@
+{
+  "note": "Site map for the three treatment sections (BUILD_PLAN 32-page structure). Order here is page order on hubs and the eyebrow number (FACIALS · 04). slug = the services.json page field and the URL (/<section>/<slug>/). name = the short name on cards. photo/detail = photos.json names for the card (detail cross-fades on hover); missing = placeholder. text = one short factual card line. Page words live in src/content/<section>/<slug>.md, never here. See CONTENT_GUIDE.md.",
+  "order": ["aesthetics", "facials", "beauty"],
+  "aesthetics": {
+    "label": "Aesthetics",
+    "url": "/aesthetics/",
+    "pages": [
+      { "slug": "lines-and-wrinkles-consultation", "name": "Lines and wrinkles consultation" },
+      { "slug": "dermal-fillers", "name": "Dermal fillers" },
+      { "slug": "skin-boosters", "name": "Skin boosters" },
+      { "slug": "polynucleotides", "name": "Polynucleotides" },
+      { "slug": "biostimulators", "name": "Biostimulators" },
+      { "slug": "microneedling", "name": "Microneedling" },
+      { "slug": "fat-dissolving", "name": "Fat dissolving" },
+      { "slug": "hair-loss", "name": "Hair loss" }
+    ]
+  },
+  "facials": {
+    "label": "Facials",
+    "url": "/facials/",
+    "pages": [
+      { "slug": "caci", "name": "CACI", "photo": "product-shelf-serums", "detail": "product-shelf-skincare", "text": "Non-surgical face and eye lifts, jowl lift and microdermabrasion." },
+      { "slug": "comcit", "name": "COMCIT", "photo": "reception-flowers-products", "detail": "product-shelf-serums", "text": "Advanced skin rejuvenation, on its own or with CACI or microdermabrasion." },
+      { "slug": "crystal-clear", "name": "Crystal Clear", "photo": "product-shelf-skincare", "detail": "hero-desk-portrait", "text": "Express, luxury and MDA facials." },
+      { "slug": "dermaplaning", "name": "Dermaplaning", "photo": "hero-desk-portrait", "detail": "reception-flowers-products", "text": "On its own or with a glycolic peel." },
+      { "slug": "glycolic-peel", "name": "Glycolic peel", "photo": "pampas", "detail": "product-shelf-serums", "text": "A glycolic peel facial, also paired with dermaplaning." }
+    ]
+  },
+  "beauty": {
+    "label": "Beauty",
+    "url": "/beauty/",
+    "pages": [
+      { "slug": "lashes-and-brows", "name": "Lashes and brows" },
+      { "slug": "nails-and-pedicures", "name": "Nails and pedicures" },
+      { "slug": "little-miss-urban", "name": "Little Miss Urban" },
+      { "slug": "massage", "name": "Massage" },
+      { "slug": "body-and-tanning", "name": "Body and tanning" },
+      { "slug": "waxing", "name": "Waxing" },
+      { "slug": "men", "name": "Treatments for men" }
+    ]
+  }
+}

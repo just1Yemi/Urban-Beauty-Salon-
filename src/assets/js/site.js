@@ -16,8 +16,99 @@
   let data = {};
   try { data = JSON.parse(d.getElementById("site-data").textContent); } catch (e) { /* no data */ }
 
-  /* ---- Booking: ONE setting (site.json booking.url, injected as #site-data) ---- */
-  if (data.booking) $$("[data-book]").forEach((a) => { a.href = data.booking; });
+  /* ---- Booking: ONE setting (site.json booking: url + mode), injected as #site-data ----
+     Every [data-book] link is the Phorest booking page in a new tab (also the no-JS default).
+     mode "overlay": Phorest's booking panel slides in on this page instead (desktop, and phones
+     when booking.phones). Phorest's script loads only on intent (pointer over, focus or touch
+     on a Book button), so pages stay fast. If the panel cannot load, the click still reaches
+     the booking page. */
+  const B = data.booking && typeof data.booking === "object" ? data.booking : { url: data.booking };
+  const phoneUA = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent); // Phorest's own test
+  const overlay = B.mode === "overlay" && B.script && B.subdomain && (!phoneUA || B.phones);
+  $$("[data-book]").forEach((a) => {
+    if (B.url) a.href = B.url;
+    const note = a.querySelector("[data-book-note]");
+    if (overlay) { a.removeAttribute("target"); if (note) note.remove(); return; }
+    a.target = "_blank";
+    a.rel = "noopener";
+    if (!note) a.insertAdjacentHTML("beforeend", '<span class="visually-hidden" data-book-note> (opens in a new tab)</span>');
+  });
+  if (overlay) {
+    const HASH = "#onlinebookings"; // Phorest's documented trigger: the widget opens and closes on this hash
+    const panel = () => d.querySelector(".ob-widget-container");
+    const isOpen = () => { const p = panel(); return Boolean(p && p.classList.contains("slide-in")); };
+    let ready = null;
+    let back = null; // { el, y }: where to return focus and scroll when the panel closes
+    const polish = (p) => { // names for Phorest's unlabelled controls; the frame gets the palette in CSS
+      p.setAttribute("role", "dialog");
+      p.setAttribute("aria-label", "Book online");
+      const f = p.querySelector("iframe");
+      if (f) f.title = "Online booking";
+      [["close__cross", "Close booking"], ["back__arrow", "Back"]].forEach(([k, label]) => {
+        const b = p.querySelector(".ob-widget-container__header__" + k);
+        if (b) { b.type = "button"; b.setAttribute("aria-label", label); }
+      });
+    };
+    const load = () => ready || (ready = new Promise((resolve, reject) => {
+      const s = d.createElement("script");
+      s.src = B.script;
+      s.async = true;
+      s.onerror = reject;
+      s.onload = () => {
+        try { window.widget = new window.OBWidget(B.subdomain, { hide_widget_button: true, force_slide_over: Boolean(B.phones) }); } catch (e) { reject(e); return; }
+        const t0 = Date.now();
+        (function wait() { // the widget builds its panel after fetching the salon's settings
+          const p = panel();
+          if (p) { polish(p); resolve(p); } else if (Date.now() - t0 > 8000) reject(new Error("Phorest panel timeout")); else setTimeout(wait, 50);
+        })();
+      };
+      d.head.appendChild(s);
+    }));
+    const open = () => {
+      if (location.hash === HASH) history.replaceState(null, "", location.pathname + location.search);
+      location.hash = HASH;
+      html.classList.add("is-booking");
+      setTimeout(() => {
+        const p = panel();
+        if (!p) return;
+        const x = p.querySelector(".ob-widget-container__header__close__cross");
+        const target = x && x.offsetParent !== null ? x : p.querySelector("iframe");
+        if (target) target.focus({ preventScroll: true });
+      }, reduce.matches ? 50 : 500);
+    };
+    window.addEventListener("hashchange", () => {
+      if (location.hash === HASH) return;
+      // Phorest clears the hash on close, which would jump to the top: stay put and return focus.
+      html.classList.remove("is-booking");
+      if (!back) return;
+      const { el, y } = back;
+      back = null;
+      window.scrollTo({ top: y, behavior: "instant" });
+      // Return focus to the Book button. Phorest reloads its hidden frame after closing, which
+      // can pull focus back into it: for a few seconds, take focus back if that happens.
+      const refocus = () => setTimeout(() => { if (!isOpen()) el.focus({ preventScroll: true }); }, 0);
+      refocus();
+      window.addEventListener("blur", refocus);
+      setTimeout(() => window.removeEventListener("blur", refocus), 4000);
+    });
+    const warm = (e) => { if (e.target.closest && e.target.closest("[data-book]")) load().catch(() => {}); };
+    ["pointerover", "focusin", "touchstart"].forEach((t) => d.addEventListener(t, warm, { passive: true }));
+    d.addEventListener("click", (e) => {
+      const a = e.target.closest && e.target.closest("[data-book]");
+      if (!a || e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+      e.preventDefault();
+      const m = d.getElementById("menu");
+      const inMenu = m && m.open && m.contains(a);
+      if (inMenu) m.close(); // a modal dialog would sit above the panel
+      back = { el: inMenu ? d.querySelector("[data-menu-open]") : a, y: window.scrollY };
+      let settled = false;
+      const leave = () => { if (!settled) { settled = true; location.assign(B.url); } };
+      const timer = setTimeout(leave, 6000);
+      load().then(() => { if (settled) return; settled = true; clearTimeout(timer); open(); }, () => { clearTimeout(timer); leave(); });
+    });
+    d.addEventListener("keydown", (e) => { if (e.key === "Escape" && isOpen()) location.hash = ""; });
+    if (location.hash === HASH) load().catch(() => {}); // e.g. a QR code link to /#onlinebookings
+  }
 
   /* ---- Lazy images: fade in over the blurred colour preview ---- */
   $$(".pic img[loading='lazy']").forEach((img) => {

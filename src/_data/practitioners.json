@@ -1,0 +1,4 @@
+{
+  "note": "Practitioners, keyed by id (used by the practitioner field on treatment pages). Only real, confirmed details: name, role, registrations and photo come from Yemi (Stage 7). Never invent names or credentials. Fields: name, role, photo (photos.json name), text (one line), registration. Empty until Yemi supplies details.",
+  "people": {}
+}

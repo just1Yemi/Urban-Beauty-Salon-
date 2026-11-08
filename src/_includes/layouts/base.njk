@@ -4,9 +4,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>{% if title and title != site.tradingName %}{{ title }} | {% endif %}{{ site.tradingName }}</title>
-{%- if description %}
-<meta name="description" content="{{ description }}">{% endif %}
+{%- set docTitle = metaTitle or title -%}
+{%- set docDescription = metaDescription or description %}
+<title>{% if docTitle and docTitle != site.tradingName %}{{ docTitle }} | {% endif %}{{ site.tradingName }}</title>
+{%- if docDescription %}
+<meta name="description" content="{{ docDescription }}">{% endif %}
 {%- if noindex %}
 <meta name="robots" content="noindex, nofollow">{% else %}
 <link rel="canonical" href="{{ site.url }}{{ page.url }}">{% endif %}
@@ -36,6 +38,6 @@
 {% include "partials/bookbar.njk" %}
 {% include "partials/footer.njk" %}
 {% include "partials/menu.njk" %}
-<script type="application/json" id="site-data">{"booking":{{ site.booking.url | json | safe }},"timezone":{{ site.hours.timezone | json | safe }},"hours":{{ site.hours.days | json | safe }}}</script>
+<script type="application/json" id="site-data">{"booking":{{ {url: site.booking.url, mode: site.booking.mode, phones: site.booking.overlayOnPhones, subdomain: site.booking.phorestSubdomain, script: site.booking.widgetScript} | json | safe }},"timezone":{{ site.hours.timezone | json | safe }},"hours":{{ site.hours.days | json | safe }}}</script>
 </body>
 </html>

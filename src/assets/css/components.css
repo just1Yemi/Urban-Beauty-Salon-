@@ -44,6 +44,11 @@
 .btn--outline { --btn-bg: transparent; --btn-fg: var(--c-espresso); --btn-bd: var(--c-espresso); }
 .btn--sm { min-height: 2.5rem; padding: 0.625rem 1.25rem; }
 .btn--block { width: 100%; }
+/* Book buttons while they open the booking page in a new tab: the arrow turns to point out
+   (site.json booking.mode "newTab", and the fallback). In overlay mode site.js drops the target. */
+.btn[target="_blank"] .icon--arrow { rotate: -45deg; }
+.btn:not([target="_blank"]) .icon--tab { display: none; }
+.btn .icon--tab { width: 0.875rem; height: 0.875rem; margin-left: -0.25rem; }
 .on-dark .btn { --btn-bg: var(--c-ivory); --btn-fg: var(--c-espresso); --btn-bd: var(--c-ivory); }
 .on-dark .btn--outline { --btn-bg: transparent; --btn-fg: var(--c-ivory); --btn-bd: rgb(246 241 234 / 0.65); }
 /* One soft Champagne sheen across the main Book button, once per visit (site.js adds .is-sheen) */
@@ -304,6 +309,8 @@ html:has(.menu[open]) { overflow: hidden; }
 .pricelist__dur { display: block; font-size: var(--step--2); letter-spacing: 0.14em; text-transform: uppercase; color: var(--text-soft); }
 .pricelist__lead { flex: 1 1 1.5rem; min-width: 1.5rem; height: 2px; margin-bottom: 0.5em; background: radial-gradient(circle, rgb(59 48 42 / 0.5) 0.6px, transparent 0.9px) left center / 6px 2px repeat-x; }
 .pricelist .price { flex: none; }
+.price--note { white-space: normal; text-align: right; }
+.pricelist .price--note { flex: 0 1 auto; max-width: 55%; }
 
 /* ---- Reviews ---- */
 .review { position: relative; display: flex; flex-direction: column; gap: var(--s-3); padding: var(--s-5) var(--s-4) var(--s-4); background: var(--c-white); border-radius: var(--radius); box-shadow: var(--shadow-1); }
@@ -487,3 +494,15 @@ select.field__input { padding-right: 2rem; cursor: pointer; background: url("dat
 /* Footer spacing helpers */
 .footer__gap { margin-top: var(--s-2); }
 .footer__status { margin-bottom: var(--s-2); }
+
+/* ---- Phorest booking panel (site.json booking.mode "overlay"). Phorest draws this frame
+   on our page; the booking pages inside it take their colours from Phorest Manager
+   (Settings > Online > Setup & Appearance). ---- */
+html .ob-widget-container { box-shadow: var(--shadow-2) !important; }
+html .ob-widget-container__header { background: var(--c-ivory); border-color: var(--line-soft); }
+html .ob-widget-container__header__title__text { font: 500 0.75rem/1.2 var(--font-body); letter-spacing: var(--track-label); text-transform: uppercase; color: var(--c-espresso); }
+html .ob-widget-container__header__close__cross, html .ob-widget-container__header__back__arrow { opacity: 1; }
+html .ob-widget-container__header__close__cross::before, html .ob-widget-container__header__close__cross::after, html .ob-widget-container__header__back__arrow::before { width: 1px; background-color: var(--c-espresso); }
+html .ob-widget-container__header__back__arrow::after { border-width: 0 1px 1px 0; color: var(--c-espresso); }
+html .ob-widget-container button:focus-visible { outline: 2px solid var(--c-espresso); outline-offset: 4px; }
+@media (max-width: 47.99em) { html.is-booking { overflow: hidden; } }

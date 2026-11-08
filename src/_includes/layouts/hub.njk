@@ -1,0 +1,60 @@
+---
+layout: layouts/base.njk
+---
+{#- Section hub (Aesthetics, Facials, Beauty). Words: src/content/<section>/index.md (CONTENT_GUIDE.md).
+    Cards: every page planned for the section in src/_data/sections.json, in that order,
+    with "From £X" and time from services.json (or "Free consultation" for prescription pages). -#}
+{%- import "ui.njk" as ui with context -%}
+{%- set sec = section | sectionInfo -%}
+{%- set cards = section | sectionCards(collections.content) -%}
+{%- set isTodo = r/^\s*\[\[TODO/ -%}
+{%- set ns = notSure or {} -%}
+
+<header class="page-head">
+<div class="wrap page-head__grid">
+<div class="page-head__text">
+<div class="section-head__title">
+<span class="section-head__word" aria-hidden="true">{{ sec.label }}</span>
+<p class="eyebrow">{{ eyebrow or ("Treatments · " ~ ((sections.order.indexOf(section) + 1) | pad2)) }}</p>
+<h1 style="--d:80ms">{{ title | amp | safe }}</h1>
+</div>
+<p class="lead" style="--d:160ms">{{ lead | todo | safe }}</p>
+{%- if content | trim %}
+<div class="prose" style="--d:200ms">{{ content | markTodos | safe }}</div>
+{%- endif %}
+<div class="btn-row" style="--d:240ms">{{ ui.button(bookLabel or "Book now", book=true) }}{{ ui.more("Not sure what to book?", "#not-sure") }}</div>
+</div>
+<div class="page-head__media" style="--d:120ms">
+{%- if isTodo.test(heroPhoto) %}{{ ui.placeholder(heroPhoto, ratio="45") }}
+{%- else %}<div class="frame">{{ ui.picture(heroPhoto, sizes="(min-width: 64em) 36vw, (min-width: 40em) 90vw, 100vw", ratio="45", priority=true) }}</div>{% endif %}
+</div>
+</div>
+</header>
+
+<section class="section section--tight" aria-labelledby="treatments">
+<div class="wrap">
+{{ ui.sectionHead(cardsTitle or ("Our " ~ (sec.label | lower)), eyebrow=(cards.length ~ " treatments"), id="treatments", lead=cardsLead) }}
+<div class="grid grid--3" data-stagger="110">
+{%- for c in cards %}{{ ui.tcard(c.name, c.url, c.photo or ("card for " ~ c.name), detail=c.detail, eyebrow=(sec.label ~ " · " ~ (c.num | pad2)), text=c.text, from=c.offer.from, mins=c.offer.fromMins, level=3, note=("Free consultation" if c.offer.consultation else "")) }}{% endfor %}
+</div>
+</div>
+</section>
+
+{%- if pause %}
+{%- set pp = photos[pause] %}
+<div class="pause{% if pp and pp.ratio == '4:1' %} pause--band{% endif %}" aria-hidden="true">{{ ui.picture(pause, sizes="100vw", alt="") }}</div>
+{%- endif %}
+
+<section class="section" aria-labelledby="not-sure">
+<div class="wrap">
+<div class="overlap overlap--flip">
+<div class="overlap__media" data-reveal="wipe">{{ ui.picture(ns.photo or "treatment-room", sizes="(min-width: 64em) 60vw, 100vw", ratio="32", alt="") }}</div>
+<div class="overlap__card stack" data-reveal style="--d:200ms">
+{{ ui.eyebrow("Advice") }}
+<h2 class="h3" id="not-sure">{{ ns.title or "Not sure what to book?" }}</h2>
+<p>{{ (ns.text or "Tell us what you would like to change and we will help you choose. Call the salon, or send a message and we usually reply within an hour during opening hours.") | todo | safe }}</p>
+<div class="btn-row">{{ ui.button("Call the salon", href="tel:" + site.phone.tel, style="outline", arrow=false) }}{{ ui.button("Send a message", href="/contact/") }}</div>
+</div>
+</div>
+</div>
+</section>

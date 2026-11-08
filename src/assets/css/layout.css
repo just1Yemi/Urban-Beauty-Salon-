@@ -57,3 +57,30 @@ body:not(.has-hero) main { padding-top: var(--header-h); }
 .prose ul, .prose ol { padding-left: 1.25em; }
 .prose li + li { margin-top: var(--s-1); }
 .prose li::marker { color: var(--c-text-soft); }
+
+/* ---- Page heads (hub, treatment and text pages, Stage 2). Above the fold, so the
+   entrance is CSS only (no data-reveal) and never delays the LCP. ---- */
+.page-head { position: relative; isolation: isolate; overflow-x: clip; padding-block: var(--s-5) var(--s-6); }
+.page-head__grid { display: grid; gap: var(--s-6); align-items: center; }
+.page-head__text > * + * { margin-top: var(--s-3); }
+.page-head__text > .facts, .page-head__text > .btn-row { margin-top: var(--s-5); }
+.page-head__text .section-head__title > * + * { margin-top: var(--s-2); }
+.page-head__media .pic, .page-head__media .placeholder { aspect-ratio: 3 / 2; }
+@media (min-width: 64em) {
+  .page-head { padding-block: var(--s-7) var(--s-7); }
+  .page-head__grid { grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: var(--s-7); }
+  .page-head__media .pic, .page-head__media .placeholder { aspect-ratio: 4 / 5; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .page-head__text > *, .page-head__media { animation: ub-rise var(--dur-3) var(--ease-out) both; animation-delay: var(--d, 0ms); }
+}
+
+/* ---- Treatment page body: sticky contents beside the sections ---- */
+.treatment__layout { display: grid; gap: var(--s-6); }
+@media (min-width: 64em) { .treatment__layout { grid-template-columns: 14rem minmax(0, 1fr); gap: var(--s-7); align-items: start; } }
+.treatment__body > * + * { margin-top: var(--s-7); }
+.treatment__section > h2 { margin-bottom: var(--s-3); }
+.treatment__section .steps { margin-top: var(--s-4); }
+.treatment__section > .btn-row { margin-top: var(--s-4); }
+.treatment__section > .btn-row + p { margin-top: var(--s-2); }
+.treatment__person { margin-top: var(--s-5); max-width: 30rem; }
