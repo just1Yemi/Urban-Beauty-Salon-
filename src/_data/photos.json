@@ -1,0 +1,272 @@
+{
+  "reception-desk": {
+    "name": "reception-desk",
+    "alt": "The reception desk, curved and covered in grey crushed velvet, with pampas grass in a white vase, a monitor, a ring light and printed leaflets in front of a glittered wall.",
+    "use": "hero",
+    "ratio": "3:2",
+    "width": 2400,
+    "height": 1600,
+    "widths": [
+      480,
+      960,
+      1600,
+      2400
+    ],
+    "formats": [
+      "avif",
+      "webp"
+    ],
+    "path": "/assets/img/salon/reception-desk",
+    "preview": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAADwAwCdASoYABAAPt1ap0yopSOiMAgBEBuJYwCw7BuPYahHlPND5AxwAPxZjvktDvRIJwsciaqPWHb+SRE4g7VOsNkHdjsGHyarNKWJkIfEtjzNBr4S/jYXDPXvnj8tYkAAAA=="
+  },
+  "reception-wide": {
+    "name": "reception-wide",
+    "alt": "The reception area: a curved crushed-velvet desk in front of a glittered wall, with a ceiling-mounted oval light above.",
+    "use": "hero",
+    "ratio": "3:2",
+    "width": 2400,
+    "height": 1600,
+    "widths": [
+      480,
+      960,
+      1600,
+      2400
+    ],
+    "formats": [
+      "avif",
+      "webp"
+    ],
+    "path": "/assets/img/salon/reception-wide",
+    "preview": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAAAQBACdASoYABAAPt1cqE0opSQiMAgBEBuJZQC7ACPbwb/H7Jz5wOSAoADeNDI7WBSik8dKGkffr3KC2xoG1hH0a6T1x3d6gHUFpzBGqPOtXpxhbRIAAA=="
+  },
+  "reception-desk-detail": {
+    "name": "reception-desk-detail",
+    "alt": "Close view of the reception desk: tufted grey crushed velvet, pampas grass in a white vase, a monitor and leaflet stands against a glittered wall.",
+    "use": "detail",
+    "ratio": "4:5",
+    "width": 1600,
+    "height": 2000,
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "formats": [
+      "avif",
+      "webp"
+    ],
+    "path": "/assets/img/salon/reception-desk-detail",
+    "preview": "data:image/webp;base64,UklGRqIAAABXRUJQVlA4IJYAAADQBQCdASoYAB4APtVWo0yoJKMiN/VYAQAaiUAWI9xvwAoroj3uP/wzF6SN2L58lCVx+3qGJR8sAN4+TanVpGszDvbAEv8njcxH54aXdO1XUreSP3qucRzBi+GUt1D2977K29qKLyLIjn0qlGP8rNflc5rVDFts9lD02JcmPQfEZvWWGwCaE0tjw9RMLl3f9mjvkaIAAAA="
+  },
+  "reception-flowers-products": {
+    "name": "reception-flowers-products",
+    "alt": "Pale pink and white flowers in a glass vase beside boxed skincare products on the reception desk.",
+    "use": "accent",
+    "ratio": "4:5",
+    "width": 1600,
+    "height": 2000,
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "formats": [
+      "avif",
+      "webp"
+    ],
+    "path": "/assets/img/salon/reception-flowers-products",
+    "preview": "data:image/webp;base64,UklGRqwAAABXRUJQVlA4IKAAAACQBQCdASoYAB4APt1eqE2opSOiKA1REBuJQBOmUADZzchyyDautlqKJz055zuq6ODq7aIRsAD+6/du/6bCaF+19nuHen8f1L7H/i0w8wv28H2t5lQWt9/TMgD1p5gT37LOXclO2Rw2tiEuk6cOULBQBljYFcgwueRLu1eGF9WUfpaBeplotbakN6fMXy9x10t4waPGa2tKTN8RMXCTgAAA"
+  },
+  "polish-wall": {
+    "name": "polish-wall",
+    "alt": "Rows of gel nail polish bottles in a wall-mounted white ornate frame, arranged by colour.",
+    "use": "accent",
+    "ratio": "4:5",
+    "width": 1600,
+    "height": 2000,
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "formats": [
+      "avif",
+      "webp"
+    ],
+    "path": "/assets/img/salon/polish-wall",
+    "preview": "data:image/webp;base64,UklGRpIAAABXRUJQVlA4IIYAAABwBQCdASoYAB4APt1gqE4opaOiMBgIARAbiWUAtOgQpRdUDAPpKH8ZJM5rH8uck71JvOs4AP6UeRIbQpK/hM85t+5Zu/QJ510po0Wewy2AwsjohBrvVeDGrHMDg//c4pN52Ka3gp+IT5wlokHB0Stua/+W6SBV/VpQvqwanAhpqdKGMGeAAA=="
+  },
+  "nail-stations": {
+    "name": "nail-stations",
+    "alt": "The nail area: white manicure desks with grey chairs, framed prints on the wall and a grey floor.",
+    "use": "room",
+    "ratio": "3:2",
+    "width": 2400,
+    "height": 1600,
+    "widths": [
+      480,
+      960,
+      1600,
+      2400
+    ],
+    "formats": [
+      "avif",
+      "webp"
+    ],
+    "path": "/assets/img/salon/nail-stations",
+    "preview": "data:image/webp;base64,UklGRoAAAABXRUJQVlA4IHQAAAAwBACdASoYABAAPt1apkyopSOiMAgBEBuJQBOgAqEJdDosactUmrj22AAA/ufWK4EW/439OUcPtUrreqxvfvSEa6SNLrLCRuPSq3Vj3m5oHAFP94ObcDBO5KuT0hEur5RrNAIRKr4OUiuvTM/N7XePp3KAAA=="
+  },
+  "treatment-room": {
+    "name": "treatment-room",
+    "alt": "A treatment room with a couch dressed in white paper roll, a stool, a wash basin with a mirror above it and a wall trolley.",
+    "use": "room",
+    "ratio": "4:5",
+    "width": 1600,
+    "height": 2000,
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "formats": [
+      "avif",
+      "webp"
+    ],
+    "path": "/assets/img/salon/treatment-room",
+    "preview": "data:image/webp;base64,UklGRqYAAABXRUJQVlA4IJoAAABwBQCdASoYAB4APt1go0yopaMiMBgMARAbiUAW2baITyYI/xFxmXKOpgOm7uLooqDfvHhAAP7V4/dr8asCp+f1D9ERVv9pwAV+ENoRE+GJy24ZqJ8EGtsYPdaVCx+u4JTYeDyxnH2/pTON36+CfpsJRaGV0WbR0cPY6x3F3K6cd8B1PTKoQSt4Y+qev0PNi4sv9mOeYHLX4yAA"
+  },
+  "relaxation-room": {
+    "name": "relaxation-room",
+    "alt": "The relaxation room: a grey sofa with silver cushions, a low dark table with a plant, a framed mirror on a dark feature wall and a light wood floor.",
+    "use": "room",
+    "ratio": "4:5",
+    "width": 1600,
+    "height": 2000,
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "formats": [
+      "avif",
+      "webp"
+    ],
+    "path": "/assets/img/salon/relaxation-room",
+    "preview": "data:image/webp;base64,UklGRroAAABXRUJQVlA4IK4AAAAwBQCdASoYAB4APt1mq1EopSOiqAgBEBuJZACdAFX7Y3NVNzc7NxXhEPxzy4LxCxHEuAD+8gO0seL2sMkUsufgddxjbH0JOFRaRCB+MRun+/o2+rhl2b/xaD7LE9IOH4TjBx0VstH42XrvmN4RfiYEWHWb98zETsR50M56N+K/tYHxJJpUbDsArvvTcl+yOgUDMJwqlcvEy2+1+t/nKjIRmM4dXF0Uf98UTO4AAAA="
+  },
+  "relaxation-room-wide": {
+    "name": "relaxation-room-wide",
+    "alt": "The relaxation room from the doorway: two grey sofas either side of a low table with a plant, a mirror on the dark wall and a light wood floor.",
+    "use": "room",
+    "ratio": "3:2",
+    "width": 2400,
+    "height": 1600,
+    "widths": [
+      480,
+      960,
+      1600,
+      2400
+    ],
+    "formats": [
+      "avif",
+      "webp"
+    ],
+    "path": "/assets/img/salon/relaxation-room-wide",
+    "preview": "data:image/webp;base64,UklGRn4AAABXRUJQVlA4IHIAAABQBACdASoYABAAPt1cp00opSOiMAgBEBuJQBWA7wAMxTYfipNUeLRhIjfwAP7qlxrNMFL01D6F4x98TZGK6qSCv8jsg4V0MC+EEbB3AK+cxWdxgjL+m7jy+Yq1mmLRX5wRIdzqBwpEV/HoB3MgAKxsgAA="
+  },
+  "lash-print": {
+    "name": "lash-print",
+    "alt": "A framed print of closed eyes with long lashes on a grey wall, in a white ornate frame.",
+    "use": "detail",
+    "ratio": "4:5",
+    "width": 1600,
+    "height": 2000,
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "formats": [
+      "avif",
+      "webp"
+    ],
+    "path": "/assets/img/salon/lash-print",
+    "preview": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAABQBACdASoYAB4APtlcpkyoJaOiMBgMAQAbCWcAwNwQ8DoEDqIPEOwy0CcIAP5ZLGzcOUZFnbLHC1grF+Osey94y/ihxJ2aN2bWSU27W+LNzvjhgMgRPxB+eznNtzAAAAA="
+  },
+  "product-shelf-skincare": {
+    "name": "product-shelf-skincare",
+    "alt": "A white shelf of boxed skincare products in black and white packaging.",
+    "use": "detail",
+    "ratio": "3:2",
+    "width": 1600,
+    "height": 1067,
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "formats": [
+      "avif",
+      "webp"
+    ],
+    "path": "/assets/img/salon/product-shelf-skincare",
+    "preview": "data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAAAQBACdASoYABAAPt1ep00opSOiMAgBEBuJZwDDNB563oJOvcbjQTQf4ADfIl34SE+TwyvSxOokOOitVezMgE07oLbtJQsPPIqrw9JUc4lQ1/3HhiLj2Ejiaj3xueV7CHOPZ3AA"
+  },
+  "product-shelf-serums": {
+    "name": "product-shelf-serums",
+    "alt": "A white shelf of skincare boxes, a white tub and gold-coloured product cartons.",
+    "use": "detail",
+    "ratio": "3:2",
+    "width": 1600,
+    "height": 1067,
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "formats": [
+      "avif",
+      "webp"
+    ],
+    "path": "/assets/img/salon/product-shelf-serums",
+    "preview": "data:image/webp;base64,UklGRnQAAABXRUJQVlA4IGgAAADQAwCdASoYABAAPt1ep00opSOiMAgBEBuJZQC7MoACptkDRJfAijAA8ntQEg87rJvYtMygHKPHxJatH59OzsrLdxkhWo1YLz6BAjbFo4vfAd1PsBgAS8E1bUjBbdujEwglwbDQA7gAAA=="
+  },
+  "product-shelf-mixed": {
+    "name": "product-shelf-mixed",
+    "alt": "A white shelf with nail treatment vials, tan mousse and lotion bottles and boxed beauty products.",
+    "use": "detail",
+    "ratio": "3:2",
+    "width": 1600,
+    "height": 1067,
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "formats": [
+      "avif",
+      "webp"
+    ],
+    "path": "/assets/img/salon/product-shelf-mixed",
+    "preview": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAADQAwCdASoYABAAPt1epkyopSOiMAgBEBuJZQC/OA//Z119m6Uh/QAA9/j5/51dEyKc3MyUibfMAaPdDx8Ln0e82y1/kwjatQ+BWpZ7XTv+FhGnJFDQ4AAJh4AAAA=="
+  },
+  "product-shelf-nail-care": {
+    "name": "product-shelf-nail-care",
+    "alt": "A white shelf with small bottles of nail oil, boxed nail products and a pink manicure set.",
+    "use": "detail",
+    "ratio": "3:2",
+    "width": 1600,
+    "height": 1067,
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "formats": [
+      "avif",
+      "webp"
+    ],
+    "path": "/assets/img/salon/product-shelf-nail-care",
+    "preview": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAADwAwCdASoYABAAPt1iqUyopiQiMAgBEBuJYwC2yGYOXzT5kiVxHeQAAP62k2XNKB8fqvLqMwTlI/A5cTMHYoUCahCoMd1z1PjFTwHp4X9Ldv7R2xB4ufmysAA="
+  }
+}
