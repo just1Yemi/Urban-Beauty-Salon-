@@ -37,6 +37,10 @@
     "note": "A null open/close means closed."
   },
   "parking": "Free parking",
+  "directions": {
+    "short": "In the corner of the Penketh precinct shops, off Meeting Lane.",
+    "full": "Find us in the corner of the horseshoe of shops at Penketh precinct, just off Meeting Lane and beside Penketh Pool and Community Centre. Free parking right outside."
+  },
   "booking": {
     "provider": "Phorest",
     "url": "https://phorest.com/book/salons/urbanbeautysalon",

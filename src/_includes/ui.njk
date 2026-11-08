@@ -184,15 +184,19 @@
 <address class="addr" data-copy="{{ site.address.oneLine }}">{{ site.address.line1 }}<br>{{ site.address.locality }}, {{ site.address.town }}<br>{{ site.address.postcode }}</address>
 {%- endmacro %}
 
-{#- Static brand-coloured map linking to Google Maps (no embed, no Google cookies).
-    image: path to the static map image when it exists; until then a placeholder pattern. -#}
-{% macro map(image="") -%}
+{#- Brand-coloured OpenStreetMap map (scripts/make-map.js writes src/_includes/map.svg, inlined here so street names use the page font).
+    The UB circle is the salon marker; the whole map links to Google Maps (no embed, no cookies).
+    The credit line under it is required by the OpenStreetMap licence. -#}
+{% macro map() -%}
+<figure class="map-fig">
 <a class="map" href="{{ site.address.oneLine | mapsUrl }}">
-{%- if image %}<img class="map__img" src="{{ image }}" alt="" width="1200" height="800" loading="lazy" decoding="async">{% else %}<span class="map__art" aria-hidden="true"></span>{% endif -%}
+{{- "map.svg" | inlineFile | safe -}}
 <span class="map__pin" aria-hidden="true">{{ logo("icon") }}</span>
 <span class="map__label"><span>{{ site.address.line1 }}, {{ site.address.locality }}<br><span class="soft">{{ site.parking }}</span></span><span class="more">Directions{{ icon("arrow", "icon--arrow") }}</span></span>
 <span class="visually-hidden"> (opens Google Maps)</span>
 </a>
+<figcaption class="map-fig__credit"><a class="link" href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">© OpenStreetMap contributors<span class="visually-hidden"> (opens in a new tab)</span></a></figcaption>
+</figure>
 {%- endmacro %}
 
 {#- Form field with a floating label. type: text | email | tel | textarea | select | checkbox.

@@ -59,6 +59,8 @@ export default function (eleventyConfig) {
     const date = new Date(String(d).length === 7 ? d + "-01" : d);
     return date.toLocaleDateString("en-GB", { month: "long", year: "numeric", timeZone: "Europe/London" });
   });
+  // Inline a file from src/_includes (the generated map SVG).
+  eleventyConfig.addFilter("inlineFile", (name) => fs.readFileSync("src/_includes/" + name, "utf8"));
   eleventyConfig.addFilter("pad2", (n) => String(n).padStart(2, "0"));
   eleventyConfig.addFilter("thousands", (n) => Number(n).toLocaleString("en-GB"));
   eleventyConfig.addFilter("json", (v) => JSON.stringify(v).replace(/</g, "\\u003c"));

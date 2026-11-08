@@ -388,12 +388,15 @@ html:has(.menu[open]) { overflow: hidden; }
 .addr__note.is-shown { opacity: 1; }
 
 /* ---- Map: brand-coloured static map, links to Google Maps (no embed, no cookies) ---- */
-.map { position: relative; display: block; aspect-ratio: 3 / 2; overflow: hidden; border-radius: var(--radius); background: var(--c-ivory-deep) var(--grain); color: var(--c-espresso); text-decoration: none; }
+.map-fig { display: grid; gap: var(--s-1); }
+.map { position: relative; display: block; aspect-ratio: 3 / 2; overflow: hidden; border-radius: var(--radius); background: var(--c-espresso) var(--grain); color: var(--c-espresso); text-decoration: none; }
 .map__art { position: absolute; inset: 0; background: linear-gradient(var(--line-soft) 1px, transparent 1px) 0 0 / 3rem 3rem, linear-gradient(90deg, var(--line-soft) 1px, transparent 1px) 0 0 / 3rem 3rem; opacity: 0.55; }
-.map__img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
-.map__pin { position: absolute; left: 50%; top: 42%; display: grid; place-items: center; width: 3.5rem; height: 3.5rem; margin: -1.75rem 0 0 -1.75rem; border-radius: 50%; background: var(--c-espresso); color: var(--c-ivory); box-shadow: var(--shadow-2); }
+.map__svg { position: absolute; inset: 0; width: 100%; height: 100%; }
+/* The salon sits 50% across and 42% down in map.svg (scripts/make-map.js). The pin is Ivory with a Champagne ring so it stands out on the Espresso map. */
+.map__pin { position: absolute; left: 50%; top: 42%; display: grid; place-items: center; width: 3.5rem; height: 3.5rem; margin: -1.75rem 0 0 -1.75rem; border-radius: 50%; background: var(--c-ivory); color: var(--c-espresso); box-shadow: 0 0 0 1px var(--c-champagne), 0 0 0 7px rgb(198 167 125 / 0.28), var(--shadow-2); }
 .map__pin svg { width: 2.75rem; }
-@media (max-width: 39.99em) { .map__pin { top: 34%; } }
+@media (max-width: 39.99em) { .map { aspect-ratio: 5 / 4; } }
+.map-fig__credit { font: 500 var(--step--2)/1.5 var(--font-body); letter-spacing: 0.08em; color: var(--text-soft); }
 .map__label { position: absolute; left: var(--s-2); right: var(--s-2); bottom: var(--s-2); display: flex; justify-content: space-between; align-items: center; gap: var(--s-2); padding: 0.875rem var(--s-3); background: var(--c-ivory); box-shadow: var(--shadow-1); border-radius: var(--radius); font-size: var(--step--1); line-height: 1.45; }
 .map__label .more { flex: none; }
 @media (hover: hover) { .map:hover .more .icon { transform: translateX(4px); } }
@@ -466,6 +469,28 @@ select.field__input { padding-right: 2rem; cursor: pointer; background: url("dat
 .to-top svg { width: 2.75rem; }
 .to-top.is-shown { opacity: 1; visibility: visible; transform: none; }
 @media (max-width: 63.99em) { .to-top { bottom: calc(var(--bookbar-h) + env(safe-area-inset-bottom) + var(--s-2)); } }
+
+/* ---- Home page (Stage 3): section links, Instagram grid, visit block ---- */
+/* Three section links (Aesthetics, Facials, Beauty): hairline on top, whole block is the link */
+.hubs { display: grid; gap: var(--s-5) var(--s-4); list-style: none; padding: 0; margin-bottom: var(--s-7); }
+@media (min-width: 48em) { .hubs { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+.hub { position: relative; display: grid; gap: var(--s-2); align-content: start; justify-items: start; padding-top: var(--s-3); border-top: 1px solid var(--line); }
+.hub p { max-width: 30ch; }
+.hub__link { text-decoration: none; }
+.hub__link::after { content: ""; position: absolute; inset: 0; z-index: 1; }
+.hub__link:focus-visible { outline: none; }
+.hub:has(.hub__link:focus-visible) { outline: 2px solid var(--c-espresso); outline-offset: 6px; }
+@media (hover: hover) { .hub:hover .more .icon { transform: translateX(4px); } }
+/* Instagram: a static grid of salon photos (no embed, no third-party script) */
+.igrid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--s-1); }
+@media (min-width: 64em) { .igrid { grid-template-columns: repeat(6, minmax(0, 1fr)); } }
+.igrid a { display: block; overflow: hidden; border-radius: var(--radius); }
+.igrid .pic { border-radius: 0; }
+/* Visit: hours, address and phone beside the map */
+.visit { display: grid; gap: var(--s-5); align-items: start; }
+@media (min-width: 64em) { .visit { grid-template-columns: 5fr 7fr; gap: var(--s-7); } }
+.visit__cols { display: grid; gap: var(--s-4); }
+@media (min-width: 40em) and (max-width: 63.99em) { .visit__cols { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 
 /* ---- 404 ---- */
 .notfound { min-height: 72svh; display: grid; place-items: center; text-align: center; padding-block: var(--s-7); }

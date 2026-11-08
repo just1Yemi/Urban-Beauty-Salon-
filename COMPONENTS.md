@@ -67,7 +67,20 @@ Reveals: `data-reveal` is for **below-the-fold content only** (it waits for site
 | `address()` | | Tap the address to copy it, with a quiet "Copied" note (plain text without JS) |
 | `field(name, label, type, required, autocomplete, options, hint, error, message, value, checked, idp)` | type `text` / `email` / `tel` / `textarea` / `select` / `checkbox`; `message` = error text shown on submit; `error` = static error state; `idp` = id prefix unique per form | Floating label on a 1px Text-soft line (3:1 for WCAG 1.4.11), 2px Espresso line on focus, error in Espresso with the alert icon via `aria-describedby`; "(optional)" marks optional fields |
 | `contactForm(formName, demo, state, idp, action)` | `demo=true` = style guide (nothing sent); `state` `error` / `success` for static previews; `action` defaults to `/contact/#<idp>-sent` | Netlify Forms (`data-netlify`, `netlify-honeypot="bot-field"`, hidden `form-name`). site.js validates, posts by fetch and shows the calm success panel (`role=status`, focused); without JS Netlify returns to `action` and `:target` shows the panel. Reply time is a `[[TODO]]` |
-| `map(image)` | `image` = path of the static map image when it exists | Links to Google Maps (no embed, no cookies). `[[TODO]]`: brand-coloured static map image |
+| `map()` | none | Brand-coloured OpenStreetMap map: `scripts/make-map.js` renders `src/_includes/map.svg` (about 21 KB, inlined so street names use the page font) from cached OSM data in `scripts/data/osm-penketh.json`; `--refresh` fetches the Overpass API again. The salon sits at 50% across and 42% down, under the UB circle pin (Ivory disc with a Champagne ring so it shows on the Espresso map). The whole map links to Google Maps (no embed, no cookies); the required "© OpenStreetMap contributors" credit sits under it. Phones use a 5:4 frame. Marker position is the building on the north side of the precinct (approximate: points at the building, not a doorway) |
+
+## Home page patterns (Stage 3)
+
+Built in the same style as the signed-off components; used on `src/index.njk`.
+
+| Class | Use |
+| --- | --- |
+| `.hubs` > `.hub` | Three section links (Aesthetics, Facials, Beauty): Champagne hairline on top, eyebrow, `h3` link stretched over the block (`.hub__link`), quiet "Discover" arrow. 3 across from 48em |
+| `.igrid` | Instagram: a static grid of square salon photos (3 across, 6 from 64em) wrapped in links to the profile (`tabindex="-1"`, `aria-hidden`; one real Follow button below). No embed or third-party script |
+| `.visit` (+ `.visit__cols`) | Hours, address, phone and directions line beside the map (5/7 from 64em) |
+| `.map-fig` | Wrapper for the map and its credit line |
+
+Home page data: `site.directions.short` / `.full` (directions lines, wording still for Yemi to confirm); card photos and lines for dermal fillers, lashes and brows, nails and pedicures and massage in `sections.json` (interim picks from the 14 salon photos). Featured treatments come from `relatedCards`, so prices always come from `services.json`.
 
 ## Photo crops (`scripts/process-photos.js`, one job each)
 
