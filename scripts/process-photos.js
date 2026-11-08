@@ -68,7 +68,8 @@ const PHOTOS = [
     name: "reception-flowers-products",
     source: "20260309_140747.jpg",
     ratio: "4:5",
-    crop: { x: 0.1, y: 0, w: 0.8 },
+    // Starts below the ring light (top left of the frame) so no ring light or stand shows (final review, Stage 9).
+    crop: { x: 0.03, y: 0.3, w: 0.7 },
     rotate: 0,
     use: "accent",
     alt: "Pale pink and white flowers in a glass vase beside boxed skincare products on the reception desk.",
@@ -141,6 +142,17 @@ const PHOTOS = [
     use: "hero (portrait screens)",
     widths: [480, 960, 1600],
     alt: "Pale pink and white flowers and boxed skincare on the reception desk, with tufted grey crushed velvet below and a glittered wall behind.",
+  },
+  {
+    // Final review (Stage 9): a clean landscape of the desk for "Not sure" blocks, cards and heroes; starts right of
+    // the monitor and remote and below the ring light.
+    name: "desk-flowers",
+    source: "20260309_140735.jpg",
+    ratio: "3:2",
+    crop: { x: 0.44, y: 0.475, w: 0.56 },
+    rotate: 0,
+    use: "detail",
+    alt: "Pale pink and white flowers and boxed skincare on the curved crushed-velvet reception desk, in front of the glittered wall.",
   },
   {
     name: "velvet-band",

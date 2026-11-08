@@ -37,6 +37,8 @@ facts:
   duration: ""                      # optional: defaults to the services' range, e.g. "60–75 min"
   resultsLast: "[[TODO: from the practitioner]]"
   downtime: "[[TODO: from the practitioner]]"
+# Keep each fact value to about 24 characters ("Typically 6–18 months", "Builds over a course"); put any qualifier
+# in the body copy (the end of "What to expect"). Long values wrap badly in the quick-facts strip.
 services:                           # service ids from src/_data/services.json, in menu order
   - "20306605379443"
   - "20323785248627"
@@ -50,7 +52,7 @@ reviews: []                         # ids from reviews.json (real Phorest review
 pause: ""                           # optional: photos.json name for a full-width image pause
 ```
 
-Prices from `services` (never typed): "From £X" is the lowest public price; the price list (dot leaders) shows public prices only. Prescription services show "Free consultation" and never a price. Held-back prices (Profhilo, microneedling, fat dissolving) show a `[[TODO]]` until Yemi decides. The build warns when a service for the page is left out.
+Prices from `services` (never typed): "From £X" is the lowest public price of a main service: services flagged `excludeFromFrom` in `services.json` (add-ons, standalone soak-offs, removals, repairs, infills, sensitivity or patch tests; set by `scripts/import-services.js`) stay in the price list but never set From £X, the card time or the duration range; the price list (dot leaders) shows public prices only. Prescription services show "Free consultation" and never a price. Held-back prices (Profhilo, microneedling, fat dissolving) show a `[[TODO]]` until Yemi decides. The build warns when a service for the page is left out.
 
 Body: exactly these `##` headings, in this order. Each becomes a section in the sticky contents list. Use `###` only inside a section.
 

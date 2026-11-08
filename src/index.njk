@@ -12,7 +12,10 @@ metaDescription: Advanced skin and aesthetics, facials and everyday beauty in Pe
 {%- import "ui.njk" as ui with context -%}
 {%- set featured = ["caci", "dermaplaning", "dermal-fillers", "lashes-and-brows", "nails-and-pedicures", "massage"] | relatedCards(collections.content) -%}
 {%- set reviewCount = reviews.items | length -%}
-{%- set igPhotos = ["reception-desk-detail", "pampas", "product-shelf-nail-care", "nail-stations", "reception-flowers-products", "product-shelf-skincare"] -%}
+{%- set teamCount = practitioners.people | length -%}
+{#- Placeholders show in local and preview builds (for review); a production build hides blocks that have no real data yet. -#}
+{%- set showTodo = not env.production -%}
+{%- set igPhotos = ["lash-print", "pampas", "product-shelf-nail-care", "nail-stations", "reception-flowers-products", "product-shelf-skincare"] -%}
 
 {#- ===== Hero ===== -#}
 <section class="hero" aria-labelledby="hero-title">
@@ -22,7 +25,7 @@ metaDescription: Advanced skin and aesthetics, facials and everyday beauty in Pe
 <div class="wrap hero__content on-dark" style="background:none">
 <p class="eyebrow">{{ site.tradingName }}</p>
 <h1 id="hero-title" class="display" style="--d:80ms">{{ "Aesthetics & beauty in Warrington" | amp | safe }}</h1>
-<p class="lead" style="--d:160ms">Advanced skin and aesthetics, everyday beauty, and a clear plan built around you.</p>
+<p class="lead" style="--d:160ms">Advanced skin, aesthetics and everyday beauty in {{ site.address.locality }} since {{ site.established }}, with {{ site.parking | lower }} right outside.</p>
 <div class="btn-row" style="--d:240ms">{{ ui.button("Book now", book=true) }}{{ ui.button("Explore treatments", href="#treatments", style="outline", arrow=false) }}</div>
 <p class="small" style="--d:320ms">{{ ui.openStatus() }}</p>
 </div>
@@ -39,12 +42,17 @@ metaDescription: Advanced skin and aesthetics, facials and everyday beauty in Pe
 <div class="stack">
 {{ ui.stat(site.reviews.count, "Five-star reviews on " ~ site.reviews.source ~ " since " ~ site.reviews.since.slice(0, 4)) }}
 <p class="small soft">Source: {{ site.reviews.source }}, verified client reviews, {{ site.reviews.since | dateLong }} to {{ site.reviews.asOf | dateLong }}.</p>
+{%- if showTodo %}
 <p class="small">{{ "[[TODO: average rating and Google rating, once Yemi confirms them]]" | todo | safe }}</p>
+{%- endif %}
+{{ ui.reviewsLink() }}
 </div>
+{%- if reviewCount or showTodo %}
 <div class="grid grid--3" data-stagger="110">
 {%- if reviewCount %}{% for id, r in reviews.items %}{% if loop.index <= 3 %}{{ ui.review(r.text, r.name, r.date | monthYear) }}{% endif %}{% endfor %}
 {%- else %}{% for i in range(0, 3) %}{{ ui.review("[[TODO: full review text from Phorest]]", "[[TODO: first name and surname initial]]", "[[TODO: month and year]]") }}{% endfor %}{% endif -%}
 </div>
+{%- endif %}
 </div>
 </div>
 </section>
@@ -52,15 +60,15 @@ metaDescription: Advanced skin and aesthetics, facials and everyday beauty in Pe
 {#- ===== Featured treatments ===== -#}
 <section class="section section--deep" id="treatments" aria-labelledby="treatments-title" style="--bg:var(--c-ivory-deep)">
 <div class="wrap">
-{{ ui.sectionHead("Our treatments", eyebrow="Treatments", word="Treatments", id="treatments-title", lead="Three sections, one clear plan. Start with what you would like to change and we will help you choose.") }}
+{{ ui.sectionHead("Our treatments", eyebrow="Treatments", word="Treatments", id="treatments-title", lead="Start with what you would like to change, and we will help you choose.") }}
 <ul class="hubs" role="list" data-stagger="110">
-<li class="hub" data-reveal>{{ ui.eyebrow("Advanced skin", 1) }}<h3 class="h3"><a class="hub__link" href="/aesthetics/">Aesthetics</a></h3><p>Advanced skin treatments and aesthetics, with a clear plan built around you.</p><span class="more" aria-hidden="true">Discover{{ ui.icon("arrow", "icon--arrow") }}</span></li>
+<li class="hub" data-reveal>{{ ui.eyebrow("Advanced skin", 1) }}<h3 class="h3"><a class="hub__link" href="/aesthetics/">Aesthetics</a></h3><p>Fillers, skin boosters and skin treatments, always starting with a consultation.</p><span class="more" aria-hidden="true">Discover{{ ui.icon("arrow", "icon--arrow") }}</span></li>
 <li class="hub" data-reveal>{{ ui.eyebrow("Skin care", 2) }}<h3 class="h3"><a class="hub__link" href="/facials/">Facials</a></h3><p>CACI, COMCIT, Crystal Clear, dermaplaning and glycolic peel facials.</p><span class="more" aria-hidden="true">Discover{{ ui.icon("arrow", "icon--arrow") }}</span></li>
 <li class="hub" data-reveal>{{ ui.eyebrow("Everyday beauty", 3) }}<h3 class="h3"><a class="hub__link" href="/beauty/">Beauty</a></h3><p>Lashes and brows, nails and pedicures, massage, waxing and more.</p><span class="more" aria-hidden="true">Discover{{ ui.icon("arrow", "icon--arrow") }}</span></li>
 </ul>
 <h3 class="h4" style="margin-bottom:var(--s-4)" data-reveal>Popular treatments</h3>
 <div class="grid grid--3" data-stagger="110">
-{%- for c in featured %}{{ ui.tcard(c.name, c.url, c.photo or ("card for " ~ c.name), detail=c.detail, eyebrow=(c.section ~ " · " ~ (c.num | pad2)), text=c.text, from=c.offer.from, mins=c.offer.fromMins, level=4, note=("Free consultation" if c.offer.consultation else ("Price on consultation" if c.offer.heldBack else ""))) }}{% endfor %}
+{%- for c in featured %}{{ ui.tcard(c.name, c.url, c.photo or ("card for " ~ c.name), detail=c.detail, eyebrow=c.section, text=c.text, from=c.offer.from, mins=c.offer.fromMins, level=4, note=("Free consultation" if c.offer.consultation else ("Price on consultation" if c.offer.heldBack else ""))) }}{% endfor %}
 </div>
 </div>
 </section>
@@ -71,33 +79,38 @@ metaDescription: Advanced skin and aesthetics, facials and everyday beauty in Pe
 <section class="section" aria-labelledby="not-sure">
 <div class="wrap">
 <div class="overlap overlap--flip">
-<div class="overlap__media" data-reveal="wipe"><div class="frame">{{ ui.picture("reception-wide", sizes="(min-width: 64em) 60vw, 100vw", ratio="32", alt="") }}</div></div>
+<div class="overlap__media" data-reveal="wipe"><div class="frame">{{ ui.picture("relaxation-room", sizes="(min-width: 64em) 60vw, 100vw", ratio="32", alt="") }}</div></div>
 <div class="overlap__card stack" data-reveal style="--d:200ms">
 {{ ui.eyebrow("Advice") }}
 <h2 class="h3" id="not-sure">Not sure what to book?</h2>
 <p>Tell us what you would like to change and we will help you choose. Call the salon, or send a message and we usually reply within an hour during opening hours.</p>
 <div class="btn-row">{{ ui.button("Call the salon", href="tel:" + site.phone.tel, style="outline", arrow=false) }}{{ ui.button("Send a message", href="/contact/") }}</div>
+<p>{{ ui.more("How a consultation works", "/consultation/") }}</p>
 </div>
 </div>
 </div>
 </section>
 
-{#- ===== Team and results preview (placeholders until Yemi supplies details and consented results) ===== -#}
+{#- ===== Team and results preview (placeholders until Yemi supplies details and consented results).
+    Production: shown only once practitioners.json has confirmed entries; the Results block stays hidden until there is real, consented results data. ===== -#}
+{%- if teamCount or showTodo %}
 <section class="section section--deep" aria-labelledby="team" style="--bg:var(--c-ivory-deep)">
 <div class="wrap">
 {{ ui.sectionHead("Your practitioners", eyebrow="The team", id="team", lead="[[TODO: two sentences on the team and how a visit works, once Yemi supplies practitioner details]]" | todo | safe) }}
 <div class="grid grid--3" data-stagger="110">
-<div data-reveal>{{ ui.person("[[TODO: practitioner name]]", "[[TODO: role and training]]") }}</div>
-<div data-reveal>{{ ui.person("[[TODO: practitioner name]]", "[[TODO: role and training]]") }}</div>
-<div data-reveal>{{ ui.person("[[TODO: practitioner name]]", "[[TODO: role and training]]") }}</div>
+{%- if teamCount %}{% for id, p in practitioners.people | dictsort %}{% if loop.index <= 3 %}<div data-reveal>{{ ui.person(p.name, p.role, p.photo or "", p.text or "") }}</div>{% endif %}{% endfor %}
+{%- else %}{% for i in range(0, 3) %}<div data-reveal>{{ ui.person("[[TODO: practitioner name]]", "[[TODO: role and training]]") }}</div>{% endfor %}{% endif %}
 </div>
 <div class="stack" style="margin-top:var(--s-6)" data-reveal>
+{%- if showTodo %}
 <h3 class="h4">Results</h3>
 <p class="small">{{ "[[TODO: results the clients have agreed to share, for treatments that are not prescription-only]]" | todo | safe }}</p>
+{%- endif %}
 <p>{{ ui.more("Meet the team", "/about/") }}</p>
 </div>
 </div>
 </section>
+{%- endif %}
 
 {#- ===== Instagram: a static grid of salon photos ===== -#}
 <section class="section" aria-labelledby="instagram">

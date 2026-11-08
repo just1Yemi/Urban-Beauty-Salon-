@@ -6,9 +6,9 @@ section: facials
 metaTitle: Dermaplaning in Penketh, Warrington
 metaDescription: Dermaplaning facials at The Urban Beauty Salon in Penketh, Warrington, on their own or with a glycolic peel. See prices and times, and book online.
 lead: Dermaplaning gently removes dead skin cells and fine facial hair for a smoother surface. Have it on its own as a luxury facial, or with a glycolic peel.
-heroPhoto: treatment-room
+heroPhoto: relaxation-room
 facts:
-  resultsLast: "Typically about three to four weeks"
+  resultsLast: "Typically 3–4 weeks"
   downtime: "Typically none"
 services:
   - "20306605379443"

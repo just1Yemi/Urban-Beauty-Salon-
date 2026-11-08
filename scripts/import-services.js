@@ -233,6 +233,10 @@ function mapSection(category, n) {
 }
 
 // ---------- Build ----------
+const EXCLUDE_FROM_FROM = (name) =>
+  /^add\b|\brepair\b|\bremoval\b|\binfill\b|\b(sensitivity|patch) test\b/i.test(name) ||
+  (/soak off/i.test(name) && !/\((no|with) soak off\)|including soak off/i.test(name));
+
 const rows = parseCsv(fs.readFileSync(csvPath, "utf8"));
 const unmapped = [];
 
@@ -272,10 +276,12 @@ const services = rows.map((r) => {
     isPrescription,
     pricePublic: priceHoldReason === null,
     priceHoldReason,
-    // isMinor: small add-ons, repairs, soak-offs and removals (exclude when working out "From" prices)
-    isMinor: /^addb\b|repair|soak off|removal/i.test(cleanName) || undefined,
+    // excludeFromFrom: add-ons ("Add ..."), standalone soak-offs, removals, repairs, infills and
+    // sensitivity or patch tests. They stay in the price list but never set the "From £X" price,
+    // the card time or the duration range (CAP Code: a "from" price must be a representative start).
+    excludeFromFrom: EXCLUDE_FROM_FROM(cleanName) || undefined,
   };
-  if (!entry.isMinor) delete entry.isMinor;
+  if (!entry.excludeFromFrom) delete entry.excludeFromFrom;
   if (note) entry.noteForYemi = note;
   return entry;
 });

@@ -220,7 +220,7 @@ progress: true
 <figure data-reveal><div class="zoom">{{ ui.picture("relaxation-room", sizes="(min-width: 64em) 30vw, (min-width: 40em) 45vw, 100vw", ratio="45", cls="arch") }}</div><figcaption>Arched top · for team portraits · zooms 3% on hover</figcaption></figure>
 <figure data-reveal>{{ ui.placeholder("[[TODO: team portrait (professional shoot)]]", ratio="45", cls="arch") }}<figcaption>Placeholder · a photo we do not have yet</figcaption></figure>
 <figure><div data-reveal="wipe">{{ ui.picture("nail-stations", sizes="(min-width: 64em) 30vw, (min-width: 40em) 45vw, 100vw", ratio="32") }}</div><figcaption>Mask-wipe reveal · hero and feature images</figcaption></figure>
-<figure data-reveal><div class="pic pic--32" style="--lqip:url({{ photos['reception-desk'].preview }})" role="img" aria-label="Blurred colour preview of the reception photo"></div><figcaption>Blurred colour preview · what shows while loading</figcaption></figure>
+<figure data-reveal><div class="pic pic--32" style="--lqip:url({{ photos['desk-flowers'].preview }})" role="img" aria-label="Blurred colour preview of the reception photo"></div><figcaption>Blurred colour preview · what shows while loading</figcaption></figure>
 <figure data-reveal>{{ ui.placeholder("[[TODO: aesthetics treatment room]]", ratio="32") }}<figcaption>Placeholder · landscape</figcaption></figure>
 </div>
 </div>
@@ -231,12 +231,12 @@ progress: true
 <section class="section" aria-labelledby="treatment">
 <div class="wrap">
 {{ ui.sectionHead("Dermaplaning", eyebrow="Sample treatment section · Facials", word="Facials", id="treatment", level=2) }}
-{{ ui.facts([
+<div class="facts-wrap">{{ ui.facts([
   { icon: "clock", label: "Duration", value: derma.mins | duration },
   { icon: "calendar", label: "Results last", value: "[[TODO: from practitioner]]" },
   { icon: "moon", label: "Downtime", value: "[[TODO: from practitioner]]" },
   { icon: "tag", label: "Price", price: derma.price }
-]) }}
+]) }}</div>
 <div class="overlap" style="margin-top:var(--s-7)">
 <div class="overlap__media" data-reveal="wipe">{{ ui.picture("treatment-room", sizes="(min-width: 64em) 60vw, 100vw", ratio="32") }}</div>
 <div class="overlap__card stack" data-reveal style="--d:200ms">
@@ -295,7 +295,7 @@ progress: true
 <div class="wrap">
 {{ ui.sectionHead("Treatment cards", eyebrow="Components · 09", word="Beauty", id="cards", lead="At most three to a row. On hover the room photo cross-fades to a detail and the price and time appear; on phones they always show.") }}
 <div class="grid grid--3" data-stagger="110">
-{{ ui.tcard("Dermaplaning", "#treatment", "product-shelf-skincare", detail="product-shelf-serums", eyebrow="Facials", text="On its own or with a glycolic peel.", from=derma.price, mins=derma.mins) }}
+{{ ui.tcard("Dermaplaning", "#treatment", "product-shelf-skincare", detail="desk-flowers", eyebrow="Facials", text="On its own or with a glycolic peel.", from=derma.price, mins=derma.mins) }}
 {{ ui.tcard("Lashes and brows", "#prices", "lash-print", detail="reception-flowers-products", eyebrow="Beauty", text="Lash lifts, tints and extensions, and brow lamination.", from=lashLift.price, mins=lashLift.mins) }}
 {{ ui.tcard("Nails and pedicures", "#prices", "polish-wall", detail="nail-stations", eyebrow="Beauty", text="Gel colour, manicures and pedicures.", from=pedicure.price, mins=pedicure.mins) }}
 </div>

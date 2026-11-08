@@ -6,9 +6,9 @@ section: beauty
 metaTitle: Kids’ Nails, Little Miss Urban
 metaDescription: "Little Miss Urban at The Urban Beauty Salon in Penketh, Warrington: gentle nail and toe treats for children aged 4 to 12. A parent or guardian must attend."
 lead: A gentle pamper for children aged 4 to 12 in Penketh, Warrington. A parent or guardian must stay for the whole appointment.
-heroPhoto: nail-stations
+heroPhoto: product-shelf-nail-care
 facts:
-  resultsLast: "Typically around 1–2 weeks, depending on the finish"
+  resultsLast: "Typically 1–2 weeks"
   downtime: "None"
 services:
   - "18829136629619"

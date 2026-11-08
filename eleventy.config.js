@@ -19,6 +19,8 @@ export default function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy({ [`src/assets/${dir}`]: `assets/${dir}` });
   }
   eleventyConfig.ignores.add("src/assets/img/source/**");
+  // The private style guide never ships to production (same test as src/_data/env.js).
+  if (process.env.CONTEXT === "production" || process.env.ELEVENTY_ENV === "production") eleventyConfig.ignores.add("src/styleguide.njk");
   eleventyConfig.addWatchTarget("src/assets/");
 
   eleventyConfig.addGlobalData("assetVersion", assetVersion);

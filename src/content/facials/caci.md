@@ -4,11 +4,11 @@ title: CACI
 slug: caci
 section: facials
 metaTitle: CACI Facials in Penketh, Warrington
-metaDescription: CACI non-surgical face lift, eye lift, jowl lift and microdermabrasion facials in Penketh, Warrington. See prices and times, then book online.
+metaDescription: CACI microcurrent facials for the face, eyes and jowls, plus microdermabrasion, in Penketh, Warrington. See prices and times, then book online.
 lead: CACI facials use gentle microcurrent to tone the muscles of the face, with options for the whole face, the eyes and the jowls, and microdermabrasion for a smoother surface.
-heroPhoto: product-shelf-serums
+heroPhoto: desk-flowers
 facts:
-  resultsLast: "Typically builds over a course; top-ups keep it going"
+  resultsLast: "Builds over a course"
   downtime: "Typically none"
 services:
   - "17317308141427"
@@ -41,7 +41,7 @@ reviews: []
 
 CACI is a non-surgical facial that uses low-level microcurrent, delivered through small probes, to stimulate the muscles of the face. It involves no needles and no cuts. Many clients choose it because they would like their skin to look and feel more toned and refreshed.
 
-Our menu has options for different areas. The non-surgical face lift works on the whole face, the eye lift focuses on the eye area, and the jowl lift express works on the lower face and jawline. The Ultimate Anti-Ageing Facial is our longest CACI option and combines several steps in one session.
+Our menu has options for different areas. The CACI Non-Surgical Face Lift (the treatment’s menu name) works on the whole face, the CACI Non-Surgical Eye Lift (also a menu name) focuses on the eye area, and the CACI Jowl Lift Express Facial works on the lower face and jawline. The Ultimate Anti-Ageing Facial is our longest CACI option and combines several steps in one session.
 
 CACI microdermabrasion is a separate, gentler option. It uses a fine exfoliating tip to lift away dead skin cells from the surface, which can leave skin looking brighter and feeling smoother. You can have it on its own or with a hydrating mask.
 
@@ -56,6 +56,8 @@ It is not suitable for everyone. Microcurrent is typically avoided if you have a
 1. **Before your treatment.** Your therapist asks about your skin, health and medication, looks at your skin and talks through which CACI option suits you. Please arrive with clean skin if you can.
 2. **During your treatment.** Your skin is cleansed, then the therapist moves the probes in set patterns over the area. You will usually feel a light tingling. Microdermabrasion feels like a gentle, slightly scratchy massage.
 3. **Afterwards.** Your skin may look a little pink for a short time. Most people carry on with their day straight away.
+
+Results typically build over a course, and top-up sessions help keep them going.
 
 ## Aftercare
 

@@ -8,7 +8,7 @@ section: aesthetics
 metaTitle: "Lines & wrinkles consultation Warrington"
 metaDescription: "A free, private consultation about lines and wrinkles at The Urban Beauty Salon in Penketh, Warrington. Talk through your options with no obligation."
 lead: "A free, private consultation to talk through lines and wrinkles, your health and the options that may suit you, with no obligation to go ahead."
-heroPhoto: pampas
+heroPhoto: "[[TODO: aesthetics room photo, from the professional shoot]]"
 # Consultation-only page: no results or downtime facts (they would imply a follow-on treatment).
 facts:
   duration: "60 min"

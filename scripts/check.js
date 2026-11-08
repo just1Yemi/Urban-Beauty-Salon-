@@ -1,4 +1,6 @@
 // npm run check: build, then contrast check, compliance check, then link check.
+// A production build (ELEVENTY_ENV=production, Netlify CONTEXT=production, or `npm run check:prod`) also runs the
+// launch gate: no [[TODO]] placeholder may be left in _site.
 // Prints failures only; exits non-zero if any step fails.
 import { spawnSync } from "node:child_process";
 import path from "node:path";
@@ -12,6 +14,9 @@ const steps = [
   ["links", [path.join(root, "scripts/link-check.js")]],
   ["seo", [path.join(root, "scripts/seo-check.js")]],
 ];
+if (process.argv.includes("--production")) process.env.ELEVENTY_ENV = "production";
+const production = process.env.CONTEXT === "production" || process.env.ELEVENTY_ENV === "production";
+if (production) steps.push(["todo-gate", [path.join(root, "scripts/todo-gate.js")]]);
 let failed = false;
 for (const [name, args] of steps) {
   const r = spawnSync(process.execPath, args, { cwd: root, encoding: "utf8" });
@@ -24,4 +29,4 @@ for (const [name, args] of steps) {
   }
 }
 if (failed) process.exit(1);
-console.log("check passed: build, contrast, compliance, links, seo");
+console.log(`check passed: build, contrast, compliance, links, seo${production ? ", todo-gate (production)" : ""}`);

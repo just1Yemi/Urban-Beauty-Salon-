@@ -1115,8 +1115,7 @@
     "price": 60,
     "isPrescription": false,
     "pricePublic": true,
-    "priceHoldReason": null,
-    "isMinor": true
+    "priceHoldReason": null
   },
   {
     "id": "19447611920243",
@@ -1228,7 +1227,8 @@
     "price": 28,
     "isPrescription": false,
     "pricePublic": true,
-    "priceHoldReason": null
+    "priceHoldReason": null,
+    "excludeFromFrom": true
   },
   {
     "id": "19791209303923",
@@ -1244,7 +1244,8 @@
     "price": 38,
     "isPrescription": false,
     "pricePublic": true,
-    "priceHoldReason": null
+    "priceHoldReason": null,
+    "excludeFromFrom": true
   },
   {
     "id": "17540646440819",
@@ -1261,7 +1262,7 @@
     "isPrescription": false,
     "pricePublic": true,
     "priceHoldReason": null,
-    "isMinor": true
+    "excludeFromFrom": true
   },
   {
     "id": "20873541062515",
@@ -1325,7 +1326,8 @@
     "price": 5,
     "isPrescription": false,
     "pricePublic": true,
-    "priceHoldReason": null
+    "priceHoldReason": null,
+    "excludeFromFrom": true
   },
   {
     "id": "19636590481267",
@@ -1389,7 +1391,8 @@
     "price": 14,
     "isPrescription": false,
     "pricePublic": true,
-    "priceHoldReason": null
+    "priceHoldReason": null,
+    "excludeFromFrom": true
   },
   {
     "id": "17867063955315",
@@ -1454,7 +1457,7 @@
     "isPrescription": false,
     "pricePublic": true,
     "priceHoldReason": null,
-    "isMinor": true
+    "excludeFromFrom": true
   },
   {
     "id": "17884243824499",
@@ -1470,8 +1473,7 @@
     "price": 31,
     "isPrescription": false,
     "pricePublic": true,
-    "priceHoldReason": null,
-    "isMinor": true
+    "priceHoldReason": null
   },
   {
     "id": "19585050873715",
@@ -1488,7 +1490,7 @@
     "isPrescription": false,
     "pricePublic": true,
     "priceHoldReason": null,
-    "isMinor": true
+    "excludeFromFrom": true
   },
   {
     "id": "20804821585779",
@@ -1504,8 +1506,7 @@
     "price": 34,
     "isPrescription": false,
     "pricePublic": true,
-    "priceHoldReason": null,
-    "isMinor": true
+    "priceHoldReason": null
   },
   {
     "id": "21595095568243",
@@ -1522,7 +1523,7 @@
     "isPrescription": false,
     "pricePublic": true,
     "priceHoldReason": null,
-    "isMinor": true
+    "excludeFromFrom": true
   },
   {
     "id": "20822001454963",
@@ -1539,7 +1540,7 @@
     "isPrescription": false,
     "pricePublic": true,
     "priceHoldReason": null,
-    "isMinor": true
+    "excludeFromFrom": true
   },
   {
     "id": "20718922239859",
@@ -1555,7 +1556,8 @@
     "price": 43,
     "isPrescription": false,
     "pricePublic": true,
-    "priceHoldReason": null
+    "priceHoldReason": null,
+    "excludeFromFrom": true
   },
   {
     "id": "20701742370675",
@@ -1603,7 +1605,8 @@
     "price": 43,
     "isPrescription": false,
     "pricePublic": true,
-    "priceHoldReason": null
+    "priceHoldReason": null,
+    "excludeFromFrom": true
   },
   {
     "id": "20392504725363",
@@ -1620,7 +1623,7 @@
     "isPrescription": false,
     "pricePublic": true,
     "priceHoldReason": null,
-    "isMinor": true
+    "excludeFromFrom": true
   },
   {
     "id": "18056042516339",
@@ -1637,7 +1640,7 @@
     "isPrescription": false,
     "pricePublic": true,
     "priceHoldReason": null,
-    "isMinor": true
+    "excludeFromFrom": true
   },
   {
     "id": "17695265263475",
@@ -1653,7 +1656,8 @@
     "price": 12,
     "isPrescription": false,
     "pricePublic": true,
-    "priceHoldReason": null
+    "priceHoldReason": null,
+    "excludeFromFrom": true
   },
   {
     "id": "21543555960691",
@@ -1669,7 +1673,8 @@
     "price": 14,
     "isPrescription": false,
     "pricePublic": true,
-    "priceHoldReason": null
+    "priceHoldReason": null,
+    "excludeFromFrom": true
   },
   {
     "id": "21268678053747",
@@ -1685,7 +1690,8 @@
     "price": 43,
     "isPrescription": false,
     "pricePublic": true,
-    "priceHoldReason": null
+    "priceHoldReason": null,
+    "excludeFromFrom": true
   },
   {
     "id": "21251498184563",
@@ -1717,8 +1723,7 @@
     "price": 46,
     "isPrescription": false,
     "pricePublic": true,
-    "priceHoldReason": null,
-    "isMinor": true
+    "priceHoldReason": null
   },
   {
     "id": "21560735829875",
@@ -1735,7 +1740,7 @@
     "isPrescription": false,
     "pricePublic": true,
     "priceHoldReason": null,
-    "isMinor": true
+    "excludeFromFrom": true
   },
   {
     "id": "21715354652531",
@@ -1768,7 +1773,7 @@
     "isPrescription": false,
     "pricePublic": true,
     "priceHoldReason": null,
-    "isMinor": true
+    "excludeFromFrom": true
   },
   {
     "id": "17712445132659",
@@ -1784,8 +1789,7 @@
     "price": 39,
     "isPrescription": false,
     "pricePublic": true,
-    "priceHoldReason": null,
-    "isMinor": true
+    "priceHoldReason": null
   },
   {
     "id": "20787641716595",
@@ -1801,8 +1805,7 @@
     "price": 42,
     "isPrescription": false,
     "pricePublic": true,
-    "priceHoldReason": null,
-    "isMinor": true
+    "priceHoldReason": null
   },
   {
     "id": "17575006179187",
@@ -1866,8 +1869,7 @@
     "price": 31,
     "isPrescription": false,
     "pricePublic": true,
-    "priceHoldReason": null,
-    "isMinor": true
+    "priceHoldReason": null
   },
   {
     "id": "20770461847411",
@@ -1883,8 +1885,7 @@
     "price": 34,
     "isPrescription": false,
     "pricePublic": true,
-    "priceHoldReason": null,
-    "isMinor": true
+    "priceHoldReason": null
   },
   {
     "id": "17815524347763",
@@ -1901,7 +1902,7 @@
     "isPrescription": false,
     "pricePublic": true,
     "priceHoldReason": null,
-    "isMinor": true
+    "excludeFromFrom": true
   },
   {
     "id": "17781164609395",
@@ -1918,7 +1919,7 @@
     "isPrescription": false,
     "pricePublic": true,
     "priceHoldReason": null,
-    "isMinor": true
+    "excludeFromFrom": true
   },
   {
     "id": "21698174783347",
@@ -1950,7 +1951,8 @@
     "price": 30,
     "isPrescription": false,
     "pricePublic": true,
-    "priceHoldReason": null
+    "priceHoldReason": null,
+    "excludeFromFrom": true
   },
   {
     "id": "18124761993075",

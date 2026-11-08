@@ -7,6 +7,7 @@ Generated 2026-11-08 by scripts/make-review-docs.js from src/content/facials/. D
 ## Section-wide checks
 
 - [ ] 'Our safety and aftercare page will have more advice once it is published' appears in each aftercare section; remove or link it when the page exists
+- [ ] Quick facts are now short (24 characters or so); the fuller wording moved into the body copy (end of What to expect). Confirm both.
 
 ## Contents
 
@@ -52,11 +53,11 @@ If you are choosing between them, a simple guide helps. CACI and COMCIT are our 
 
 - **URL:** /facials/caci/
 - **Page title (search results):** CACI Facials in Penketh, Warrington
-- **Description (search results):** CACI non-surgical face lift, eye lift, jowl lift and microdermabrasion facials in Penketh, Warrington. See prices and times, then book online.
+- **Description (search results):** CACI microcurrent facials for the face, eyes and jowls, plus microdermabrasion, in Penketh, Warrington. See prices and times, then book online.
 - **Practitioner shown:** [[TODO: practitioner name]]
 - **Book button:** Book a CACI facial
 - **Booking menu entries linked:** CACI Non-Surgical Face Lift; CACI Non-Surgical Eye Lift; CACI Jowl Lift Express Facial; CACI Ultimate Anti-Ageing Facial; CACI Ultimate Microdermabrasion; CACI Ultimate Microdermabrasion & Hydratone Mask
-- **Quick facts:** resultsLast: Typically builds over a course; top-ups keep it going | downtime: Typically none
+- **Quick facts:** resultsLast: Builds over a course | downtime: Typically none
 
 ### Introduction
 
@@ -68,7 +69,7 @@ CACI facials use gentle microcurrent to tone the muscles of the face, with optio
 
 CACI is a non-surgical facial that uses low-level microcurrent, delivered through small probes, to stimulate the muscles of the face. It involves no needles and no cuts. Many clients choose it because they would like their skin to look and feel more toned and refreshed.
 
-Our menu has options for different areas. The non-surgical face lift works on the whole face, the eye lift focuses on the eye area, and the jowl lift express works on the lower face and jawline. The Ultimate Anti-Ageing Facial is our longest CACI option and combines several steps in one session.
+Our menu has options for different areas. The CACI Non-Surgical Face Lift (the treatment’s menu name) works on the whole face, the CACI Non-Surgical Eye Lift (also a menu name) focuses on the eye area, and the CACI Jowl Lift Express Facial works on the lower face and jawline. The Ultimate Anti-Ageing Facial is our longest CACI option and combines several steps in one session.
 
 CACI microdermabrasion is a separate, gentler option. It uses a fine exfoliating tip to lift away dead skin cells from the surface, which can leave skin looking brighter and feeling smoother. You can have it on its own or with a hydrating mask.
 
@@ -83,6 +84,8 @@ It is not suitable for everyone. Microcurrent is typically avoided if you have a
 1. **Before your treatment.** Your therapist asks about your skin, health and medication, looks at your skin and talks through which CACI option suits you. Please arrive with clean skin if you can.
 2. **During your treatment.** Your skin is cleansed, then the therapist moves the probes in set patterns over the area. You will usually feel a light tingling. Microdermabrasion feels like a gentle, slightly scratchy massage.
 3. **Afterwards.** Your skin may look a little pink for a short time. Most people carry on with their day straight away.
+
+Results typically build over a course, and top-up sessions help keep them going.
 
 #### Aftercare
 
@@ -121,6 +124,7 @@ Microcurrent is not suitable for everyone, for example if you have a pacemaker o
 - [ ] Typically recommended as a course of sessions, with the number depending on the client (course length and total price unknown)
 - [ ] Microneedling is described as making tiny controlled channels in the skin (confirm wording)
 - [ ] Aftercare: gentle moisturiser, daily sun protection (freshly exfoliated skin more sun-sensitive), avoid harsh exfoliants for a few days
+- [ ] ASA wording (final review, Stage 9): “face lift” and “eye lift” appear only as CACI menu names, labelled “(the treatment’s menu name)”, and the meta description says “CACI microcurrent facials for the face, eyes and jowls”. The ASA has ruled against “facelift” claims for non-surgical treatments: confirm, or rename the Phorest menu items.
 - [ ] Open placeholder: [[TODO: practitioner name]]
 - [ ] Open placeholder: [[TODO: course length and total course price, if the salon offers one]]
 - [ ] Open placeholder: [[TODO: the practitioner’s advice on make-up after CACI]]
@@ -135,7 +139,7 @@ Microcurrent is not suitable for everyone, for example if you have a pacemaker o
 - **Practitioner shown:** [[TODO: practitioner name]]
 - **Book button:** Book a COMCIT facial
 - **Booking menu entries linked:** COMCIT Advanced Skin Rejuvenation; COMCIT Including CACI Face Lift; COMCIT Including Microdermabrasion; COMCIT Including Prime & Peel
-- **Quick facts:** resultsLast: Typically builds over a course; top-ups keep it going | downtime: Typically none, or mild pinkness for a short time
+- **Quick facts:** resultsLast: Builds over a course | downtime: None, or mild pinkness
 
 ### Introduction
 
@@ -162,6 +166,8 @@ It is not suitable for everyone. Your therapist will ask about pregnancy, medica
 1. **Before your treatment.** Your therapist checks your skin and health history, explains the steps and agrees your chosen option with you.
 2. **During your treatment.** Your skin is cleansed and prepared, then the COMCIT step is carried out, followed by any extra step you have chosen. Your therapist will check in on your comfort throughout.
 3. **Afterwards.** Your skin may look slightly pink for a short time. You can usually go back to your day, and you will be told how to look after your skin before you leave.
+
+Results typically build over a course, and top-up sessions help keep them going.
 
 #### Aftercare
 
@@ -215,7 +221,7 @@ We would not recommend it. Please tell your therapist if you are pregnant or thi
 - **Practitioner shown:** [[TODO: practitioner name]]
 - **Book button:** Book Crystal Clear
 - **Booking menu entries linked:** Crystal Clear Express Facial; Crystal Clear Luxury Facial; Crystal Clear MDA; Crystal Clear MDA Including Prime & Peel
-- **Quick facts:** resultsLast: Typically a few weeks; regular sessions help skin stay fresh | downtime: Typically none
+- **Quick facts:** resultsLast: Typically a few weeks | downtime: Typically none
 
 ### Introduction
 
@@ -290,7 +296,7 @@ Many clients book a few days beforehand, so any pinkness has settled. If you hav
 - **Practitioner shown:** [[TODO: practitioner name]]
 - **Book button:** Book dermaplaning
 - **Booking menu entries linked:** Dermaplaning Luxury; Dermaplaning & Glycolic Peel
-- **Quick facts:** resultsLast: Typically about three to four weeks | downtime: Typically none
+- **Quick facts:** resultsLast: Typically 3–4 weeks | downtime: Typically none
 
 ### Introduction
 
@@ -367,7 +373,7 @@ Dermaplaning Luxury is a good place to start. Adding a glycolic peel gives a dee
 - **Practitioner shown:** [[TODO: practitioner name]]
 - **Book button:** Book a glycolic peel
 - **Booking menu entries linked:** Glycolic Peel Facial
-- **Quick facts:** resultsLast: Typically a few weeks; a course builds on it | downtime: Typically none, or mild pinkness and flaking for a few days
+- **Quick facts:** resultsLast: Typically a few weeks | downtime: None, or mild flaking
 
 ### Introduction
 
@@ -394,6 +400,8 @@ It is not suitable if your skin is sunburnt, broken, inflamed or infected, or if
 1. **Before your treatment.** Your therapist asks about your skin, health and routine, checks your skin and explains the peel.
 2. **During your treatment.** Your skin is cleansed, then the peel is applied for a timed period. You will feel warmth or tingling. The peel is then removed or neutralised and your skin is soothed and protected.
 3. **Afterwards.** Your skin may look pink and feel tight or warm. Mild flaking can follow over the next few days.
+
+Results typically last a few weeks, and a course builds on them.
 
 #### Aftercare
 

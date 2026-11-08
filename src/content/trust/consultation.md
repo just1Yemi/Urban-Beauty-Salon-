@@ -8,7 +8,8 @@ metaTitle: First visit and consultation, Warrington
 metaDescription: What to expect at The Urban Beauty Salon in Penketh, Warrington. How booking works, what happens at your consultation, patch tests and how to prepare.
 eyebrow: Before you visit
 lead: What happens when you book, how a consultation works and how to prepare, so your first visit feels calm and clear.
-heroPhoto: relaxation-room
+heroPhoto: reception-flowers-products
+bookCta: Book a consultation
 routesTitle: Not sure what to book?
 routesLead: Start with what you would like to change. These three routes cover everything we offer, and you can always call or message us for a steer.
 routes:

@@ -12,6 +12,8 @@ progress: true
 {%- set who = practitioner | practitioner if practitioner else null -%}
 {%- set parts = content | sectionsOf -%}
 {%- set isTodo = r/^\s*\[\[TODO/ -%}
+{#- Placeholders show in local and preview builds; production hides blocks that have no real data yet. -#}
+{%- set showTodo = not env.production -%}
 {%- if o.from %}{% set priceFact = { icon: "tag", label: "Price", price: o.from } %}
 {%- else %}{% set priceFact = { icon: "tag", label: "Price", value: ("Free consultation" if o.consultation else ("Price on consultation" if o.heldBack else "[[TODO: price]]")) } %}{% endif -%}
 {#- Consultation-only pages (every service is prescription): no results or downtime facts, "Consultations" in place of
@@ -58,7 +60,7 @@ progress: true
 <section class="treatment__section" aria-labelledby="{{ s.id }}" data-reveal>
 <h2 class="h3" id="{{ s.id }}">{{ s.label }}</h2>
 <div class="prose">{{ s.html | safe }}</div>
-{%- if loop.first %}
+{%- if loop.first and (who or showTodo) %}
 <div class="treatment__person">{{ ui.person(who.name if who else (practitioner if isTodo.test(practitioner) else "[[TODO: practitioner name]]"), who.role if who else "[[TODO: role, training and registration]]", who.photo if who else "", who.text if who else "") }}</div>
 {%- endif %}
 </section>
@@ -98,6 +100,8 @@ progress: true
 <div class="grid grid--3" style="margin-top:var(--s-6)" data-stagger="110">
 {%- for r in rv %}{{ ui.review(r.text, r.name, r.date | monthYear) }}{% endfor %}
 </div>
+{%- elif not showTodo %}
+<div style="margin-top:var(--s-4)">{{ ui.reviewsLink() }}</div>
 {%- elif o.consultation %}
 <p class="small" style="margin-top:var(--s-4)">{{ "[[TODO: one to three general salon reviews (first name and surname initial). None that mention injections, lines and wrinkles results or any medicine]]" | todo | safe }}</p>
 {%- else %}

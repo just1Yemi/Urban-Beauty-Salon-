@@ -75,7 +75,7 @@
       "webp"
     ],
     "path": "/assets/img/salon/reception-flowers-products",
-    "preview": "data:image/webp;base64,UklGRqwAAABXRUJQVlA4IKAAAACQBQCdASoYAB4APt1eqE2opSOiKA1REBuJQBOmUADZzchyyDautlqKJz055zuq6ODq7aIRsAD+6/du/6bCaF+19nuHen8f1L7H/i0w8wv28H2t5lQWt9/TMgD1p5gT37LOXclO2Rw2tiEuk6cOULBQBljYFcgwueRLu1eGF9WUfpaBeplotbakN6fMXy9x10t4waPGa2tKTN8RMXCTgAAA"
+    "preview": "data:image/webp;base64,UklGRsoAAABXRUJQVlA4IL4AAADQBQCdASoYAB4APt1gp02opaOiKA1REBuJZgCdMoABq6ZWK7DrwCFteYHoJImZGIRsXciESCAAAPaewFLYB76CiU5RmVhZ5FmIBuSnljlNKmtBYKN4OBwzW3JTSsQhBsHfoH+swe/JWhIURePlDbeZ0hi0Y2+l8FnZ7QIKFdc7/AdkstuiZWm7i78xztEENpTJ8Ga6anrVzmUzFgsTx0xOet4EqFvgydKwCguF1HkiHxMW6+sn1es5a1aagAAA"
   },
   "polish-wall": {
     "name": "polish-wall",
@@ -212,6 +212,25 @@
     ],
     "path": "/assets/img/salon/hero-desk-portrait",
     "preview": "data:image/webp;base64,UklGRpwAAABXRUJQVlA4IJAAAACQBQCdASoYACQAPs1WpkynpKQiNVgMAPAZiWUAyJgRC7ZPpIqXAl/ZySZgsL50bObJVOGzAAD+wD8r2dUM2+EOy/b+BVHF4A9AJhn4JTVBCC9fFwx+GE3VNvPzPKU1L6D7347NsU7i4+ICrue8l1X037y4GINp7wkJ6iSF70B9Xb1FpG5WfLMSugO40mbgAAA="
+  },
+  "desk-flowers": {
+    "name": "desk-flowers",
+    "alt": "Pale pink and white flowers and boxed skincare on the curved crushed-velvet reception desk, in front of the glittered wall.",
+    "use": "detail",
+    "ratio": "3:2",
+    "width": 1600,
+    "height": 1067,
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "formats": [
+      "avif",
+      "webp"
+    ],
+    "path": "/assets/img/salon/desk-flowers",
+    "preview": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAACwAwCdASoYABAAPt1cp00opSOiMAgBEBuJQBOgAsbl3CjcrxbMAAD+pOd/i4IdgPE2shiqxEKlDB1hmGmOxuylzvmFb/OMPlVV0TOvGb58tanLAAA="
   },
   "velvet-band": {
     "name": "velvet-band",

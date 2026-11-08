@@ -285,7 +285,10 @@ html:has(.menu[open]) { overflow: hidden; }
 .facts__item .icon { grid-row: span 2; width: 1.375rem; height: 1.375rem; margin-top: 0.1rem; color: var(--c-champagne); }
 .facts dt { font: 500 var(--step--2)/1.5 var(--font-body); letter-spacing: var(--track-label); text-transform: uppercase; color: var(--text-soft); }
 .facts dd { margin: 0.125rem 0 0; font-variant-numeric: tabular-nums; }
-@media (min-width: 48em) {
+/* 2 x 2 by default; 4 across only when the strip itself is wide enough (about 44rem). The page-head text column is
+   a size container, so the strip stays 2 x 2 in the narrow 7/5 page head and wraps no value to one word a line. */
+.page-head__text, .facts-wrap { container-type: inline-size; }
+@container (min-width: 44rem) {
   .facts { grid-template-columns: repeat(4, minmax(0, 1fr)); }
   .facts__item { padding: var(--s-3) var(--s-3); }
   .facts__item:first-child { padding-left: 0; }
@@ -473,6 +476,7 @@ select.field__input { padding-right: 2rem; cursor: pointer; background: url("dat
 /* ---- Home page (Stage 3): section links, Instagram grid, visit block ---- */
 /* Three section links (Aesthetics, Facials, Beauty): hairline on top, whole block is the link */
 .hubs { display: grid; gap: var(--s-5) var(--s-4); list-style: none; padding: 0; margin-bottom: var(--s-7); }
+.hubs:last-child { margin-bottom: 0; }
 @media (min-width: 48em) { .hubs { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
 .hub { position: relative; display: grid; gap: var(--s-2); align-content: start; justify-items: start; padding-top: var(--s-3); border-top: 1px solid var(--line); }
 .hub p { max-width: 30ch; }
@@ -520,6 +524,8 @@ select.field__input { padding-right: 2rem; cursor: pointer; background: url("dat
 .contact__list .icon { width: 1.25rem; height: 1.25rem; margin-top: 0.2rem; color: var(--c-espresso); }
 .contact__list small { display: block; font: 500 var(--step--2)/1.4 var(--font-body); letter-spacing: var(--track-label); text-transform: uppercase; color: var(--c-text-soft); }
 .contact__list a { text-decoration: none; }
+.contact__list a[href^="mailto:"] { overflow-wrap: anywhere; }
+@media (max-width: 24em) { .contact__list a[href^="mailto:"] { font-size: var(--step--1); } }
 .contact__list a:hover { text-decoration: underline; text-decoration-color: var(--c-champagne); text-underline-offset: 4px; }
 .print-btn { display: none; }
 .js .print-btn { display: inline-flex; }

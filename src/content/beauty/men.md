@@ -6,10 +6,10 @@ section: beauty
 metaTitle: Men’s Waxing and Manicures, Warrington
 metaDescription: Gentleman’s manicure and pedicure, and chest and back waxing for men at The Urban Beauty Salon in Penketh, Warrington. See prices and book online.
 lead: "A clear men’s menu in Penketh, Warrington, with gentleman’s manicure and pedicure, and chest and back waxing. Free parking right outside."
-heroPhoto: reception-desk
+heroPhoto: nail-stations
 facts:
-  resultsLast: "Manicure and pedicure typically 2–3 weeks; hair typically regrows in 3–6 weeks"
-  downtime: "Typically none; redness after waxing usually settles within a few hours"
+  resultsLast: "Typically 2–6 weeks"
+  downtime: "Typically none"
 services:
   - "18915035975539"
   - "18932215844723"
@@ -51,6 +51,8 @@ Please tell your therapist about any skin conditions, medication such as retinoi
 1. **Before your treatment.** Your therapist will ask about your skin, nails and health, and explain what will happen. For waxing, they will check your hair length and clean the area.
 2. **During your treatment.** For a manicure or pedicure, you sit back while your nails are shaped and your cuticles and skin cared for. For waxing, wax is applied and removed in small sections. You may feel a brief sting, and we go at your pace.
 3. **Afterwards.** Your nails will look clean and tidy. Waxed skin may look pink for a few hours.
+
+A manicure or pedicure typically lasts 2 to 3 weeks, and waxed hair typically regrows in 3 to 6 weeks. Any redness after waxing usually settles within a few hours.
 
 ## Aftercare
 

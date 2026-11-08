@@ -10,10 +10,10 @@ section: aesthetics
 metaTitle: Hair loss treatments in Warrington
 metaDescription: Scalp treatments including PRP and Plinest Hair at The Urban Beauty Salon in Penketh, Warrington. Every plan starts with a consultation.
 lead: Scalp treatments, including PRP and Plinest Hair, for people concerned about thinning hair. Every plan starts with a consultation, because hair loss has many causes and many types do not respond to treatment.
-heroPhoto: product-shelf-mixed
+heroPhoto: "[[TODO: aesthetics room photo, from the professional shoot]]"
 facts:
-  resultsLast: Varies; maintenance typically every 6–12 months
-  downtime: Typically 1–2 days of scalp tenderness
+  resultsLast: "Varies by person"
+  downtime: "Typically 1–2 days"
 services:
   - "22299470204787"
   - "22316650073971"
@@ -68,6 +68,8 @@ Treatment is not suitable if you are under 18, pregnant or breastfeeding, or hav
 2. **During your treatment.** Your scalp is cleansed. For PRP, a blood sample is taken and prepared during your appointment. The treatment is then given as a series of small injections across the thinning area.
 3. **Afterwards.** Your scalp may feel tender, with small pinpoint marks or mild swelling. This typically settles within one to two days, and most people return to everyday activities straight away.
 4. **Your course.** Sessions are typically four to six weeks apart, followed by maintenance sessions. Your practitioner reviews your progress over the following months.
+
+Results vary from person to person. Once your course is complete, maintenance sessions are typically every 6 to 12 months.
 
 ## Aftercare
 

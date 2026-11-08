@@ -8,10 +8,10 @@ section: aesthetics
 metaTitle: Polynucleotides in Penketh, Warrington
 metaDescription: "Polynucleotide skin treatments for the face and under-eye area at The Urban Beauty Salon in Penketh, Warrington. Consultation first. See prices and book."
 lead: "Polynucleotide treatments are designed to support the skin’s own repair processes, for the face and the delicate under-eye area."
-heroPhoto: reception-flowers-products
+heroPhoto: "[[TODO: aesthetics room photo, from the professional shoot]]"
 facts:
-  resultsLast: "Typically 6–12 months after a course"
-  downtime: "Typically small bumps for a day or two"
+  resultsLast: "Typically 6–12 months"
+  downtime: "Typically a day or two"
 services:
   - "22093311774579"
   - "22110491643763"
@@ -58,6 +58,8 @@ Treatment is not suitable if you have a fish allergy. It is not usually suitable
 1. **Before your treatment.** You start with a consultation about your skin, your health, what you would like to improve, the options, the risks and the cost. Your skin is cleansed before treatment.
 2. **During your treatment.** Your practitioner places small amounts of product with a fine needle or cannula. Most appointments take around 45 minutes, including time to talk.
 3. **Afterwards.** Small raised bumps and some redness are common and typically settle within a day or two. Bruising is possible, especially under the eyes.
+
+After a course, results typically last 6 to 12 months.
 
 ## Aftercare
 

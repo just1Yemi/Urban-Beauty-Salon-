@@ -7,10 +7,10 @@ section: aesthetics
 metaTitle: Microneedling in Penketh, Warrington
 metaDescription: Microneedling in Penketh, Warrington, for skin texture, acne scarring, pigmentation and glow. Find out what to expect and book a consultation.
 lead: Microneedling uses very fine needles to create tiny channels in the skin, prompting its natural repair process. It is a gradual, course-based treatment for texture, scarring, pigmentation and glow.
-heroPhoto: product-shelf-skincare
+heroPhoto: "[[TODO: aesthetics room photo, from the professional shoot]]"
 facts:
-  resultsLast: Typically several months, with maintenance sessions
-  downtime: Typically 1–3 days of redness
+  resultsLast: "Typically several months"
+  downtime: "Typically 1–3 days"
 services:
   - "22368189681523"
   - "22385369550707"
@@ -62,6 +62,8 @@ It is not suitable if you have active acne breakouts, a cold sore or skin infect
 2. **During your treatment.** Your skin is cleansed and a numbing cream is applied. The device is passed gently over the skin in sections, and a serum is applied to finish.
 3. **Afterwards.** Your skin will look pink or red and may feel warm and tight, like mild sunburn. This typically settles within one to three days, and some light flaking may follow.
 4. **Your course.** Sessions are typically four to six weeks apart, giving your skin time to repair between treatments.
+
+Results typically last several months, with maintenance sessions to keep them going.
 
 ## Aftercare
 

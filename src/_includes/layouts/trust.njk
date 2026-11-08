@@ -4,7 +4,8 @@ progress: true
 ---
 {#- Trust page (consultation, aftercare). Words: src/content/trust/<slug>.md. Body: Markdown with ## headings; each becomes a
     section in the sticky contents list. Optional front matter: heroPhoto, urgent {title, intro, items}, routes (three
-    "Not sure what to book?" links), routesTitle, routesLead, faqs, print (shows a Print button). -#}
+    "Not sure what to book?" links), routesTitle, routesLead, faqs, print (shows a Print button), bookCta (label of a
+    consultation button in the page head, beside Book now). -#}
 {%- import "ui.njk" as ui with context -%}
 {%- set parts = content | sectionsOf -%}
 {%- set isTodo = r/^\s*\[\[TODO/ -%}
@@ -22,6 +23,10 @@ progress: true
 {%- if urgent %}
 {%- set urgentBody %}<p>{{ urgent.intro | todo | safe }}</p>{% if urgent.items %}<ul>{% for l in urgent.items %}<li>{{ l | todo | safe }}</li>{% endfor %}</ul>{% endif %}{% endset %}
 <div style="--d:220ms">{{ ui.callout(urgent.title, urgentBody) }}</div>
+{%- endif %}
+{%- if bookCta %}
+{#- Consultation page: book a consultation (contact form while site.booking.consultationVia is "contact", see the launch gate) or book now. -#}
+<div class="btn-row" style="--d:240ms">{% if site.booking.consultationVia == "contact" %}{{ ui.button(bookCta, href="/contact/") }}{% else %}{{ ui.button(bookCta, book=true) }}{% endif %}{{ ui.button("Book now", book=true, style="outline") }}</div>
 {%- endif %}
 {%- if print %}
 <div class="btn-row" style="--d:260ms"><button class="btn btn--outline print-btn" type="button" data-print><span>Print this page</span></button></div>

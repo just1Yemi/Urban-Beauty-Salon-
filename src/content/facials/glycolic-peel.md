@@ -6,10 +6,10 @@ section: facials
 metaTitle: Glycolic Peel in Penketh, Warrington
 metaDescription: Glycolic peel facial in Penketh, Warrington to exfoliate and refresh dull-looking skin. See the price and time, then book online at The Urban Beauty Salon.
 lead: A glycolic peel uses a gentle acid to lift away dead skin cells, leaving skin looking fresher and feeling smoother. It is also available with dermaplaning.
-heroPhoto: pampas
+heroPhoto: hero-desk-portrait
 facts:
-  resultsLast: "Typically a few weeks; a course builds on it"
-  downtime: "Typically none, or mild pinkness and flaking for a few days"
+  resultsLast: "Typically a few weeks"
+  downtime: "None, or mild flaking"
 services:
   - "19636590481267"
 bookLabel: Book a glycolic peel
@@ -51,6 +51,8 @@ It is not suitable if your skin is sunburnt, broken, inflamed or infected, or if
 1. **Before your treatment.** Your therapist asks about your skin, health and routine, checks your skin and explains the peel.
 2. **During your treatment.** Your skin is cleansed, then the peel is applied for a timed period. You will feel warmth or tingling. The peel is then removed or neutralised and your skin is soothed and protected.
 3. **Afterwards.** Your skin may look pink and feel tight or warm. Mild flaking can follow over the next few days.
+
+Results typically last a few weeks, and a course builds on them.
 
 ## Aftercare
 

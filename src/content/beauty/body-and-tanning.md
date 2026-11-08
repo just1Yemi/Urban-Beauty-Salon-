@@ -8,8 +8,8 @@ metaDescription: Sienna X spray tan, body exfoliation, Shrinking Violet wrap, si
 lead: Spray tans, body exfoliation, the Shrinking Violet wrap and signature body treatments in Penketh, Warrington, for smooth skin and a relaxing hour.
 heroPhoto: product-shelf-mixed
 facts:
-  resultsLast: "Spray tan typically 5–10 days"
-  downtime: "Spray tan: avoid water for several hours, typically 6–8"
+  resultsLast: "Spray tan: 5–10 days"
+  downtime: "No water for 6–8 hours"
 services:
   - "21663815044979"
   - "20890720931699"
@@ -59,6 +59,9 @@ Please tell us about any allergies, skin conditions, medication, pregnancy or re
 1. **Before your treatment.** Your therapist will ask about your health and skin, and explain the treatment. For a spray tan, you choose your shade and wear disposable underwear or swimwear.
 2. **During your treatment.** Exfoliations and wraps are relaxing and unhurried. A spray tan takes only a few minutes, and the solution is applied evenly to the body.
 3. **Afterwards.** Your skin will feel soft after a body treatment. A spray tan develops over several hours, so you will be given instructions on when you can wash.
+
+
+A spray tan typically lasts 5 to 10 days. Avoid water for several hours afterwards, typically 6 to 8, while it develops.
 
 ## Aftercare
 

@@ -54,10 +54,11 @@ Reveals: `data-reveal` is for **below-the-fold content only** (it waits for site
 | `placeholder(label, ratio, cls)` | label `"[[TODO: photo of ...]]"` | For photos we do not have (exterior, people, aesthetics room). `cls="arch"` for portraits |
 | `price(amount, from)` | amount from services.json | "From £58": tracked caps, small £, light numerals, never breaks |
 | `pricelist(items)` | `[services \| service("Name"), ...]` or `services \| pageServices("slug")`, or `(ids \| offer).rows` (rows may be `{ name, note }`: "Free consultation" or a TODO in place of a price) | Dot leaders, hairline rows; short lists only |
-| `facts(items, reveal)` | `[{icon, label, value}]` or `{icon, label, price}`; `reveal=false` above the fold (page heads) | Quick-facts strip under a treatment heading: Duration · Results last · Downtime · From £X. Unknown values: `[[TODO]]` |
+| `facts(items, reveal)` | `[{icon, label, value}]` or `{icon, label, price}`; `reveal=false` above the fold (page heads) | Quick-facts strip under a treatment heading: Duration · Results last · Downtime · From £X. Unknown values: `[[TODO]]`. 2 x 2 by default; 4 across only when its container is 44rem or wider (container query: `.page-head__text` and `.facts-wrap` are size containers), so it stays 2 x 2 in the 7/5 page head. Values about 24 characters at most; number ranges never break at the dash |
 | `tcard(title, href, photo, detail, eyebrow, text, from, mins, level, note)` | `detail` = second photo for hover cross-fade; `from`/`mins` from services; `note` in place of the price ("Free consultation") | Max 3 per row. Price and time show on hover/focus (always on touch) |
 | `review(text, name, date)` | | First name + surname initial only; month and year; never reviews mentioning prescription medicines. Adds "Verified Phorest client" |
 | `stat(number, label)` | number from `site.reviews.count` | Counts up once; screen readers get the final number |
+| `reviewsLink()` | none | "Read our Phorest reviews" link from `site.reviews.url` (not set yet: a `[[TODO]]` in local and preview builds, nothing in production). Shown beside the count wherever there are no review texts |
 | `faq(items)` | `[{q, a}]` | details/summary; smooth height; "+" turns to "×" |
 | `steps(items, level)` | `[{title, text}]` | 01, 02 numerals in circles linked by a thin line |
 | `toc(items, label)` | `[{id, label}]` | Treatment pages: sticky on desktop, current section marked with a Champagne dot |
@@ -68,6 +69,13 @@ Reveals: `data-reveal` is for **below-the-fold content only** (it waits for site
 | `field(name, label, type, required, autocomplete, options, hint, error, message, value, checked, idp)` | type `text` / `email` / `tel` / `textarea` / `select` / `checkbox`; `message` = error text shown on submit; `error` = static error state; `idp` = id prefix unique per form | Floating label on a 1px Text-soft line (3:1 for WCAG 1.4.11), 2px Espresso line on focus, error in Espresso with the alert icon via `aria-describedby`; "(optional)" marks optional fields |
 | `contactForm(formName, demo, state, idp, action)` | `demo=true` = style guide (nothing sent); `state` `error` / `success` for static previews; `action` defaults to `/contact/#<idp>-sent` | Netlify Forms (`data-netlify`, `netlify-honeypot="bot-field"`, hidden `form-name`). site.js validates, posts by fetch and shows the calm success panel (`role=status`, focused); without JS Netlify returns to `action` and `:target` shows the panel. Reply time is a `[[TODO]]` |
 | `map()` | none | Brand-coloured OpenStreetMap map: `scripts/make-map.js` renders `src/_includes/map.svg` (about 21 KB, inlined so street names use the page font) from cached OSM data in `scripts/data/osm-penketh.json`; `--refresh` fetches the Overpass API again. The salon sits at 50% across and 42% down, under the UB circle pin (Ivory disc with a Champagne ring so it shows on the Espresso map). The whole map links to Google Maps (no embed, no cookies); the required "© OpenStreetMap contributors" credit sits under it. Phones use a 5:4 frame. Marker position is the building on the north side of the precinct (approximate: points at the building, not a doorway) |
+
+## Placeholders and production (final review, Stage 9)
+
+- Local and preview builds show every `[[TODO]]` so Yemi can review. A production build (`env.production`) hides blocks that have no real data yet: the home review cards, the home team section (until `practitioners.json` has entries) and the Results block (no results data source yet), the treatment-page "Your practitioner" card, treatment review prompts (the count plus `reviewsLink()` stays) and the About team section. Templates use `showTodo = not env.production`.
+- Launch gate: `npm run check:prod` (or `npm run check` with `ELEVENTY_ENV=production` / Netlify `CONTEXT=production`) builds for production and runs `scripts/todo-gate.js`, which fails if any `[[TODO` is left in `_site`. `/styleguide/` is not built in production (robots.txt no longer lists it).
+- Hub and home "Not sure" blocks end with a quiet `more("How a consultation works", "/consultation/")` link. Trust pages take `bookCta` (label) to show a consultation button (contact form while `site.booking.consultationVia` is `"contact"`) beside an outline Book now in the page head.
+- `.prose ul` (treatment, trust and text pages): no bullets, a 1px `--line-soft` rule above each item with `--s-1` padding, like the price list. `.hubs:last-child` has no bottom margin; a text page's body section starts straight under its page head.
 
 ## Trust pages and policies (Stages 7 and 8)
 
@@ -110,8 +118,10 @@ Home page data: `site.directions.short` / `.full` (directions lines, wording sti
 | Texture band (`.pause--band`) | `velvet-band` (4:1, velvet only) |
 | Image pause (`.pause`) | `polish-band` (2:1) |
 | Accent | `pampas` (4:5, 480/960; `sizes="(min-width: 48em) 13rem, 100vw"`) |
-| Treatment room | `treatment-room` (3:2, basin and couch head only) for feature images; cards use product shelves |
-| Avoid in new layouts | `reception-desk`, `reception-desk-detail`, `relaxation-room-wide` (monitor, leaflets, throws, tissue box in frame) unless cropped tight |
+| Desk landscape | `desk-flowers` (3:2: flowers, boxed skincare and the velvet desk; right of the monitor, below the ring light; a thin stand pole shows behind the flowers) |
+| Flowers accent | `reception-flowers-products` (4:5, re-cropped below the ring light: flowers, gift voucher, products) |
+| Treatment room | `treatment-room` only on `/aftercare/` ("clean and safe"): it reads clinical elsewhere. Aesthetics heroes and cards use the branded placeholder until the aesthetics room shoot |
+| Never use | `reception-desk`, `reception-wide`, `reception-desk-detail` (monitor and ring light in frame); `product-shelf-serums` (legible third-party efficacy claims: never on any page); `relaxation-room-wide` (throws, tissue box) unless cropped tight |
 
 ## Booking (`site.json` booking, `site.js`)
 

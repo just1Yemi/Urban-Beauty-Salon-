@@ -8,7 +8,7 @@ metaDescription: Gel colour, BIAB, Bio Sculpture, acrylic and Acrygel nails, man
 lead: Manicures, pedicures, gel colour, BIAB, Bio Sculpture, acrylic and Acrygel nails in Penketh, Warrington, from a simple polish to a full set.
 heroPhoto: polish-wall
 facts:
-  resultsLast: "Typically 2–3 weeks for gel colour; enhancements need an infill every 2–3 weeks"
+  resultsLast: "Typically 2–3 weeks"
   downtime: "Typically none"
 services:
   - "17609365917555"
@@ -81,6 +81,8 @@ Please tell your therapist about any skin or nail conditions, or if you have a k
 1. **Before your treatment.** Your therapist will look at your nails and skin, talk through the shape and finish you would like, and remove any existing product if you have booked a soak-off.
 2. **During your treatment.** Your nails are shaped, the cuticles are tidied, and the product is applied and set under a lamp. Pedicures include soaking and care for your feet and toenails. Treatment should not be painful, so tell us if anything is uncomfortable.
 3. **Afterwards.** Gel products are set under the lamp, so your nails are dry to the touch and you can use your hands straight away.
+
+Gel colour typically lasts 2 to 3 weeks. Enhancements need an infill every 2 to 3 weeks.
 
 ## Aftercare
 

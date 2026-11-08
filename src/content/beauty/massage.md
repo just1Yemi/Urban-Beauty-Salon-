@@ -8,7 +8,7 @@ metaDescription: Back, deep tissue, hot stone, head, foot and full body massage 
 lead: Back, deep tissue, hot stone, head, foot and full body massage in Penketh, Warrington, in a calm setting with free parking outside.
 heroPhoto: relaxation-room
 facts:
-  resultsLast: "Most people feel relaxed for a day or two, though this varies"
+  resultsLast: "Varies by person"
   downtime: "Typically none"
 services:
   - "18141941862259"
@@ -61,6 +61,8 @@ Please tell your therapist if you are pregnant, have a medical condition, a rece
 1. **Before your treatment.** Your therapist will ask about your health, any areas of tension or concern, and the pressure you prefer. They will explain how the massage will go and leave the room while you get ready.
 2. **During your treatment.** You lie comfortably, covered with towels, while only the area being worked on is uncovered. Tell your therapist at any time if you would like more or less pressure or if you are too warm or cool.
 3. **Afterwards.** You may feel relaxed or a little sleepy. Take your time getting up, and allow a few minutes before you drive.
+
+Most people feel relaxed for a day or two afterwards, though this varies.
 
 ## Aftercare
 

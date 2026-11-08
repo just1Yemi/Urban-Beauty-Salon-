@@ -8,10 +8,10 @@ section: aesthetics
 metaTitle: Skin boosters and Profhilo, Warrington
 metaDescription: "Skin boosters including Profhilo at The Urban Beauty Salon in Penketh, Warrington, designed to improve hydration and skin quality. Book online."
 lead: "Skin boosters place hyaluronic acid within the skin and are designed to improve hydration and skin quality, without changing the shape of your face."
-heroPhoto: product-shelf-skincare
+heroPhoto: "[[TODO: aesthetics room photo, from the professional shoot]]"
 facts:
-  resultsLast: "Typically around 6 months after a course"
-  downtime: "Typically small bumps for a day or two"
+  resultsLast: "Typically about 6 months"
+  downtime: "Typically a day or two"
 services:
   - "22007412428659"
   - "21990232559475"
@@ -55,6 +55,8 @@ Treatment is not usually suitable if you are pregnant or breastfeeding, have an 
 1. **Before your treatment.** You start with a consultation about your skin, your health, what you would like to improve, the options, the risks and the cost. Your skin is cleansed before treatment.
 2. **During your treatment.** Your practitioner makes a series of small injections with a fine needle. Most appointments take around 45 minutes, including time to talk.
 3. **Afterwards.** Small raised bumps where the product was placed are common and typically settle within a day or two. Some redness or bruising is possible.
+
+After a course, results typically last around 6 months.
 
 ## Aftercare
 

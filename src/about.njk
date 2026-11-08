@@ -10,6 +10,8 @@ progress: true
     insurance and treatments are placeholders until Yemi supplies them: never invent them (CLAUDE.md). -#}
 {%- import "ui.njk" as ui with context -%}
 {%- set people = practitioners.people | dictsort -%}
+{#- Production hides the placeholder cards and the TODO note until practitioners.json has confirmed entries. -#}
+{%- set showTodo = not env.production -%}
 
 <header class="page-head">
 <div class="wrap page-head__grid">
@@ -20,7 +22,7 @@ progress: true
 <h1 style="--d:80ms">About the salon</h1>
 </div>
 <p class="lead" style="--d:160ms">The Urban Beauty Salon has looked after clients in Penketh, Warrington since {{ site.established }}.</p>
-<div class="btn-row" style="--d:240ms">{{ ui.button("Book now", book=true) }}{{ ui.more("Meet the practitioners", "#team") }}</div>
+<div class="btn-row" style="--d:240ms">{{ ui.button("Book now", book=true) }}{% if people.length or showTodo %}{{ ui.more("Meet the practitioners", "#team") }}{% endif %}</div>
 </div>
 <div class="page-head__media" style="--d:120ms"><div class="frame">{{ ui.picture("pampas", sizes="(min-width: 64em) 36vw, (min-width: 40em) 90vw, 100vw", ratio="45", priority=true) }}</div></div>
 </div>
@@ -54,19 +56,23 @@ progress: true
 </div>
 </section>
 
+{%- if people.length or showTodo %}
 <section class="section" id="team" aria-labelledby="team-title">
 <div class="wrap">
 {{ ui.sectionHead("Your practitioners", eyebrow="The team", word="Team", id="team-title", lead="Each practitioner is listed with their registration, training, insurance and the treatments they perform or prescribe, so you can check before you book.") }}
 <div class="grid grid--3" data-stagger="110">
 {%- if people.length %}
 {%- for id, p in people %}<div data-reveal>{{ ui.pcard(p) }}</div>{% endfor %}
-{%- else %}
+{%- elif showTodo %}
 {%- for i in range(0, 3) %}<div data-reveal>{{ ui.pcard({}) }}</div>{% endfor %}
 {%- endif %}
 </div>
+{%- if showTodo %}
 <p class="small soft" style="margin-top:var(--s-5)">{{ "[[TODO: Yemi to supply every practitioner's name, role, photo, registration body and number, link to the register, training, insurance and treatments performed or prescribed. Add them to src/_data/practitioners.json]]" | todo | safe }}</p>
+{%- endif %}
 </div>
 </section>
+{%- endif %}
 
 <section class="section section--deep" aria-labelledby="company" style="--bg:var(--c-ivory-deep)">
 <div class="wrap wrap--narrow">

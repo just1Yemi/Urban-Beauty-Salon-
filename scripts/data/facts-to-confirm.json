@@ -104,7 +104,8 @@
     ],
     "_general": [
       "The practitioner confirms the plan and total cost before treatment starts, and there is no pressure to go ahead on the day (salon policy)",
-      "All 'Typically' ranges need prescriber sign-off before launch"
+      "All 'Typically' ranges need prescriber sign-off before launch",
+      "Quick facts are now short (24 characters or so); the fuller wording moved into the body copy (end of What to expect). Confirm both."
     ]
   },
   "facials": {
@@ -118,7 +119,8 @@
       "Microcurrent typically avoided with a pacemaker or other implanted electrical device, epilepsy, pregnancy, or metal implants in the treatment area; therapist also asks about recent injectable treatments, skin infections and medication. Practitioner to give the full contraindication list",
       "Typically recommended as a course of sessions, with the number depending on the client (course length and total price unknown)",
       "Microneedling is described as making tiny controlled channels in the skin (confirm wording)",
-      "Aftercare: gentle moisturiser, daily sun protection (freshly exfoliated skin more sun-sensitive), avoid harsh exfoliants for a few days"
+      "Aftercare: gentle moisturiser, daily sun protection (freshly exfoliated skin more sun-sensitive), avoid harsh exfoliants for a few days",
+      "ASA wording (final review, Stage 9): “face lift” and “eye lift” appear only as CACI menu names, labelled “(the treatment’s menu name)”, and the meta description says “CACI microcurrent facials for the face, eyes and jowls”. The ASA has ruled against “facelift” claims for non-surgical treatments: confirm, or rename the Phorest menu items."
     ],
     "comcit": [
       "Described as an 'advanced skin rejuvenation facial built around a professional treatment device'; the FAQ says CACI tones facial muscles while COMCIT is aimed at the look and feel of the skin itself. Practitioner must confirm how COMCIT actually works (a TODO is in the body)",
@@ -149,7 +151,8 @@
       "Aftercare: sun protection essential, gentle moisturiser, avoid exfoliants, retinol, other actives, waxing, saunas and hot baths until skin settles, do not pick flaking skin; contact the salon if skin blisters or feels sore"
     ],
     "_general": [
-      "'Our safety and aftercare page will have more advice once it is published' appears in each aftercare section; remove or link it when the page exists"
+      "'Our safety and aftercare page will have more advice once it is published' appears in each aftercare section; remove or link it when the page exists",
+      "Quick facts are now short (24 characters or so); the fuller wording moved into the body copy (end of What to expect). Confirm both."
     ]
   },
   "beauty": {
@@ -235,7 +238,8 @@
       "'Free parking right outside' (from CLAUDE.md) appears on this page's lead"
     ],
     "_general": [
-      "'Typically' ranges throughout need practitioner sign-off before launch"
+      "'Typically' ranges throughout need practitioner sign-off before launch",
+      "Quick facts are now short (24 characters or so); the fuller wording moved into the body copy (end of What to expect). Confirm both."
     ]
   }
 }

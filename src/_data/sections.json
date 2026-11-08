@@ -11,38 +11,43 @@
     "pages": [
       {
         "slug": "lines-and-wrinkles-consultation",
-        "name": "Lines and wrinkles consultation"
+        "name": "Lines and wrinkles consultation",
+        "text": "A free, private consultation, with no obligation to go ahead."
       },
       {
         "slug": "dermal-fillers",
         "name": "Dermal fillers",
-        "photo": "treatment-room",
-        "detail": "product-shelf-serums",
         "text": "Lip, chin, jawline and mid-face treatments."
       },
       {
         "slug": "skin-boosters",
-        "name": "Skin boosters"
+        "name": "Skin boosters",
+        "text": "Designed to improve hydration and skin quality."
       },
       {
         "slug": "polynucleotides",
-        "name": "Polynucleotides"
+        "name": "Polynucleotides",
+        "text": "Skin-quality treatments for the face and the under-eye area."
       },
       {
         "slug": "biostimulators",
-        "name": "Biostimulators"
+        "name": "Biostimulators",
+        "text": "Designed to encourage your skin’s own collagen, for a gradual change."
       },
       {
         "slug": "microneedling",
-        "name": "Microneedling"
+        "name": "Microneedling",
+        "text": "A gradual treatment for texture, scarring, pigmentation and glow."
       },
       {
         "slug": "fat-dissolving",
-        "name": "Fat dissolving"
+        "name": "Fat dissolving",
+        "text": "For small areas of stubborn fat, such as under the chin."
       },
       {
         "slug": "hair-loss",
-        "name": "Hair loss"
+        "name": "Hair loss",
+        "text": "Scalp treatments for people concerned about thinning hair."
       }
     ]
   },
@@ -53,15 +58,13 @@
       {
         "slug": "caci",
         "name": "CACI",
-        "photo": "product-shelf-serums",
-        "detail": "product-shelf-skincare",
+        "photo": "reception-flowers-products",
         "text": "Microcurrent facials for the face, eyes and jowls, plus microdermabrasion."
       },
       {
         "slug": "comcit",
         "name": "COMCIT",
-        "photo": "reception-flowers-products",
-        "detail": "product-shelf-serums",
+        "photo": "desk-flowers",
         "text": "A skin-focused facial, on its own or with CACI or microdermabrasion."
       },
       {
@@ -82,7 +85,6 @@
         "slug": "glycolic-peel",
         "name": "Glycolic peel",
         "photo": "pampas",
-        "detail": "product-shelf-serums",
         "text": "A glycolic peel facial, also paired with dermaplaning."
       }
     ]

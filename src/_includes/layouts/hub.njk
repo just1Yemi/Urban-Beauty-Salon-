@@ -48,12 +48,13 @@ layout: layouts/base.njk
 <section class="section" aria-labelledby="not-sure">
 <div class="wrap">
 <div class="overlap overlap--flip">
-<div class="overlap__media" data-reveal="wipe">{{ ui.picture(ns.photo or "treatment-room", sizes="(min-width: 64em) 60vw, 100vw", ratio="32", alt="") }}</div>
+<div class="overlap__media" data-reveal="wipe">{{ ui.picture(ns.photo or "desk-flowers", sizes="(min-width: 64em) 60vw, 100vw", ratio="32", alt="") }}</div>
 <div class="overlap__card stack" data-reveal style="--d:200ms">
 {{ ui.eyebrow("Advice") }}
 <h2 class="h3" id="not-sure">{{ ns.title or "Not sure what to book?" }}</h2>
 <p>{{ (ns.text or "Tell us what you would like to change and we will help you choose. Call the salon, or send a message and we usually reply within an hour during opening hours.") | todo | safe }}</p>
 <div class="btn-row">{{ ui.button("Call the salon", href="tel:" + site.phone.tel, style="outline", arrow=false) }}{{ ui.button("Send a message", href="/contact/") }}</div>
+<p>{{ ui.more("How a consultation works", "/consultation/") }}</p>
 </div>
 </div>
 </div>

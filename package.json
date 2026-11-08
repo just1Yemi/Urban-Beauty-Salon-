@@ -8,6 +8,7 @@
     "start": "eleventy --serve",
     "build": "eleventy --quiet",
     "check": "node scripts/check.js",
+    "check:prod": "node scripts/check.js --production",
     "shots": "node scripts/shots.js",
     "import-services": "node scripts/import-services.js",
     "fonts": "node scripts/copy-fonts.js",

@@ -8,7 +8,7 @@ metaDescription: Crystal Clear express, luxury and microdermabrasion (MDA) facia
 lead: Crystal Clear facials focus on cleansing and refreshing the surface of the skin. Choose an express or luxury facial, or add microdermabrasion (MDA) for deeper exfoliation.
 heroPhoto: product-shelf-skincare
 facts:
-  resultsLast: "Typically a few weeks; regular sessions help skin stay fresh"
+  resultsLast: "Typically a few weeks"
   downtime: "Typically none"
 services:
   - "20444044332915"

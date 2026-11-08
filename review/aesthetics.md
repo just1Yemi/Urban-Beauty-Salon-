@@ -10,6 +10,7 @@ Generated 2026-11-08 by scripts/make-review-docs.js from src/content/aesthetics/
 
 - [ ] The practitioner confirms the plan and total cost before treatment starts, and there is no pressure to go ahead on the day (salon policy)
 - [ ] All 'Typically' ranges need prescriber sign-off before launch
+- [ ] Quick facts are now short (24 characters or so); the fuller wording moved into the body copy (end of What to expect). Confirm both.
 
 ## Contents
 
@@ -126,6 +127,7 @@ Yes. Consultations are for adults aged 18 and over.
 - [ ] Clients are asked health questions when booking and should bring a list of medicines and supplements
 - [ ] Free consultations are also offered for excessive sweating and teeth grinding, using the same approach
 - [ ] Aftercare for any later treatment is explained and given in writing
+- [ ] Open placeholder: [[TODO: aesthetics room photo, from the professional shoot]]
 - [ ] Open placeholder: [[TODO: practitioner name]]
 - [ ] Open placeholder: [[TODO: practitioner name, role and registration, confirmed for this consultation]]
 - [ ] Open placeholder: [[TODO: confirm whether any treatment can follow on the same day or only after a cooling-off period]]
@@ -140,7 +142,7 @@ Yes. Consultations are for adults aged 18 and over.
 - **Practitioner shown:** [[TODO: practitioner name]]
 - **Book button:** Book dermal fillers
 - **Booking menu entries linked:** Dermal Filler: Lip Filler 0.5ml; Dermal Filler: 1ml; Dermal Filler: Chin Enhancement; Dermal Filler: Chin & Mid Face Enhancement; Dermal Filler: Jawline 1ml; Dermal Filler: Jawline 2ml; Dermal Filler: Nasolabial Folds (Smile Lines); Dermal Filler: Marionette Lines; Dermal Filler: Upper Lip Lines; Dermal Filler: Tear Trough
-- **Quick facts:** resultsLast: Typically 6–18 months, depending on the area | downtime: Typically a few days of swelling or bruising
+- **Quick facts:** resultsLast: Typically 6–18 months | downtime: Typically a few days
 
 ### Introduction
 
@@ -214,6 +216,7 @@ Yes. By law, dermal fillers are not available to anyone under 18.
 - [ ] Not usually suitable during pregnancy or breastfeeding, with an active skin infection or cold sore in the area, or with certain medical conditions; the tear trough needs careful assessment
 - [ ] Aftercare (first 24 to 48 hours): avoid touching or pressing the area, no make-up on the area for the rest of the day, avoid alcohol, strenuous exercise, saunas, steam rooms and sunbeds, sleep with the head slightly raised on the first night
 - [ ] Red flags: contact straight away for severe or increasing pain, a pale or dusky patch of skin, changes to vision, or signs of infection (heat, spreading redness, fever)
+- [ ] Open placeholder: [[TODO: aesthetics room photo, from the professional shoot]]
 - [ ] Open placeholder: [[TODO: practitioner name]]
 - [ ] Open placeholder: [[TODO: Yemi and the prescriber to confirm the filler review consultation is offered, and to create it as a service in Phorest]]
 - [ ] Open placeholder: [[TODO: aftercare contact hours and how out-of-hours concerns are escalated]]
@@ -228,7 +231,7 @@ Yes. By law, dermal fillers are not available to anyone under 18.
 - **Practitioner shown:** [[TODO: practitioner name]]
 - **Book button:** Book skin boosters
 - **Booking menu entries linked:** Skin Booster: Profhilo; Skin Booster: Jalupro Super Hydro; Skin Booster: Seventy Hyal; Skin Booster: Juvederm Volite; Skin Booster: RRS Long Lasting; Skin Booster: RRS Hyalift
-- **Quick facts:** resultsLast: Typically around 6 months after a course | downtime: Typically small bumps for a day or two
+- **Quick facts:** resultsLast: Typically about 6 months | downtime: Typically a day or two
 
 ### Introduction
 
@@ -253,6 +256,8 @@ Treatment is not usually suitable if you are pregnant or breastfeeding, have an 
 1. **Before your treatment.** You start with a consultation about your skin, your health, what you would like to improve, the options, the risks and the cost. Your skin is cleansed before treatment.
 2. **During your treatment.** Your practitioner makes a series of small injections with a fine needle. Most appointments take around 45 minutes, including time to talk.
 3. **Afterwards.** Small raised bumps where the product was placed are common and typically settle within a day or two. Some redness or bruising is possible.
+
+After a course, results typically last around 6 months.
 
 #### Aftercare
 
@@ -297,6 +302,7 @@ It depends on your skin, the area and what you would like to improve. Your pract
 - [ ] Profhilo is priced on consultation
 - [ ] Aftercare (first 24 to 48 hours): avoid touching or massaging the areas, no make-up on the area for the rest of the day, avoid alcohol, strenuous exercise, saunas, steam rooms and sunbeds, use high-factor sunscreen
 - [ ] Not usually suitable during pregnancy or breastfeeding, with an active skin infection in the area, or with certain medical conditions
+- [ ] Open placeholder: [[TODO: aesthetics room photo, from the professional shoot]]
 - [ ] Open placeholder: [[TODO: practitioner name]]
 - [ ] Open placeholder: [[TODO: aftercare contact hours and how out-of-hours concerns are escalated]]
 - [ ] Open placeholder: [[TODO: price held back until Yemi decides; the page shows "Price on consultation" meanwhile]]
@@ -311,7 +317,7 @@ It depends on your skin, the area and what you would like to improve. Your pract
 - **Practitioner shown:** [[TODO: practitioner name]]
 - **Book button:** Book polynucleotides
 - **Booking menu entries linked:** Polynucleotide: Plinest Eye; Polynucleotide: Plinest Fast; Newest: Polynucleotide & Hyaluronic Acid; Polynucleotide: Vitaran Eye; Polynucleotide: Vitaran Face; Polynucleotide: Rejuran Healer; Polynucleotide: Rejuran HB; Polynucleotide: Rejuran S
-- **Quick facts:** resultsLast: Typically 6–12 months after a course | downtime: Typically small bumps for a day or two
+- **Quick facts:** resultsLast: Typically 6–12 months | downtime: Typically a day or two
 
 ### Introduction
 
@@ -338,6 +344,8 @@ Treatment is not suitable if you have a fish allergy. It is not usually suitable
 1. **Before your treatment.** You start with a consultation about your skin, your health, what you would like to improve, the options, the risks and the cost. Your skin is cleansed before treatment.
 2. **During your treatment.** Your practitioner places small amounts of product with a fine needle or cannula. Most appointments take around 45 minutes, including time to talk.
 3. **Afterwards.** Small raised bumps and some redness are common and typically settle within a day or two. Bruising is possible, especially under the eyes.
+
+After a course, results typically last 6 to 12 months.
 
 #### Aftercare
 
@@ -381,6 +389,7 @@ Changes build gradually over the weeks after a course rather than straight away.
 - [ ] Newest combines polynucleotides with hyaluronic acid (confirm the product name, flagged in services-review.md)
 - [ ] Aftercare (first 24 to 48 hours): avoid touching or rubbing the areas, no make-up on the area for the rest of the day, avoid alcohol, strenuous exercise, saunas, steam rooms and sunbeds, use high-factor sunscreen
 - [ ] Not usually suitable during pregnancy or breastfeeding, with an active skin infection in the area, or with certain medical conditions
+- [ ] Open placeholder: [[TODO: aesthetics room photo, from the professional shoot]]
 - [ ] Open placeholder: [[TODO: practitioner name]]
 - [ ] Open placeholder: [[TODO: aftercare contact hours and how out-of-hours concerns are escalated]]
 
@@ -394,7 +403,7 @@ Changes build gradually over the weeks after a course rather than straight away.
 - **Practitioner shown:** [[TODO: practitioner name]]
 - **Book button:** Book biostimulators
 - **Booking menu entries linked:** Biostimulator: Sculptra (PLLA); Biostimulator: Radiesse (CaHA)
-- **Quick facts:** resultsLast: Typically 12–24 months | downtime: Typically a few days of swelling or bruising
+- **Quick facts:** resultsLast: Typically 12–24 months | downtime: Typically a few days
 
 ### Introduction
 
@@ -478,6 +487,7 @@ Book online at any time with any Book button, or call the salon during opening h
 - [ ] Not suitable for under 18s, during pregnancy or breastfeeding, with an infection or cold sore in the area, certain autoimmune conditions, a tendency to raised scars, or some medicines
 - [ ] Aftercare: no touching or make-up for the rest of the day; no strenuous exercise, sauna, steam or alcohol for 24 hours; Sculptra 5-5-5 massage (5 minutes, 5 times a day, 5 days); high-factor sunscreen and no other facial treatments for about 2 weeks
 - [ ] Red flags listed: pain that is getting worse, a pale, dusky or blotchy patch of skin, signs of infection
+- [ ] Open placeholder: [[TODO: aesthetics room photo, from the professional shoot]]
 - [ ] Open placeholder: [[TODO: practitioner name]]
 - [ ] Open placeholder: [[TODO: aftercare contact hours and the urgent out-of-hours route, from Yemi]]
 
@@ -491,7 +501,7 @@ Book online at any time with any Book button, or call the salon during opening h
 - **Practitioner shown:** [[TODO: practitioner name]]
 - **Book button:** Book microneedling
 - **Booking menu entries linked:** Microneedling: Hydration & Glow; Microneedling: Acne Scars; Microneedling: Pigmentation
-- **Quick facts:** resultsLast: Typically several months, with maintenance sessions | downtime: Typically 1–3 days of redness
+- **Quick facts:** resultsLast: Typically several months | downtime: Typically 1–3 days
 
 ### Introduction
 
@@ -525,6 +535,8 @@ It is not suitable if you have active acne breakouts, a cold sore or skin infect
 2. **During your treatment.** Your skin is cleansed and a numbing cream is applied. The device is passed gently over the skin in sections, and a serum is applied to finish.
 3. **Afterwards.** Your skin will look pink or red and may feel warm and tight, like mild sunburn. This typically settles within one to three days, and some light flaking may follow.
 4. **Your course.** Sessions are typically four to six weeks apart, giving your skin time to repair between treatments.
+
+Results typically last several months, with maintenance sessions to keep them going.
 
 #### Aftercare
 
@@ -572,6 +584,7 @@ Yes, it can be planned alongside facials such as CACI or COMCIT, with suitable g
 - [ ] Aftercare: no make-up for 24 hours; no retinoids, acids or scrubs for at least 3–5 days; SPF 30 or higher daily; no exercise, pools, sauna or steam for 24–48 hours; do not pick flaking skin
 - [ ] It can be planned alongside CACI or COMCIT with suitable gaps between treatments
 - [ ] 'Price on consultation' wording (prices held back until Yemi decides)
+- [ ] Open placeholder: [[TODO: aesthetics room photo, from the professional shoot]]
 - [ ] Open placeholder: [[TODO: practitioner name]]
 - [ ] Open placeholder: [[TODO: aftercare contact hours and the out-of-hours route, from Yemi]]
 - [ ] Open placeholder: [[TODO: price held back until Yemi decides; the page shows "Price on consultation" meanwhile]]
@@ -586,7 +599,7 @@ Yes, it can be planned alongside facials such as CACI or COMCIT, with suitable g
 - **Practitioner shown:** [[TODO: practitioner name]]
 - **Book button:** Book a consultation
 - **Booking menu entries linked:** Fat Dissolving: Face, One Area; Fat Dissolving: Body, One Area
-- **Quick facts:** resultsLast: Discussed at your consultation | downtime: Typically 3–7 days of swelling
+- **Quick facts:** resultsLast: Discussed at consultation | downtime: Typically 3–7 days
 
 ### Introduction
 
@@ -665,6 +678,7 @@ Most people can. Swelling under the chin can be noticeable for several days, so 
 - [ ] Not suitable for under 18s, during pregnancy or breastfeeding, with an infection in the area, poorly controlled diabetes, liver or kidney disease, autoimmune or clotting disorders, or allergies to ingredients
 - [ ] Aftercare: no strenuous exercise, sauna or hot baths for 24–48 hours; drink plenty of water; no alcohol for 24 hours; loose clothing; whether to massage depends on the product (TODO)
 - [ ] Most people can go back to work the next day
+- [ ] Open placeholder: [[TODO: aesthetics room photo, from the professional shoot]]
 - [ ] Open placeholder: [[TODO: practitioner name]]
 - [ ] Open placeholder: [[TODO: confirm the fat dissolving product used and what it contains, for the practitioner and prescriber to describe accurately]]
 - [ ] Open placeholder: [[TODO: whether to massage the treated area or leave it alone, which depends on the product]]
@@ -681,7 +695,7 @@ Most people can. Swelling under the chin can be noticeable for several days, so 
 - **Practitioner shown:** [[TODO: practitioner name]]
 - **Book button:** Book a consultation
 - **Booking menu entries linked:** Hair Treatment: PRP, One Session; Hair Treatment: PRP, Three Sessions; Hair Treatment: Plinest Hair; Hair Treatment: Hair Filler
-- **Quick facts:** resultsLast: Varies; maintenance typically every 6–12 months | downtime: Typically 1–2 days of scalp tenderness
+- **Quick facts:** resultsLast: Varies by person | downtime: Typically 1–2 days
 
 ### Introduction
 
@@ -719,6 +733,8 @@ Treatment is not suitable if you are under 18, pregnant or breastfeeding, or hav
 2. **During your treatment.** Your scalp is cleansed. For PRP, a blood sample is taken and prepared during your appointment. The treatment is then given as a series of small injections across the thinning area.
 3. **Afterwards.** Your scalp may feel tender, with small pinpoint marks or mild swelling. This typically settles within one to two days, and most people return to everyday activities straight away.
 4. **Your course.** Sessions are typically four to six weeks apart, followed by maintenance sessions. Your practitioner reviews your progress over the following months.
+
+Results vary from person to person. Once your course is complete, maintenance sessions are typically every 6 to 12 months.
 
 #### Aftercare
 
@@ -766,6 +782,7 @@ Yes. Thinning hair affects men and women, and the treatments can suit both. Your
 - [ ] Not suitable for under 18s, during pregnancy or breastfeeding, or with a scalp infection; PRP is not suitable with blood or platelet disorders or blood-thinning medicines
 - [ ] Aftercare: no hair washing until the next day; no colouring, perming or chemical treatments for 48–72 hours; no strenuous exercise, sauna, steam or pools for 24 hours; ask before pausing any medicines or supplements
 - [ ] A consultation is required before treatment; the treatments suit both men and women
+- [ ] Open placeholder: [[TODO: aesthetics room photo, from the professional shoot]]
 - [ ] Open placeholder: [[TODO: practitioner name]]
 - [ ] Open placeholder: [[TODO: confirm the hair filler product, what it contains and how it works, for the practitioner to describe accurately]]
 - [ ] Open placeholder: [[TODO: aftercare contact hours and the out-of-hours route, from Yemi]]
@@ -775,27 +792,35 @@ Yes. Thinning hair affects men and women, and the treatments can suit both. Your
 ## All open placeholders in this section
 
 - **Aesthetics:** [[TODO: practitioner names, roles, registration numbers and which treatments each performs]]
+- **Lines and wrinkles consultation:** [[TODO: aesthetics room photo, from the professional shoot]]
 - **Lines and wrinkles consultation:** [[TODO: practitioner name]]
 - **Lines and wrinkles consultation:** [[TODO: practitioner name, role and registration, confirmed for this consultation]]
 - **Lines and wrinkles consultation:** [[TODO: confirm whether any treatment can follow on the same day or only after a cooling-off period]]
+- **Dermal fillers:** [[TODO: aesthetics room photo, from the professional shoot]]
 - **Dermal fillers:** [[TODO: practitioner name]]
 - **Dermal fillers:** [[TODO: Yemi and the prescriber to confirm the filler review consultation is offered, and to create it as a service in Phorest]]
 - **Dermal fillers:** [[TODO: aftercare contact hours and how out-of-hours concerns are escalated]]
+- **Skin boosters:** [[TODO: aesthetics room photo, from the professional shoot]]
 - **Skin boosters:** [[TODO: practitioner name]]
 - **Skin boosters:** [[TODO: aftercare contact hours and how out-of-hours concerns are escalated]]
 - **Skin boosters:** [[TODO: price held back until Yemi decides; the page shows "Price on consultation" meanwhile]]
+- **Polynucleotides:** [[TODO: aesthetics room photo, from the professional shoot]]
 - **Polynucleotides:** [[TODO: practitioner name]]
 - **Polynucleotides:** [[TODO: aftercare contact hours and how out-of-hours concerns are escalated]]
+- **Biostimulators:** [[TODO: aesthetics room photo, from the professional shoot]]
 - **Biostimulators:** [[TODO: practitioner name]]
 - **Biostimulators:** [[TODO: aftercare contact hours and the urgent out-of-hours route, from Yemi]]
+- **Microneedling:** [[TODO: aesthetics room photo, from the professional shoot]]
 - **Microneedling:** [[TODO: practitioner name]]
 - **Microneedling:** [[TODO: aftercare contact hours and the out-of-hours route, from Yemi]]
 - **Microneedling:** [[TODO: price held back until Yemi decides; the page shows "Price on consultation" meanwhile]]
+- **Fat dissolving:** [[TODO: aesthetics room photo, from the professional shoot]]
 - **Fat dissolving:** [[TODO: practitioner name]]
 - **Fat dissolving:** [[TODO: confirm the fat dissolving product used and what it contains, for the practitioner and prescriber to describe accurately]]
 - **Fat dissolving:** [[TODO: whether to massage the treated area or leave it alone, which depends on the product]]
 - **Fat dissolving:** [[TODO: aftercare contact hours and the out-of-hours route, from Yemi]]
 - **Fat dissolving:** [[TODO: price held back until Yemi decides; the page shows "Price on consultation" meanwhile]]
+- **Hair loss treatments:** [[TODO: aesthetics room photo, from the professional shoot]]
 - **Hair loss treatments:** [[TODO: practitioner name]]
 - **Hair loss treatments:** [[TODO: confirm the hair filler product, what it contains and how it works, for the practitioner to describe accurately]]
 - **Hair loss treatments:** [[TODO: aftercare contact hours and the out-of-hours route, from Yemi]]

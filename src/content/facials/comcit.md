@@ -8,8 +8,8 @@ metaDescription: COMCIT advanced skin rejuvenation facials in Penketh, Warringto
 lead: COMCIT is our advanced skin rejuvenation facial. Have it on its own, or add CACI, microdermabrasion or Prime & Peel for a longer, more thorough session.
 heroPhoto: reception-flowers-products
 facts:
-  resultsLast: "Typically builds over a course; top-ups keep it going"
-  downtime: "Typically none, or mild pinkness for a short time"
+  resultsLast: "Builds over a course"
+  downtime: "None, or mild pinkness"
 services:
   - "19825569042291"
   - "19911468388211"
@@ -54,6 +54,8 @@ It is not suitable for everyone. Your therapist will ask about pregnancy, medica
 1. **Before your treatment.** Your therapist checks your skin and health history, explains the steps and agrees your chosen option with you.
 2. **During your treatment.** Your skin is cleansed and prepared, then the COMCIT step is carried out, followed by any extra step you have chosen. Your therapist will check in on your comfort throughout.
 3. **Afterwards.** Your skin may look slightly pink for a short time. You can usually go back to your day, and you will be told how to look after your skin before you leave.
+
+Results typically build over a course, and top-up sessions help keep them going.
 
 ## Aftercare
 

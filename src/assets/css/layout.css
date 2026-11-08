@@ -7,6 +7,8 @@
 
 .section { position: relative; padding-block: var(--section-y); }
 .section--tight { padding-block: calc(var(--section-y) * 0.6); }
+/* Text pages: the page head already ends with a section step, so the body starts straight after it. */
+.page-head--text + .section { padding-top: 0; }
 .section--deep { background: var(--c-ivory-deep) var(--grain); }
 .section--white { background: var(--c-white); }
 .section--dark, .on-dark { background-color: var(--c-espresso); color: var(--c-ivory); }
@@ -54,8 +56,12 @@ body:not(.has-hero) main { padding-top: var(--header-h); }
 .prose > * + * { margin-top: var(--s-3); }
 .prose > :is(h2, h3) { margin-top: var(--s-6); }
 .prose > :is(h2, h3) + * { margin-top: var(--s-2); }
-.prose ul, .prose ol { padding-left: 1.25em; }
+/* Lists in page copy: hairline separators instead of bullets (luxury menu styling, like the price list). */
+.prose ol { padding-left: 1.25em; }
 .prose li + li { margin-top: var(--s-1); }
+.prose ul { list-style: none; padding-left: 0; }
+.prose ul > li { padding-block: var(--s-1); border-top: 1px solid var(--line-soft); }
+.prose ul > li + li { margin-top: 0; }
 .prose li::marker { color: var(--c-text-soft); }
 
 /* ---- Page heads (hub, treatment and text pages, Stage 2). Above the fold, so the

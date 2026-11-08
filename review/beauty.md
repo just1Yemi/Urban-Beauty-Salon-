@@ -7,6 +7,7 @@ Generated 2026-11-08 by scripts/make-review-docs.js from src/content/beauty/. Do
 ## Section-wide checks
 
 - [ ] 'Typically' ranges throughout need practitioner sign-off before launch
+- [ ] Quick facts are now short (24 characters or so); the fuller wording moved into the body copy (end of What to expect). Confirm both.
 
 ## Contents
 
@@ -58,7 +59,7 @@ Some treatments, such as lash lifts, tints and lamination, need a short sensitiv
 - **Practitioner shown:** [[TODO: practitioner name]]
 - **Book button:** Book lashes and brows
 - **Booking menu entries linked:** Korean Lash Lift; Korean Lash Lift Including Eyebrow Wax & Tint; LVL (Length, Volume & Lift); LVL (Length, Volume & Lift) Including Eyebrow Wax & Tint; Brow Lamination; LVL & Brow Lamination Package; Eyelash Tint; Eyebrow Tint; Eyebrow Wax & Tint; Eye Package; Express Lashes; Express Lashes Including Soak Off; Lash Infill Classic (2-3 weeks); Lash Infill Russian (3 weeks); Lash Removal; Sensitivity Test
-- **Quick facts:** resultsLast: Typically 6–8 weeks for lifts and lamination; extensions need an infill every 2–3 weeks | downtime: Typically none
+- **Quick facts:** resultsLast: Typically 6–8 weeks | downtime: Typically none
 
 ### Introduction
 
@@ -85,6 +86,8 @@ Please tell us if you have sensitive skin, allergies, an eye infection, or if yo
 1. **Before your treatment.** Your therapist will ask about your skin, your eyes and the look you would like, and will check your sensitivity test result. Please arrive without eye make-up if you can.
 2. **During your treatment.** You lie back with your eyes closed while the products are applied and left to work. It should be comfortable and relaxing, and you can tell us at any point if anything feels uncomfortable.
 3. **Afterwards.** Your lashes and brows will look defined straight away. Lifted lashes can look slightly more curled for a day or two before they settle.
+
+Lash lifts and brow lamination typically last 6 to 8 weeks. Lash extensions need an infill every 2 to 3 weeks.
 
 #### Aftercare
 
@@ -139,7 +142,7 @@ You can usually wear eye make-up the day after a lift, tint or lamination, but y
 - **Practitioner shown:** [[TODO: practitioner name]]
 - **Book button:** Book nails
 - **Booking menu entries linked:** File & Polish Fingers; Manicure; Deluxe Manicure; Shellac/Gel Colour Manicure (No Soak Off); Shellac/Gel Colour Manicure (With Soak Off); Add Shellac/Gel (to Deluxe Manicure); Shellac/Gel Soak Off; Shellac/Gel Nail Repair; BIAB Natural Nail Overlay; BIAB Manicure with Shellac/Gel; BIAB Manicure with Shellac/Gel (With Soak Off); BIAB Infill with Shellac/Gel; BIAB Nail Repair; BIAB Removal (Must Have Been Applied Here); Bio Sculpture Manicure (No Soak Off); Bio Sculpture Manicure (With Soak Off); Acrylic Full Set with Tips + Gel Finish; Acrylic Infill with Shellac/Gel (2-3 weeks); Acrylic Nail Repair; Acrylic Soak Off When Having New Set; Acrygel Nail Enhancements; Acrygel Infill (2-3 weeks); Acrygel Nail Repair; Add Nail Art; File & Polish Toes; Pedicure; Deluxe Pedicure; Add Shellac/Gel Toes (to Pedicure); Shellac/Gel Colour Toes (No Soak Off); Shellac/Gel Toes (With Soak Off); Shellac/Gel Colour Soak Off on Toes; Shellac/Gel Soak Off Toes (With Pedicure); Shellac/Gel Toes Nail Repair
-- **Quick facts:** resultsLast: Typically 2–3 weeks for gel colour; enhancements need an infill every 2–3 weeks | downtime: Typically none
+- **Quick facts:** resultsLast: Typically 2–3 weeks | downtime: Typically none
 
 ### Introduction
 
@@ -166,6 +169,8 @@ Please tell your therapist about any skin or nail conditions, or if you have a k
 1. **Before your treatment.** Your therapist will look at your nails and skin, talk through the shape and finish you would like, and remove any existing product if you have booked a soak-off.
 2. **During your treatment.** Your nails are shaped, the cuticles are tidied, and the product is applied and set under a lamp. Pedicures include soaking and care for your feet and toenails. Treatment should not be painful, so tell us if anything is uncomfortable.
 3. **Afterwards.** Gel products are set under the lamp, so your nails are dry to the touch and you can use your hands straight away.
+
+Gel colour typically lasts 2 to 3 weeks. Enhancements need an infill every 2 to 3 weeks.
 
 #### Aftercare
 
@@ -216,7 +221,7 @@ Yes. Nail art can be added to your appointment, and gel colour can be added to a
 - **Practitioner shown:** [[TODO: practitioner name]]
 - **Book button:** Book Little Miss Urban
 - **Booking menu entries linked:** Little Miss Nails; Little Miss Toes
-- **Quick facts:** resultsLast: Typically around 1–2 weeks, depending on the finish | downtime: None
+- **Quick facts:** resultsLast: Typically 1–2 weeks | downtime: None
 
 ### Introduction
 
@@ -291,7 +296,7 @@ Please tell us when you book or when you arrive. If your child has eczema, a ski
 - **Practitioner shown:** [[TODO: practitioner name]]
 - **Book button:** Book a massage
 - **Booking menu entries linked:** Head Massage; Back Massage; Deep Tissue Back Massage; Hot Stone Back Massage; Foot, Leg & Ankle Massage; 20 Minute Face, Chest & Scalp Massage; Full Body Massage; Full Body Massage (Including Face & Scalp); Add 25 Minute Back Massage to Any Facial
-- **Quick facts:** resultsLast: Most people feel relaxed for a day or two, though this varies | downtime: Typically none
+- **Quick facts:** resultsLast: Varies by person | downtime: Typically none
 
 ### Introduction
 
@@ -322,6 +327,8 @@ Please tell your therapist if you are pregnant, have a medical condition, a rece
 1. **Before your treatment.** Your therapist will ask about your health, any areas of tension or concern, and the pressure you prefer. They will explain how the massage will go and leave the room while you get ready.
 2. **During your treatment.** You lie comfortably, covered with towels, while only the area being worked on is uncovered. Tell your therapist at any time if you would like more or less pressure or if you are too warm or cool.
 3. **Afterwards.** You may feel relaxed or a little sleepy. Take your time getting up, and allow a few minutes before you drive.
+
+Most people feel relaxed for a day or two afterwards, though this varies.
 
 #### Aftercare
 
@@ -371,7 +378,7 @@ Please tell us when you book. Some conditions and stages of pregnancy mean we ne
 - **Practitioner shown:** [[TODO: practitioner name]]
 - **Book button:** Book body and tanning
 - **Booking menu entries linked:** Full Body Exfoliation; Signature Back Treatment; Signature Body Treatment; Shrinking Violet Wrap; CACI Bum Lift; Sienna X Spray Tan; Half Body Spray Tan
-- **Quick facts:** resultsLast: Spray tan typically 5–10 days | downtime: Spray tan: avoid water for several hours, typically 6–8
+- **Quick facts:** resultsLast: Spray tan: 5–10 days | downtime: No water for 6–8 hours
 
 ### Introduction
 
@@ -402,6 +409,9 @@ Please tell us about any allergies, skin conditions, medication, pregnancy or re
 1. **Before your treatment.** Your therapist will ask about your health and skin, and explain the treatment. For a spray tan, you choose your shade and wear disposable underwear or swimwear.
 2. **During your treatment.** Exfoliations and wraps are relaxing and unhurried. A spray tan takes only a few minutes, and the solution is applied evenly to the body.
 3. **Afterwards.** Your skin will feel soft after a body treatment. A spray tan develops over several hours, so you will be given instructions on when you can wash.
+
+
+A spray tan typically lasts 5 to 10 days. Avoid water for several hours afterwards, typically 6 to 8, while it develops.
 
 #### Aftercare
 
@@ -457,7 +467,7 @@ Yes. You can book a body treatment and a massage on the same day. Choose both wh
 - **Practitioner shown:** [[TODO: practitioner name]]
 - **Book button:** Book waxing
 - **Booking menu entries linked:** Eyebrow Wax; Lip Strip Wax; Lip Hot Wax; Chin Strip Wax; Chin Hot Wax; Lip & Chin Strip Wax; Lip & Chin Hot Wax; Underarm Strip Wax; Underarm Hot Wax; Full Arm Wax; Half Leg Wax; Full Leg Wax; Bikini Tidy; Bikini Tidy Hot Wax; Bikini Slim; Bikini Slim Hot Wax; Intimate Wax; Back Wax (Female); Back Wax (Male); Men's Brow Wax
-- **Quick facts:** resultsLast: Hair typically regrows in 3–6 weeks | downtime: Typically none; redness usually settles within a few hours
+- **Quick facts:** resultsLast: Typically 3–6 weeks | downtime: Typically none
 
 ### Introduction
 
@@ -484,6 +494,8 @@ Please tell us if you are pregnant, take medication such as retinoids or steroid
 1. **Before your treatment.** Your therapist will ask about your skin, medication and any past reactions, and explain the method they recommend. They will clean the area. Your hair should be around 5 mm long. If you are unsure, ask us.
 2. **During your treatment.** Wax is applied and removed in small sections, with a soothing finish afterwards. You may feel a brief sting. Tell your therapist if you are uncomfortable, and we will go at your pace.
 3. **Afterwards.** Skin can look pink or slightly raised for a short time. This usually settles within a few hours.
+
+Hair typically regrows in 3 to 6 weeks. Any redness usually settles within a few hours.
 
 #### Aftercare
 
@@ -535,7 +547,7 @@ Please tell us when you book. Some medication, including certain skin treatments
 - **Practitioner shown:** [[TODO: practitioner name]]
 - **Book button:** Book for men
 - **Booking menu entries linked:** Gentleman's Manicure; Gentleman's Pedicure; Men's Chest Wax; Men's Back Wax; Men's Chest & Back Wax
-- **Quick facts:** resultsLast: Manicure and pedicure typically 2–3 weeks; hair typically regrows in 3–6 weeks | downtime: Typically none; redness after waxing usually settles within a few hours
+- **Quick facts:** resultsLast: Typically 2–6 weeks | downtime: Typically none
 
 ### Introduction
 
@@ -560,6 +572,8 @@ Please tell your therapist about any skin conditions, medication such as retinoi
 1. **Before your treatment.** Your therapist will ask about your skin, nails and health, and explain what will happen. For waxing, they will check your hair length and clean the area.
 2. **During your treatment.** For a manicure or pedicure, you sit back while your nails are shaped and your cuticles and skin cared for. For waxing, wax is applied and removed in small sections. You may feel a brief sting, and we go at your pace.
 3. **Afterwards.** Your nails will look clean and tidy. Waxed skin may look pink for a few hours.
+
+A manicure or pedicure typically lasts 2 to 3 weeks, and waxed hair typically regrows in 3 to 6 weeks. Any redness after waxing usually settles within a few hours.
 
 #### Aftercare
 

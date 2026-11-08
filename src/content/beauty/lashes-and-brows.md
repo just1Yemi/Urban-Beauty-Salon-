@@ -8,7 +8,7 @@ metaDescription: Lash lifts, LVL, tints, brow lamination and lash extensions at 
 lead: Lash lifts, LVL, tints, brow lamination and lash extensions in Penketh, Warrington, to frame your eyes with a look that suits you.
 heroPhoto: lash-print
 facts:
-  resultsLast: "Typically 6–8 weeks for lifts and lamination; extensions need an infill every 2–3 weeks"
+  resultsLast: "Typically 6–8 weeks"
   downtime: "Typically none"
 services:
   - "21749714390899"
@@ -64,6 +64,8 @@ Please tell us if you have sensitive skin, allergies, an eye infection, or if yo
 1. **Before your treatment.** Your therapist will ask about your skin, your eyes and the look you would like, and will check your sensitivity test result. Please arrive without eye make-up if you can.
 2. **During your treatment.** You lie back with your eyes closed while the products are applied and left to work. It should be comfortable and relaxing, and you can tell us at any point if anything feels uncomfortable.
 3. **Afterwards.** Your lashes and brows will look defined straight away. Lifted lashes can look slightly more curled for a day or two before they settle.
+
+Lash lifts and brow lamination typically last 6 to 8 weeks. Lash extensions need an infill every 2 to 3 weeks.
 
 ## Aftercare
 

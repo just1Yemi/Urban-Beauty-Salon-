@@ -6,10 +6,10 @@ section: beauty
 metaTitle: Waxing in Penketh, Warrington
 metaDescription: Strip and hot wax for brows, lip, chin, underarms, arms, legs, bikini and intimate areas at The Urban Beauty Salon in Penketh, Warrington. Book online.
 lead: Strip and hot wax for face, underarms, arms, legs, bikini and intimate areas in Penketh, Warrington, with clear times and prices.
-heroPhoto: treatment-room
+heroPhoto: desk-flowers
 facts:
-  resultsLast: "Hair typically regrows in 3–6 weeks"
-  downtime: "Typically none; redness usually settles within a few hours"
+  resultsLast: "Typically 3–6 weeks"
+  downtime: "Typically none"
 services:
   - "18640158068595"
   - "18571438591859"
@@ -68,6 +68,8 @@ Please tell us if you are pregnant, take medication such as retinoids or steroid
 1. **Before your treatment.** Your therapist will ask about your skin, medication and any past reactions, and explain the method they recommend. They will clean the area. Your hair should be around 5 mm long. If you are unsure, ask us.
 2. **During your treatment.** Wax is applied and removed in small sections, with a soothing finish afterwards. You may feel a brief sting. Tell your therapist if you are uncomfortable, and we will go at your pace.
 3. **Afterwards.** Skin can look pink or slightly raised for a short time. This usually settles within a few hours.
+
+Hair typically regrows in 3 to 6 weeks. Any redness usually settles within a few hours.
 
 ## Aftercare
 
