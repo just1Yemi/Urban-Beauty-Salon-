@@ -50,10 +50,10 @@ related: []
 
 ## Your consultation
 
-A consultation is a private, face to face conversation with your practitioner. It is not a sales pitch.
+A consultation is a private conversation with your practitioner. It is not a sales pitch. Our free aesthetics consultations take place by phone; some treatments also need an in-person assessment by a qualified prescriber at the salon before they can begin.
 
 - Your practitioner asks about your health, your medicines and what you would like to change.
-- They look at your skin or the area in question.
+- They ask about your skin or the area in question, and look at it in person where needed.
 - They explain the options that may suit you, what each involves, what it can and cannot do, the possible risks and the cost.
 - You have time to ask questions and to decide. Sometimes the honest answer is that no treatment is needed.
 

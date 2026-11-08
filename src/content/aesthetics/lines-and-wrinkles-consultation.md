@@ -11,8 +11,8 @@ lead: "A free, private consultation to talk through lines and wrinkles, your hea
 heroPhoto: "[[TODO: aesthetics room photo, from the professional shoot]]"
 # Consultation-only page: no results or downtime facts (they would imply a follow-on treatment).
 facts:
-  duration: "60 min"
-  format: "Private, face to face"
+  duration: "About 30 min"
+  format: "Free, by phone"
 # The excessive sweating (21955872821107) and teeth grinding (21938692951923) consultations are
 # deliberately NOT listed: they are not shown on the site (decision for Yemi and the prescriber).
 services:
@@ -47,7 +47,7 @@ reviews: []
 
 Lines and wrinkles are a natural part of how a face changes over time, and how much they bother you is personal. This consultation is a calm, unhurried conversation about the lines you notice, what you would like to change and what might help.
 
-Your practitioner looks at your skin, asks about your health and talks you through the options that may be suitable for you. That may include skincare, facials or other treatments on our menu, and sometimes the honest advice that no treatment is needed. You will hear what each option involves, what it can and cannot do, and the possible risks, so you can make a decision that feels right for you.
+The consultation takes place by phone, so you can have it from home. Your practitioner asks about your health and talks you through the options that may be suitable for you. That may include skincare, facials or other treatments on our menu, and sometimes the honest advice that no treatment is needed. You will hear what each option involves, what it can and cannot do, and the possible risks, so you can make a decision that feels right for you.
 
 The consultation is free, and there is no obligation to go ahead with anything.
 
@@ -60,11 +60,12 @@ It is a good place to start if you are not sure what you need, would like to und
 ## What to expect
 
 1. **Before your consultation.** When you book, we will ask a few questions about your health. Please bring a list of any medicines or supplements you take.
-2. **During your consultation.** You meet your practitioner face to face in a private room. They listen to what you would like to change, look at your skin, go through your medical history and explain the options that may suit you.
-3. **Afterwards.** You leave with clear information and time to think. [[TODO: confirm whether any treatment can follow on the same day or only after a cooling-off period]]
+2. **Your phone consultation.** Your practitioner calls you at the time you booked. They listen to what you would like to change, go through your medical history and explain the options that may suit you.
+3. **Before any treatment.** If you decide to go ahead, some treatments also need an in-person assessment by a qualified prescriber at the salon before they can begin. Your practitioner will tell you if this applies to you.
+4. **Afterwards.** You have clear information and time to think, with no pressure to decide.
 
 ## Aftercare
 
 There is no aftercare for a consultation itself. If you decide to go ahead with any treatment, your practitioner will explain the aftercare for it and give it to you in writing.
 
-If you think of questions after your visit, call the salon or send us a message. We usually reply within an hour during opening hours.
+If you think of questions after your consultation, call the salon or send us a message. We usually reply within an hour during opening hours.

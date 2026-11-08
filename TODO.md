@@ -19,7 +19,7 @@ Nothing here blocks the build. Several items block **launch**: the Phorest clean
 - [ ] Practitioner details for every practitioner card (name, role, photo, registering body and number, link to the register entry, training, indemnity insurance, treatments performed or prescribed). Add once to src/_data/practitioners.json and every card fills in `/, /about/, /aesthetics/biostimulators/ and 19 more`
 - [ ] One to three real reviews per treatment page, as first name and surname initial plus month and year (20 placeholders; none may mention injections, lines and wrinkles results or any medicine). Also the three review cards on the home page and the review text, name and month fields `/aesthetics/biostimulators/, /aesthetics/dermal-fillers/, /aesthetics/fat-dissolving/ and 17 more`
 - [ ] The salon story from Yemi: how it began, what it stands for and what has changed, in two or three short paragraphs `/about/`
-- [ ] A short quote or line from Yemi, if she would like one on the page `/about/`
+- [ ] A short quote or line from Yemi, if Yemi would like one on the page `/about/`
 - [ ] ICO registration number (About page and privacy notice) `/about/, /privacy/`
 - [ ] Aesthetics room photo, from the professional shoot `/aesthetics/biostimulators/, /aesthetics/dermal-fillers/, /aesthetics/fat-dissolving/ and 5 more`
 - [ ] Aftercare contact hours and the urgent out-of-hours route, from Yemi `/aesthetics/biostimulators/`
