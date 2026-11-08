@@ -1,0 +1,56 @@
+{
+  "legalName": "Urban Beauty Salon Ltd",
+  "tradingName": "The Urban Beauty Salon",
+  "established": 2013,
+  "companyNumber": "[[TODO]]",
+  "registeredOffice": "[[TODO]]",
+  "icoNumber": "[[TODO]]",
+  "domain": "theurbanbeautysalon.co.uk",
+  "url": "https://theurbanbeautysalon.co.uk",
+  "address": {
+    "line1": "5 Honiton Way",
+    "locality": "Penketh",
+    "town": "Warrington",
+    "postcode": "WA5 2EY",
+    "country": "GB",
+    "oneLine": "5 Honiton Way, Penketh, Warrington WA5 2EY"
+  },
+  "phone": {
+    "display": "01925 726 688",
+    "tel": "+441925726688"
+  },
+  "email": {
+    "general": "hello@theurbanbeautysalon.co.uk",
+    "bookings": "bookings@theurbanbeautysalon.co.uk"
+  },
+  "hours": {
+    "timezone": "Europe/London",
+    "days": [
+      { "day": "monday", "label": "Monday", "open": null, "close": null },
+      { "day": "tuesday", "label": "Tuesday", "open": "10:00", "close": "20:00" },
+      { "day": "wednesday", "label": "Wednesday", "open": "10:00", "close": "18:00" },
+      { "day": "thursday", "label": "Thursday", "open": "10:00", "close": "20:00" },
+      { "day": "friday", "label": "Friday", "open": "10:00", "close": "18:00" },
+      { "day": "saturday", "label": "Saturday", "open": "09:00", "close": "15:00" },
+      { "day": "sunday", "label": "Sunday", "open": null, "close": null }
+    ],
+    "note": "A null open/close means closed."
+  },
+  "parking": "Free parking",
+  "booking": {
+    "provider": "Phorest",
+    "url": "https://phorest.com/book/salons/urbanbeautysalon",
+    "phorestSubdomain": "urbanbeautysalon"
+  },
+  "social": {
+    "instagram": "https://www.instagram.com/urban_beauty_salon/",
+    "facebook": "https://www.facebook.com/urbanbeautysalonpenketh/"
+  },
+  "reviews": {
+    "count": 6736,
+    "since": "2016-07-02",
+    "asOf": "2026-11-03",
+    "source": "Phorest",
+    "sourceNote": "6,736 five-star Phorest reviews, 2 Jul 2016 to 3 Nov 2026. Evidence: Phorest screenshots, 3 Nov 2026."
+  }
+}

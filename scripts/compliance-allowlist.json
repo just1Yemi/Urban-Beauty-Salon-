@@ -1,0 +1,4 @@
+{
+  "_readme": "Legitimate uses of a banned term. Each entry: { \"file\": \"path relative to project root (forward slashes), or * for any\", \"term\": \"matched text, lower case\", \"reason\": \"why this is safe\" }. Empty on purpose: add entries only with a written reason, and only if a prescriber or Yemi has agreed.",
+  "allow": []
+}
