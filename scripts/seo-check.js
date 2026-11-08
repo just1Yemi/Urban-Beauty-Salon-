@@ -76,7 +76,43 @@ for (const f of walk(siteDir)) {
     const nodes = j["@graph"] ?? [j];
     if (/aggregateRating|"Review"|"reviewRating"|"review"/.test(b)) bad(url, "JSON-LD must not carry aggregateRating or review markup");
     for (const s of rx) if (b.includes(s.rawName.trim()) || b.includes(String(s.id))) bad(url, `JSON-LD contains prescription service ${s.id}`);
+    if (j["@context"] !== "https://schema.org") bad(url, "JSON-LD @context must be https://schema.org");
+    const need = (n, keys, what) => { for (const k of keys) if (n[k] == null || n[k] === "" || (Array.isArray(n[k]) && !n[k].length)) bad(url, `${what} missing required field ${k}`); };
+    const isUrl = (v) => typeof v === "string" && /^https:\/\/[^\s]+$/.test(v);
     for (const n of nodes) {
+      // Structure and required fields (schema.org / Google rich-result requirements)
+      if (n["@type"] === "BeautySalon") {
+        need(n, ["@id", "name", "url", "telephone", "address", "image", "openingHoursSpecification"], "BeautySalon");
+        if (n.address) need(n.address, ["streetAddress", "addressLocality", "postalCode", "addressCountry"], "BeautySalon address");
+        if (n.geo && (typeof n.geo.latitude !== "number" || typeof n.geo.longitude !== "number")) bad(url, "BeautySalon geo needs numeric latitude and longitude");
+        for (const h of n.openingHoursSpecification || []) {
+          need(h, ["dayOfWeek", "opens", "closes"], "OpeningHoursSpecification");
+          if (!/^([01]\d|2[0-3]):[0-5]\d$/.test(h.opens) || !/^([01]\d|2[0-3]):[0-5]\d$/.test(h.closes) || h.opens >= h.closes) bad(url, `bad opening hours ${h.dayOfWeek} ${h.opens}-${h.closes}`);
+          if (!["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"].includes(h.dayOfWeek)) bad(url, `bad dayOfWeek ${h.dayOfWeek}`);
+        }
+        for (const k of ["url", "image", "logo", "hasMap"]) if (n[k] && !isUrl(n[k])) bad(url, `BeautySalon ${k} is not an absolute https URL`);
+        for (const u of n.sameAs || []) if (!isUrl(u)) bad(url, `sameAs is not an absolute https URL: ${u}`);
+        if (!/^\+\d{10,14}$/.test(n.telephone || "")) bad(url, "BeautySalon telephone should be E.164 (+44...)");
+      }
+      if (n["@type"] === "Service") {
+        need(n, ["@id", "name", "url", "provider", "offers"], "Service");
+        if (n.provider && n.provider["@id"] !== site.url + "/#salon") bad(url, "Service provider does not reference the salon @id");
+        if (n.offers) {
+          need(n.offers, ["priceCurrency", "priceSpecification"], "Offer");
+          if (n.offers.priceSpecification) need(n.offers.priceSpecification, ["minPrice", "priceCurrency"], "PriceSpecification");
+        }
+      }
+      if (n["@type"] === "BreadcrumbList") {
+        const items = n.itemListElement || [];
+        if (items.length < 2) bad(url, "BreadcrumbList needs at least 2 items");
+        items.forEach((it, i) => {
+          need(it, ["position", "name", "item"], "ListItem");
+          if (it.position !== i + 1) bad(url, `BreadcrumbList position ${it.position} out of sequence`);
+          if (!isUrl(it.item)) bad(url, "BreadcrumbList item is not an absolute https URL");
+          else if (!fs.existsSync(path.join(siteDir, it.item.slice(site.url.length), "index.html"))) bad(url, `BreadcrumbList points at a page that does not exist: ${it.item}`);
+        });
+        if (items.length && items[items.length - 1].item !== site.url + url) bad(url, "last breadcrumb is not the page itself");
+      }
       if (n["@type"] === "Service" || n.offers) {
         const price = n.offers?.priceSpecification?.minPrice;
         const match = services.filter((s) => s.pricePublic && !s.isPrescription && s.price === price);
@@ -94,7 +130,12 @@ for (const f of walk(siteDir)) {
 const smPath = path.join(siteDir, "sitemap.xml");
 if (!fs.existsSync(smPath)) bad("sitemap.xml", "missing");
 else {
-  const locs = [...fs.readFileSync(smPath, "utf8").matchAll(/<loc>([^<]*)<\/loc>/g)].map((m) => m[1].replace(site.url, ""));
+  const xml = fs.readFileSync(smPath, "utf8");
+  if (!xml.startsWith('<?xml version="1.0" encoding="UTF-8"?>') || !xml.includes('<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">') || !xml.trim().endsWith("</urlset>")) bad("sitemap.xml", "not a well-formed urlset");
+  if ((xml.match(/<url>/g) || []).length !== (xml.match(/<\/url>/g) || []).length) bad("sitemap.xml", "unbalanced <url> tags");
+  const locs = [...xml.matchAll(/<loc>([^<]*)<\/loc>/g)].map((m) => m[1].replace(site.url, ""));
+  if (new Set(locs).size !== locs.length) bad("sitemap.xml", "duplicate <loc> entries");
+  for (const u of locs) if (!fs.existsSync(path.join(siteDir, u, "index.html"))) bad("sitemap.xml", `lists a page that is not built: ${u}`);
   for (const u of indexable) if (!locs.includes(u)) bad("sitemap.xml", `missing ${u}`);
   for (const u of locs) if (!indexable.includes(u)) bad("sitemap.xml", `lists a page that is not indexable: ${u}`);
   for (const u of locs) if (/styleguide|404/.test(u)) bad("sitemap.xml", `must not list ${u}`);

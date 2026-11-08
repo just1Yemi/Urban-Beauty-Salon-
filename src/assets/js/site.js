@@ -80,6 +80,7 @@
       if (location.hash === HASH) return;
       // Phorest clears the hash on close, which would jump to the top: stay put and return focus.
       html.classList.remove("is-booking");
+      wantOpen = false;
       if (!back) return;
       const { el, y } = back;
       back = null;
@@ -91,6 +92,18 @@
       window.addEventListener("blur", refocus);
       setTimeout(() => window.removeEventListener("blur", refocus), 4000);
     });
+    /* Phorest's script focuses its hidden booking frame as soon as it has loaded, which would pull a
+       keyboard user out of the page just for tabbing past a Book button. Unless the panel was asked
+       for, hand focus straight back to where it was. */
+    let wantOpen = false;
+    let lastOutside = null;
+    const inPanel = (n) => { const p = panel(); return Boolean(p && n && p.contains(n)); };
+    d.addEventListener("focusin", (e) => { if (!inPanel(e.target)) lastOutside = e.target; });
+    const guard = () => setTimeout(() => {
+      if (!wantOpen && !isOpen() && !html.classList.contains("is-booking") && inPanel(d.activeElement) && lastOutside && lastOutside.isConnected) lastOutside.focus({ preventScroll: true });
+    }, 0);
+    window.addEventListener("blur", guard);
+    d.addEventListener("focusin", (e) => { if (inPanel(e.target)) guard(); });
     const warm = (e) => { if (e.target.closest && e.target.closest("[data-book]")) load().catch(() => {}); };
     ["pointerover", "focusin", "touchstart"].forEach((t) => d.addEventListener(t, warm, { passive: true }));
     d.addEventListener("click", (e) => {
@@ -101,6 +114,7 @@
       const inMenu = m && m.open && m.contains(a);
       if (inMenu) m.close(); // a modal dialog would sit above the panel
       back = { el: inMenu ? d.querySelector("[data-menu-open]") : a, y: window.scrollY };
+      wantOpen = true;
       let settled = false;
       const leave = () => { if (!settled) { settled = true; location.assign(B.url); } };
       const timer = setTimeout(leave, 6000);

@@ -13,6 +13,8 @@
     "fonts": "node scripts/copy-fonts.js",
     "contrast": "node scripts/contrast-check.js",
     "lh": "node scripts/lh.js",
+    "keyboard": "node scripts/keyboard-check.js",
+    "todo": "node scripts/todo-report.js",
     "review-docs": "node scripts/make-review-docs.js",
     "share-images": "node scripts/make-share-images.js"
   },
