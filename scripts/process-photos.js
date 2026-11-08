@@ -23,7 +23,7 @@ const OUT = path.join(ROOT, "src/assets/img/salon");
 const DATA = path.join(ROOT, "src/_data/photos.json");
 const SHEET = path.join(ROOT, "screenshots/photos-contact.jpg");
 
-const RATIOS = { "4:5": 4 / 5, "3:2": 3 / 2 };
+const RATIOS = { "4:5": 4 / 5, "3:2": 3 / 2, "2:3": 2 / 3, "2:1": 2, "4:1": 4 };
 const BASE_WIDTHS = [480, 960, 1600];
 const HERO_WIDTH = 2400;
 
@@ -93,13 +93,14 @@ const PHOTOS = [
     alt: "The nail area: white manicure desks with grey chairs, framed prints on the wall and a grey floor.",
   },
   {
+    // Tight to the basin and couch head: leaves out the sockets, cables, radiator and wax heater.
     name: "treatment-room",
     source: "20260309_141501.jpg",
-    ratio: "4:5",
-    crop: { x: 0.1, y: 0.05, w: 0.9 },
+    ratio: "3:2",
+    crop: { x: 0.4, y: 0.215, w: 0.56 },
     rotate: 0,
     use: "room",
-    alt: "A treatment room with a couch dressed in white paper roll, a stool, a wash basin with a mirror above it and a wall trolley.",
+    alt: "A treatment room: a white basin on a dark worktop above wood cabinets, the head of a couch dressed in white paper roll, and a magnifying lamp over a trolley of skincare products.",
   },
   {
     name: "relaxation-room",
@@ -119,6 +120,57 @@ const PHOTOS = [
     use: "room",
     hero: true,
     alt: "The relaxation room from the doorway: two grey sofas either side of a low table with a plant, a mirror on the dark wall and a light wood floor.",
+  },
+  // ---- Art-directed crops (reviewer, Stage 1): one job each, no monitor, ring light or leaflets ----
+  {
+    name: "hero-desk",
+    source: "20260309_140735.jpg",
+    ratio: "3:2",
+    crop: { x: 0.612, y: 0.447, w: 0.388 },
+    rotate: 0,
+    use: "hero (landscape screens)",
+    hero: true,
+    alt: "Pale pink and white flowers in glass vases and boxed skincare on the reception desk, with tufted grey crushed velvet below and a glittered wall behind.",
+  },
+  {
+    name: "hero-desk-portrait",
+    source: "20260309_140735.jpg",
+    ratio: "2:3",
+    crop: { x: 0.612, y: 0.43, w: 0.388 },
+    rotate: 0,
+    use: "hero (portrait screens)",
+    widths: [480, 960, 1600],
+    alt: "Pale pink and white flowers and boxed skincare on the reception desk, with tufted grey crushed velvet below and a glittered wall behind.",
+  },
+  {
+    name: "velvet-band",
+    source: "20260309_140735.jpg",
+    ratio: "4:1",
+    crop: { x: 0.12, y: 0.62, w: 0.76 },
+    rotate: 0,
+    use: "texture band",
+    hero: true,
+    alt: "Tufted grey crushed velvet on the front of the reception desk.",
+  },
+  {
+    name: "polish-band",
+    source: "20260309_140446.jpg",
+    ratio: "2:1",
+    crop: { x: 0, y: 0.22, w: 1 },
+    rotate: 0,
+    use: "image pause",
+    hero: true,
+    alt: "Rows of gel nail polish bottles in white ornate frames, arranged by colour.",
+  },
+  {
+    name: "pampas",
+    source: "20260309_140817.jpg",
+    ratio: "4:5",
+    crop: { x: 0, y: 0.1, w: 0.4 },
+    rotate: 0,
+    use: "accent",
+    widths: [480, 960],
+    alt: "Pampas grass plumes in front of the glittered reception wall.",
   },
   {
     name: "lash-print",
@@ -219,7 +271,7 @@ async function gradeAndCut(photo) {
   const W = swap ? meta.height : meta.width;
   const H = swap ? meta.width : meta.height;
   const box = resolveBox(photo, W, H);
-  const maxOut = photo.hero ? HERO_WIDTH : BASE_WIDTHS[BASE_WIDTHS.length - 1];
+  const maxOut = photo.widths ? Math.max(...photo.widths) : photo.hero ? HERO_WIDTH : BASE_WIDTHS[BASE_WIDTHS.length - 1];
   const s = Math.min(1, maxOut / box.cw);
   const Ws = Math.round(W * s);
   const Hs = Math.round(H * s);
@@ -288,7 +340,7 @@ async function main() {
     const t0 = Date.now();
     const { graded, outW, outH, srcW, srcH, box, scale } = await gradeAndCut(photo);
     const aspect = RATIOS[photo.ratio];
-    const widths = [...BASE_WIDTHS, ...(photo.hero ? [HERO_WIDTH] : [])].filter((w) => w <= outW * 1.02);
+    const widths = (photo.widths || [...BASE_WIDTHS, ...(photo.hero ? [HERO_WIDTH] : [])]).filter((w) => w <= outW * 1.02);
     const made = [];
     for (const w of widths) {
       const h = Math.round(w / aspect);
@@ -321,7 +373,7 @@ async function main() {
       preview: `data:image/webp;base64,${prev.toString("base64")}`,
     };
     if (wantSheet) pairs.push({ photo, box, srcW, srcH });
-    const sz = fs.statSync(path.join(OUT, `${photo.name}-${Math.min(1600, top)}.avif`)).size;
+    const sz = fs.statSync(path.join(OUT, `${photo.name}-${made.filter((w) => w <= 1600).pop()}.avif`)).size;
     console.log(
       `${photo.name}: ${made.join("/")} px, crop ${Math.round(box.cw)}px wide (work x${scale.toFixed(2)}), ` +
         `1600 avif ${(sz / 1024).toFixed(0)} KB, ${Date.now() - t0} ms`

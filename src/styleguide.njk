@@ -57,14 +57,14 @@ progress: true
 
 {#- ===== Sample hero ===== -#}
 <section class="hero" aria-labelledby="hero-title">
-<div class="hero__media">{{ ui.picture("reception-desk", sizes="(orientation: portrait) 160vw, 100vw", priority=true, position="62% 58%") }}</div>
+<div class="hero__media">{{ ui.picture("hero-desk", sizes="100vw", priority=true, portrait="hero-desk-portrait", portraitSizes="133vw") }}</div>
 <div class="hero__shade" aria-hidden="true"></div>
 <p class="hero__edge" aria-hidden="true">{{ site.address.locality }} · {{ site.address.town }} · Est. {{ site.established }}</p>
 <div class="wrap hero__content on-dark" style="background:none">
-<p class="eyebrow" data-reveal>Style guide · Sample hero</p>
-<h1 id="hero-title" class="display" data-reveal style="--d:100ms">{{ "Skin & Beauty" | amp | safe }}</h1>
-<p class="lead" data-reveal style="--d:200ms">Aesthetics, facials and beauty treatments in {{ site.address.locality }}, {{ site.address.town }}.</p>
-<div class="btn-row" data-reveal style="--d:300ms">{{ ui.button("Book now", book=true) }}{{ ui.button("Explore treatments", href="#cards", style="outline", arrow=false) }}</div>
+<p class="eyebrow">Style guide · Sample hero</p>
+<h1 id="hero-title" class="display" style="--d:80ms">{{ "Skin & Beauty" | amp | safe }}</h1>
+<p class="lead" style="--d:160ms">Aesthetics, facials and beauty treatments in {{ site.address.locality }}, {{ site.address.town }}.</p>
+<div class="btn-row" style="--d:240ms">{{ ui.button("Book now", book=true) }}{{ ui.button("Explore treatments", href="#cards", style="outline", arrow=false) }}</div>
 </div>
 </section>
 
@@ -76,7 +76,7 @@ progress: true
 <p class="lead">Every token and component, in use with the salon’s own photographs. Resize the window, or open this page on a phone: the layout is checked at 360, 768 and 1440 pixels wide.</p>
 <p class="sg-note">Sample copy on this page is for layout only. Final words are written in later stages and reviewed by the practitioners. Yellow marks <span class="todo">[[TODO]]</span> show facts we still need.</p>
 <ul class="sg-nav" role="list">
-<li><a class="link" href="#colour">Colour</a></li><li><a class="link" href="#type">Type</a></li><li><a class="link" href="#space">Space, shape, motion</a></li><li><a class="link" href="#logo">Logo and seal</a></li><li><a class="link" href="#icons">Icons</a></li><li><a class="link" href="#buttons">Buttons and links</a></li><li><a class="link" href="#headings">Headings and dividers</a></li><li><a class="link" href="#images">Images</a></li><li><a class="link" href="#treatment">Treatment section</a></li><li><a class="link" href="#cards">Cards</a></li><li><a class="link" href="#prices">Prices</a></li><li><a class="link" href="#reviews">Reviews</a></li><li><a class="link" href="#visit">Visit</a></li>
+<li><a class="link" href="#colour">Colour</a></li><li><a class="link" href="#type">Type</a></li><li><a class="link" href="#space">Space, shape, motion</a></li><li><a class="link" href="#logo">Logo and seal</a></li><li><a class="link" href="#icons">Icons</a></li><li><a class="link" href="#buttons">Buttons and links</a></li><li><a class="link" href="#headings">Headings and dividers</a></li><li><a class="link" href="#images">Images</a></li><li><a class="link" href="#treatment">Treatment section</a></li><li><a class="link" href="#cards">Cards</a></li><li><a class="link" href="#prices">Prices</a></li><li><a class="link" href="#reviews">Reviews</a></li><li><a class="link" href="#visit">Visit</a></li><li><a class="link" href="#forms">Forms</a></li>
 </ul>
 </div>
 </section>
@@ -86,7 +86,7 @@ progress: true
 <div class="wrap">
 {{ ui.sectionHead("Colour", eyebrow="Tokens · 01", id="colour", lead="Ivory backgrounds and Espresso text. Champagne is an accent for hairlines, icons and dark surfaces: never text on Ivory.") }}
 <div class="sg-swatches">
-{%- set roles = { "espresso": "Text, buttons, footer", "champagne": "Hairlines, icons, hover fill", "ivory": "Page background", "onyx": "Reserved (not for large areas)", "white": "Review cards", "ivory-deep": "Tint: alternate band", "text-soft": "Tint: secondary text", "ivory-soft": "Tint: text on Espresso", "espresso-deep": "Tint: deepest Espresso" } %}
+{%- set roles = { "espresso": "Text, buttons, footer", "champagne": "Hairlines, icons, hover fill", "ivory": "Page background", "onyx": "Reserved (not for large areas)", "white": "Review cards", "ivory-deep": "Tint: alternate band", "ivory-shade": "Tint: photo placeholders", "text-soft": "Tint: secondary text", "ivory-soft": "Tint: text on Espresso", "espresso-deep": "Tint: deepest Espresso" } %}
 {%- for name, hex in palette.tokens %}
 <div class="sg-swatch"><div class="sg-swatch__chip" style="background:{{ hex }}"></div><div class="sg-swatch__meta"><strong>{{ name }}</strong><br><span class="tnum">{{ hex }}</span><br><span class="soft">{{ roles[name] }}</span></div></div>
 {%- endfor %}
@@ -116,7 +116,7 @@ progress: true
 <div class="stack-s"><p class="caption">Heading 3 · step 2 · tracked 0.18em</p><p class="h3" aria-hidden="true">What to expect</p></div>
 <div class="stack-s"><p class="caption">Heading 4 · Jost 400</p><p class="h4" aria-hidden="true">Aftercare</p></div>
 <div class="stack-s"><p class="caption">Lead · Inter 400 · step 1</p><p class="lead">A calm, unhurried appointment in a salon that has looked after {{ site.address.locality }} since {{ site.established }}.</p></div>
-<div class="stack-s"><p class="caption">Body · Inter 400 · step 0 · 65 characters a line</p><p>Body copy sits in Inter at a comfortable reading size, with generous line spacing and a measure of about sixty-five characters. Times use en dashes, such as 10:00–20:00, quotation marks are curly (“like this”), and prices never break across lines: {{ ui.price(derma.price) }}.</p></div>
+<div class="stack-s"><p class="caption">Body · Inter 400 · step 0 · measure 34em, about 65 characters a line</p><p>Body copy sits in Inter at a comfortable reading size, with generous line spacing and a measure of about sixty-five characters. Times use en dashes, such as 10:00–20:00, quotation marks are curly (“like this”), and prices never break across lines: {{ ui.price(derma.price) }}.</p></div>
 <div class="stack-s"><p class="caption">Small and eyebrow labels · wider tracking</p><p class="small soft">Small text for notes and captions.</p>{{ ui.eyebrow("Aesthetics", 1) }}</div>
 <div class="stack-s"><p class="caption">Tabular figures for prices, times and phone numbers</p><p class="tnum">{{ site.phone.display }} · 09:00–15:00 · 10:00–20:00</p></div>
 <div class="stack-s"><p class="caption">Pull quote with a hanging quotation mark (a print on the salon wall)</p><blockquote><p class="pullquote">“May your lashes be long and your standards be high.”</p></blockquote></div>
@@ -225,7 +225,7 @@ progress: true
 </div>
 </div>
 </section>
-<div class="pause pause--band" role="img" aria-label="Texture band: the crushed-velvet reception desk">{{ ui.picture("reception-desk", sizes="100vw", alt="", position="50% 90%") }}</div>
+<div class="pause pause--band" role="img" aria-label="Texture band: the crushed-velvet reception desk">{{ ui.picture("velvet-band", sizes="100vw", alt="") }}</div>
 
 {#- ===== Sample treatment section ===== -#}
 <section class="section" aria-labelledby="treatment">
@@ -238,12 +238,12 @@ progress: true
   { icon: "tag", label: "Price", price: derma.price }
 ]) }}
 <div class="overlap" style="margin-top:var(--s-7)">
-<div class="overlap__media" data-reveal="wipe">{{ ui.picture("treatment-room", sizes="(min-width: 64em) 60vw, 100vw", ratio="32", position="50% 55%") }}</div>
+<div class="overlap__media" data-reveal="wipe">{{ ui.picture("treatment-room", sizes="(min-width: 64em) 60vw, 100vw", ratio="32") }}</div>
 <div class="overlap__card stack" data-reveal style="--d:200ms">
 {{ ui.eyebrow("Text card over image") }}
 <p class="h3">Clean, calm treatment rooms</p>
 <p class="small">An editorial layout: the text card overlaps the photo on desktop and tucks under it on phones. Sample copy.</p>
-{{ ui.button(derma.name and "Book " + derma.name, book=true) }}
+{{ ui.button("Book dermaplaning", book=true) }}
 </div>
 </div>
 <div class="sg-treat" style="margin-top:var(--s-8)">
@@ -257,7 +257,7 @@ progress: true
 <p>This paragraph shows body text beside a pampas-grass accent crop. The in-page contents on the left stays in view on desktop and marks the section you are reading with a small Champagne dot, while a 1px Champagne line along the bottom of the header shows how far down the page you are.</p>
 {{ ui.person("[[TODO: practitioner first name]]", "[[TODO: role and training]]") }}
 </div>
-<figure data-reveal><div class="frame">{{ ui.picture("reception-desk-detail", sizes="30rem", ratio="45", alt="Pampas grass in a white vase on the reception desk", position="14% 12%", zoom=2.2) }}</div><figcaption>Pampas accent crop</figcaption></figure>
+<figure data-reveal><div class="frame">{{ ui.picture("pampas", sizes="(min-width: 48em) 13rem, 100vw", ratio="45") }}</div><figcaption>Pampas accent crop</figcaption></figure>
 </div>
 </section>
 <section aria-labelledby="tr-steps">
@@ -288,14 +288,14 @@ progress: true
 </div>
 </section>
 
-<div class="pause" role="img" aria-label="Image pause: the relaxation room">{{ ui.picture("relaxation-room-wide", sizes="100vw", alt="", position="50% 55%") }}</div>
+<div class="pause" role="img" aria-label="Image pause: the gel polish wall">{{ ui.picture("polish-band", sizes="100vw", alt="", position="50% 40%") }}</div>
 
 {#- ===== Treatment cards ===== -#}
 <section class="section" aria-labelledby="cards">
 <div class="wrap">
 {{ ui.sectionHead("Treatment cards", eyebrow="Components · 09", word="Beauty", id="cards", lead="At most three to a row. On hover the room photo cross-fades to a detail and the price and time appear; on phones they always show.") }}
 <div class="grid grid--3" data-stagger="110">
-{{ ui.tcard("Dermaplaning", "#treatment", "treatment-room", detail="product-shelf-skincare", eyebrow="Facials", text="On its own or with a glycolic peel.", from=derma.price, mins=derma.mins) }}
+{{ ui.tcard("Dermaplaning", "#treatment", "product-shelf-skincare", detail="product-shelf-serums", eyebrow="Facials", text="On its own or with a glycolic peel.", from=derma.price, mins=derma.mins) }}
 {{ ui.tcard("Lashes and brows", "#prices", "lash-print", detail="reception-flowers-products", eyebrow="Beauty", text="Lash lifts, tints and extensions, and brow lamination.", from=lashLift.price, mins=lashLift.mins) }}
 {{ ui.tcard("Nails and pedicures", "#prices", "polish-wall", detail="nail-stations", eyebrow="Beauty", text="Gel colour, manicures and pedicures.", from=pedicure.price, mins=pedicure.mins) }}
 </div>
@@ -347,6 +347,29 @@ progress: true
 <div class="stack">
 {{ ui.map() }}
 <p class="small soft"><span class="todo">[[TODO: brand-coloured static map image]]</span> Until then the map shows a quiet pattern; it already links to Google Maps.</p>
+</div>
+</div>
+</div>
+</section>
+
+{#- ===== Forms ===== -#}
+<section class="section" aria-labelledby="forms">
+<div class="wrap">
+{{ ui.sectionHead("Contact form", eyebrow="Components · 13", id="forms", lead="Floating labels on a fine line, a 2px Espresso line on focus, plain-English errors with an icon, and a calm thank-you. The live form uses Netlify Forms with a hidden spam trap.") }}
+<div class="grid grid--2" style="--gap:var(--s-7) var(--s-6)">
+<div class="stack">
+<h3 class="h4">Try it (nothing is sent)</h3>
+{{ ui.contactForm(demo=true, idp="sg-live") }}
+</div>
+<div class="stack-l">
+<div class="stack">
+<h3 class="h4">Error state</h3>
+{{ ui.contactForm(demo=true, state="error", idp="sg-err") }}
+</div>
+<div class="stack">
+<h3 class="h4">Success state</h3>
+{{ ui.contactForm(demo=true, state="success", idp="sg-ok") }}
+</div>
 </div>
 </div>
 </div>

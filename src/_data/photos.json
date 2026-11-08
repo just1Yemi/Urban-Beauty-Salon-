@@ -118,11 +118,11 @@
   },
   "treatment-room": {
     "name": "treatment-room",
-    "alt": "A treatment room with a couch dressed in white paper roll, a stool, a wash basin with a mirror above it and a wall trolley.",
+    "alt": "A treatment room: a white basin on a dark worktop above wood cabinets, the head of a couch dressed in white paper roll, and a magnifying lamp over a trolley of skincare products.",
     "use": "room",
-    "ratio": "4:5",
+    "ratio": "3:2",
     "width": 1600,
-    "height": 2000,
+    "height": 1067,
     "widths": [
       480,
       960,
@@ -133,7 +133,7 @@
       "webp"
     ],
     "path": "/assets/img/salon/treatment-room",
-    "preview": "data:image/webp;base64,UklGRqYAAABXRUJQVlA4IJoAAABwBQCdASoYAB4APt1go0yopaMiMBgMARAbiUAW2baITyYI/xFxmXKOpgOm7uLooqDfvHhAAP7V4/dr8asCp+f1D9ERVv9pwAV+ENoRE+GJy24ZqJ8EGtsYPdaVCx+u4JTYeDyxnH2/pTON36+CfpsJRaGV0WbR0cPY6x3F3K6cd8B1PTKoQSt4Y+qev0PNi4sv9mOeYHLX4yAA"
+    "preview": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAACQAwCdASoYABAAPt1cpkyopSOiMAgBEBuJQBdgBFVRrnt5bs0QAP5gKGNvsvu0I1Hh7paYwBVuiJ6tTVX3wIQPrJR+xQH6wiFMYpai5In79GnTuvI3sGKwE57QAAAA"
   },
   "relaxation-room": {
     "name": "relaxation-room",
@@ -173,6 +173,103 @@
     ],
     "path": "/assets/img/salon/relaxation-room-wide",
     "preview": "data:image/webp;base64,UklGRn4AAABXRUJQVlA4IHIAAABQBACdASoYABAAPt1cp00opSOiMAgBEBuJQBWA7wAMxTYfipNUeLRhIjfwAP7qlxrNMFL01D6F4x98TZGK6qSCv8jsg4V0MC+EEbB3AK+cxWdxgjL+m7jy+Yq1mmLRX5wRIdzqBwpEV/HoB3MgAKxsgAA="
+  },
+  "hero-desk": {
+    "name": "hero-desk",
+    "alt": "Pale pink and white flowers in glass vases and boxed skincare on the reception desk, with tufted grey crushed velvet below and a glittered wall behind.",
+    "use": "hero (landscape screens)",
+    "ratio": "3:2",
+    "width": 2400,
+    "height": 1600,
+    "widths": [
+      480,
+      960,
+      1600,
+      2400
+    ],
+    "formats": [
+      "avif",
+      "webp"
+    ],
+    "path": "/assets/img/salon/hero-desk",
+    "preview": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAADQAwCdASoYABAAPt1apkyopSOiMAgBEBuJQBYdhCiHz09Hy/W0KgAA/km+LP3wbwi32x3iZ8eEesJ51PhGP6RN2vm9IcLH3Y9IfukAeMOnEciDHYLNoIAA"
+  },
+  "hero-desk-portrait": {
+    "name": "hero-desk-portrait",
+    "alt": "Pale pink and white flowers and boxed skincare on the reception desk, with tufted grey crushed velvet below and a glittered wall behind.",
+    "use": "hero (portrait screens)",
+    "ratio": "2:3",
+    "width": 1600,
+    "height": 2400,
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "formats": [
+      "avif",
+      "webp"
+    ],
+    "path": "/assets/img/salon/hero-desk-portrait",
+    "preview": "data:image/webp;base64,UklGRpwAAABXRUJQVlA4IJAAAACQBQCdASoYACQAPs1WpkynpKQiNVgMAPAZiWUAyJgRC7ZPpIqXAl/ZySZgsL50bObJVOGzAAD+wD8r2dUM2+EOy/b+BVHF4A9AJhn4JTVBCC9fFwx+GE3VNvPzPKU1L6D7347NsU7i4+ICrue8l1X037y4GINp7wkJ6iSF70B9Xb1FpG5WfLMSugO40mbgAAA="
+  },
+  "velvet-band": {
+    "name": "velvet-band",
+    "alt": "Tufted grey crushed velvet on the front of the reception desk.",
+    "use": "texture band",
+    "ratio": "4:1",
+    "width": 2400,
+    "height": 600,
+    "widths": [
+      480,
+      960,
+      1600,
+      2400
+    ],
+    "formats": [
+      "avif",
+      "webp"
+    ],
+    "path": "/assets/img/salon/velvet-band",
+    "preview": "data:image/webp;base64,UklGRkoAAABXRUJQVlA4ID4AAABwAwCdASoYAAYAPt1cpkyopSOiMAgBEBuJZQAAOnTeg+uoYcAA/SDEaSGoNOuczqoymf5N83xki/njdBgAAA=="
+  },
+  "polish-band": {
+    "name": "polish-band",
+    "alt": "Rows of gel nail polish bottles in white ornate frames, arranged by colour.",
+    "use": "image pause",
+    "ratio": "2:1",
+    "width": 2400,
+    "height": 1200,
+    "widths": [
+      480,
+      960,
+      1600,
+      2400
+    ],
+    "formats": [
+      "avif",
+      "webp"
+    ],
+    "path": "/assets/img/salon/polish-band",
+    "preview": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAAAQBACdASoYAAwAPt1apkyopSOiMAgBEBuJZQCdACPcKLNENDIVNI/NAAD+a0YvkbbOGlArnmJ3SgFrYaM5iHk9o0GVCp+h5DYK7pv9FKuOW/EHnx2UEkMpyFti+f4cq+RFO1GrgAA="
+  },
+  "pampas": {
+    "name": "pampas",
+    "alt": "Pampas grass plumes in front of the glittered reception wall.",
+    "use": "accent",
+    "ratio": "4:5",
+    "width": 960,
+    "height": 1200,
+    "widths": [
+      480,
+      960
+    ],
+    "formats": [
+      "avif",
+      "webp"
+    ],
+    "path": "/assets/img/salon/pampas",
+    "preview": "data:image/webp;base64,UklGRoAAAABXRUJQVlA4IHQAAACwBACdASoYAB4APt1apE0opSMiMBgMARAbiUAWnQFwBBzfsIZ6L3JAD6Mzp9lAAP3q2wt5LT4l35I4vHxhNWBc2Tv4xb7goUXkoL2NSRD+sh1GUd3yf2wl7ylfuKL/QgXU+Fm6GZkiVjOV+aEpte+wd4AAAA=="
   },
   "lash-print": {
     "name": "lash-print",

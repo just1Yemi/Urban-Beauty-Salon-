@@ -41,6 +41,9 @@ Working rules and agreed decisions for every Claude Code session on this repo. R
 | Memberships | Phase 2 |
 | Analytics | Plausible (no cookies) and Google Search Console at launch |
 | Contact form | Netlify Forms, sending to hello@ |
+| Book Now behaviour | Phorest booking overlay on the page where the widget works (desktop and mobile); otherwise open the Phorest booking page in a new tab, with an accessible "opens in a new tab" label and a small arrow icon |
+| Legal line | "Registered in England and Wales No. [[TODO]]" (England and Wales is the Companies House jurisdiction) |
+| Map | Brand-coloured OpenStreetMap SVG, see BUILD_PLAN Stage 3 |
 
 ## Compliance rules (non-negotiable)
 

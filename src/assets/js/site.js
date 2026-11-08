@@ -54,6 +54,7 @@
   const toTop = d.querySelector("[data-to-top]");
   const progress = d.querySelector("[data-progress]");
   const needsJsProgress = progress && !(window.CSS && CSS.supports("animation-timeline: scroll()"));
+  const themeMeta = d.querySelector("meta[data-hero-theme]");
   let ticking = false;
   const onScroll = () => {
     ticking = false;
@@ -61,6 +62,7 @@
     const vh = window.innerHeight;
     const max = html.scrollHeight - vh;
     if (header) header.classList.toggle("is-scrolled", y > 8);
+    if (themeMeta) themeMeta.content = y > 8 ? "#F6F1EA" : "#3B302A"; // phone browser bar follows the header
     if (toTop) toTop.classList.toggle("is-shown", html.scrollHeight > vh * 3 && y > vh * 1.5);
     if (needsJsProgress) progress.style.setProperty("--p", max > 0 ? Math.min(1, y / max).toFixed(4) : 0);
   };
@@ -218,6 +220,52 @@
     }, { rootMargin: "-30% 0px -60% 0px" });
     map.forEach((_, t) => tio.observe(t));
   }
+
+  /* ---- Contact form: friendly validation, Netlify submit by fetch, calm success panel ----
+     Without JS the browser posts to Netlify, which returns to the action URL (#...-sent). */
+  $$("form[data-form]").forEach((form) => {
+    const wrap = form.closest(".form-wrap");
+    const success = wrap && wrap.querySelector("[data-form-success]");
+    const fail = form.querySelector("[data-form-fail]");
+    const fields = $$(".field__input, .check input", form);
+    const show = (el, bad) => {
+      const box = el.closest(".field");
+      const err = box && box.querySelector(".field__error");
+      if (!box || !err) return;
+      box.classList.toggle("is-invalid", bad);
+      err.hidden = !bad;
+      if (bad) { err.querySelector("span").textContent = el.dataset.error || el.validationMessage; el.setAttribute("aria-invalid", "true"); }
+      else el.removeAttribute("aria-invalid");
+    };
+    fields.forEach((el) => {
+      const recheck = () => { if (el.getAttribute("aria-invalid")) show(el, !el.checkValidity()); };
+      el.addEventListener("input", recheck);
+      el.addEventListener("change", recheck);
+      el.addEventListener("blur", () => { if (el.value && el.type !== "checkbox") show(el, !el.checkValidity()); });
+    });
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      if (fail) fail.hidden = true;
+      const bad = fields.filter((el) => !el.checkValidity());
+      fields.forEach((el) => show(el, bad.includes(el)));
+      if (bad.length) { bad[0].focus(); return; }
+      const btn = form.querySelector("[type=submit]");
+      if (btn) btn.disabled = true;
+      let ok = form.hasAttribute("data-demo");
+      if (!ok) {
+        try {
+          const res = await fetch("/", { method: "POST", headers: { "Content-Type": "application/x-www-form-urlencoded" }, body: new URLSearchParams(new FormData(form)).toString() });
+          ok = res.ok;
+        } catch (err) { ok = false; }
+      }
+      if (btn) btn.disabled = false;
+      if (ok && success) {
+        form.hidden = true;
+        success.classList.add("is-shown");
+        success.focus();
+      } else if (fail) fail.hidden = false;
+    });
+  });
 
   /* ---- Style guide only: replay the logo draw-in ---- */
   $$("[data-replay-logo]").forEach((b) => b.addEventListener("click", () => {

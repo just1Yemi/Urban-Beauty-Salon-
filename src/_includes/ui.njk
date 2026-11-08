@@ -47,9 +47,11 @@
 {#- Section heading with optional faint oversized background word -#}
 {% macro sectionHead(title, eyebrow="", word="", lead="", level=2, align="left", id="") -%}
 <header class="section-head{% if align == 'center' %} section-head--center{% endif %}" data-reveal>
+<div class="section-head__title">
 {%- if word %}<span class="section-head__word" aria-hidden="true">{{ word }}</span>{% endif %}
 {%- if eyebrow %}<p class="eyebrow">{{ eyebrow }}</p>{% endif %}
 <h{{ level }}{% if id %} id="{{ id }}"{% endif %}>{{ title | amp | safe }}</h{{ level }}>
+</div>
 {%- if lead %}<p class="lead">{{ lead }}</p>{% endif %}
 </header>
 {%- endmacro %}
@@ -61,11 +63,14 @@
 {%- endmacro %}
 
 {#- Responsive photo from src/_data/photos.json: AVIF/WebP, fixed dimensions, blurred preview.
-    ratio: 45 | 32 | 11 | wide (or "" for the photo's own). priority=true for the hero only. -#}
-{% macro picture(name, sizes="100vw", ratio="", cls="", loading="lazy", priority=false, alt=false, position="", zoom=0) -%}
+    ratio: 45 | 32 | 11 | wide (or "" for the photo's own). priority=true for the hero only.
+    portrait: a second photos.json crop served to portrait screens (art direction), with portraitSizes. -#}
+{% macro picture(name, sizes="100vw", ratio="", cls="", loading="lazy", priority=false, alt=false, position="", zoom=0, portrait="", portraitSizes="100vw") -%}
 {%- set p = photos[name] -%}
+{%- set pp = photos[portrait] if portrait else false -%}
 {%- if p -%}
 <picture class="pic{% if ratio %} pic--{{ ratio }}{% endif %}{% if cls %} {{ cls }}{% endif %}" style="--lqip:url({{ p.preview }})">
+{%- if pp %}{% for fmt in pp.formats %}<source media="(orientation: portrait)" type="image/{{ fmt }}" srcset="{% for w in pp.widths %}{{ pp.path }}-{{ w }}.{{ fmt }} {{ w }}w{% if not loop.last %}, {% endif %}{% endfor %}" sizes="{{ portraitSizes }}" width="{{ pp.width }}" height="{{ pp.height }}">{% endfor %}{% endif -%}
 {%- for fmt in p.formats %}<source type="image/{{ fmt }}" srcset="{% for w in p.widths %}{{ p.path }}-{{ w }}.{{ fmt }} {{ w }}w{% if not loop.last %}, {% endif %}{% endfor %}" sizes="{{ sizes }}">{% endfor -%}
 <img src="{{ p.path }}-960.webp" alt="{{ p.alt if alt === false else alt }}" width="{{ p.width }}" height="{{ p.height }}"{% if priority %} fetchpriority="high"{% else %} loading="{{ loading }}" decoding="async"{% endif %}{% if position or zoom %} style="{% if position %}object-position:{{ position }};{% endif %}{% if zoom %}scale:{{ zoom }};transform-origin:{{ position or '50% 50%' }}{% endif %}"{% endif %}>
 </picture>
@@ -182,4 +187,61 @@
 <span class="map__label"><span>{{ site.address.line1 }}, {{ site.address.locality }}<br><span class="soft">{{ site.parking }}</span></span><span class="more">Directions{{ icon("arrow", "icon--arrow") }}</span></span>
 <span class="visually-hidden"> (opens Google Maps)</span>
 </a>
+{%- endmacro %}
+
+{#- Form field with a floating label. type: text | email | tel | textarea | select | checkbox.
+    error: shows the error state (static); message: the error text site.js shows when the field
+    is invalid on submit. options: for select ([label, ...]). idp: id prefix, unique per form. -#}
+{% macro field(name, label, type="text", required=false, autocomplete="", options=[], hint="", error="", message="", value="", checked=false, idp="f") -%}
+{%- set fid = idp ~ "-" ~ name -%}
+{%- set describe = (fid ~ "-hint " if hint else "") ~ fid ~ "-err" -%}
+{%- set msg = message or ("Please fill in " ~ (label | lower) ~ ".") -%}
+{%- set common %} id="{{ fid }}" name="{{ name }}" aria-describedby="{{ describe }}"{% if required %} required{% endif %}{% if error %} aria-invalid="true"{% endif %} data-error="{{ msg }}"{% endset -%}
+{%- if type == "checkbox" %}
+<div class="field field--check{% if error %} is-invalid{% endif %}">
+<label class="check" for="{{ fid }}"><input type="checkbox" value="yes"{{ common | safe }}{% if checked %} checked{% endif %}><span>{{ label | todo | safe }}{% if not required %} <span class="field__opt">(optional)</span>{% endif %}</span></label>
+{%- else %}
+<div class="field field--{{ type }}{% if error %} is-invalid{% endif %}">
+{%- if type == "textarea" %}<textarea class="field__input" rows="5" placeholder=" "{{ common | safe }}>{{ value }}</textarea>
+{%- elif type == "select" %}<select class="field__input"{{ common | safe }}><option value=""{% if not value %} selected{% endif %}>Please choose</option>{% for o in options %}<option{% if o == value %} selected{% endif %}>{{ o }}</option>{% endfor %}</select>
+{%- else %}<input class="field__input" type="{{ type }}" placeholder=" "{% if autocomplete %} autocomplete="{{ autocomplete }}"{% endif %}{% if type == "email" %} spellcheck="false"{% endif %}{% if value %} value="{{ value }}"{% endif %}{{ common | safe }}>{% endif %}
+<label class="field__label" for="{{ fid }}">{{ label }}{% if not required %} <span class="field__opt">(optional)</span>{% endif %}</label>
+{%- endif %}
+{%- if hint %}<p class="field__hint" id="{{ fid }}-hint">{{ hint | todo | safe }}</p>{% endif %}
+<p class="field__error" id="{{ fid }}-err"{% if not error %} hidden{% endif %}>{{ icon("alert") }}<span>{{ error or msg }}</span></p>
+</div>
+{%- endmacro %}
+
+{#- Contact form block (Netlify Forms, honeypot, calm success panel).
+    demo=true: style guide only (no data-netlify, nothing is sent). state: "" | "error" | "success" (static previews).
+    Without JS, Netlify returns to action, and :target shows the success panel. -#}
+{% macro contactForm(formName="contact", demo=false, state="", idp="contact", action="") -%}
+{%- set err = state == "error" -%}
+{%- set action = action or ("/contact/#" ~ idp ~ "-sent") -%}
+<div class="form-wrap">
+<form class="form" name="{{ formName }}" method="POST" action="{{ action }}"{% if not demo %} data-netlify="true" netlify-honeypot="bot-field"{% else %} data-demo{% endif %} data-form novalidate{% if state == "success" %} hidden{% endif %}>
+<input type="hidden" name="form-name" value="{{ formName }}">
+<p class="form__trap" aria-hidden="true"><label>Leave this empty <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+<p class="form__note small soft">All fields are needed unless marked optional.</p>
+<div class="form__row form__row--2">
+{{ field("name", "Your name", required=true, autocomplete="name", idp=idp, error=("Please tell us your name." if err else ""), message="Please tell us your name.") }}
+{{ field("email", "Email address", type="email", required=true, autocomplete="email", idp=idp, value=("name@example" if err else ""), error=("Please check your email address, for example name@example.com." if err else ""), message="Please enter your email address, for example name@example.com.") }}
+</div>
+<div class="form__row form__row--2">
+{{ field("phone", "Phone", type="tel", autocomplete="tel", idp=idp, hint="We only call if email is not easier.") }}
+{{ field("topic", "What is it about?", type="select", idp=idp, options=["A treatment question", "Booking or changing an appointment", "Something else"]) }}
+</div>
+{{ field("message", "Your message", type="textarea", required=true, idp=idp, error=("Please write a short message." if err else ""), message="Please write a short message.") }}
+{{ field("reply", "You may reply by phone if that is quicker", type="checkbox", idp=idp) }}
+<p class="small soft">We use your details only to reply to you. See our <a class="link" href="/privacy/">privacy notice</a>.</p>
+<p class="form__fail" data-form-fail hidden role="alert">{{ icon("alert") }}<span>Sorry, your message did not send. Please try again, or call <a class="link" href="tel:{{ site.phone.tel }}">{{ site.phone.display }}</a>.</span></p>
+<div><button class="btn" type="submit"><span>Send message</span>{{ icon("arrow", "icon--arrow") }}</button></div>
+</form>
+<div class="form-success{% if state == 'success' %} is-shown{% endif %}" id="{{ idp }}-sent"{% if not state %} data-form-success{% endif %} role="status" tabindex="-1">
+<span class="form-success__icon">{{ icon("check") }}</span>
+<p class="h3">Thank you</p>
+<p>Your message is on its way to the salon. We will reply {{ "[[TODO: usual reply time, for example within one working day]]" | todo | safe }}.</p>
+<p class="small soft">To book straight away, use any Book now button or call <a class="link" href="tel:{{ site.phone.tel }}">{{ site.phone.display }}</a>.</p>
+</div>
+</div>
 {%- endmacro %}

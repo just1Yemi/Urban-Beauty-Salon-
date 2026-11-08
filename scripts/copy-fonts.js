@@ -6,7 +6,7 @@ import { fileURLToPath } from "node:url";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const out = path.join(root, "src/assets/fonts");
-const FONTS = { jost: [300, 400, 500], inter: [400, 500, 600] };
+const FONTS = { jost: [300, 400, 500], inter: [400, 500] };
 fs.mkdirSync(out, { recursive: true });
 for (const [family, weights] of Object.entries(FONTS)) {
   for (const w of weights) {

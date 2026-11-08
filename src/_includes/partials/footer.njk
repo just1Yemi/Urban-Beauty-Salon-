@@ -38,7 +38,7 @@
 </div>
 <div class="footer__legal">
 <ul role="list">{% for p in nav.policies %}<li><a class="link-draw" href="{{ p.url }}">{{ p.label }}</a></li>{% endfor %}</ul>
-<p>© {% year %} {{ site.legalName }} · Registered in England No. {{ site.companyNumber | todo | safe }} · Registered office {{ site.registeredOffice | todo | safe }}</p>
+<p>© {% year %} {{ site.legalName }} · Registered in England and Wales No. {{ site.companyNumber | todo | safe }} · Registered office {{ site.registeredOffice | todo | safe }}</p>
 </div>
 </div>
 <a class="to-top" href="#top" data-to-top aria-label="Back to top">{{ ui.logo("icon") }}</a>
