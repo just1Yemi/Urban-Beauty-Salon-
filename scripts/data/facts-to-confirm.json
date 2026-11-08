@@ -1,0 +1,241 @@
+{
+  "note": "Facts reported by the copy writers for practitioner confirmation, keyed by section then page slug (index = hub, _general = whole section). Used by scripts/make-review-docs.js.",
+  "aesthetics": {
+    "index": [
+      "Every aesthetics treatment starts with a consultation covering health, goals, options, limits and risks, with no pressure to go ahead",
+      "Aesthetic treatments are for adults aged 18 and over (the law covers fillers; confirm it is salon policy for skin boosters, polynucleotides and consultations)"
+    ],
+    "lines-and-wrinkles-consultation": [
+      "The consultation is free and there is no obligation to book anything afterwards",
+      "It is face to face, in a private room, with a practitioner who looks at the skin and takes a medical history",
+      "Options discussed may include skincare, facials or other treatments on the menu, or the advice that no treatment is needed",
+      "Duration shown as 60 min (from services.json; may be the treatment slot rather than the consultation)",
+      "Clients are asked health questions when booking and should bring a list of medicines and supplements",
+      "Free consultations are also offered for excessive sweating and teeth grinding, using the same approach",
+      "Aftercare for any later treatment is explained and given in writing"
+    ],
+    "dermal-fillers": [
+      "Most fillers are made from hyaluronic acid, break down gradually and are not permanent",
+      "Results typically last 6 to 18 months depending on area, product and the individual, with lips at the shorter end",
+      "Downtime is typically a few days of swelling, tenderness or bruising; lips can look fuller than the final result at first",
+      "Most people feel pinching or pressure, and many fillers contain a local anaesthetic",
+      "Hyaluronic acid filler can usually be dissolved, and dissolving (including of filler from elsewhere) is offered after an assessment",
+      "Filler is placed with a fine needle or cannula, and most appointments take around 45 minutes including time to talk",
+      "Not usually suitable during pregnancy or breastfeeding, with an active skin infection or cold sore in the area, or with certain medical conditions; the tear trough needs careful assessment",
+      "Aftercare (first 24 to 48 hours): avoid touching or pressing the area, no make-up on the area for the rest of the day, avoid alcohol, strenuous exercise, saunas, steam rooms and sunbeds, sleep with the head slightly raised on the first night",
+      "Red flags: contact straight away for severe or increasing pain, a pale or dusky patch of skin, changes to vision, or signs of infection (heat, spreading redness, fever)"
+    ],
+    "skin-boosters": [
+      "They place hyaluronic acid within the skin to improve hydration, texture and skin quality, without changing the shape of the face",
+      "Results typically last around 6 months after a course",
+      "Typically given as a course of two or three sessions a few weeks apart, followed by maintenance sessions",
+      "Downtime is typically small raised bumps that settle within a day or two, with possible redness or bruising",
+      "Suitable areas include the face, neck, décolletage and hands (confirm for each product offered)",
+      "The products differ in ingredients, how they spread and how many sessions are advised; check the product names Seventy Hyal and RRS Hyalift are spelt correctly",
+      "Given as a series of small injections with a fine needle, around 45 minutes including time to talk",
+      "Profhilo is priced on consultation",
+      "Aftercare (first 24 to 48 hours): avoid touching or massaging the areas, no make-up on the area for the rest of the day, avoid alcohol, strenuous exercise, saunas, steam rooms and sunbeds, use high-factor sunscreen",
+      "Not usually suitable during pregnancy or breastfeeding, with an active skin infection in the area, or with certain medical conditions"
+    ],
+    "polynucleotides": [
+      "Purified DNA fragments typically taken from salmon or trout, designed to support the skin's natural repair processes",
+      "Not suitable for anyone with a fish allergy",
+      "Results typically last 6 to 12 months after a course",
+      "Typically a course of three sessions a few weeks apart, with maintenance after that; changes build gradually over weeks",
+      "Downtime is typically small raised bumps and redness that settle within a day or two; bruising is possible, especially under the eyes",
+      "Placed with a fine needle or cannula, around 45 minutes including time to talk",
+      "Newest combines polynucleotides with hyaluronic acid (confirm the product name, flagged in services-review.md)",
+      "Aftercare (first 24 to 48 hours): avoid touching or rubbing the areas, no make-up on the area for the rest of the day, avoid alcohol, strenuous exercise, saunas, steam rooms and sunbeds, use high-factor sunscreen",
+      "Not usually suitable during pregnancy or breastfeeding, with an active skin infection in the area, or with certain medical conditions"
+    ],
+    "biostimulators": [
+      "Results typically last 12–24 months (facts strip)",
+      "Downtime is typically a few days of swelling or bruising; most people return to everyday activities straight away",
+      "Sculptra is poly-L-lactic acid, which the body gradually breaks down; it is used on broader areas such as the temples, cheeks and jawline",
+      "Radiesse is calcium hydroxylapatite microspheres in a gel; it gives some lift straight away and stimulates collagen as the gel is absorbed; it can be diluted to support skin firmness",
+      "Neither product is used in the lips",
+      "Unlike hyaluronic acid filler, neither product can be dissolved once placed",
+      "Sculptra is typically a course of 2 or 3 sessions about 4–6 weeks apart; Radiesse is often a single session, sometimes with a top-up",
+      "Sculptra's early fullness is from the water it is mixed with and fades within a few days; the collagen change typically builds over 2–3 months",
+      "Local anaesthetic is typically mixed with the product or used alongside it; the product is placed with a fine needle or a blunt cannula",
+      "Not suitable for under 18s, during pregnancy or breastfeeding, with an infection or cold sore in the area, certain autoimmune conditions, a tendency to raised scars, or some medicines",
+      "Aftercare: no touching or make-up for the rest of the day; no strenuous exercise, sauna, steam or alcohol for 24 hours; Sculptra 5-5-5 massage (5 minutes, 5 times a day, 5 days); high-factor sunscreen and no other facial treatments for about 2 weeks",
+      "Red flags listed: pain that is getting worse, a pale, dusky or blotchy patch of skin, signs of infection"
+    ],
+    "microneedling": [
+      "Results typically last several months, with maintenance sessions (facts strip)",
+      "Downtime is typically 1–3 days of redness, like mild sunburn, sometimes followed by light flaking",
+      "The device is handheld with very fine, sterile needles; needle depth and serum are adjusted for each of the 3 treatments (Hydration & Glow, Acne Scars, Pigmentation)",
+      "A course is typically 3–6 sessions about 4–6 weeks apart; acne scars and pigmentation often need more sessions",
+      "A numbing cream is typically applied beforehand (check it fits the 45-minute appointment)",
+      "Typically suitable for a wide range of skin tones because it does not use heat or light; darker skin can be more prone to pigment changes",
+      "Not suitable with active acne, a cold sore or infection, an eczema, psoriasis or rosacea flare, a keloid tendency, pregnancy, sunburn, isotretinoin within the last 6 months, some blood disorders, or blood-thinning medicines",
+      "Pre-care: stop retinoids and exfoliating acids for 3–5 days before; avoid tanning",
+      "Aftercare: no make-up for 24 hours; no retinoids, acids or scrubs for at least 3–5 days; SPF 30 or higher daily; no exercise, pools, sauna or steam for 24–48 hours; do not pick flaking skin",
+      "It can be planned alongside CACI or COMCIT with suitable gaps between treatments",
+      "'Price on consultation' wording (prices held back until Yemi decides)"
+    ],
+    "fat-dissolving": [
+      "Confirm the product used and what it contains, and whether it is a prescription-only medicine. The product is not named on the page (visible TODO)",
+      "The solution breaks down fat cells, which the body clears naturally over the following weeks (the mechanism depends on the product)",
+      "Results are typically long term if weight stays stable; treated fat cells are typically not replaced, but the remaining cells can grow with weight gain",
+      "Downtime is typically 3–7 days of swelling, tenderness, redness or bruising; the area may feel numb or firm; swelling under the chin can be noticeable for several days",
+      "A course is typically 2–4 sessions about 4–6 weeks apart; the change develops over 4–8 weeks after each session",
+      "A warm, stinging or tingling feeling is common during treatment; it is given as a marked grid of small injections",
+      "Areas: face (under the chin, jowls); body (tummy, love handles, bra line, inner thighs, upper arms)",
+      "Not a weight-loss treatment; not for loose skin or cellulite; suits soft fat you can pinch in people close to a stable, healthy weight",
+      "Not suitable for under 18s, during pregnancy or breastfeeding, with an infection in the area, poorly controlled diabetes, liver or kidney disease, autoimmune or clotting disorders, or allergies to ingredients",
+      "Aftercare: no strenuous exercise, sauna or hot baths for 24–48 hours; drink plenty of water; no alcohol for 24 hours; loose clothing; whether to massage depends on the product (TODO)",
+      "Most people can go back to work the next day"
+    ],
+    "hair-loss": [
+      "Results typically need maintenance every 6–12 months (facts strip)",
+      "Downtime is typically 1–2 days of scalp tenderness, pinpoint marks or mild swelling",
+      "PRP: blood sample spun in a centrifuge to concentrate platelets, then injected into the scalp; platelets contain growth factors; 'thought to support hair follicles; research is still developing and results vary'. Needs prescriber sign-off given the PRP consultation",
+      "PRP: the blood sample is taken and prepared during the appointment",
+      "Plinest Hair: a polynucleotide treatment of purified DNA fragments derived from fish, injected into the scalp; not suitable with a fish allergy",
+      "Hair filler: product, contents and how it works (visible TODO)",
+      "A course is typically 3 or 4 sessions about 4–6 weeks apart, then maintenance; changes are judged over 3–6 months",
+      "Suits early to moderate thinning (including pattern hair loss in men and women) where follicles are still active; not for completely bald areas or scarring hair loss",
+      "Sudden, patchy or rapid hair loss, or hair loss with other symptoms, should be checked by a GP first; possible causes include iron, thyroid, hormones and stress",
+      "Not suitable for under 18s, during pregnancy or breastfeeding, or with a scalp infection; PRP is not suitable with blood or platelet disorders or blood-thinning medicines",
+      "Aftercare: no hair washing until the next day; no colouring, perming or chemical treatments for 48–72 hours; no strenuous exercise, sauna, steam or pools for 24 hours; ask before pausing any medicines or supplements",
+      "A consultation is required before treatment; the treatments suit both men and women"
+    ],
+    "_general": [
+      "The practitioner confirms the plan and total cost before treatment starts, and there is no pressure to go ahead on the day (salon policy)",
+      "All 'Typically' ranges need prescriber sign-off before launch"
+    ]
+  },
+  "facials": {
+    "index": [
+      "The hub says every treatment starts with questions about skin and health and that therapists will say if a treatment is not suitable on the day; confirm this matches the salon's consultation process"
+    ],
+    "caci": [
+      "Uses low-level microcurrent through small probes to stimulate facial muscles, with no needles; microdermabrasion uses a fine exfoliating tip; the Ultimate Anti-Ageing Facial 'combines several steps' (confirm exactly what it includes); the 'Hydratone' mask is described only as a hydrating mask",
+      "Results typically build over a course and top-ups keep them going; downtime typically none; skin may look a little pink for a short time afterwards",
+      "Sensation is a gentle tingling or light pulsing; microdermabrasion feels like a gentle, slightly scratchy massage",
+      "Microcurrent typically avoided with a pacemaker or other implanted electrical device, epilepsy, pregnancy, or metal implants in the treatment area; therapist also asks about recent injectable treatments, skin infections and medication. Practitioner to give the full contraindication list",
+      "Typically recommended as a course of sessions, with the number depending on the client (course length and total price unknown)",
+      "Microneedling is described as making tiny controlled channels in the skin (confirm wording)",
+      "Aftercare: gentle moisturiser, daily sun protection (freshly exfoliated skin more sun-sensitive), avoid harsh exfoliants for a few days"
+    ],
+    "comcit": [
+      "Described as an 'advanced skin rejuvenation facial built around a professional treatment device'; the FAQ says CACI tones facial muscles while COMCIT is aimed at the look and feel of the skin itself. Practitioner must confirm how COMCIT actually works (a TODO is in the body)",
+      "Results typically build over a course and top-ups keep them going; downtime typically none or mild pinkness for a short time; a course is typically recommended for a visible change",
+      "Not recommended in pregnancy; therapist asks about pregnancy, medication, skin conditions, recent injectable treatments and reaction history; may rebook if skin is sunburnt, broken or inflamed",
+      "The longer options add CACI, microdermabrasion or Prime & Peel to the same session (Prime & Peel is not described beyond being a peel step; confirm what it is)",
+      "Aftercare: gentle moisturiser, daily sun protection, avoid strong exfoliants or actives for a few days, avoid strong sun and saunas on the day"
+    ],
+    "crystal-clear": [
+      "MDA means microdermabrasion; express = short refresh, luxury = longer thorough session, MDA = gentle exfoliation lifting dead skin cells, longest option adds a peel step; what each Crystal Clear facial includes is a TODO",
+      "Results typically a few weeks; downtime typically none; skin may look a little pink for a short while after MDA or a peel",
+      "Many people have a facial every four to six weeks (roughly the skin renewal cycle); often suitable for sensitive skin but tell the therapist about sensitivity, rosacea or eczema; many clients book a few days before an event so pinkness has settled",
+      "Aftercare: gentle moisturiser, daily sun protection, avoid hot baths, saunas, heavy make-up and strong exfoliants for a few days"
+    ],
+    "dermaplaning": [
+      "Manual exfoliation with a sterile, single-use surgical blade held at an angle, removing dead skin cells and fine pale hair (peach fuzz); can leave skin brighter and smoother and help products and make-up sit evenly",
+      "Results typically about three to four weeks; downtime typically none; many people have it every three to four weeks; skin may look slightly pink or feel a little sensitive afterwards",
+      "Hair does not grow back thicker, does not change how hair grows and typically regrows with the same texture; sensation is a soft scraping or tickling feeling",
+      "Works with most skin types; not suitable with active acne or inflamed spots, skin infection, cold sores, sunburn or broken skin; not suited to thick or dark hair; pregnant clients should tell the therapist before booking",
+      "Aftercare: gentle moisturiser, daily sun protection, avoid strong exfoliants, retinol, active skincare and saunas for a few days, do not pick or scrub the skin",
+      "Dermaplaning Luxury is a full facial built around the dermaplaning step; Dermaplaning and Glycolic Peel adds a glycolic acid peel in the same appointment"
+    ],
+    "glycolic-peel": [
+      "Glycolic acid is an alpha hydroxy acid that loosens the bonds between dead skin cells so they can be removed; can leave skin brighter, smoother and more even in tone; typical steps are cleanse, peel, then soothing and protecting products (TODO in body to confirm steps and strength)",
+      "Results typically a few weeks and a course builds on it; downtime typically none, or mild pinkness and flaking for a few days; many people have a series of peels a few weeks apart",
+      "Typically a warm tingling for a minute or two while the peel is on; mild dryness or flaking possible; peel is removed or neutralised afterwards",
+      "Not suitable with sunburnt, broken, inflamed or infected skin or a cold sore; therapist asks about pregnancy, breastfeeding, certain medications, recent strong skincare actives and past reactions to acids; patch test or gentler option may be suggested for sensitive skin; may be asked to pause retinol or actives for a few days before (duration is a TODO)",
+      "Aftercare: sun protection essential, gentle moisturiser, avoid exfoliants, retinol, other actives, waxing, saunas and hot baths until skin settles, do not pick flaking skin; contact the salon if skin blisters or feels sore"
+    ],
+    "_general": [
+      "'Our safety and aftercare page will have more advice once it is published' appears in each aftercare section; remove or link it when the page exists"
+    ]
+  },
+  "beauty": {
+    "index": [
+      "The hub says some treatments, such as lash lifts, tints and lamination, need a short sensitivity test beforehand"
+    ],
+    "lashes-and-brows": [
+      "Lifts and lamination typically last 6 to 8 weeks",
+      "Extensions need an infill every 2 to 3 weeks (taken from the Phorest service names)",
+      "Downtime is typically none",
+      "A sensitivity test is advised before tints, lifts and lamination, ideally at least 24 to 48 hours before treatment; the therapist may suggest one before extensions",
+      "Lash lift and LVL both lift and curl natural lashes from the root; the difference between them is stated as 'slightly different products and method'",
+      "Tints suit light or fine lashes and brows",
+      "Brow lamination sets the brow hairs in a brushed-up, fuller-looking shape",
+      "'Express Lashes' are described as an express extension set. Please confirm what Express Lashes are, and what the Eye Package includes (not described on the page)",
+      "Lifted lashes can look more curled for a day or two before they settle",
+      "Aftercare: keep lashes and brows dry for 24 hours (no steam, sauna, swimming or heavy sweating), avoid rubbing, sleep on your back, brush gently with a clean spoolie daily, keep oil-based products away from extensions",
+      "Eye make-up is usually fine the day after a lift, tint or lamination",
+      "Contraindications named: eye infection, pregnancy, recent eye surgery, sensitive skin and allergies",
+      "Please arrive without eye make-up"
+    ],
+    "nails-and-pedicures": [
+      "Gel colour typically lasts 2 to 3 weeks",
+      "Enhancements need an infill every 2 to 3 weeks (from the service names)",
+      "Downtime is typically none. Gel is set under a lamp and dry to the touch, so nails can be used straight away",
+      "BIAB is a gel overlay for natural nails; Bio Sculpture is a gel system; acrylic and Acrygel are built up on the nail with a gel finish. Please confirm these descriptions are right for your products",
+      "Overlays can suit people whose natural nails split or bend",
+      "Manicures and pedicures include shaping, cuticle care and polish, and pedicures include soaking",
+      "BIAB removal is only for BIAB applied at the salon (from the service name)",
+      "Aftercare: cuticle oil and hand cream daily, gloves for cleaning, no picking or peeling, and professional soak-off or infill",
+      "Nail or skin infection means waiting until clear; products can occasionally cause sensitivity"
+    ],
+    "little-miss-urban": [
+      "Ages 4 to 12; a parent or guardian must attend and stay for the whole appointment",
+      "Results last typically 1 to 2 weeks depending on finish, and downtime is none. This assumes polish; please confirm what the treatments involve",
+      "The copy says the treatments are 'shaped and painted'. Please confirm",
+      "Siblings book separate appointments, and back-to-back appointments are arranged by calling",
+      "Anyone over 12 uses the regular nail menu",
+      "Aftercare covers keeping polish dry briefly, using a gentle child-friendly hand cream, and using a gentle remover"
+    ],
+    "massage": [
+      "Most people feel relaxed for a day or two, though this varies",
+      "Downtime is typically none; mild muscle tenderness after deeper massage typically eases within a day or two",
+      "Practice statements need confirming: the client is covered with towels with only the treated area uncovered; the therapist leaves the room while the client gets ready; allow a few minutes before driving",
+      "Deep tissue uses firmer pressure; hot stone adds gentle heat from warmed stones",
+      "The 20-minute face, chest and scalp massage and the 25-minute back massage are add-ons to any facial",
+      "Contraindications: pregnancy, medical conditions, recent injury, high blood pressure, blood-thinning medication, fever and contagious illness",
+      "The page says 'Massage is a relaxation treatment. It is not a medical treatment'",
+      "'Free parking right outside' (from CLAUDE.md) appears on this page's lead"
+    ],
+    "body-and-tanning": [
+      "Spray tan typically lasts 5 to 10 days; avoid water for typically 6 to 8 hours afterwards",
+      "Prep advice: exfoliate and shave or wax at least 24 hours beforehand, arrive with clean dry skin and no moisturiser, deodorant or perfume, and wear loose dark clothing afterwards",
+      "A spray tan takes a few minutes, and the client chooses a shade and wears disposable underwear or swimwear. Please confirm",
+      "A half body spray tan option exists (from the service name)",
+      "Exfoliation leaves the skin feeling smooth and is good preparation for a spray tan; skin feels soft after a body treatment",
+      "Aftercare advice for tan, exfoliation and wraps",
+      "A patch test may be suggested for sensitive skin",
+      "Pregnancy, allergies, medication and recent surgery may mean adjusting or postponing a wrap or CACI",
+      "Shrinking Violet wrap is described as a pampering treatment with no inch-loss, weight-loss or body-shape claims. Its steps and products are a TODO",
+      "CACI Bum Lift is described as using CACI microcurrent technology on the bottom area. The steps and the usual number of sessions are a TODO",
+      "Signature Back and Body Treatments are described only as longer, unhurried treatments. Their contents are a TODO"
+    ],
+    "waxing": [
+      "Hair typically regrows in 3 to 6 weeks",
+      "Hair needs to be about 5 mm long, roughly 2 to 3 weeks of growth, about the length of a grain of rice. Do not shave between appointments",
+      "Downtime is typically none; redness typically settles within a few hours",
+      "Strip wax is spread thinly and removed with a cloth strip. Hot wax is applied thicker, sets, and is lifted without a strip. Hot wax is often chosen for delicate areas such as lip, underarms and bikini line",
+      "Regular waxing may mean hair regrows finer for some people",
+      "Waxing removes hair from the root, so skin stays smooth longer than shaving",
+      "Contraindications: pregnancy, retinoids and steroids, sunburnt, broken or irritated skin, eczema, varicose veins, and no waxing over moles, warts, cuts or inflamed skin",
+      "Most people feel a quick sting and it typically becomes more comfortable with regular appointments",
+      "Aftercare for 24 hours: avoid hot baths, saunas, swimming, sun and sunbeds, heavy exercise, perfumed products and tight clothing, and do not pick. After a day or two, gently exfoliate and moisturise to help prevent ingrown hairs",
+      "The page says men's waxing, including chest and back, is on the men's page"
+    ],
+    "men": [
+      "Manicure and pedicure typically last 2 to 3 weeks; hair typically regrows in 3 to 6 weeks",
+      "Downtime is typically none; redness after waxing typically settles within a few hours",
+      "The gentleman's manicure and pedicure are described as tidying and shaping nails and caring for cuticles and skin, leaving a clean, natural finish. Contents are a TODO",
+      "The FAQ says the menu is written with men in mind and everyone is welcome to book. Please confirm",
+      "Wax hair length of about 5 mm, roughly 2 to 3 weeks of growth, and aftercare as for waxing",
+      "The men's brow wax is booked from the waxing page, not the men's page, because that is where it sits in services.json",
+      "'Free parking right outside' (from CLAUDE.md) appears on this page's lead"
+    ],
+    "_general": [
+      "'Typically' ranges throughout need practitioner sign-off before launch"
+    ]
+  }
+}

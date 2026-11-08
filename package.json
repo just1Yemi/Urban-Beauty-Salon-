@@ -12,7 +12,8 @@
     "import-services": "node scripts/import-services.js",
     "fonts": "node scripts/copy-fonts.js",
     "contrast": "node scripts/contrast-check.js",
-    "lh": "node scripts/lh.js"
+    "lh": "node scripts/lh.js",
+    "review-docs": "node scripts/make-review-docs.js"
   },
   "devDependencies": {
     "@11ty/eleventy": "^3.1.8",
