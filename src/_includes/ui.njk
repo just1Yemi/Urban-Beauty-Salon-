@@ -240,7 +240,7 @@
 <div class="form-success{% if state == 'success' %} is-shown{% endif %}" id="{{ idp }}-sent"{% if not state %} data-form-success{% endif %} role="status" tabindex="-1">
 <span class="form-success__icon">{{ icon("check") }}</span>
 <p class="h3">Thank you</p>
-<p>Your message is on its way to the salon. We will reply {{ "[[TODO: usual reply time, for example within one working day]]" | todo | safe }}.</p>
+<p>Your message is on its way to the salon. We usually reply within an hour during opening hours.</p>
 <p class="small soft">To book straight away, use any Book now button or call <a class="link" href="tel:{{ site.phone.tel }}">{{ site.phone.display }}</a>.</p>
 </div>
 </div>

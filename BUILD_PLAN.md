@@ -61,7 +61,7 @@ Source: `C:\Users\olaye\Downloads\Empty Salon Photos-20261108T152613Z-1-001.zip`
 | Stage | Name | Status |
 | --- | --- | --- |
 | 0 | Foundations | Done |
-| 1 | Design system | Done, reviewed and fixed – awaiting Checkpoint 1 |
+| 1 | Design system | Done – signed off by Yemi at Checkpoint 1 (8 Nov 2026), all premium details kept |
 | 2 | Templates and booking | Not started |
 | 3 | Home page | Not started |
 | 4 | Aesthetics (hub + 8) | Not started |

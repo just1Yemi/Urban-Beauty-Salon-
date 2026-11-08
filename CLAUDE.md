@@ -15,11 +15,14 @@ Working rules and agreed decisions for every Claude Code session on this repo. R
 | --- | --- |
 | Legal entity | Urban Beauty Salon Ltd |
 | Trading name | The Urban Beauty Salon |
+| Company number | 17031560 (England and Wales). Registered office: 40 Kipling Avenue, Tilbury RM18 8HF |
+| Contact form reply promise | "We usually reply within an hour during opening hours." |
 | Established | 2013 |
 | Address | 5 Honiton Way, Penketh, Warrington WA5 2EY |
 | Phone | 01925 726688 |
 | Hours | Tue 10:00–20:00, Wed 10:00–18:00, Thu 10:00–20:00, Fri 10:00–18:00, Sat 09:00–15:00, closed Sun and Mon |
-| Parking | Free parking |
+| Parking | Free parking right outside, in front of the shops |
+| Directions (Contact page, map caption) | "Find us in the corner of the horseshoe of shops at Penketh precinct, just off Meeting Lane and beside Penketh Pool and Community Centre. Free parking right outside." Short version: "In the corner of the Penketh precinct shops, off Meeting Lane." |
 | Domain | theurbanbeautysalon.co.uk (DNS at one.com) |
 | Email | hello@, bookings@ (Google Workspace) |
 | Booking | Phorest: https://phorest.com/book/salons/urbanbeautysalon (subdomain `urbanbeautysalon`) |
