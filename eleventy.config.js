@@ -1,6 +1,7 @@
 import fs from "node:fs";
 import crypto from "node:crypto";
 import { registerContent } from "./lib/content.js";
+import { registerSeo } from "./lib/seo.js";
 
 // Design-system CSS lives in four source files; it is published as one bundle at
 // /assets/css/site.css by src/assets/css/site.11ty.js (see COMPONENTS.md).
@@ -14,7 +15,7 @@ const assetVersion = () => {
 export default function (eleventyConfig) {
   // Copy published assets folder by folder. src/assets/img/source (full-size originals and
   // source videos) is git-ignored and must never be copied into _site. CSS is bundled, not copied.
-  for (const dir of ["js", "fonts", "video", "img/brand", "img/salon"]) {
+  for (const dir of ["js", "fonts", "video", "img/brand", "img/salon", "img/share"]) {
     eleventyConfig.addPassthroughCopy({ [`src/assets/${dir}`]: `assets/${dir}` });
   }
   eleventyConfig.ignores.add("src/assets/img/source/**");
@@ -27,6 +28,8 @@ export default function (eleventyConfig) {
   eleventyConfig.amendLibrary("md", (md) => md.set({ typographer: true, quotes: "“”‘’" }));
   // Content model (CONTENT_GUIDE.md): validated "content" collection, clean URLs, page filters.
   registerContent(eleventyConfig);
+  // JSON-LD and share-image helpers (Stage 8).
+  registerSeo(eleventyConfig);
   // Front matter replaces global data of the same name instead of merging with it: treatment
   // pages use `services` and `reviews` (lists of ids), which must not be merged with
   // services.json and reviews.json.

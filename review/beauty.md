@@ -78,7 +78,7 @@ None of these treatments promises a particular result. Your therapist will talk 
 
 These treatments suit most adults who want to define their eyes without wearing make-up every day. A lash lift or LVL works best on natural lashes that have some length. Tints suit light or fine lashes and brows.
 
-Please tell us if you have sensitive skin, allergies, an eye infection, or if you are pregnant or recently had eye surgery, as we may recommend waiting or choosing a different treatment. A sensitivity test is advised before tints, lifts and lamination; you can book the [sensitivity test](#prices) from the price list below.
+Please tell us if you have sensitive skin, allergies, an eye infection, or if you are pregnant or recently had eye surgery, as we may recommend waiting or choosing a different treatment. A sensitivity test is advised before tints, lifts and lamination; you can book the [sensitivity test](#prices) from the price list below. Read more about [patch tests](/consultation/#patch-tests) and our [safety and aftercare advice](/aftercare/).
 
 #### What to expect
 

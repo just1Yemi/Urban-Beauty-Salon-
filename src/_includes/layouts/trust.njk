@@ -1,0 +1,72 @@
+---
+layout: layouts/base.njk
+progress: true
+---
+{#- Trust page (consultation, aftercare). Words: src/content/trust/<slug>.md. Body: Markdown with ## headings; each becomes a
+    section in the sticky contents list. Optional front matter: heroPhoto, urgent {title, intro, items}, routes (three
+    "Not sure what to book?" links), routesTitle, routesLead, faqs, print (shows a Print button). -#}
+{%- import "ui.njk" as ui with context -%}
+{%- set parts = content | sectionsOf -%}
+{%- set isTodo = r/^\s*\[\[TODO/ -%}
+{%- set tocItems = [] -%}
+{%- if routes and routes.length %}{% set _ = tocItems.push({ id: "not-sure", label: routesTitle or "Not sure what to book?" }) %}{% endif -%}
+{%- for s in parts %}{% if s.id %}{% set _ = tocItems.push({ id: s.id, label: s.label }) %}{% endif %}{% endfor -%}
+{%- if faqs and faqs.length %}{% set _ = tocItems.push({ id: "questions", label: "Questions" }) %}{% endif -%}
+
+<header class="page-head">
+<div class="wrap{% if heroPhoto %} page-head__grid{% endif %}">
+<div class="page-head__text">
+<p class="eyebrow">{{ eyebrow or "The Urban Beauty Salon" }}</p>
+<h1 style="--d:80ms">{{ title | amp | safe }}</h1>
+<p class="lead" style="--d:160ms">{{ lead | todo | safe }}</p>
+{%- if urgent %}
+{%- set urgentBody %}<p>{{ urgent.intro | todo | safe }}</p>{% if urgent.items %}<ul>{% for l in urgent.items %}<li>{{ l | todo | safe }}</li>{% endfor %}</ul>{% endif %}{% endset %}
+<div style="--d:220ms">{{ ui.callout(urgent.title, urgentBody) }}</div>
+{%- endif %}
+{%- if print %}
+<div class="btn-row" style="--d:260ms"><button class="btn btn--outline print-btn" type="button" data-print><span>Print this page</span></button></div>
+{%- endif %}
+</div>
+{%- if heroPhoto %}
+<div class="page-head__media" style="--d:120ms">
+{%- if isTodo.test(heroPhoto) %}{{ ui.placeholder(heroPhoto, ratio="45") }}
+{%- else %}<div class="frame">{{ ui.picture(heroPhoto, sizes="(min-width: 64em) 36vw, (min-width: 40em) 90vw, 100vw", ratio="45", priority=true) }}</div>{% endif %}
+</div>
+{%- endif %}
+</div>
+</header>
+
+<div class="section section--tight treatment">
+<div class="wrap treatment__layout">
+{{ ui.toc(tocItems) }}
+<div class="treatment__body">
+{%- if routes and routes.length %}
+<section class="treatment__section" aria-labelledby="not-sure" data-reveal>
+<h2 class="h3" id="not-sure">{{ routesTitle or "Not sure what to book?" }}</h2>
+{%- if routesLead %}<p>{{ routesLead | todo | safe }}</p>{% endif %}
+<ul class="hubs" role="list" data-stagger="110" style="margin-top:var(--s-4);margin-bottom:0">
+{%- for r in routes %}
+<li class="hub" data-reveal>{{ ui.eyebrow(r.eyebrow) }}<h3 class="h4"><a class="hub__link" href="{{ r.url }}">{{ r.title }}</a></h3><p>{{ r.text | todo | safe }}</p><span class="more" aria-hidden="true">Discover{{ ui.icon("arrow", "icon--arrow") }}</span></li>
+{%- endfor %}
+</ul>
+</section>
+{%- endif %}
+{%- for s in parts %}
+{%- if s.id %}
+<section class="treatment__section" aria-labelledby="{{ s.id }}" data-reveal>
+<h2 class="h3" id="{{ s.id }}">{{ s.label }}</h2>
+<div class="prose">{{ s.html | safe }}</div>
+</section>
+{%- else %}
+<div class="prose">{{ s.html | safe }}</div>
+{%- endif %}
+{%- endfor %}
+{%- if faqs and faqs.length %}
+<section class="treatment__section" aria-labelledby="questions" data-reveal>
+<h2 class="h3" id="questions">Questions</h2>
+{{ ui.faq(faqs) }}
+</section>
+{%- endif %}
+</div>
+</div>
+</div>

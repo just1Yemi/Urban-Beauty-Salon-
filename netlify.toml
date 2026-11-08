@@ -1,0 +1,68 @@
+# Netlify settings (Stage 8). Hosting: Netlify free tier; DNS stays at one.com (never touch MX, SPF, DKIM or DMARC).
+[build]
+  command = "npm run build"
+  publish = "_site"
+
+[build.environment]
+  NODE_VERSION = "22"
+
+# www to apex (the apex theurbanbeautysalon.co.uk is the canonical domain). HTTP to HTTPS is automatic on Netlify.
+[[redirects]]
+  from = "https://www.theurbanbeautysalon.co.uk/*"
+  to = "https://theurbanbeautysalon.co.uk/:splat"
+  status = 301
+  force = true
+
+# Netlify serves /404.html for unknown paths automatically.
+
+# Security headers on every page.
+# A Content-Security-Policy is deliberately not set yet: the pages use small inline scripts (theme, speculation rules, data)
+# and the Phorest booking panel loads its own scripts and frames. Stage 10 adds a tested policy once the panel is checked live.
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "DENY"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=(), payment=(), interest-cohort=()"
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains"
+
+# Pages: always revalidate, so a new deploy shows straight away.
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+# CSS and JS are versioned with ?v=<hash> in the page, so a change is a new URL: cache for a year.
+[[headers]]
+  for = "/assets/css/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/assets/js/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Fonts never change under the same name.
+[[headers]]
+  for = "/assets/fonts/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Photos, brand files and share images keep their names when re-exported, so a month, then revalidate.
+[[headers]]
+  for = "/assets/img/*"
+  [headers.values]
+    Cache-Control = "public, max-age=2592000, stale-while-revalidate=86400"
+
+[[headers]]
+  for = "/sitemap.xml"
+  [headers.values]
+    Content-Type = "application/xml; charset=utf-8"
+    Cache-Control = "public, max-age=3600"
+
+[[headers]]
+  for = "/robots.txt"
+  [headers.values]
+    Cache-Control = "public, max-age=3600"

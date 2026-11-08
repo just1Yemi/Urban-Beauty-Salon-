@@ -6,8 +6,8 @@ title: Skin boosters
 slug: skin-boosters
 section: aesthetics
 metaTitle: Skin boosters and Profhilo, Warrington
-metaDescription: "Skin boosters including Profhilo at The Urban Beauty Salon in Penketh, Warrington, to improve hydration and skin quality. Consultation first. Book online."
-lead: "Skin boosters place hyaluronic acid within the skin to improve hydration and skin quality, without changing the shape of your face."
+metaDescription: "Skin boosters including Profhilo at The Urban Beauty Salon in Penketh, Warrington, designed to improve hydration and skin quality. Book online."
+lead: "Skin boosters place hyaluronic acid within the skin and are designed to improve hydration and skin quality, without changing the shape of your face."
 heroPhoto: product-shelf-skincare
 facts:
   resultsLast: "Typically around 6 months after a course"
@@ -26,6 +26,7 @@ faqs:
     a: "Fillers add volume or shape to a particular area. Skin boosters spread a thin layer of hyaluronic acid within the skin to improve hydration and texture, so they are not designed to change the shape of your face."
   - q: How many sessions will I need?
     a: "Most skin boosters are given as a short course, typically two or three sessions a few weeks apart, followed by maintenance sessions. Your practitioner will recommend a plan for your skin."
+  # remove if price published
   - q: How much does Profhilo cost?
     a: "Profhilo is priced on consultation. Your practitioner will confirm the cost and the number of sessions before you book."
   - q: Which skin booster is right for me?
@@ -42,8 +43,6 @@ reviews: []
 Skin boosters are treatments that place small amounts of hyaluronic acid, a substance found naturally in the skin, within the skin itself. Rather than adding volume to one area, they are designed to improve hydration, texture and the overall quality of the skin.
 
 We offer several skin boosters: Profhilo, Jalupro Super Hydro, Seventy Hyal, Juvederm Volite, RRS Long Lasting and RRS Hyalift. They differ in their ingredients, how they spread within the skin and how many sessions are usually advised. Your practitioner will recommend the one that suits your skin and explain why.
-
-Profhilo is priced on consultation.
 
 ## Who it suits
 

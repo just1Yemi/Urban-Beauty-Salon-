@@ -60,7 +60,7 @@ metaDescription: Advanced skin and aesthetics, facials and everyday beauty in Pe
 </ul>
 <h3 class="h4" style="margin-bottom:var(--s-4)" data-reveal>Popular treatments</h3>
 <div class="grid grid--3" data-stagger="110">
-{%- for c in featured %}{{ ui.tcard(c.name, c.url, c.photo or ("card for " ~ c.name), detail=c.detail, eyebrow=(c.section ~ " · " ~ (c.num | pad2)), text=c.text, from=c.offer.from, mins=c.offer.fromMins, level=4, note=("Free consultation" if c.offer.consultation else "")) }}{% endfor %}
+{%- for c in featured %}{{ ui.tcard(c.name, c.url, c.photo or ("card for " ~ c.name), detail=c.detail, eyebrow=(c.section ~ " · " ~ (c.num | pad2)), text=c.text, from=c.offer.from, mins=c.offer.fromMins, level=4, note=("Free consultation" if c.offer.consultation else ("Price on consultation" if c.offer.heldBack else ""))) }}{% endfor %}
 </div>
 </div>
 </section>

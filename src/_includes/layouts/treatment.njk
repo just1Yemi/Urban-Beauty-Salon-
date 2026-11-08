@@ -13,10 +13,20 @@ progress: true
 {%- set parts = content | sectionsOf -%}
 {%- set isTodo = r/^\s*\[\[TODO/ -%}
 {%- if o.from %}{% set priceFact = { icon: "tag", label: "Price", price: o.from } %}
-{%- else %}{% set priceFact = { icon: "tag", label: "Price", value: ("Free consultation" if o.consultation else "[[TODO: price held back until Yemi decides]]") } %}{% endif -%}
+{%- else %}{% set priceFact = { icon: "tag", label: "Price", value: ("Free consultation" if o.consultation else ("Price on consultation" if o.heldBack else "[[TODO: price]]")) } %}{% endif -%}
+{#- Consultation-only pages (every service is prescription): no results or downtime facts, "Consultations" in place of
+    "Prices and times", no review prompts about the treatment, and Book buttons go to the contact form while
+    site.booking.consultationVia is "contact" (Phorest still lists the services under their old names). -#}
+{%- set priceHeading = "Consultations" if o.consultation else "Prices and times" -%}
+{%- set bookHref = "/contact/" if (o.consultation and site.booking.consultationVia == "contact") else "" -%}
+{%- set factItems = [{ icon: "clock", label: "Duration", value: (facts.duration or (o | minsRange) or "[[TODO: duration]]") }] -%}
+{%- if facts.format %}{% set _ = factItems.push({ icon: "user", label: "Format", value: facts.format }) %}{% endif -%}
+{%- if facts.resultsLast %}{% set _ = factItems.push({ icon: "calendar", label: "Results last", value: facts.resultsLast }) %}{% endif -%}
+{%- if facts.downtime %}{% set _ = factItems.push({ icon: "moon", label: "Downtime", value: facts.downtime }) %}{% endif -%}
+{%- set _ = factItems.push(priceFact) -%}
 {%- set tocItems = [] -%}
 {%- for s in parts %}{% if s.id %}{% set _ = tocItems.push({ id: s.id, label: s.label }) %}{% endif %}{% endfor -%}
-{%- set _ = tocItems.push({ id: "prices", label: "Prices and times" }) -%}
+{%- set _ = tocItems.push({ id: "prices", label: priceHeading }) -%}
 {%- if faqs and faqs.length %}{% set _ = tocItems.push({ id: "questions", label: "Questions" }) %}{% endif -%}
 
 <header class="page-head">
@@ -29,13 +39,8 @@ progress: true
 {%- endif %}
 <h1 style="--d:80ms">{{ title | amp | safe }}</h1>
 <p class="lead" style="--d:160ms">{{ lead | todo | safe }}</p>
-{{ ui.facts([
-  { icon: "clock", label: "Duration", value: (facts.duration or (o | minsRange) or "[[TODO: duration]]") },
-  { icon: "calendar", label: "Results last", value: facts.resultsLast },
-  { icon: "moon", label: "Downtime", value: facts.downtime },
-  priceFact
-], reveal=false) }}
-<div class="btn-row" style="--d:240ms">{{ ui.button(bookLabel, book=true) }}{{ ui.more("Prices and times", "#prices") }}</div>
+{{ ui.facts(factItems, reveal=false) }}
+<div class="btn-row" style="--d:240ms">{% if bookHref %}{{ ui.button(bookLabel, href=bookHref) }}{% else %}{{ ui.button(bookLabel, book=true) }}{% endif %}{{ ui.more(priceHeading, "#prices") }}</div>
 </div>
 <div class="page-head__media" style="--d:120ms">
 {%- if isTodo.test(heroPhoto) %}{{ ui.placeholder(heroPhoto, ratio="45") }}
@@ -63,9 +68,9 @@ progress: true
 {%- endfor %}
 
 <section class="treatment__section" aria-labelledby="prices" data-reveal>
-<h2 class="h3" id="prices">Prices and times</h2>
+<h2 class="h3" id="prices">{{ priceHeading }}</h2>
 {{ ui.pricelist(o.rows) }}
-<div class="btn-row">{{ ui.button(bookLabel, book=true) }}</div>
+<div class="btn-row">{% if bookHref %}{{ ui.button(bookLabel, href=bookHref) }}{% else %}{{ ui.button(bookLabel, book=true) }}{% endif %}</div>
 <p class="small soft">Or call <a class="link" href="tel:{{ site.phone.tel }}">{{ site.phone.display }}</a> during opening hours.</p>
 </section>
 
@@ -93,6 +98,8 @@ progress: true
 <div class="grid grid--3" style="margin-top:var(--s-6)" data-stagger="110">
 {%- for r in rv %}{{ ui.review(r.text, r.name, r.date | monthYear) }}{% endfor %}
 </div>
+{%- elif o.consultation %}
+<p class="small" style="margin-top:var(--s-4)">{{ "[[TODO: one to three general salon reviews (first name and surname initial). None that mention injections, lines and wrinkles results or any medicine]]" | todo | safe }}</p>
 {%- else %}
 <p class="small" style="margin-top:var(--s-4)">{{ ("[[TODO: one to three Phorest reviews that mention " ~ (title | lower) ~ " (first name and surname initial)]]") | todo | safe }}</p>
 {%- endif %}
@@ -105,7 +112,7 @@ progress: true
 <div class="wrap">
 {{ ui.sectionHead("You may also like", eyebrow="Related treatments", id="related") }}
 <div class="grid grid--3" data-stagger="110">
-{%- for c in rel %}{{ ui.tcard(c.name, c.url, c.photo or ("card for " ~ c.name), detail=c.detail, eyebrow=c.section, text=c.text, from=c.offer.from, mins=c.offer.fromMins, note=("Free consultation" if c.offer.consultation else "")) }}{% endfor %}
+{%- for c in rel %}{{ ui.tcard(c.name, c.url, c.photo or ("card for " ~ c.name), detail=c.detail, eyebrow=c.section, text=c.text, from=c.offer.from, mins=c.offer.fromMins, note=("Free consultation" if c.offer.consultation else ("Price on consultation" if c.offer.heldBack else ""))) }}{% endfor %}
 </div>
 </div>
 </section>

@@ -10,6 +10,7 @@ const steps = [
   ["contrast", [path.join(root, "scripts/contrast-check.js")]],
   ["compliance", [path.join(root, "scripts/compliance-check.js")]],
   ["links", [path.join(root, "scripts/link-check.js")]],
+  ["seo", [path.join(root, "scripts/seo-check.js")]],
 ];
 let failed = false;
 for (const [name, args] of steps) {
@@ -23,4 +24,4 @@ for (const [name, args] of steps) {
   }
 }
 if (failed) process.exit(1);
-console.log("check passed: build, contrast, compliance, links");
+console.log("check passed: build, contrast, compliance, links, seo");

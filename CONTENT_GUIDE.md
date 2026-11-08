@@ -72,6 +72,12 @@ Plain advice. Link to the safety and aftercare page when it exists.
 
 A numbered list becomes the numbered steps (01, 02 on a thin line): start each item with a short bold title ending in a full stop. The template then adds Prices and times, Questions (`faqs`), reviews (or a `[[TODO]]`), related treatments and the closing "See you soon." band.
 
+Consultation-only pages (every listed service is prescription) use `facts: { duration, format }` and no `resultsLast` or `downtime`; list only the consultation services you want shown. A YAML comment `# remove if price published` marks FAQs that mention a held-back price. `noindex: true` keeps a page out of search and the sitemap.
+
+## Trust page
+
+`layout: layouts/trust.njk`, in `src/content/trust/<slug>.md`, URL `/<slug>/`. Front matter: title, slug, metaTitle, metaDescription, eyebrow, lead, optional heroPhoto, `urgent: { title, intro, items }`, `routes` (eyebrow, title, text, url), routesTitle, routesLead, faqs, print. Body: `##` sections.
+
 ## Hub page
 
 ```yaml
@@ -95,7 +101,7 @@ notSure:                            # optional: defaults shown on the Facials hu
 
 Body (optional): one or two short paragraphs under the lead, no headings. The cards come from `sections.json`: every page planned for the section, in order, with "From £X" and time from `services.json` ("Free consultation" for prescription pages).
 
-## Text page
+## Text page (policies)
 
 ```yaml
 layout: layouts/text.njk
@@ -106,6 +112,7 @@ metaDescription: 70 to 160 characters, unique.
 eyebrow: Policies                  # optional
 lead: ""                           # optional
 updated: "2026-11-08"              # optional, quoted: shows "Last updated 8 November 2026"
+draft: true                        # shows the "Draft, pending legal review" note
 ```
 
 Body: Markdown with `##` and `###` headings, lists and links. It prints cleanly.

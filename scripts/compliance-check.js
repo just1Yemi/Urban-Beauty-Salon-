@@ -12,7 +12,7 @@ const srcDir = path.join(root, "src");
 
 // Case-insensitive, word boundaries (so "secure" and "detox" do not trip "cure" and "tox").
 const BANNED = [
-  "botox", "botulinum", "toxins?", "tox",
+  "botox", "botulinum", "toxins?", "tox", "hyaluronidase",
   "anti[\\s_-]*wrinkles?", "wrinkle[\\s_-]+injections?", "baby[\\s_-]+botox",
   "licen[cs]ed", "cures?", "cured", "guaranteed", "the[\\s_-]+best", "the[\\s_-]+only", "first[\\s_-]+in",
 ];

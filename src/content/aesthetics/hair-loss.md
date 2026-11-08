@@ -1,5 +1,6 @@
 ---
 # Stage 4 copy, drafted for prescriber and practitioner sign-off. Consultation required.
+# PRP: prescriber to confirm wording, the blood draw procedure and who performs it, before launch.
 # PRP wording kept neutral: cosmetic PRP is part of the government's high-risk procedures
 # consultation (closes 13 January 2027). Confirm before launch. Schema: CONTENT_GUIDE.md.
 layout: layouts/treatment.njk
@@ -7,11 +8,11 @@ title: Hair loss treatments
 slug: hair-loss
 section: aesthetics
 metaTitle: Hair loss treatments in Warrington
-metaDescription: Hair loss treatments in Penketh, Warrington, including PRP and Plinest Hair scalp treatments for thinning hair. Consultation required. Book online.
-lead: Scalp treatments for thinning hair, including PRP and Plinest Hair. Every plan starts with a consultation, because hair loss has many causes and not every type responds to treatment.
+metaDescription: Scalp treatments including PRP and Plinest Hair at The Urban Beauty Salon in Penketh, Warrington. Every plan starts with a consultation.
+lead: Scalp treatments, including PRP and Plinest Hair, for people concerned about thinning hair. Every plan starts with a consultation, because hair loss has many causes and many types do not respond to treatment.
 heroPhoto: product-shelf-mixed
 facts:
-  resultsLast: Typically needs maintenance every 6–12 months
+  resultsLast: Varies; maintenance typically every 6–12 months
   downtime: Typically 1–2 days of scalp tenderness
 services:
   - "22299470204787"
@@ -43,7 +44,7 @@ Hair loss treatments aim to support the scalp and the hair follicles that are st
 
 ### PRP (platelet-rich plasma)
 
-A small sample of your blood is taken and spun in a machine called a centrifuge to concentrate the platelets. This platelet-rich plasma is then injected into the thinning areas of the scalp. Platelets contain growth factors involved in the body’s natural repair, and PRP is thought to support hair follicles. Research is still developing and results vary from person to person. PRP is available as a single session or as a course of three.
+A small sample of your blood is taken and spun in a machine called a centrifuge to concentrate the platelets. This platelet-rich plasma is then injected into the thinning areas of the scalp. Platelets contain growth factors involved in the body’s natural repair, and PRP is used with the aim of supporting hair follicles, but the evidence is still developing and results vary, so some people see little or no change. PRP is available as a single session or as a course of three.
 
 ### Plinest Hair
 
@@ -55,7 +56,7 @@ Hair filler is a scalp injection treatment. [[TODO: confirm the hair filler prod
 
 ## Who it suits
 
-These treatments can suit adults with early to moderate thinning, such as pattern hair loss in men and women, where hair follicles are still active. They are not designed for areas that are completely bald or for scarring types of hair loss.
+These treatments may be discussed if you have early thinning and your practitioner finds active hair follicles. They are not designed for completely bald areas or scarring types of hair loss.
 
 Hair loss can be linked to iron levels, thyroid problems, hormones, stress or other health conditions. If your hair loss is sudden, patchy or rapid, or you have other symptoms, please see your GP first.
 

@@ -358,6 +358,9 @@
     });
   });
 
+  /* ---- Print button (aftercare page; hidden without JS and in print) ---- */
+  $$("[data-print]").forEach((b) => b.addEventListener("click", () => window.print()));
+
   /* ---- Style guide only: replay the logo draw-in ---- */
   $$("[data-replay-logo]").forEach((b) => b.addEventListener("click", () => {
     html.classList.remove("logo-seen");

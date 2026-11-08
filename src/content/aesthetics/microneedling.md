@@ -19,6 +19,7 @@ bookLabel: Book microneedling
 practitioner: "[[TODO: practitioner name]]"
 faqs:
   - q: How much does microneedling cost?
+    # remove if price published
     a: Price on consultation. Your practitioner confirms the cost of each session, and of any course, before you start.
   - q: Does it hurt?
     a: Most people describe a light scratching or vibrating feeling. A numbing cream is typically applied beforehand to keep you comfortable.

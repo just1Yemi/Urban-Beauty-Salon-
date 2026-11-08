@@ -11,7 +11,23 @@
 <meta name="description" content="{{ docDescription }}">{% endif %}
 {%- if noindex %}
 <meta name="robots" content="noindex, nofollow">{% else %}
-<link rel="canonical" href="{{ site.url }}{{ page.url }}">{% endif %}
+<link rel="canonical" href="{{ site.url }}{{ page.url }}">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_GB">
+<meta property="og:site_name" content="{{ site.tradingName }}">
+<meta property="og:title" content="{{ docTitle }}{% if docTitle and docTitle != site.tradingName %} | {{ site.tradingName }}{% endif %}">
+{%- if docDescription %}
+<meta property="og:description" content="{{ docDescription }}">{% endif %}
+<meta property="og:url" content="{{ site.url }}{{ page.url }}">
+<meta property="og:image" content="{{ site.url }}/assets/img/share/{{ page.url | shareSlug }}.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="{{ site.tradingName }}{% if docTitle and docTitle != site.tradingName %}: {{ docTitle }}{% endif %}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ docTitle }}{% if docTitle and docTitle != site.tradingName %} | {{ site.tradingName }}{% endif %}">
+{%- if docDescription %}
+<meta name="twitter:description" content="{{ docDescription }}">{% endif %}
+<meta name="twitter:image" content="{{ site.url }}/assets/img/share/{{ page.url | shareSlug }}.jpg">{% endif %}
 <meta name="theme-color" content="{{ '#3B302A' if hero else '#F6F1EA' }}"{% if hero %} data-hero-theme{% endif %}>
 <link rel="preload" href="/assets/fonts/jost-latin-300-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/inter-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
@@ -19,6 +35,10 @@
 <script>(function(h){h.classList.add("js");try{if(sessionStorage.getItem("ub-logo"))h.classList.add("logo-seen")}catch(e){}})(document.documentElement)</script>
 <script src="/assets/js/site.js?v={{ assetVersion }}" defer></script>
 <script type="speculationrules">{"prefetch":[{"where":{"and":[{"href_matches":"/*"},{"not":{"selector_matches":"[data-book]"}}]},"eagerness":"moderate"}]}</script>
+{%- set ld = "" | jsonld %}{% if ld %}
+{{ ld | safe }}{% endif %}
+{%- if env.production %}
+<script defer data-domain="{{ site.domain }}" src="https://plausible.io/js/script.js"></script>{% endif %}
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="/assets/img/brand/icons/urban-beauty-favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="/assets/img/brand/icons/urban-beauty-apple-touch-icon-180.png">

@@ -2,6 +2,9 @@
 # Stage 4 copy, drafted for prescriber and practitioner sign-off. Prices held back until Yemi decides.
 # Product not named: the product type is unconfirmed. If it is a prescription medicine, this page
 # must be reworked to the prescription rules in CLAUDE.md before launch. Schema: CONTENT_GUIDE.md.
+# Kept out of search (noindex, not in the sitemap or schema) until the product TODO is closed. If the
+# product is a prescription medicine, rework as a consultation-only page with no price (review finding).
+noindex: true
 layout: layouts/treatment.njk
 title: Fat dissolving
 slug: fat-dissolving
@@ -11,7 +14,7 @@ metaDescription: Fat dissolving injections in Penketh, Warrington, for small, st
 lead: Fat dissolving is a course of injections for small pockets of stubborn fat, such as under the chin or around the tummy, that have not shifted with a healthy diet and exercise.
 heroPhoto: reception-desk-detail
 facts:
-  resultsLast: Typically long term, if your weight stays stable
+  resultsLast: Discussed at your consultation
   downtime: Typically 3–7 days of swelling
 services:
   - "22265110466419"
@@ -22,10 +25,11 @@ faqs:
   - q: Is fat dissolving a weight-loss treatment?
     a: No. It is designed for small, specific areas of fat in people who are already close to a stable, healthy weight. It does not replace a healthy diet and exercise, and it does not tighten loose skin.
   - q: Are the results permanent?
-    a: Fat cells broken down by the treatment are typically not replaced. The fat cells that remain can still grow if you gain weight, so keeping your weight stable helps maintain the change.
+    a: How long any change lasts varies from person to person and depends on the product used and on keeping your weight stable. Your practitioner will explain what is realistic for you.
   - q: How many sessions will I need?
-    a: Most people need a course, typically two to four sessions about four to six weeks apart. It depends on the area and how your body responds. Your practitioner suggests a plan at your consultation.
+    a: A course is usually recommended, typically two to four sessions about four to six weeks apart. It depends on the area and how your body responds. Your practitioner suggests a plan at your consultation.
   - q: How much does fat dissolving cost?
+    # remove if price published
     a: Prices are confirmed at your consultation, once your practitioner has assessed the area and suggested a plan.
   - q: Can I go back to work the next day?
     a: Most people can. Swelling under the chin can be noticeable for several days, so it is worth planning treatment away from important events.
@@ -42,7 +46,7 @@ Fat dissolving uses a series of small injections into the layer of fat just unde
 
 [[TODO: confirm the fat dissolving product used and what it contains, for the practitioner and prescriber to describe accurately]]
 
-It is a gradual treatment. The change appears slowly over the weeks after each session, and most people need a course to reach the result they are hoping for.
+It is a gradual treatment. The change appears slowly over the weeks after each session, and a course is usually recommended.
 
 We offer two options:
 

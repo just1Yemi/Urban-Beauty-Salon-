@@ -1,12 +1,12 @@
 ---
-# Stage 4 copy, drafted for prescriber and practitioner sign-off. Schema: CONTENT_GUIDE.md.
+# Stage 4 copy, drafted for prescriber and practitioner sign-off. Prescriber to sign off the aftercare vision line. Schema: CONTENT_GUIDE.md.
 layout: layouts/treatment.njk
 title: Biostimulators
 slug: biostimulators
 section: aesthetics
 metaTitle: Biostimulators in Penketh, Warrington
 metaDescription: Sculptra and Radiesse biostimulator treatments in Penketh, Warrington, to support your skin’s own collagen. See prices and times, and book.
-lead: Biostimulators are injectable treatments that encourage your skin to make more of its own collagen, for a gradual change that builds over weeks rather than an instant one.
+lead: Biostimulators are injectable treatments designed to encourage your skin to make more of its own collagen, for a gradual change that builds over weeks rather than an instant one.
 heroPhoto: treatment-room
 facts:
   resultsLast: Typically 12–24 months
@@ -36,7 +36,7 @@ reviews: []
 
 ## What it is
 
-Collagen is the protein that gives skin its firmness and structure, and the body makes less of it as we age. This is one reason skin can look thinner or less supported over time. Biostimulators work with your skin’s own repair processes. Rather than simply filling a line, they are designed to prompt the skin to produce new collagen in the treated area.
+Collagen is the protein that gives skin its firmness and structure, and the body makes less of it as we age. This is one reason skin can look thinner or less supported over time. Biostimulators are designed to work with your skin’s own repair processes. Rather than simply filling a line, they are designed to prompt the skin to produce new collagen in the treated area.
 
 We offer two biostimulators.
 
@@ -69,4 +69,5 @@ They are not suitable if you are under 18, pregnant or breastfeeding, or have a 
 - Avoid strenuous exercise, saunas, steam rooms and alcohol for 24 hours.
 - After Sculptra, you are typically asked to massage the area for five minutes, five times a day, for five days. Your practitioner shows you how.
 - Wear a high-factor sunscreen and avoid other facial treatments for about two weeks unless your practitioner advises otherwise.
-- Contact us straight away if you notice pain that is getting worse, a pale, dusky or blotchy patch of skin, or signs of infection such as heat and spreading redness. [[TODO: aftercare contact hours and the urgent out-of-hours route, from Yemi]]
+- If you notice any change to your vision, call 999 or go to A&E straight away, then let us know.
+- Contact us straight away if you notice pain that is getting worse, a pale, dusky or blotchy patch of skin, or signs of infection such as heat, spreading redness or fever. [[TODO: aftercare contact hours and the urgent out-of-hours route, from Yemi]]

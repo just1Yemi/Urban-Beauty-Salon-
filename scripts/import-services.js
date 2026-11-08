@@ -77,14 +77,14 @@ const OVERRIDES = {
   // Dermal filler
   "derma filler: 1ml": { clean: "Dermal Filler: 1ml" },
   "derma filler: chin filler/mid face enhancement": { clean: "Dermal Filler: Chin & Mid Face Enhancement" },
-  "derma filler: dissolving & refill": { clean: "Dermal Filler: Dissolving & Refill" },
-  "derma filler: filler dissolving": { clean: "Dermal Filler: Filler Dissolving" },
+  "derma filler: dissolving & refill": { clean: "Dermal Filler: Dissolving & Refill", publicName: "Filler review consultation", note: "Filler dissolving uses a prescription-only medicine, so it is treated like the lines and wrinkles consultation: no price or offer on the site. Needs the prescriber to confirm. Phorest names and prices need changing too." },
+  "derma filler: filler dissolving": { clean: "Dermal Filler: Filler Dissolving", publicName: "Filler review consultation" },
   "derma filler: jaw lines 2mlsl": { clean: "Dermal Filler: Jawline 2ml", note: "Phorest says '2MLSL'. Assumed this means 2ml. Please confirm." },
   "derma filler: jaw lines 1ml": { clean: "Dermal Filler: Jawline 1ml" },
   "derma filler: lip filler 0.5ml": { clean: "Dermal Filler: Lip Filler 0.5ml" },
   "derma filler: marionate line": { clean: "Dermal Filler: Marionette Lines" },
   "derma filler: nasolabial fold (smile line)": { clean: "Dermal Filler: Nasolabial Folds (Smile Lines)" },
-  "derma filler: tear trough for refresged youth eye": { clean: "Dermal Filler: Tear Trough for Refreshed Eyes" },
+  "derma filler: tear trough for refresged youth eye": { clean: "Dermal Filler: Tear Trough", note: "Phorest says 'Tear Trough for Refreshed Eyes'. Shortened so the name makes no result promise. Confirm." },
   "derma filler: upper lip lines (smoker lines)": { clean: "Dermal Filler: Upper Lip Lines", note: "Dropped '(smoker lines)' from the name as it can read as judgemental. Confirm you are happy." },
   "dermo filler: chin enhancement": { clean: "Dermal Filler: Chin Enhancement", note: "Looks similar to 'Chin & Mid Face Enhancement' (£180 vs 160). Are these two different treatments?" },
   // Fat dissolving
@@ -144,7 +144,47 @@ const OVERRIDES = {
   "add 25 minute back massage to any facial": { clean: "Add 25 Minute Back Massage to Any Facial" },
 };
 
-const PRESCRIPTION = /^(anti wrinkles injection|hyperhidrosis|teeth grinding)/;
+// Prescription-only medicines: toxin services and filler dissolving (hyaluronidase). No price, offer or name on the site.
+const PRESCRIPTION = /^(anti wrinkles injection|hyperhidrosis|teeth grinding|derma filler: (filler )?dissolving)/;
+
+// Names shown on price lists (Aesthetics only): no "Category: " prefix, sentence case.
+const MENU = {
+  "22419729289075": "Lip filler, 0.5ml",
+  "22436909158259": "Dermal filler, 1ml [[TODO: which area the 1ml filler is for]]",
+  "22454089027443": "Chin and mid-face enhancement",
+  "22471268896627": "Chin enhancement",
+  "22557168242547": "Jawline, 1ml",
+  "22574348111731": "Jawline, 2ml",
+  "22488448765811": "Nasolabial folds (smile lines)",
+  "22505628634995": "Marionette lines",
+  "22522808504179": "Upper lip lines",
+  "22539988373363": "Tear trough",
+  "22299470204787": "PRP, one session",
+  "22316650073971": "PRP, course of three",
+  "22351009812339": "Plinest Hair",
+  "22333829943155": "Hair filler",
+  "22127671512947": "Newest (polynucleotide and hyaluronic acid)",
+  "22093311774579": "Plinest Eye",
+  "22110491643763": "Plinest Fast",
+  "22196390989683": "Rejuran HB",
+  "22179211120499": "Rejuran Healer",
+  "22213570858867": "Rejuran S",
+  "22144851382131": "Vitaran Eye",
+  "22162031251315": "Vitaran Face",
+  "22007412428659": "Profhilo",
+  "21990232559475": "Jalupro Super Hydro",
+  "22024592297843": "Seventy Hyal",
+  "22041772167027": "Juvederm Volite",
+  "22058952036211": "RRS Long Lasting",
+  "22076131905395": "RRS Hyalift",
+  "22230750728051": "Sculptra (PLLA)",
+  "22247930597235": "Radiesse (CaHA)",
+  "22385369550707": "Acne scars",
+  "22368189681523": "Hydration and glow",
+  "22402549419891": "Pigmentation",
+  "22265110466419": "Face, one area",
+  "22282290335603": "Body, one area",
+};
 
 // ---------- Section and page mapping (Services and pricing table in the website plan) ----------
 const CATEGORY_MAP = {
@@ -164,8 +204,8 @@ const CATEGORY_MAP = {
 };
 
 function aestheticsPage(n) {
-  if (PRESCRIPTION.test(n)) return "lines-and-wrinkles-consultation";
   if (/^(derma|dermo) filler/.test(n)) return "dermal-fillers";
+  if (PRESCRIPTION.test(n)) return "lines-and-wrinkles-consultation";
   if (n.startsWith("skin booster")) return "skin-boosters";
   if (n.startsWith("polynuclotide") || n.startsWith("newest")) return "polynucleotides";
   if (n.startsWith("biostimulator")) return "biostimulators";
@@ -221,6 +261,7 @@ const services = rows.map((r) => {
     rawName,
     cleanName,
     publicName,
+    ...(MENU[r.service_id] ? { menuName: MENU[r.service_id] } : {}),
     phorestCategory: r.category_name,
     section,
     websiteSection,

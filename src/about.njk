@@ -1,0 +1,83 @@
+---
+layout: layouts/base.njk
+permalink: /about/index.html
+title: About the salon
+metaTitle: About us and our practitioners, Penketh
+metaDescription: Meet The Urban Beauty Salon in Penketh, Warrington, open since 2013. Our practitioners, their registrations, training and insurance, and how we work.
+progress: true
+---
+{#- About (Stage 7). Facts from site.json and practitioners.json. The salon story, practitioner names, registrations, training,
+    insurance and treatments are placeholders until Yemi supplies them: never invent them (CLAUDE.md). -#}
+{%- import "ui.njk" as ui with context -%}
+{%- set people = practitioners.people | dictsort -%}
+
+<header class="page-head">
+<div class="wrap page-head__grid">
+<div class="page-head__text">
+<div class="section-head__title">
+<span class="section-head__word" aria-hidden="true">About</span>
+<p class="eyebrow">About · Est. {{ site.established }}</p>
+<h1 style="--d:80ms">About the salon</h1>
+</div>
+<p class="lead" style="--d:160ms">The Urban Beauty Salon has looked after clients in Penketh, Warrington since {{ site.established }}.</p>
+<div class="btn-row" style="--d:240ms">{{ ui.button("Book now", book=true) }}{{ ui.more("Meet the practitioners", "#team") }}</div>
+</div>
+<div class="page-head__media" style="--d:120ms"><div class="frame">{{ ui.picture("pampas", sizes="(min-width: 64em) 36vw, (min-width: 40em) 90vw, 100vw", ratio="45", priority=true) }}</div></div>
+</div>
+</header>
+
+<section class="section section--tight" aria-labelledby="story">
+<div class="wrap">
+<div class="split split--flip">
+<div class="stack" data-reveal>
+{{ ui.eyebrow("Our story") }}
+<h2 class="h3" id="story">Penketh since {{ site.established }}</h2>
+<p>{{ "[[TODO: the salon story from Yemi: how it began, what it stands for and what has changed, in two or three short paragraphs]]" | todo | safe }}</p>
+<p>{{ "[[TODO: a short quote or line from Yemi, if she would like one on the page]]" | todo | safe }}</p>
+<div class="stack-s" style="margin-top:var(--s-5)">
+{{ ui.stat(site.reviews.count, "Five-star reviews on " ~ site.reviews.source ~ " since " ~ site.reviews.since.slice(0, 4)) }}
+</div>
+</div>
+<div data-reveal="wipe" style="--d:120ms;display:grid;place-items:center">{{ ui.seal(cls="seal--lg", id="seal-about") }}</div>
+</div>
+</div>
+</section>
+
+<section class="section section--deep" aria-labelledby="how" style="--bg:var(--c-ivory-deep)">
+<div class="wrap">
+{{ ui.sectionHead("How we work", eyebrow="Our approach", id="how") }}
+<ul class="hubs" role="list" data-stagger="110">
+<li class="hub" data-reveal>{{ ui.eyebrow("Consultation first", 1) }}<h3 class="h4">A conversation before anything else</h3><p>Every aesthetics treatment starts with a consultation about your health and what you would like to change, and there is no pressure to go ahead.</p></li>
+<li class="hub" data-reveal>{{ ui.eyebrow("Clear and honest", 2) }}<h3 class="h4">Plain answers</h3><p>We explain what each treatment involves, what it can and cannot do, the possible risks and the cost, in plain English.</p></li>
+<li class="hub" data-reveal>{{ ui.eyebrow("Safe and calm", 3) }}<h3 class="h4">Looked after, start to finish</h3><p>Aftercare advice, a clear route to contact us and a calm, private space. See our <a class="link" href="/aftercare/">safety and aftercare page</a>.</p></li>
+</ul>
+</div>
+</section>
+
+<section class="section" id="team" aria-labelledby="team-title">
+<div class="wrap">
+{{ ui.sectionHead("Your practitioners", eyebrow="The team", word="Team", id="team-title", lead="Each practitioner is listed with their registration, training, insurance and the treatments they perform or prescribe, so you can check before you book.") }}
+<div class="grid grid--3" data-stagger="110">
+{%- if people.length %}
+{%- for id, p in people %}<div data-reveal>{{ ui.pcard(p) }}</div>{% endfor %}
+{%- else %}
+{%- for i in range(0, 3) %}<div data-reveal>{{ ui.pcard({}) }}</div>{% endfor %}
+{%- endif %}
+</div>
+<p class="small soft" style="margin-top:var(--s-5)">{{ "[[TODO: Yemi to supply every practitioner's name, role, photo, registration body and number, link to the register, training, insurance and treatments performed or prescribed. Add them to src/_data/practitioners.json]]" | todo | safe }}</p>
+</div>
+</section>
+
+<section class="section section--deep" aria-labelledby="company" style="--bg:var(--c-ivory-deep)">
+<div class="wrap wrap--narrow">
+{{ ui.sectionHead("Business details", eyebrow="Registered company", id="company") }}
+<dl class="pcard__facts" data-reveal>
+<div><dt>Company</dt><dd>{{ site.legalName }}, trading as {{ site.tradingName }}</dd></div>
+<div><dt>Registered in</dt><dd>England and Wales, company number {{ site.companyNumber | todo | safe }}</dd></div>
+<div><dt>Registered office</dt><dd>{{ site.registeredOffice | todo | safe }}</dd></div>
+<div><dt>Salon address</dt><dd>{{ site.address.oneLine }}</dd></div>
+<div><dt>ICO registration</dt><dd>{{ site.icoNumber | todo | safe }}</dd></div>
+</dl>
+<div class="btn-row" style="margin-top:var(--s-5)">{{ ui.button("Visit and contact", href="/contact/", style="outline") }}{{ ui.button("Your first visit", href="/consultation/", style="outline") }}</div>
+</div>
+</section>

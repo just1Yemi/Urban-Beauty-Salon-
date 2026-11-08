@@ -1,11 +1,4 @@
 {
   "note": "Pages linked from the header, menu and footer that later stages will build. The link check reports these as pending instead of failing. Remove each URL when its page exists; Stage 9 must leave this list empty.",
-  "pending": [
-    "/about/",
-    "/contact/",
-    "/privacy/",
-    "/cookies/",
-    "/cancellation-policy/",
-    "/booking-terms/"
-  ]
+  "pending": []
 }

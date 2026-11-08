@@ -6,6 +6,10 @@
     { "label": "About", "url": "/about/" },
     { "label": "Contact", "url": "/contact/" }
   ],
+  "info": [
+    { "label": "Your first visit", "url": "/consultation/" },
+    { "label": "Safety and aftercare", "url": "/aftercare/" }
+  ],
   "policies": [
     { "label": "Privacy", "url": "/privacy/" },
     { "label": "Cookies", "url": "/cookies/" },

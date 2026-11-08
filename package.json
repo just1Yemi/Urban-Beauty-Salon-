@@ -13,7 +13,8 @@
     "fonts": "node scripts/copy-fonts.js",
     "contrast": "node scripts/contrast-check.js",
     "lh": "node scripts/lh.js",
-    "review-docs": "node scripts/make-review-docs.js"
+    "review-docs": "node scripts/make-review-docs.js",
+    "share-images": "node scripts/make-share-images.js"
   },
   "devDependencies": {
     "@11ty/eleventy": "^3.1.8",

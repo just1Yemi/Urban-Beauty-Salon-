@@ -13,6 +13,8 @@ progress: true
 <p class="lead" style="--d:160ms">{{ lead | todo | safe }}</p>{% endif %}
 {%- if updated %}
 <p class="small soft" style="--d:200ms">Last updated <time datetime="{{ updated }}">{{ updated | dateLong }}</time></p>{% endif %}
+{%- if draft %}
+<div style="--d:240ms">{{ ui.callout("Draft, pending legal review", "<p>This page is a plain-English draft. A solicitor has not reviewed it yet, and anything highlighted in yellow still needs to be confirmed by the salon.</p>", ico="alert", cls="callout--quiet") }}</div>{% endif %}
 </div>
 </header>
 <div class="section section--tight">

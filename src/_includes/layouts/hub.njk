@@ -35,7 +35,7 @@ layout: layouts/base.njk
 <div class="wrap">
 {{ ui.sectionHead(cardsTitle or ("Our " ~ (sec.label | lower)), eyebrow=(cards.length ~ " treatments"), id="treatments", lead=cardsLead) }}
 <div class="grid grid--3" data-stagger="110">
-{%- for c in cards %}{{ ui.tcard(c.name, c.url, c.photo or ("card for " ~ c.name), detail=c.detail, eyebrow=(sec.label ~ " · " ~ (c.num | pad2)), text=c.text, from=c.offer.from, mins=c.offer.fromMins, level=3, note=("Free consultation" if c.offer.consultation else "")) }}{% endfor %}
+{%- for c in cards %}{{ ui.tcard(c.name, c.url, c.photo or ("card for " ~ c.name), detail=c.detail, eyebrow=(sec.label ~ " · " ~ (c.num | pad2)), text=c.text, from=c.offer.from, mins=c.offer.fromMins, level=3, note=("Free consultation" if c.offer.consultation else ("Price on consultation" if c.offer.heldBack else ""))) }}{% endfor %}
 </div>
 </div>
 </section>

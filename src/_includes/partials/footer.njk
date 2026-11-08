@@ -32,6 +32,7 @@
 <h2 class="eyebrow" id="ft-explore">Explore</h2>
 <ul class="footer__list" role="list">
 {%- for item in nav.main %}<li><a class="link-draw" href="{{ item.url }}">{{ item.label }}</a></li>{% endfor %}
+{%- for item in nav.info %}<li><a class="link-draw" href="{{ item.url }}">{{ item.label }}</a></li>{% endfor %}
 <li><a class="link-draw" href="{{ site.booking.url }}" data-book>Book now</a></li>
 </ul>
 </nav>

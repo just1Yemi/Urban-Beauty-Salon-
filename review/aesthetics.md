@@ -43,7 +43,7 @@ Tell us what you would like to change and we will talk you through the options, 
 
 ### Page copy
 
-Every aesthetics treatment starts with a consultation. Your practitioner asks about your health, listens to what you would like to change and explains what each option involves, what it can and cannot do, and the risks, before anything is booked. There is never any pressure to go ahead.
+Every aesthetics treatment starts with a consultation. Your practitioner asks about your health, listens to what you would like to change and explains what each option involves, what it can and cannot do, and the risks, before any treatment goes ahead. There is never any pressure to go ahead.
 
 Aesthetic treatments are for adults aged 18 and over. [[TODO: practitioner names, roles, registration numbers and which treatments each performs]]
 
@@ -62,8 +62,8 @@ Aesthetic treatments are for adults aged 18 and over. [[TODO: practitioner names
 - **Description (search results):** A free, private consultation about lines and wrinkles at The Urban Beauty Salon in Penketh, Warrington. Talk through your options with no obligation.
 - **Practitioner shown:** [[TODO: practitioner name]]
 - **Book button:** Book a free consultation
-- **Booking menu entries linked:** Lines and wrinkles consultation; Excessive sweating consultation; Teeth grinding consultation
-- **Quick facts:** duration: 60 min | resultsLast: Discussed at your consultation | downtime: None for the consultation
+- **Booking menu entries linked:** Lines and wrinkles consultation
+- **Quick facts:** duration: 60 min | format: Private, face to face
 
 ### Introduction
 
@@ -79,15 +79,11 @@ Your practitioner looks at your skin, asks about your health and talks you throu
 
 The consultation is free, and there is no obligation to go ahead with anything.
 
-### Other consultations
-
-We also offer free consultations for excessive sweating and for teeth grinding. These follow the same approach: a private conversation about your concern, your health and your options.
-
 #### Who it suits
 
-The consultation suits any adult who would like expert, impartial advice about lines and wrinkles, whether you have had aesthetic treatments before or are simply curious. You must be 18 or over.
+The consultation suits any adult who would like clear, honest advice about lines and wrinkles, whether you have had aesthetic treatments before or are simply curious. You must be 18 or over.
 
-It is a good place to start if you are not sure what you need, would like to understand your options before deciding, or have had treatment elsewhere and want a second opinion. Please tell us about any medical conditions, medicines or allergies when you book, so your practitioner can take them into account.
+It is a good place to start if you are not sure what you need, would like to understand your options before deciding, or would simply like a second opinion. Please tell us about any medical conditions, medicines or allergies when you book, so your practitioner can take them into account.
 
 #### What to expect
 
@@ -114,10 +110,6 @@ No. You can take as long as you need to think things over, ask more questions or
 **Who will I see?**
 
 [[TODO: practitioner name, role and registration, confirmed for this consultation]]
-
-**Can I book a consultation for excessive sweating or teeth grinding?**
-
-Yes. Both are free consultations and follow the same approach: a private conversation about your concern, your health and your options.
 
 **Is there an age limit?**
 
@@ -147,7 +139,7 @@ Yes. Consultations are for adults aged 18 and over.
 - **Description (search results):** Dermal and lip fillers at The Urban Beauty Salon in Penketh, Warrington: lips, chin, jawline, mid-face and lines. Consultation first. See prices and book.
 - **Practitioner shown:** [[TODO: practitioner name]]
 - **Book button:** Book dermal fillers
-- **Booking menu entries linked:** Dermal Filler: Lip Filler 0.5ml; Dermal Filler: 1ml; Dermal Filler: Chin Enhancement; Dermal Filler: Chin & Mid Face Enhancement; Dermal Filler: Jawline 1ml; Dermal Filler: Jawline 2ml; Dermal Filler: Nasolabial Folds (Smile Lines); Dermal Filler: Marionette Lines; Dermal Filler: Upper Lip Lines; Dermal Filler: Tear Trough for Refreshed Eyes; Dermal Filler: Filler Dissolving; Dermal Filler: Dissolving & Refill
+- **Booking menu entries linked:** Dermal Filler: Lip Filler 0.5ml; Dermal Filler: 1ml; Dermal Filler: Chin Enhancement; Dermal Filler: Chin & Mid Face Enhancement; Dermal Filler: Jawline 1ml; Dermal Filler: Jawline 2ml; Dermal Filler: Nasolabial Folds (Smile Lines); Dermal Filler: Marionette Lines; Dermal Filler: Upper Lip Lines; Dermal Filler: Tear Trough
 - **Quick facts:** resultsLast: Typically 6–18 months, depending on the area | downtime: Typically a few days of swelling or bruising
 
 ### Introduction
@@ -162,7 +154,7 @@ Dermal fillers are soft gels, most often made from hyaluronic acid, a substance 
 
 Our menu covers lip filler, chin and mid-face enhancement, jawline definition, smile lines (nasolabial folds), marionette lines, upper lip lines and the tear trough area under the eyes. Your practitioner will help you decide which areas, and how much product, make sense for you. Hyaluronic acid fillers break down gradually over time, so they are not permanent.
 
-If you have filler you are unhappy with, including filler from another clinic, we also offer filler dissolving and dissolving with a refill, after an assessment.
+If you are unhappy with filler, including filler from another clinic, book a free filler review consultation. Your practitioner will assess the area and explain your options. [[TODO: Yemi and the prescriber to confirm the filler review consultation is offered, and to create it as a service in Phorest]]
 
 #### Who it suits
 
@@ -185,7 +177,7 @@ Your practitioner will give you aftercare advice in writing. Typical advice for 
 - avoid alcohol, strenuous exercise, saunas, steam rooms and sunbeds
 - sleep with your head slightly raised on the first night
 
-Contact us straight away if you notice severe or increasing pain, a pale or dusky patch of skin, changes to your vision, or signs of infection such as heat, spreading redness or fever. [[TODO: aftercare contact hours and how out-of-hours concerns are escalated]]
+If you notice any change to your vision, call 999 or go to A&E straight away, then let us know. Contact us straight away if you notice severe or increasing pain, a pale, dusky or blotchy patch of skin, or signs of infection such as heat, spreading redness or fever. [[TODO: aftercare contact hours and how out-of-hours concerns are escalated]]
 
 ### Questions and answers
 
@@ -201,9 +193,9 @@ Most people describe a pinching or pressure feeling. Many fillers contain a loca
 
 It varies with the area treated, the product and your own body. Results typically last between 6 and 18 months, with lips usually at the shorter end of that range.
 
-**Can filler be dissolved?**
+**I am unhappy with filler I had elsewhere. Can you help?**
 
-Yes. Hyaluronic acid fillers can usually be dissolved. Filler dissolving is offered after an assessment, including for filler you had elsewhere.
+Book a filler review consultation. Your practitioner will assess the area and talk you through your options.
 
 **Is there an age limit?**
 
@@ -223,6 +215,7 @@ Yes. By law, dermal fillers are not available to anyone under 18.
 - [ ] Aftercare (first 24 to 48 hours): avoid touching or pressing the area, no make-up on the area for the rest of the day, avoid alcohol, strenuous exercise, saunas, steam rooms and sunbeds, sleep with the head slightly raised on the first night
 - [ ] Red flags: contact straight away for severe or increasing pain, a pale or dusky patch of skin, changes to vision, or signs of infection (heat, spreading redness, fever)
 - [ ] Open placeholder: [[TODO: practitioner name]]
+- [ ] Open placeholder: [[TODO: Yemi and the prescriber to confirm the filler review consultation is offered, and to create it as a service in Phorest]]
 - [ ] Open placeholder: [[TODO: aftercare contact hours and how out-of-hours concerns are escalated]]
 
 ---
@@ -231,7 +224,7 @@ Yes. By law, dermal fillers are not available to anyone under 18.
 
 - **URL:** /aesthetics/skin-boosters/
 - **Page title (search results):** Skin boosters and Profhilo, Warrington
-- **Description (search results):** Skin boosters including Profhilo at The Urban Beauty Salon in Penketh, Warrington, to improve hydration and skin quality. Consultation first. Book online.
+- **Description (search results):** Skin boosters including Profhilo at The Urban Beauty Salon in Penketh, Warrington, designed to improve hydration and skin quality. Book online.
 - **Practitioner shown:** [[TODO: practitioner name]]
 - **Book button:** Book skin boosters
 - **Booking menu entries linked:** Skin Booster: Profhilo; Skin Booster: Jalupro Super Hydro; Skin Booster: Seventy Hyal; Skin Booster: Juvederm Volite; Skin Booster: RRS Long Lasting; Skin Booster: RRS Hyalift
@@ -239,7 +232,7 @@ Yes. By law, dermal fillers are not available to anyone under 18.
 
 ### Introduction
 
-Skin boosters place hyaluronic acid within the skin to improve hydration and skin quality, without changing the shape of your face.
+Skin boosters place hyaluronic acid within the skin and are designed to improve hydration and skin quality, without changing the shape of your face.
 
 ### Page copy
 
@@ -248,8 +241,6 @@ Skin boosters place hyaluronic acid within the skin to improve hydration and ski
 Skin boosters are treatments that place small amounts of hyaluronic acid, a substance found naturally in the skin, within the skin itself. Rather than adding volume to one area, they are designed to improve hydration, texture and the overall quality of the skin.
 
 We offer several skin boosters: Profhilo, Jalupro Super Hydro, Seventy Hyal, Juvederm Volite, RRS Long Lasting and RRS Hyalift. They differ in their ingredients, how they spread within the skin and how many sessions are usually advised. Your practitioner will recommend the one that suits your skin and explain why.
-
-Profhilo is priced on consultation.
 
 #### Who it suits
 
@@ -308,6 +299,7 @@ It depends on your skin, the area and what you would like to improve. Your pract
 - [ ] Not usually suitable during pregnancy or breastfeeding, with an active skin infection in the area, or with certain medical conditions
 - [ ] Open placeholder: [[TODO: practitioner name]]
 - [ ] Open placeholder: [[TODO: aftercare contact hours and how out-of-hours concerns are escalated]]
+- [ ] Open placeholder: [[TODO: price held back until Yemi decides; the page shows "Price on consultation" meanwhile]]
 
 ---
 
@@ -406,13 +398,13 @@ Changes build gradually over the weeks after a course rather than straight away.
 
 ### Introduction
 
-Biostimulators are injectable treatments that encourage your skin to make more of its own collagen, for a gradual change that builds over weeks rather than an instant one.
+Biostimulators are injectable treatments designed to encourage your skin to make more of its own collagen, for a gradual change that builds over weeks rather than an instant one.
 
 ### Page copy
 
 #### What it is
 
-Collagen is the protein that gives skin its firmness and structure, and the body makes less of it as we age. This is one reason skin can look thinner or less supported over time. Biostimulators work with your skin’s own repair processes. Rather than simply filling a line, they are designed to prompt the skin to produce new collagen in the treated area.
+Collagen is the protein that gives skin its firmness and structure, and the body makes less of it as we age. This is one reason skin can look thinner or less supported over time. Biostimulators are designed to work with your skin’s own repair processes. Rather than simply filling a line, they are designed to prompt the skin to produce new collagen in the treated area.
 
 We offer two biostimulators.
 
@@ -445,7 +437,8 @@ They are not suitable if you are under 18, pregnant or breastfeeding, or have a 
 - Avoid strenuous exercise, saunas, steam rooms and alcohol for 24 hours.
 - After Sculptra, you are typically asked to massage the area for five minutes, five times a day, for five days. Your practitioner shows you how.
 - Wear a high-factor sunscreen and avoid other facial treatments for about two weeks unless your practitioner advises otherwise.
-- Contact us straight away if you notice pain that is getting worse, a pale, dusky or blotchy patch of skin, or signs of infection such as heat and spreading redness. [[TODO: aftercare contact hours and the urgent out-of-hours route, from Yemi]]
+- If you notice any change to your vision, call 999 or go to A&E straight away, then let us know.
+- Contact us straight away if you notice pain that is getting worse, a pale, dusky or blotchy patch of skin, or signs of infection such as heat, spreading redness or fever. [[TODO: aftercare contact hours and the urgent out-of-hours route, from Yemi]]
 
 ### Questions and answers
 
@@ -581,6 +574,7 @@ Yes, it can be planned alongside facials such as CACI or COMCIT, with suitable g
 - [ ] 'Price on consultation' wording (prices held back until Yemi decides)
 - [ ] Open placeholder: [[TODO: practitioner name]]
 - [ ] Open placeholder: [[TODO: aftercare contact hours and the out-of-hours route, from Yemi]]
+- [ ] Open placeholder: [[TODO: price held back until Yemi decides; the page shows "Price on consultation" meanwhile]]
 
 ---
 
@@ -592,7 +586,7 @@ Yes, it can be planned alongside facials such as CACI or COMCIT, with suitable g
 - **Practitioner shown:** [[TODO: practitioner name]]
 - **Book button:** Book a consultation
 - **Booking menu entries linked:** Fat Dissolving: Face, One Area; Fat Dissolving: Body, One Area
-- **Quick facts:** resultsLast: Typically long term, if your weight stays stable | downtime: Typically 3–7 days of swelling
+- **Quick facts:** resultsLast: Discussed at your consultation | downtime: Typically 3–7 days of swelling
 
 ### Introduction
 
@@ -606,7 +600,7 @@ Fat dissolving uses a series of small injections into the layer of fat just unde
 
 [[TODO: confirm the fat dissolving product used and what it contains, for the practitioner and prescriber to describe accurately]]
 
-It is a gradual treatment. The change appears slowly over the weeks after each session, and most people need a course to reach the result they are hoping for.
+It is a gradual treatment. The change appears slowly over the weeks after each session, and a course is usually recommended.
 
 We offer two options:
 
@@ -642,11 +636,11 @@ No. It is designed for small, specific areas of fat in people who are already cl
 
 **Are the results permanent?**
 
-Fat cells broken down by the treatment are typically not replaced. The fat cells that remain can still grow if you gain weight, so keeping your weight stable helps maintain the change.
+How long any change lasts varies from person to person and depends on the product used and on keeping your weight stable. Your practitioner will explain what is realistic for you.
 
 **How many sessions will I need?**
 
-Most people need a course, typically two to four sessions about four to six weeks apart. It depends on the area and how your body responds. Your practitioner suggests a plan at your consultation.
+A course is usually recommended, typically two to four sessions about four to six weeks apart. It depends on the area and how your body responds. Your practitioner suggests a plan at your consultation.
 
 **How much does fat dissolving cost?**
 
@@ -675,6 +669,7 @@ Most people can. Swelling under the chin can be noticeable for several days, so 
 - [ ] Open placeholder: [[TODO: confirm the fat dissolving product used and what it contains, for the practitioner and prescriber to describe accurately]]
 - [ ] Open placeholder: [[TODO: whether to massage the treated area or leave it alone, which depends on the product]]
 - [ ] Open placeholder: [[TODO: aftercare contact hours and the out-of-hours route, from Yemi]]
+- [ ] Open placeholder: [[TODO: price held back until Yemi decides; the page shows "Price on consultation" meanwhile]]
 
 ---
 
@@ -682,15 +677,15 @@ Most people can. Swelling under the chin can be noticeable for several days, so 
 
 - **URL:** /aesthetics/hair-loss/
 - **Page title (search results):** Hair loss treatments in Warrington
-- **Description (search results):** Hair loss treatments in Penketh, Warrington, including PRP and Plinest Hair scalp treatments for thinning hair. Consultation required. Book online.
+- **Description (search results):** Scalp treatments including PRP and Plinest Hair at The Urban Beauty Salon in Penketh, Warrington. Every plan starts with a consultation.
 - **Practitioner shown:** [[TODO: practitioner name]]
 - **Book button:** Book a consultation
 - **Booking menu entries linked:** Hair Treatment: PRP, One Session; Hair Treatment: PRP, Three Sessions; Hair Treatment: Plinest Hair; Hair Treatment: Hair Filler
-- **Quick facts:** resultsLast: Typically needs maintenance every 6–12 months | downtime: Typically 1–2 days of scalp tenderness
+- **Quick facts:** resultsLast: Varies; maintenance typically every 6–12 months | downtime: Typically 1–2 days of scalp tenderness
 
 ### Introduction
 
-Scalp treatments for thinning hair, including PRP and Plinest Hair. Every plan starts with a consultation, because hair loss has many causes and not every type responds to treatment.
+Scalp treatments, including PRP and Plinest Hair, for people concerned about thinning hair. Every plan starts with a consultation, because hair loss has many causes and many types do not respond to treatment.
 
 ### Page copy
 
@@ -700,7 +695,7 @@ Hair loss treatments aim to support the scalp and the hair follicles that are st
 
 ### PRP (platelet-rich plasma)
 
-A small sample of your blood is taken and spun in a machine called a centrifuge to concentrate the platelets. This platelet-rich plasma is then injected into the thinning areas of the scalp. Platelets contain growth factors involved in the body’s natural repair, and PRP is thought to support hair follicles. Research is still developing and results vary from person to person. PRP is available as a single session or as a course of three.
+A small sample of your blood is taken and spun in a machine called a centrifuge to concentrate the platelets. This platelet-rich plasma is then injected into the thinning areas of the scalp. Platelets contain growth factors involved in the body’s natural repair, and PRP is used with the aim of supporting hair follicles, but the evidence is still developing and results vary, so some people see little or no change. PRP is available as a single session or as a course of three.
 
 ### Plinest Hair
 
@@ -712,7 +707,7 @@ Hair filler is a scalp injection treatment. [[TODO: confirm the hair filler prod
 
 #### Who it suits
 
-These treatments can suit adults with early to moderate thinning, such as pattern hair loss in men and women, where hair follicles are still active. They are not designed for areas that are completely bald or for scarring types of hair loss.
+These treatments may be discussed if you have early thinning and your practitioner finds active hair follicles. They are not designed for completely bald areas or scarring types of hair loss.
 
 Hair loss can be linked to iron levels, thyroid problems, hormones, stress or other health conditions. If your hair loss is sudden, patchy or rapid, or you have other symptoms, please see your GP first.
 
@@ -784,19 +779,23 @@ Yes. Thinning hair affects men and women, and the treatments can suit both. Your
 - **Lines and wrinkles consultation:** [[TODO: practitioner name, role and registration, confirmed for this consultation]]
 - **Lines and wrinkles consultation:** [[TODO: confirm whether any treatment can follow on the same day or only after a cooling-off period]]
 - **Dermal fillers:** [[TODO: practitioner name]]
+- **Dermal fillers:** [[TODO: Yemi and the prescriber to confirm the filler review consultation is offered, and to create it as a service in Phorest]]
 - **Dermal fillers:** [[TODO: aftercare contact hours and how out-of-hours concerns are escalated]]
 - **Skin boosters:** [[TODO: practitioner name]]
 - **Skin boosters:** [[TODO: aftercare contact hours and how out-of-hours concerns are escalated]]
+- **Skin boosters:** [[TODO: price held back until Yemi decides; the page shows "Price on consultation" meanwhile]]
 - **Polynucleotides:** [[TODO: practitioner name]]
 - **Polynucleotides:** [[TODO: aftercare contact hours and how out-of-hours concerns are escalated]]
 - **Biostimulators:** [[TODO: practitioner name]]
 - **Biostimulators:** [[TODO: aftercare contact hours and the urgent out-of-hours route, from Yemi]]
 - **Microneedling:** [[TODO: practitioner name]]
 - **Microneedling:** [[TODO: aftercare contact hours and the out-of-hours route, from Yemi]]
+- **Microneedling:** [[TODO: price held back until Yemi decides; the page shows "Price on consultation" meanwhile]]
 - **Fat dissolving:** [[TODO: practitioner name]]
 - **Fat dissolving:** [[TODO: confirm the fat dissolving product used and what it contains, for the practitioner and prescriber to describe accurately]]
 - **Fat dissolving:** [[TODO: whether to massage the treated area or leave it alone, which depends on the product]]
 - **Fat dissolving:** [[TODO: aftercare contact hours and the out-of-hours route, from Yemi]]
+- **Fat dissolving:** [[TODO: price held back until Yemi decides; the page shows "Price on consultation" meanwhile]]
 - **Hair loss treatments:** [[TODO: practitioner name]]
 - **Hair loss treatments:** [[TODO: confirm the hair filler product, what it contains and how it works, for the practitioner to describe accurately]]
 - **Hair loss treatments:** [[TODO: aftercare contact hours and the out-of-hours route, from Yemi]]

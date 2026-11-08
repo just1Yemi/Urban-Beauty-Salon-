@@ -69,6 +69,26 @@ Reveals: `data-reveal` is for **below-the-fold content only** (it waits for site
 | `contactForm(formName, demo, state, idp, action)` | `demo=true` = style guide (nothing sent); `state` `error` / `success` for static previews; `action` defaults to `/contact/#<idp>-sent` | Netlify Forms (`data-netlify`, `netlify-honeypot="bot-field"`, hidden `form-name`). site.js validates, posts by fetch and shows the calm success panel (`role=status`, focused); without JS Netlify returns to `action` and `:target` shows the panel. Reply time is a `[[TODO]]` |
 | `map()` | none | Brand-coloured OpenStreetMap map: `scripts/make-map.js` renders `src/_includes/map.svg` (about 21 KB, inlined so street names use the page font) from cached OSM data in `scripts/data/osm-penketh.json`; `--refresh` fetches the Overpass API again. The salon sits at 50% across and 42% down, under the UB circle pin (Ivory disc with a Champagne ring so it shows on the Espresso map). The whole map links to Google Maps (no embed, no cookies); the required "© OpenStreetMap contributors" credit sits under it. Phones use a 5:4 frame. Marker position is the building on the north side of the precinct (approximate: points at the building, not a doorway) |
 
+## Trust pages and policies (Stages 7 and 8)
+
+| Item | Use |
+| --- | --- |
+| `layouts/trust.njk` | Long-form trust pages in `src/content/trust/` (consultation, aftercare): text head (with an optional photo), sticky contents, `##` sections, optional `routes` (three "Not sure what to book?" links as `.hubs`), `urgent` (callout under the lead), `faqs`, `print: true` (Print button). Validated as a text page |
+| `layouts/text.njk` | Policies in `src/content/policies/`. `draft: true` shows the "Draft, pending legal review" callout under the heading |
+| `callout(title, body, ico, cls)` macro, `.callout` | Quiet boxed note: white, hairline with a Champagne top line, alert icon, Jost title. `callout--quiet` = flat. Urgent advice and draft notices only |
+| `pcard(p)` macro, `.pcard` | Practitioner card (About): arched portrait placeholder, name, role, definition list (Registration with link to the register, Training, Insurance, Treatments). `p` is an entry of `practitioners.json` (fields name, role, photo, registration {body, number, url}, training, insurance, treatments); `{}` renders a placeholder card |
+| `.contact`, `.contact__list` | Contact page: form (7) beside icon rows (5) |
+| `.seal--lg` | Large heritage seal (About) |
+| `.print-btn` | Print button, shown only with JS, hidden when printing |
+| `src/about.njk`, `src/contact.njk` | Bespoke pages (copy and facts from `site.json`) |
+
+Consultation-only pages (every service prescription): the treatment template drops Results last and Downtime (use `facts.format`), renames "Prices and times" to "Consultations", shows a general-reviews prompt, and points Book buttons to `/contact/` while `site.booking.consultationVia` is `"contact"` (launch gate: see BUILD_PLAN).
+Held-back prices (Profhilo, microneedling, fat dissolving) show "Price on consultation" in lists, strips and cards; the open decision is listed in the review documents. Price lists use `menuName` (sentence case, no category prefix) from `services.json`.
+
+## SEO (Stage 8)
+
+`lib/seo.js`: JSON-LD built in `base.njk` by the `jsonld` filter (BeautySalon on /, /about/, /contact/; Service + Offer only on indexable treatment pages with a public, non-prescription price, never from rawName; BreadcrumbList; never aggregateRating or reviews). Open Graph and Twitter tags and canonical in `base.njk`; `noindex: true` removes them and the page from the sitemap. Share images: `npm run share-images` (Playwright + sharp, 1200 x 630 into `src/assets/img/share/`, one per indexable page; re-run after changing a page title or adding a page). `src/sitemap.xml.njk`, `src/robots.txt.njk`, `netlify.toml`. Plausible loads only when `ELEVENTY_ENV=production` or Netlify `CONTEXT=production` (`src/_data/env.js`). `npm run check` now ends with `scripts/seo-check.js`.
+
 ## Home page patterns (Stage 3)
 
 Built in the same style as the signed-off components; used on `src/index.njk`.

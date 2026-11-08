@@ -1,0 +1,72 @@
+---
+layout: layouts/base.njk
+permalink: /contact/index.html
+title: Contact us
+metaTitle: Contact, hours and directions, Penketh
+metaDescription: Contact The Urban Beauty Salon at 5 Honiton Way, Penketh, Warrington. Opening hours, phone, email, a message form, directions and free parking.
+---
+{#- Contact (Stage 7). Facts from site.json. The form is Netlify Forms (contactForm macro, honeypot, calm success panel). -#}
+{%- import "ui.njk" as ui with context -%}
+
+<header class="page-head page-head--text">
+<div class="wrap page-head__text">
+<p class="eyebrow">Contact · {{ site.address.locality }} · {{ site.address.town }}</p>
+<h1 style="--d:80ms">Contact us</h1>
+<p class="lead" style="--d:160ms">Questions, bookings or advice? Send us a message or call. We usually reply within an hour during opening hours.</p>
+<p style="--d:200ms">{{ ui.openStatus() }}</p>
+<div class="btn-row" style="--d:240ms">{{ ui.button("Call " ~ site.phone.display, href="tel:" ~ site.phone.tel, arrow=false) }}{{ ui.button("Book now", book=true, style="outline") }}</div>
+</div>
+</header>
+
+<section class="section section--tight" aria-labelledby="message">
+<div class="wrap">
+<div class="contact">
+<div class="stack-l" data-reveal>
+<div class="stack-s">
+{{ ui.eyebrow("Write to us") }}
+<h2 class="h3" id="message">Send a message</h2>
+<p>Tell us what you need and we will come back to you. For a booking, the quickest way is any Book now button.</p>
+</div>
+{{ ui.contactForm("contact", idp="contact") }}
+</div>
+<div class="stack-l" data-reveal style="--d:120ms">
+<div class="stack-s">
+{{ ui.eyebrow("Get in touch") }}
+<h2 class="h3">The salon</h2>
+</div>
+<ul class="contact__list" role="list">
+<li>{{ ui.icon("phone") }}<div><small>Phone</small><a class="tnum" href="tel:{{ site.phone.tel }}">{{ site.phone.display }}</a></div></li>
+<li>{{ ui.icon("mail") }}<div><small>Questions and advice</small><a href="mailto:{{ site.email.general }}">{{ site.email.general }}</a></div></li>
+<li>{{ ui.icon("calendar") }}<div><small>Bookings</small><a href="mailto:{{ site.email.bookings }}">{{ site.email.bookings }}</a></div></li>
+<li>{{ ui.icon("pin") }}<div><small>Address</small>{{ ui.address() }}</div></li>
+<li>{{ ui.icon("parking") }}<div><small>Parking</small>{{ site.parking }} right outside, in front of the shops.</div></li>
+</ul>
+<div class="stack" id="hours">
+<h3 class="h4">Opening hours</h3>
+{{ ui.hours() }}
+</div>
+<p class="small soft">Worried after a treatment? Read our <a class="link" href="/aftercare/">safety and aftercare advice</a>, and call us straight away.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section section--deep" aria-labelledby="find-us" style="--bg:var(--c-ivory-deep)">
+<div class="wrap">
+{{ ui.sectionHead("Find us", eyebrow="Directions", id="find-us") }}
+<div class="visit">
+<div class="stack-l" data-reveal>
+<div class="stack">
+<h3 class="h4">Getting here</h3>
+<p>{{ site.directions.full }}</p>
+</div>
+<div class="stack">
+<h3 class="h4">Address</h3>
+{{ ui.address() }}
+<p>{{ ui.more("Open in Google Maps", site.address.oneLine | mapsUrl) }}</p>
+</div>
+</div>
+<div data-reveal="wipe" style="--d:120ms">{{ ui.map() }}</div>
+</div>
+</div>
+</section>

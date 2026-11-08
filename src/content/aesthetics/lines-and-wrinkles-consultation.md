@@ -9,10 +9,12 @@ metaTitle: "Lines & wrinkles consultation Warrington"
 metaDescription: "A free, private consultation about lines and wrinkles at The Urban Beauty Salon in Penketh, Warrington. Talk through your options with no obligation."
 lead: "A free, private consultation to talk through lines and wrinkles, your health and the options that may suit you, with no obligation to go ahead."
 heroPhoto: pampas
+# Consultation-only page: no results or downtime facts (they would imply a follow-on treatment).
 facts:
   duration: "60 min"
-  resultsLast: "Discussed at your consultation"
-  downtime: "None for the consultation"
+  format: "Private, face to face"
+# The excessive sweating (21955872821107) and teeth grinding (21938692951923) consultations are
+# deliberately NOT listed: they are not shown on the site (decision for Yemi and the prescriber).
 services:
   - "21784074129267"
   - "21801253998451"
@@ -23,8 +25,6 @@ services:
   - "21852793606003"
   - "21921513082739"
   - "21869973475187"
-  - "21955872821107"
-  - "21938692951923"
 bookLabel: Book a free consultation
 practitioner: "[[TODO: practitioner name]]"
 faqs:
@@ -34,8 +34,6 @@ faqs:
     a: "No. You can take as long as you need to think things over, ask more questions or simply decide that nothing is right for you at the moment."
   - q: Who will I see?
     a: "[[TODO: practitioner name, role and registration, confirmed for this consultation]]"
-  - q: Can I book a consultation for excessive sweating or teeth grinding?
-    a: "Yes. Both are free consultations and follow the same approach: a private conversation about your concern, your health and your options."
   - q: Is there an age limit?
     a: "Yes. Consultations are for adults aged 18 and over."
 related:
@@ -53,15 +51,11 @@ Your practitioner looks at your skin, asks about your health and talks you throu
 
 The consultation is free, and there is no obligation to go ahead with anything.
 
-### Other consultations
-
-We also offer free consultations for excessive sweating and for teeth grinding. These follow the same approach: a private conversation about your concern, your health and your options.
-
 ## Who it suits
 
-The consultation suits any adult who would like expert, impartial advice about lines and wrinkles, whether you have had aesthetic treatments before or are simply curious. You must be 18 or over.
+The consultation suits any adult who would like clear, honest advice about lines and wrinkles, whether you have had aesthetic treatments before or are simply curious. You must be 18 or over.
 
-It is a good place to start if you are not sure what you need, would like to understand your options before deciding, or have had treatment elsewhere and want a second opinion. Please tell us about any medical conditions, medicines or allergies when you book, so your practitioner can take them into account.
+It is a good place to start if you are not sure what you need, would like to understand your options before deciding, or would simply like a second opinion. Please tell us about any medical conditions, medicines or allergies when you book, so your practitioner can take them into account.
 
 ## What to expect
 

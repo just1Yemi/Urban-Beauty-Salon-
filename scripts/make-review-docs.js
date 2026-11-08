@@ -81,6 +81,8 @@ for (const [key, label] of Object.entries(SECTIONS)) {
 
     const raw = JSON.stringify(d) + p.body;
     const todos = todosIn(raw);
+    // The page shows "Price on consultation" for held-back prices; the open decision stays visible here.
+    if ((d.services ?? []).some((id) => { const x = byId.get(String(id)); return x && !x.isPrescription && !x.pricePublic; })) todos.push("[[TODO: price held back until Yemi decides; the page shows \"Price on consultation\" meanwhile]]");
     todos.forEach((t) => allTodos.push({ page: d.title, todo: t }));
     out.push("### Facts to confirm", "");
     const list = facts[key]?.[p.file === "index.md" ? "index" : p.slug] ?? [];

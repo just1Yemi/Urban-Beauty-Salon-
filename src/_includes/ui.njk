@@ -227,7 +227,7 @@
     Without JS, Netlify returns to action, and :target shows the success panel. -#}
 {% macro contactForm(formName="contact", demo=false, state="", idp="contact", action="") -%}
 {%- set err = state == "error" -%}
-{%- set action = action or ("/contact/#" ~ idp ~ "-sent") -%}
+{%- set action = action or (("#" if demo else "/contact/#") ~ idp ~ "-sent") -%}
 <div class="form-wrap">
 <form class="form" name="{{ formName }}" method="POST" action="{{ action }}"{% if not demo %} data-netlify="true" netlify-honeypot="bot-field"{% else %} data-demo{% endif %} data-form novalidate{% if state == "success" %} hidden{% endif %}>
 <input type="hidden" name="form-name" value="{{ formName }}">
@@ -239,7 +239,7 @@
 </div>
 <div class="form__row form__row--2">
 {{ field("phone", "Phone", type="tel", autocomplete="tel", idp=idp, hint="We only call if email is not easier.") }}
-{{ field("topic", "What is it about?", type="select", idp=idp, options=["A treatment question", "Booking or changing an appointment", "Something else"]) }}
+{{ field("topic", "What is it about?", type="select", idp=idp, options=["A free consultation", "A treatment question", "Booking or changing an appointment", "Something else"]) }}
 </div>
 {{ field("message", "Your message", type="textarea", required=true, idp=idp, error=("Please write a short message." if err else ""), message="Please write a short message.") }}
 {{ field("reply", "You may reply by phone if that is quicker", type="checkbox", idp=idp) }}
@@ -254,4 +254,30 @@
 <p class="small soft">To book straight away, use any Book now button or call <a class="link" href="tel:{{ site.phone.tel }}">{{ site.phone.display }}</a>.</p>
 </div>
 </div>
+{%- endmacro %}
+
+{#- Practitioner card (About page). p = an entry from practitioners.json, or {} for a placeholder card.
+    Fields: name, role, photo (photos.json name), registration { body, number, url }, training, insurance,
+    treatments (performed or prescribed). Anything missing shows a [[TODO]]; never invent a name or a registration. -#}
+{% macro pcard(p={}) -%}
+{%- set reg = p.registration or {} -%}
+<article class="pcard">
+{%- if p.photo and photos[p.photo] %}<div class="pcard__photo">{{ picture(p.photo, sizes="112px", ratio="45", cls="arch") }}</div>
+{%- else %}<div class="pcard__photo placeholder" role="img" aria-label="Portrait to come">{{ logo("icon", cls="placeholder__icon") }}</div>{% endif %}
+<div>
+<h3 class="pcard__name">{{ (p.name or "[[TODO: practitioner name]]") | todo | safe }}</h3>
+<p class="small soft">{{ (p.role or "[[TODO: role]]") | todo | safe }}</p>
+</div>
+<dl class="pcard__facts">
+<div><dt>Registration</dt><dd>{% if reg.number %}{{ reg.body | todo | safe }} {{ reg.number }}{% if reg.url %} · <a class="link" href="{{ reg.url }}" target="_blank" rel="noopener">Check the register<span class="visually-hidden"> (opens in a new tab)</span></a>{% endif %}{% else %}{{ "[[TODO: registering body and registration number]]" | todo | safe }} {{ "[[TODO: link to the register entry]]" | todo | safe }}{% endif %}</dd></div>
+<div><dt>Training</dt><dd>{{ (p.training or "[[TODO: qualifications and training]]") | todo | safe }}</dd></div>
+<div><dt>Insurance</dt><dd>{{ (p.insurance or "[[TODO: professional indemnity insurer and cover]]") | todo | safe }}</dd></div>
+<div><dt>Treatments</dt><dd>{{ (p.treatments or "[[TODO: treatments performed or prescribed by this practitioner]]") | todo | safe }}</dd></div>
+</dl>
+</article>
+{%- endmacro %}
+
+{#- Callout: a quiet boxed note. kind "alert" (default icon) or any icon name; title optional; body is HTML (pass through safe). -#}
+{% macro callout(title="", body="", ico="alert", cls="") -%}
+<aside class="callout{% if cls %} {{ cls }}{% endif %}"{% if title %} aria-label="{{ title }}"{% endif %}>{{ icon(ico) }}<div class="callout__body">{% if title %}<p class="callout__title">{{ title }}</p>{% endif %}{{ body | safe }}</div></aside>
 {%- endmacro %}

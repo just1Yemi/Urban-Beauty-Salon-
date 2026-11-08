@@ -1,5 +1,6 @@
 ---
 # Stage 4 copy. Needs prescriber or practitioner sign-off before launch (CLAUDE.md).
+# Aftercare vision line and filler review wording: prescriber to sign off.
 # Typical ranges below ("typically") are listed for practitioner confirmation.
 layout: layouts/treatment.njk
 title: Dermal fillers
@@ -12,6 +13,7 @@ heroPhoto: product-shelf-serums
 facts:
   resultsLast: "Typically 6–18 months, depending on the area"
   downtime: "Typically a few days of swelling or bruising"
+# Filler dissolving (22591527980915, 22608707850099) uses a prescription-only medicine: not listed, no price.
 services:
   - "22419729289075"
   - "22436909158259"
@@ -23,8 +25,6 @@ services:
   - "22505628634995"
   - "22522808504179"
   - "22539988373363"
-  - "22591527980915"
-  - "22608707850099"
 bookLabel: Book dermal fillers
 practitioner: "[[TODO: practitioner name]]"
 faqs:
@@ -34,8 +34,8 @@ faqs:
     a: "Most people describe a pinching or pressure feeling. Many fillers contain a local anaesthetic to make treatment more comfortable, and your practitioner will talk you through what to expect."
   - q: How long do fillers last?
     a: "It varies with the area treated, the product and your own body. Results typically last between 6 and 18 months, with lips usually at the shorter end of that range."
-  - q: Can filler be dissolved?
-    a: "Yes. Hyaluronic acid fillers can usually be dissolved. Filler dissolving is offered after an assessment, including for filler you had elsewhere."
+  - q: I am unhappy with filler I had elsewhere. Can you help?
+    a: "Book a filler review consultation. Your practitioner will assess the area and talk you through your options."
   - q: Is there an age limit?
     a: "Yes. By law, dermal fillers are not available to anyone under 18."
 related:
@@ -51,7 +51,7 @@ Dermal fillers are soft gels, most often made from hyaluronic acid, a substance 
 
 Our menu covers lip filler, chin and mid-face enhancement, jawline definition, smile lines (nasolabial folds), marionette lines, upper lip lines and the tear trough area under the eyes. Your practitioner will help you decide which areas, and how much product, make sense for you. Hyaluronic acid fillers break down gradually over time, so they are not permanent.
 
-If you have filler you are unhappy with, including filler from another clinic, we also offer filler dissolving and dissolving with a refill, after an assessment.
+If you are unhappy with filler, including filler from another clinic, book a free filler review consultation. Your practitioner will assess the area and explain your options. [[TODO: Yemi and the prescriber to confirm the filler review consultation is offered, and to create it as a service in Phorest]]
 
 ## Who it suits
 
@@ -74,4 +74,4 @@ Your practitioner will give you aftercare advice in writing. Typical advice for 
 - avoid alcohol, strenuous exercise, saunas, steam rooms and sunbeds
 - sleep with your head slightly raised on the first night
 
-Contact us straight away if you notice severe or increasing pain, a pale or dusky patch of skin, changes to your vision, or signs of infection such as heat, spreading redness or fever. [[TODO: aftercare contact hours and how out-of-hours concerns are escalated]]
+If you notice any change to your vision, call 999 or go to A&E straight away, then let us know. Contact us straight away if you notice severe or increasing pain, a pale, dusky or blotchy patch of skin, or signs of infection such as heat, spreading redness or fever. [[TODO: aftercare contact hours and how out-of-hours concerns are escalated]]
