@@ -1,0 +1,16 @@
+{
+  "main": [
+    { "label": "Aesthetics", "url": "/aesthetics/" },
+    { "label": "Facials", "url": "/facials/" },
+    { "label": "Beauty", "url": "/beauty/" },
+    { "label": "About", "url": "/about/" },
+    { "label": "Contact", "url": "/contact/" }
+  ],
+  "policies": [
+    { "label": "Privacy", "url": "/privacy/" },
+    { "label": "Cookies", "url": "/cookies/" },
+    { "label": "Cancellation policy", "url": "/cancellation-policy/" },
+    { "label": "Booking terms", "url": "/booking-terms/" }
+  ],
+  "note": "Single source for header, mobile menu and footer links. Concerns is Phase 2 (omitted). Pages not built yet are listed in scripts/link-pending.json so the link check reports them without failing; Stage 9 empties that list."
+}

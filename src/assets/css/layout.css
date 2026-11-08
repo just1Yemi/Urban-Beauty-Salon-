@@ -1,0 +1,59 @@
+/* =========================================================================
+   Layout: wrappers, sections, grids, editorial overlap, page frame
+   Breakpoints: 40em (640), 48em (768), 64em (1024), 80em (1280)
+   ========================================================================= */
+.wrap { width: 100%; max-width: calc(var(--wrap) + 2 * var(--gutter)); margin-inline: auto; padding-inline: var(--gutter); }
+.wrap--narrow { max-width: calc(var(--wrap-narrow) + 2 * var(--gutter)); }
+
+.section { position: relative; padding-block: var(--section-y); }
+.section--tight { padding-block: calc(var(--section-y) * 0.6); }
+.section--deep { background: var(--c-ivory-deep) var(--grain); }
+.section--white { background: var(--c-white); }
+.section--dark, .on-dark { background-color: var(--c-espresso); color: var(--c-ivory); }
+
+/* Vertical rhythm */
+.stack > * + * { margin-top: var(--stack, var(--s-3)); }
+.stack-s > * + * { margin-top: var(--s-2); }
+.stack-l > * + * { margin-top: var(--s-5); }
+
+/* Grids: never more than 3 cards per row */
+.grid { display: grid; gap: var(--gap, var(--s-5) var(--s-4)); }
+@media (min-width: 40em) { .grid--2, .grid--3 { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (min-width: 64em) { .grid--3 { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+
+/* Editorial split: image and text, asymmetric (7/5) */
+.split { display: grid; gap: var(--s-5); align-items: center; }
+@media (min-width: 64em) {
+  .split { grid-template-columns: 7fr 5fr; gap: var(--s-7); }
+  .split--flip { grid-template-columns: 5fr 7fr; }
+  .split--flip > :first-child { order: 2; }
+}
+
+/* Overlap: a text card laid over the edge of an image */
+.overlap { display: grid; }
+.overlap__card {
+  position: relative; z-index: 1;
+  margin: calc(-1 * var(--s-6)) var(--s-2) 0;
+  padding: var(--s-4) var(--s-3);
+  background: var(--c-ivory) var(--grain);
+  box-shadow: var(--shadow-2);
+  border-radius: var(--radius);
+}
+@media (min-width: 64em) {
+  .overlap { grid-template-columns: repeat(12, minmax(0, 1fr)); align-items: center; }
+  .overlap__media { grid-column: 1 / 9; grid-row: 1; }
+  .overlap__card { grid-column: 8 / 13; grid-row: 1; margin: 0; padding: var(--s-6) var(--s-5); }
+  .overlap--flip .overlap__media { grid-column: 5 / 13; }
+  .overlap--flip .overlap__card { grid-column: 1 / 6; }
+}
+
+/* Page frame: fixed header offset (pages without a full-bleed hero) and the mobile Book bar */
+body:not(.has-hero) main { padding-top: var(--header-h); }
+
+/* Text pages */
+.prose > * + * { margin-top: var(--s-3); }
+.prose > :is(h2, h3) { margin-top: var(--s-6); }
+.prose > :is(h2, h3) + * { margin-top: var(--s-2); }
+.prose ul, .prose ol { padding-left: 1.25em; }
+.prose li + li { margin-top: var(--s-1); }
+.prose li::marker { color: var(--c-text-soft); }

@@ -1,0 +1,45 @@
+<footer class="site-footer on-dark">
+<div class="wrap">
+<div class="footer__top">
+{{ ui.logo("secondary", cls="footer__logo", label=site.tradingName) }}
+{{ ui.seal(cls="footer__seal", id="seal-footer") }}
+</div>
+<div class="footer__cols">
+<section aria-labelledby="ft-visit">
+<h2 class="eyebrow" id="ft-visit">Visit</h2>
+{{ ui.address() }}
+<p class="soft footer__gap">{{ site.parking }}</p>
+<p class="footer__gap">{{ ui.more("Get directions", site.address.oneLine | mapsUrl) }}</p>
+</section>
+<section aria-labelledby="ft-hours">
+<h2 class="eyebrow" id="ft-hours">Opening hours</h2>
+<p class="footer__status">{{ ui.openStatus() }}</p>
+{{ ui.hours() }}
+</section>
+<section aria-labelledby="ft-contact">
+<h2 class="eyebrow" id="ft-contact">Contact</h2>
+<div class="footer__contact">
+<a class="link-draw" href="tel:{{ site.phone.tel }}">{{ ui.icon("phone") }}{{ site.phone.display }}</a>
+<a class="link-draw" href="mailto:{{ site.email.general }}">{{ ui.icon("mail") }}{{ site.email.general }}</a>
+<a class="link-draw" href="mailto:{{ site.email.bookings }}">{{ ui.icon("calendar") }}{{ site.email.bookings }}</a>
+</div>
+<ul class="socials" role="list">
+<li><a href="{{ site.social.instagram }}">{{ ui.icon("instagram") }}<span class="visually-hidden">Instagram</span></a></li>
+<li><a href="{{ site.social.facebook }}">{{ ui.icon("facebook") }}<span class="visually-hidden">Facebook</span></a></li>
+</ul>
+</section>
+<nav aria-labelledby="ft-explore" id="footer-nav">
+<h2 class="eyebrow" id="ft-explore">Explore</h2>
+<ul class="footer__list" role="list">
+{%- for item in nav.main %}<li><a class="link-draw" href="{{ item.url }}">{{ item.label }}</a></li>{% endfor %}
+<li><a class="link-draw" href="{{ site.booking.url }}" data-book>Book now</a></li>
+</ul>
+</nav>
+</div>
+<div class="footer__legal">
+<ul role="list">{% for p in nav.policies %}<li><a class="link-draw" href="{{ p.url }}">{{ p.label }}</a></li>{% endfor %}</ul>
+<p>© {% year %} {{ site.legalName }} · Registered in England No. {{ site.companyNumber | todo | safe }} · Registered office {{ site.registeredOffice | todo | safe }}</p>
+</div>
+</div>
+<a class="to-top" href="#top" data-to-top aria-label="Back to top">{{ ui.logo("icon") }}</a>
+</footer>

@@ -1,0 +1,131 @@
+/* =========================================================================
+   Base: reset, page, typography, links, focus, selection, motion defaults
+   ========================================================================= */
+*, *::before, *::after { box-sizing: border-box; }
+* { margin: 0; }
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  scroll-padding-top: calc(var(--header-h) + var(--s-3));
+  interpolate-size: allow-keywords;
+}
+@media (prefers-reduced-motion: no-preference) {
+  html { scroll-behavior: smooth; }
+  @view-transition { navigation: auto; }
+  ::view-transition-old(root), ::view-transition-new(root) { animation-duration: 0.4s; animation-timing-function: var(--ease-out); }
+}
+body {
+  min-height: 100vh;
+  background: var(--bg) var(--grain);
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: var(--step-0);
+  line-height: var(--leading);
+  font-feature-settings: "kern", "liga", "calt";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+img, picture, svg, video { display: block; max-width: 100%; }
+img { height: auto; }
+input, button, textarea, select { font: inherit; color: inherit; }
+button { cursor: pointer; background: none; border: 0; padding: 0; }
+ul[role="list"], ol[role="list"] { list-style: none; padding: 0; }
+table { border-collapse: collapse; }
+[hidden] { display: none !important; }
+address { font-style: normal; }
+
+/* ---- Type ---- */
+h1, h2, h3, h4, .h1, .h2, .h3, .h4, .display {
+  font-family: var(--font-display);
+  font-weight: 300;
+  text-transform: uppercase;
+  line-height: 1.15;
+  text-wrap: balance;
+  overflow-wrap: break-word;
+}
+.display { font-size: var(--step-5); letter-spacing: var(--track-display); line-height: 1.04; }
+h1, .h1 { font-size: var(--step-4); letter-spacing: var(--track-h1); }
+h2, .h2 { font-size: var(--step-3); letter-spacing: var(--track-h2); }
+h3, .h3 { font-size: var(--step-2); letter-spacing: var(--track-h3); line-height: 1.25; }
+h4, .h4 { font-size: var(--step-0); letter-spacing: var(--track-label); font-weight: 400; line-height: 1.4; }
+p, li, dd, figcaption, blockquote { text-wrap: pretty; }
+p { max-width: var(--measure); }
+.lead { font-size: var(--step-1); line-height: 1.6; max-width: 40ch; }
+.small { font-size: var(--step--1); }
+.soft { color: var(--text-soft); }
+strong, b { font-weight: 600; }
+.num, time, .tnum { font-variant-numeric: tabular-nums lining-nums; }
+
+/* Eyebrow label: AESTHETICS · 01 */
+.eyebrow {
+  font-family: var(--font-body);
+  font-size: var(--step--2);
+  font-weight: 500;
+  letter-spacing: var(--track-label);
+  text-transform: uppercase;
+  line-height: 1.5;
+  color: var(--text-soft);
+}
+.on-dark .eyebrow { color: var(--c-champagne); }
+
+/* Jost's ampersand: Champagne only on dark surfaces (never Champagne text on Ivory) */
+.amp { font-weight: 300; }
+.on-dark .amp { color: var(--c-champagne); }
+
+/* ---- Links: thin Champagne underline, offset 4px ---- */
+a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: 4px; }
+.prose a, a.link {
+  text-decoration-line: underline;
+  text-decoration-color: var(--c-champagne);
+  transition: text-decoration-color var(--dur-1) var(--ease-out);
+}
+.prose a:hover, a.link:hover { text-decoration-color: currentColor; }
+/* Draw-in underline (navigation, quiet links): left to right on hover */
+.link-draw {
+  text-decoration: none;
+  background: linear-gradient(var(--c-champagne), var(--c-champagne)) 0 calc(100% - 0px) / 0 1px no-repeat;
+  padding-bottom: 4px;
+  transition: background-size var(--dur-2) var(--ease-soft);
+}
+.link-draw:hover, .link-draw:focus-visible { background-size: 100% 1px; }
+
+/* ---- Focus and selection ---- */
+:focus-visible { outline: 2px solid var(--c-espresso); outline-offset: 3px; border-radius: var(--radius); }
+.on-dark :focus-visible, .on-dark:focus-visible { outline-color: var(--c-champagne); }
+::selection { background: var(--c-champagne); color: var(--c-espresso); }
+#main:focus { outline: none; }
+
+/* ---- Utilities ---- */
+.visually-hidden {
+  position: absolute !important; width: 1px; height: 1px; padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0 0 0 0); clip-path: inset(50%); white-space: nowrap; border: 0;
+}
+.skip-link {
+  position: fixed; z-index: 100; top: var(--s-2); left: var(--s-2);
+  padding: var(--s-1) var(--s-2); background: var(--c-espresso); color: var(--c-ivory);
+  font-size: var(--step--1); letter-spacing: 0.08em; text-decoration: none;
+  transform: translateY(-200%);
+}
+.skip-link:focus { transform: none; }
+.todo { background: #FFF3C4; color: var(--c-espresso); outline: 1px dashed #B58A00; padding: 0 0.25em; font-family: var(--font-body); text-transform: none; letter-spacing: normal; font-weight: 500; }
+
+/* ---- Reveals: fade-and-rise, staggered with --d. Hidden only when motion is allowed and
+   site.js is running (failsafe: anything not revealed after 3s shows itself). ---- */
+@media (prefers-reduced-motion: no-preference) {
+  .js [data-reveal]:not(.is-in) { opacity: 0; transform: translateY(var(--rise)); animation: ub-failsafe 0s 3s forwards; }
+  .js [data-reveal="wipe"]:not(.is-in) { opacity: 1; transform: none; clip-path: inset(0 100% 0 0); }
+  .reveal-on [data-reveal]:not(.is-in) { animation: none; }
+  [data-reveal].is-in {
+    transition: opacity var(--dur-3) var(--ease-out), transform var(--dur-3) var(--ease-out), clip-path var(--dur-4) var(--ease-wipe);
+    transition-delay: var(--d, 0ms);
+  }
+  [data-reveal="wipe"].is-in { clip-path: inset(0); transition-duration: 1.4s; }
+  [data-reveal="wipe"] img { transition: transform 1.8s var(--ease-soft); }
+  .js [data-reveal="wipe"]:not(.is-in) img { transform: scale(1.06); }
+}
+@keyframes ub-failsafe { to { opacity: 1; transform: none; clip-path: inset(0); } }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
+}

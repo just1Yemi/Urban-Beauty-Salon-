@@ -1,0 +1,99 @@
+/* =========================================================================
+   Tokens: the only place colours, type, spacing, radius, shadow and motion
+   values are defined. Everything else uses these custom properties.
+   ========================================================================= */
+
+/* ---- Fonts: self-hosted latin subsets, swap, with size-matched fallbacks so
+   text does not jump when the web font arrives (metrics measured against Arial). */
+@font-face { font-family: "Jost"; font-weight: 300; font-style: normal; font-display: swap; src: url(/assets/fonts/jost-latin-300-normal.woff2) format("woff2"); }
+@font-face { font-family: "Jost"; font-weight: 400; font-style: normal; font-display: swap; src: url(/assets/fonts/jost-latin-400-normal.woff2) format("woff2"); }
+@font-face { font-family: "Jost"; font-weight: 500; font-style: normal; font-display: swap; src: url(/assets/fonts/jost-latin-500-normal.woff2) format("woff2"); }
+@font-face { font-family: "Inter"; font-weight: 400; font-style: normal; font-display: swap; src: url(/assets/fonts/inter-latin-400-normal.woff2) format("woff2"); }
+@font-face { font-family: "Inter"; font-weight: 500; font-style: normal; font-display: swap; src: url(/assets/fonts/inter-latin-500-normal.woff2) format("woff2"); }
+@font-face { font-family: "Inter"; font-weight: 600; font-style: normal; font-display: swap; src: url(/assets/fonts/inter-latin-600-normal.woff2) format("woff2"); }
+@font-face { font-family: "Jost Fallback"; src: local("Arial"), local("Helvetica Neue"), local("Helvetica"); size-adjust: 89.9%; ascent-override: 119%; descent-override: 42.3%; line-gap-override: 0%; }
+@font-face { font-family: "Inter Fallback"; src: local("Arial"), local("Helvetica Neue"), local("Helvetica"); size-adjust: 106.8%; ascent-override: 90.8%; descent-override: 22.5%; line-gap-override: 0%; }
+
+:root {
+  /* ---- Brand palette (CLAUDE.md). Champagne is NEVER text on Ivory. ---- */
+  --c-espresso: #3B302A;
+  --c-champagne: #C6A77D;
+  --c-ivory: #F6F1EA;
+  --c-onyx: #000000;
+  --c-white: #FFFFFF;
+  /* Tints of the palette (not new colours): */
+  --c-ivory-deep: #EEE7DD;   /* alternate Ivory band */
+  --c-ivory-shade: #E6DFD5;  /* photo placeholders (shows on both Ivory bands) */
+  --c-text-soft: #6A5E56;    /* secondary text on Ivory/White (AA) */
+  --c-ivory-soft: #C9C0B6;   /* secondary text on Espresso (AA) */
+  --c-espresso-deep: #2E2520;/* footer base under the Espresso */
+
+  /* Roles */
+  --bg: var(--c-ivory);
+  --text: var(--c-espresso);
+  --text-soft: var(--c-text-soft);
+  --line: var(--c-champagne);              /* 1px hairlines echo the logo's thin strokes */
+  --line-soft: rgb(198 167 125 / 0.45);
+  --ink-faint: rgb(59 48 42 / 0.04);       /* oversized background words */
+  --scrim: rgb(59 48 42 / 0.55);
+
+  /* ---- Type ---- */
+  --font-display: "Jost", "Jost Fallback", system-ui, sans-serif;
+  --font-body: "Inter", "Inter Fallback", system-ui, sans-serif;
+  /* Fluid scale (360px -> 1440px) */
+  --step--2: 0.6875rem;                                   /* 11px labels */
+  --step--1: clamp(0.8125rem, 0.79rem + 0.1vw, 0.875rem);  /* 13-14 small */
+  --step-0: clamp(1rem, 0.97rem + 0.14vw, 1.0625rem);      /* 16-17 body */
+  --step-1: clamp(1.125rem, 1.06rem + 0.3vw, 1.3125rem);   /* 18-21 lead */
+  --step-2: clamp(1.25rem, 1.12rem + 0.6vw, 1.625rem);     /* 20-26 h3 */
+  --step-3: clamp(1.5rem, 1.22rem + 1.25vw, 2.375rem);     /* 24-38 h2 */
+  --step-4: clamp(1.75rem, 1.3rem + 2vw, 3.25rem);         /* 28-52 h1 */
+  --step-5: clamp(2.5rem, 1.6rem + 4vw, 5.25rem);          /* 40-84 display */
+  --step-6: clamp(3.5rem, 1.9rem + 7vw, 8.5rem);           /* "See you soon." */
+  --track-display: 0.08em;  /* tighter on large headings */
+  --track-h1: 0.12em;
+  --track-h2: 0.16em;
+  --track-h3: 0.18em;
+  --track-label: 0.22em;    /* wider on small labels, echoes "S A L O N" */
+  --leading: 1.65;
+  --measure: 65ch;
+
+  /* ---- Space: 8px scale ---- */
+  --s-1: 0.5rem;   /* 8 */
+  --s-2: 1rem;     /* 16 */
+  --s-3: 1.5rem;   /* 24 */
+  --s-4: 2rem;     /* 32 */
+  --s-5: 3rem;     /* 48 */
+  --s-6: 4rem;     /* 64 */
+  --s-7: 6rem;     /* 96 */
+  --s-8: 8rem;     /* 128 */
+  --s-9: 10rem;    /* 160 */
+  --gutter: clamp(1.25rem, 0.6rem + 3.4vw, 4rem);
+  --section-y: clamp(4rem, 2rem + 8vw, 10rem); /* 64 mobile, 96-160 desktop */
+  --wrap: 76rem;
+  --wrap-narrow: 46rem;
+  --header-h: 4.5rem;
+  --bookbar-h: 4.5rem;
+
+  /* ---- Shape: one sharp radius everywhere; the arch is the only curve ---- */
+  --radius: 2px;
+  --arch: 999px 999px 0 0;
+
+  /* ---- Warm-tinted shadows (Espresso, never grey) ---- */
+  --shadow-1: 0 1px 2px rgb(59 48 42 / 0.05), 0 6px 16px -8px rgb(59 48 42 / 0.14);
+  --shadow-2: 0 2px 6px rgb(59 48 42 / 0.05), 0 24px 48px -20px rgb(59 48 42 / 0.24);
+
+  /* ---- Motion ---- */
+  --ease-out: cubic-bezier(0.22, 0.61, 0.36, 1);
+  --ease-soft: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --ease-wipe: cubic-bezier(0.77, 0, 0.18, 1);
+  --dur-1: 180ms;   /* press, colour */
+  --dur-2: 380ms;   /* hover fills, accordion */
+  --dur-3: 700ms;   /* reveals */
+  --dur-4: 1200ms;  /* image wipe, logo, hover zoom */
+  --rise: 14px;     /* reveal travel */
+
+  /* ---- Texture: faint grain on Ivory (under 1 KB) ---- */
+  --grain: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .23 0 0 0 0 .19 0 0 0 0 .16 0 0 0 .05 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}

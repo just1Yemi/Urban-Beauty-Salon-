@@ -1,0 +1,23 @@
+---
+layout: layouts/base.njk
+title: Page not found
+description: The page you were looking for could not be found.
+permalink: /404.html
+noindex: true
+closing: false
+sitemap: false
+eleventyExcludeFromCollections: true
+---
+{%- import "ui.njk" as ui with context -%}
+<section class="notfound">
+<div class="wrap wrap--narrow stack">
+<div data-reveal>{{ ui.logo("icon") }}</div>
+<p class="eyebrow" data-reveal style="--d:80ms">Error 404</p>
+<h1 data-reveal style="--d:140ms">We can’t find that page</h1>
+<p class="lead" data-reveal style="--d:200ms">It may have moved when we refreshed our website. Everything you need is one tap away.</p>
+<div class="btn-row" data-reveal style="--d:260ms; justify-content:center">{{ ui.button("Book now", book=true) }}{{ ui.button("Back to home", href="/", style="outline", arrow=false) }}</div>
+<ul role="list" data-reveal style="--d:320ms">
+{%- for item in nav.main %}<li><a class="link-draw" href="{{ item.url }}">{{ item.label }}</a></li>{% endfor -%}
+</ul>
+</div>
+</section>

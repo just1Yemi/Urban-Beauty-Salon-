@@ -1,4 +1,4 @@
-// npm run check: build, then compliance check, then link check.
+// npm run check: build, then contrast check, compliance check, then link check.
 // Prints failures only; exits non-zero if any step fails.
 import { spawnSync } from "node:child_process";
 import path from "node:path";
@@ -7,6 +7,7 @@ import { fileURLToPath } from "node:url";
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const steps = [
   ["build", [path.join(root, "node_modules/@11ty/eleventy/cmd.cjs"), "--quiet"]],
+  ["contrast", [path.join(root, "scripts/contrast-check.js")]],
   ["compliance", [path.join(root, "scripts/compliance-check.js")]],
   ["links", [path.join(root, "scripts/link-check.js")]],
 ];
@@ -22,4 +23,4 @@ for (const [name, args] of steps) {
   }
 }
 if (failed) process.exit(1);
-console.log("check passed: build, compliance, links");
+console.log("check passed: build, contrast, compliance, links");

@@ -43,6 +43,11 @@ function resolveTarget(urlPath) {
   return candidates.find((c) => fileSet.has(c)) ?? null;
 }
 
+// Pages later stages will build (header/footer links): reported, not failed. Stage 9 empties it.
+const pendingFile = path.join(root, "scripts/link-pending.json");
+const pending = new Set(fs.existsSync(pendingFile) ? JSON.parse(fs.readFileSync(pendingFile, "utf8")).pending ?? [] : []);
+const pendingHit = new Set();
+
 const failures = [];
 let checked = 0;
 const ATTR = /\b(href|src|poster|data-src|action)\s*=\s*(?:"([^"]*)"|'([^']*)')/gi;
@@ -76,7 +81,10 @@ for (const f of htmlFiles) {
     if (u.protocol !== "http:" && u.protocol !== "https:") continue;
     if (u.origin !== origin) continue; // external: not fetched
     const target = u.pathname === pageUrl ? pageRel : resolveTarget(u.pathname);
-    if (!target) { fail("missing target"); continue; }
+    if (!target) {
+      if (pending.has(u.pathname)) { pendingHit.add(u.pathname); continue; }
+      fail("missing target"); continue;
+    }
     if (u.hash.length > 1 && target.endsWith(".html")) {
       const id = decodeURIComponent(u.hash.slice(1));
       if (!idsOf(target).has(id)) fail(`missing #${id} in ${target}`);
@@ -89,4 +97,4 @@ if (failures.length) {
   for (const f of failures) console.error("  " + f);
   process.exit(1);
 }
-console.log(`Link check passed (${htmlFiles.length} pages, ${checked} links)`);
+console.log(`Link check passed (${htmlFiles.length} pages, ${checked} links)` + (pendingHit.size ? `; ${pendingHit.size} pending page(s) not built yet: ${[...pendingHit].join(" ")}` : ""));

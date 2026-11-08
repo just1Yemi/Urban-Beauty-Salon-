@@ -1,0 +1,353 @@
+---
+layout: layouts/base.njk
+title: Style guide
+description: Private style guide for The Urban Beauty Salon website. Every token and component in use.
+permalink: /styleguide/
+noindex: true
+sitemap: false
+eleventyExcludeFromCollections: true
+hero: true
+progress: true
+---
+{%- import "ui.njk" as ui with context -%}
+{%- set derma = services | service("Dermaplaning Luxury") -%}
+{%- set lashLift = services | service("Korean Lash Lift") -%}
+{%- set pedicure = services | service("Pedicure") -%}
+<style>
+/* Style-guide-only helpers (not shipped to other pages) */
+.sg-nav { display: flex; flex-wrap: wrap; gap: .5rem 1.5rem; list-style: none; padding: 0; font-size: var(--step--1); }
+.sg-block + .sg-block { margin-top: var(--s-7); }
+.sg-label { margin-bottom: var(--s-3); }
+.sg-swatches { display: grid; gap: var(--s-3); grid-template-columns: repeat(auto-fill, minmax(9.5rem, 1fr)); }
+.sg-swatch { border: 1px solid var(--line-soft); border-radius: var(--radius); overflow: hidden; background: var(--c-white); font-size: var(--step--1); }
+.sg-swatch__chip { height: 5.5rem; }
+.sg-swatch__meta { padding: .75rem; line-height: 1.5; }
+.sg-table { width: 100%; font-size: var(--step--1); font-variant-numeric: tabular-nums; }
+.sg-table th, .sg-table td { text-align: left; padding: .6rem .75rem .6rem 0; border-bottom: 1px solid var(--line-soft); vertical-align: top; }
+.sg-table th { font-weight: 500; }
+.sg-scroll { overflow-x: auto; }
+.sg-sample { display: inline-block; padding: .2rem .55rem; border-radius: var(--radius); font-weight: 500; }
+.sg-space { display: grid; gap: .5rem; }
+.sg-space div { display: grid; grid-template-columns: 7.5rem 1fr; align-items: center; gap: 1rem; font-size: var(--step--1); }
+.sg-space span:last-child { height: .5rem; background: var(--c-champagne); }
+.sg-cards { display: grid; gap: var(--s-4); grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr)); }
+.sg-card { padding: var(--s-4); background: var(--c-ivory); border-radius: var(--radius); font-size: var(--step--1); }
+.sg-icons { display: grid; gap: var(--s-2); grid-template-columns: repeat(auto-fill, minmax(6.5rem, 1fr)); list-style: none; padding: 0; }
+.sg-icons li { display: grid; justify-items: center; gap: .6rem; padding: var(--s-3) .5rem; border: 1px solid var(--line-soft); border-radius: var(--radius); font-size: var(--step--2); letter-spacing: .08em; color: var(--text-soft); }
+.sg-icons .icon { width: 1.75rem; height: 1.75rem; color: var(--c-espresso); }
+.sg-logos { display: grid; gap: var(--s-4); }
+.sg-logo { display: grid; place-items: center; min-height: 11rem; padding: var(--s-5) var(--s-4); border-radius: var(--radius); }
+.sg-logo .logo { width: min(100%, 26rem); }
+.sg-logo .logo--icon { width: 7rem; }
+.sg-logo .seal { width: 10rem; }
+@media (min-width: 48em) { .sg-logos { grid-template-columns: repeat(2, minmax(0, 1fr)); } .sg-logo--wide { grid-column: 1 / -1; } }
+.sg-dark { padding: var(--s-5) var(--s-4); border-radius: var(--radius); }
+.sg-frames { display: grid; gap: var(--s-5) var(--s-4); }
+@media (min-width: 40em) { .sg-frames { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (min-width: 64em) { .sg-frames { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+.sg-treat { display: grid; gap: var(--s-6); }
+@media (min-width: 64em) { .sg-treat { grid-template-columns: 14rem minmax(0, 1fr); gap: var(--s-7); align-items: start; } }
+.sg-treat__body > section + section { margin-top: var(--s-7); }
+.sg-accent { display: grid; gap: var(--s-4); align-items: end; }
+@media (min-width: 48em) { .sg-accent { grid-template-columns: minmax(0, 1fr) 13rem; } }
+.sg-note { padding: var(--s-2) var(--s-3); border-left: 1px solid var(--c-champagne); font-size: var(--step--1); color: var(--text-soft); max-width: 60ch; }
+.sg-visit { display: grid; gap: var(--s-6); }
+@media (min-width: 64em) { .sg-visit { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+</style>
+
+{#- ===== Sample hero ===== -#}
+<section class="hero" aria-labelledby="hero-title">
+<div class="hero__media">{{ ui.picture("reception-desk", sizes="(orientation: portrait) 160vw, 100vw", priority=true, position="62% 58%") }}</div>
+<div class="hero__shade" aria-hidden="true"></div>
+<p class="hero__edge" aria-hidden="true">{{ site.address.locality }} · {{ site.address.town }} · Est. {{ site.established }}</p>
+<div class="wrap hero__content on-dark" style="background:none">
+<p class="eyebrow" data-reveal>Style guide · Sample hero</p>
+<h1 id="hero-title" class="display" data-reveal style="--d:100ms">{{ "Skin & Beauty" | amp | safe }}</h1>
+<p class="lead" data-reveal style="--d:200ms">Aesthetics, facials and beauty treatments in {{ site.address.locality }}, {{ site.address.town }}.</p>
+<div class="btn-row" data-reveal style="--d:300ms">{{ ui.button("Book now", book=true) }}{{ ui.button("Explore treatments", href="#cards", style="outline", arrow=false) }}</div>
+</div>
+</section>
+
+{#- ===== Intro and contents ===== -#}
+<section class="section section--tight" aria-labelledby="sg-intro">
+<div class="wrap stack">
+{{ ui.eyebrow("Private · not indexed") }}
+<h2 id="sg-intro">The design system</h2>
+<p class="lead">Every token and component, in use with the salon’s own photographs. Resize the window, or open this page on a phone: the layout is checked at 360, 768 and 1440 pixels wide.</p>
+<p class="sg-note">Sample copy on this page is for layout only. Final words are written in later stages and reviewed by the practitioners. Yellow marks <span class="todo">[[TODO]]</span> show facts we still need.</p>
+<ul class="sg-nav" role="list">
+<li><a class="link" href="#colour">Colour</a></li><li><a class="link" href="#type">Type</a></li><li><a class="link" href="#space">Space, shape, motion</a></li><li><a class="link" href="#logo">Logo and seal</a></li><li><a class="link" href="#icons">Icons</a></li><li><a class="link" href="#buttons">Buttons and links</a></li><li><a class="link" href="#headings">Headings and dividers</a></li><li><a class="link" href="#images">Images</a></li><li><a class="link" href="#treatment">Treatment section</a></li><li><a class="link" href="#cards">Cards</a></li><li><a class="link" href="#prices">Prices</a></li><li><a class="link" href="#reviews">Reviews</a></li><li><a class="link" href="#visit">Visit</a></li>
+</ul>
+</div>
+</section>
+
+{#- ===== Colour ===== -#}
+<section class="section" aria-labelledby="colour">
+<div class="wrap">
+{{ ui.sectionHead("Colour", eyebrow="Tokens · 01", id="colour", lead="Ivory backgrounds and Espresso text. Champagne is an accent for hairlines, icons and dark surfaces: never text on Ivory.") }}
+<div class="sg-swatches">
+{%- set roles = { "espresso": "Text, buttons, footer", "champagne": "Hairlines, icons, hover fill", "ivory": "Page background", "onyx": "Reserved (not for large areas)", "white": "Review cards", "ivory-deep": "Tint: alternate band", "text-soft": "Tint: secondary text", "ivory-soft": "Tint: text on Espresso", "espresso-deep": "Tint: deepest Espresso" } %}
+{%- for name, hex in palette.tokens %}
+<div class="sg-swatch"><div class="sg-swatch__chip" style="background:{{ hex }}"></div><div class="sg-swatch__meta"><strong>{{ name }}</strong><br><span class="tnum">{{ hex }}</span><br><span class="soft">{{ roles[name] }}</span></div></div>
+{%- endfor %}
+</div>
+<h3 class="h4" style="margin-top:var(--s-6)">Contrast of every text pair (WCAG 2.2)</h3>
+<div class="sg-scroll" style="margin-top:var(--s-3)" tabindex="0" role="region" aria-label="Contrast table (scrolls sideways on small screens)">
+<table class="sg-table">
+<thead><tr><th scope="col">Sample</th><th scope="col">Pair</th><th scope="col">Ratio</th><th scope="col">Level</th><th scope="col">Use</th></tr></thead>
+<tbody>
+{%- for p in palette.pairs %}
+<tr><td>{% if p.forbidden %}<span class="soft">Not used</span>{% else %}<span class="sg-sample" style="color:{{ p.fgHex }};background:{{ p.bgHex }}">Aa 12</span>{% endif %}</td><td>{{ p.fg }} on {{ p.bg }}</td><td class="tnum">{{ p.ratio }}:1</td><td>{{ "Not allowed" if p.forbidden else p.level }}</td><td>{{ p.use }}</td></tr>
+{%- endfor %}
+</tbody>
+</table>
+</div>
+</div>
+</section>
+
+{#- ===== Type ===== -#}
+<section class="section section--deep" aria-labelledby="type" style="--bg:var(--c-ivory-deep)">
+<div class="wrap">
+{{ ui.sectionHead("Typography", eyebrow="Tokens · 02", id="type", word="Type", lead="Jost light, uppercase and tracked for headings; Inter for reading. Fluid sizes with clamp(), balanced headings and no single-word last lines.") }}
+<div class="stack-l">
+<div class="stack-s"><p class="caption">Display · Jost 300 · step 5</p><p class="display" aria-hidden="true">Penketh</p></div>
+<div class="stack-s"><p class="caption">Heading 1 · step 4 · tracked 0.12em</p><p class="h1" aria-hidden="true">Lines and wrinkles consultation</p></div>
+<div class="stack-s"><p class="caption">Heading 2 · step 3 · tracked 0.16em</p><p class="h2" aria-hidden="true">Your first visit</p></div>
+<div class="stack-s"><p class="caption">Heading 3 · step 2 · tracked 0.18em</p><p class="h3" aria-hidden="true">What to expect</p></div>
+<div class="stack-s"><p class="caption">Heading 4 · Jost 400</p><p class="h4" aria-hidden="true">Aftercare</p></div>
+<div class="stack-s"><p class="caption">Lead · Inter 400 · step 1</p><p class="lead">A calm, unhurried appointment in a salon that has looked after {{ site.address.locality }} since {{ site.established }}.</p></div>
+<div class="stack-s"><p class="caption">Body · Inter 400 · step 0 · 65 characters a line</p><p>Body copy sits in Inter at a comfortable reading size, with generous line spacing and a measure of about sixty-five characters. Times use en dashes, such as 10:00–20:00, quotation marks are curly (“like this”), and prices never break across lines: {{ ui.price(derma.price) }}.</p></div>
+<div class="stack-s"><p class="caption">Small and eyebrow labels · wider tracking</p><p class="small soft">Small text for notes and captions.</p>{{ ui.eyebrow("Aesthetics", 1) }}</div>
+<div class="stack-s"><p class="caption">Tabular figures for prices, times and phone numbers</p><p class="tnum">{{ site.phone.display }} · 09:00–15:00 · 10:00–20:00</p></div>
+<div class="stack-s"><p class="caption">Pull quote with a hanging quotation mark (a print on the salon wall)</p><blockquote><p class="pullquote">“May your lashes be long and your standards be high.”</p></blockquote></div>
+<div class="sg-dark on-dark stack-s"><p class="caption" style="color:var(--c-ivory-soft)">Champagne ampersand · on Espresso only</p><p class="h1" aria-hidden="true">{{ "Skin & Beauty" | amp | safe }}</p></div>
+</div>
+</div>
+</section>
+
+{#- ===== Space, shape, motion ===== -#}
+<section class="section" aria-labelledby="space">
+<div class="wrap">
+{{ ui.sectionHead("Space, shape and motion", eyebrow="Tokens · 03", id="space") }}
+<div class="grid grid--2" style="--gap:var(--s-6)">
+<div>
+<h3 class="h4 sg-label">8px spacing scale</h3>
+<div class="sg-space">
+{%- for s in [["s-1", 8], ["s-2", 16], ["s-3", 24], ["s-4", 32], ["s-5", 48], ["s-6", 64], ["s-7", 96], ["s-8", 128], ["s-9", 160]] %}
+<div><span class="tnum">--{{ s[0] }} · {{ s[1] }}</span><span style="width:{{ s[1] }}px;max-width:100%"></span></div>
+{%- endfor %}
+</div>
+<p class="small soft" style="margin-top:var(--s-3)">Sections: 64px tall padding on phones rising to 96–160px on desktop.</p>
+</div>
+<div>
+<h3 class="h4 sg-label">One sharp radius, warm shadows</h3>
+<div class="sg-cards">
+<div class="sg-card" style="box-shadow:var(--shadow-1)"><strong>--shadow-1</strong><br>Cards, the header once scrolled. Espresso-tinted, never grey.</div>
+<div class="sg-card" style="box-shadow:var(--shadow-2)"><strong>--shadow-2</strong><br>Text cards over images, the map pin. Radius 2px everywhere.</div>
+</div>
+<h3 class="h4 sg-label" style="margin-top:var(--s-5)">Motion</h3>
+<table class="sg-table">
+<tbody>
+<tr><th scope="row">Reveal</th><td>700ms fade and 14px rise, staggered; once</td></tr>
+<tr><th scope="row">Image wipe</th><td>1.4s clip-path wipe with a slow settle</td></tr>
+<tr><th scope="row">Hover</th><td>380ms Champagne fill, 4px arrow nudge, 3% image zoom</td></tr>
+<tr><th scope="row">Logo</th><td>Draws itself in once per visit, about 1.2s</td></tr>
+<tr><th scope="row">Pages</th><td>0.4s cross-fade (View Transitions), prefetch on hover</td></tr>
+<tr><th scope="row">Reduced motion</th><td>All of the above switch off</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</section>
+
+{#- ===== Logo ===== -#}
+<section class="section section--deep" aria-labelledby="logo" style="--bg:var(--c-ivory-deep)">
+<div class="wrap">
+{{ ui.sectionHead("Logo and heritage seal", eyebrow="Brand · 04", id="logo", lead="Always the SVG files from the logo pack. The header logo traces itself in once per visit.") }}
+<div class="sg-logos">
+<div class="sg-logo sg-logo--wide section--white">{{ ui.logo("primary", label="Primary logo") }}</div>
+<div class="sg-logo on-dark">{{ ui.logo("secondary", label="Secondary logo, Ivory on Espresso") }}</div>
+<div class="sg-logo section--white">{{ ui.logo("tertiary", label="Tertiary logo") }}</div>
+<div class="sg-logo section--white">{{ ui.seal(id="seal-sg-light") }}</div>
+<div class="sg-logo on-dark" style="color:var(--c-champagne)">{{ ui.seal(id="seal-sg-dark") }}</div>
+</div>
+<p style="margin-top:var(--s-4)"><button class="btn btn--outline btn--sm" type="button" data-replay-logo onclick="window.scrollTo(0,0)">Replay the logo draw-in</button></p>
+</div>
+</section>
+
+{#- ===== Icons ===== -#}
+<section class="section" aria-labelledby="icons">
+<div class="wrap">
+{{ ui.sectionHead("Thin-line icons", eyebrow="Brand · 05", id="icons", lead="Drawn for this site at the logo’s stroke weight, with square ends and sharp corners like the letters.") }}
+<ul class="sg-icons" role="list">
+{%- for name, svg in icons %}<li>{{ ui.icon(name) }}<span>{{ name }}</span></li>{% endfor -%}
+</ul>
+</div>
+</section>
+
+{#- ===== Buttons and links ===== -#}
+<section class="section section--deep" aria-labelledby="buttons" style="--bg:var(--c-ivory-deep)">
+<div class="wrap">
+{{ ui.sectionHead("Buttons and links", eyebrow="Components · 06", id="buttons", lead="Two button styles only, with small tracked labels that say exactly what happens next. Hover fills with Champagne; on phones the button presses down.") }}
+<div class="stack-l">
+<div class="btn-row">{{ ui.button("Book a free consultation", book=true) }}{{ ui.button("View treatments", href="#cards", style="outline") }}{{ ui.button("Book now", book=true, size="sm", arrow=false) }}</div>
+<div class="sg-dark on-dark"><div class="btn-row">{{ ui.button("Book now", book=true) }}{{ ui.button("Call the salon", href="tel:" + site.phone.tel, style="outline", arrow=false) }}</div></div>
+<div class="prose"><p>In running text, links are <a href="#visit">underlined thinly in Champagne</a>, offset by four pixels. Navigation links <a class="link-draw" style="text-decoration:none" href="#headings">draw their underline from left to right</a> on hover, and quiet calls to action use an arrow: {{ ui.more("Discover", "#treatment") }}</p></div>
+</div>
+</div>
+</section>
+
+{#- ===== Headings and dividers ===== -#}
+<section class="section" aria-labelledby="headings">
+<div class="wrap">
+{{ ui.sectionHead("Section headings", eyebrow="Components · 07", word="Facials", id="headings", lead="An eyebrow, a light tracked heading and, behind it, a very faint oversized word.") }}
+<div class="stack-l">
+{{ ui.rule() }}
+{{ ui.sectionHead("Beauty", eyebrow="Centred variant", word="Beauty", align="center", level=3) }}
+{{ ui.rule("icon") }}
+{{ ui.rule("short") }}
+</div>
+</div>
+</section>
+
+{#- ===== Images ===== -#}
+<section class="section section--deep" aria-labelledby="images" style="--bg:var(--c-ivory-deep)">
+<div class="wrap">
+{{ ui.sectionHead("Images", eyebrow="Components · 08", id="images", lead="Fixed ratios (4:5 portrait, 3:2 landscape), a blurred colour preview while each photo loads, and frames taken from the salon itself.") }}
+<div class="sg-frames">
+<figure data-reveal><div class="frame">{{ ui.picture("polish-wall", sizes="(min-width: 64em) 30vw, (min-width: 40em) 45vw, 100vw", ratio="45") }}</div><figcaption>Thin inset frame · echoes the salon’s white frames</figcaption></figure>
+<figure data-reveal><div class="zoom">{{ ui.picture("relaxation-room", sizes="(min-width: 64em) 30vw, (min-width: 40em) 45vw, 100vw", ratio="45", cls="arch") }}</div><figcaption>Arched top · for team portraits · zooms 3% on hover</figcaption></figure>
+<figure data-reveal>{{ ui.placeholder("[[TODO: team portrait (professional shoot)]]", ratio="45", cls="arch") }}<figcaption>Placeholder · a photo we do not have yet</figcaption></figure>
+<figure><div data-reveal="wipe">{{ ui.picture("nail-stations", sizes="(min-width: 64em) 30vw, (min-width: 40em) 45vw, 100vw", ratio="32") }}</div><figcaption>Mask-wipe reveal · hero and feature images</figcaption></figure>
+<figure data-reveal><div class="pic pic--32" style="--lqip:url({{ photos['reception-desk'].preview }})" role="img" aria-label="Blurred colour preview of the reception photo"></div><figcaption>Blurred colour preview · what shows while loading</figcaption></figure>
+<figure data-reveal>{{ ui.placeholder("[[TODO: aesthetics treatment room]]", ratio="32") }}<figcaption>Placeholder · landscape</figcaption></figure>
+</div>
+</div>
+</section>
+<div class="pause pause--band" role="img" aria-label="Texture band: the crushed-velvet reception desk">{{ ui.picture("reception-desk", sizes="100vw", alt="", position="50% 90%") }}</div>
+
+{#- ===== Sample treatment section ===== -#}
+<section class="section" aria-labelledby="treatment">
+<div class="wrap">
+{{ ui.sectionHead("Dermaplaning", eyebrow="Sample treatment section · Facials", word="Facials", id="treatment", level=2) }}
+{{ ui.facts([
+  { icon: "clock", label: "Duration", value: derma.mins | duration },
+  { icon: "calendar", label: "Results last", value: "[[TODO: from practitioner]]" },
+  { icon: "moon", label: "Downtime", value: "[[TODO: from practitioner]]" },
+  { icon: "tag", label: "Price", price: derma.price }
+]) }}
+<div class="overlap" style="margin-top:var(--s-7)">
+<div class="overlap__media" data-reveal="wipe">{{ ui.picture("treatment-room", sizes="(min-width: 64em) 60vw, 100vw", ratio="32", position="50% 55%") }}</div>
+<div class="overlap__card stack" data-reveal style="--d:200ms">
+{{ ui.eyebrow("Text card over image") }}
+<p class="h3">Clean, calm treatment rooms</p>
+<p class="small">An editorial layout: the text card overlaps the photo on desktop and tucks under it on phones. Sample copy.</p>
+{{ ui.button(derma.name and "Book " + derma.name, book=true) }}
+</div>
+</div>
+<div class="sg-treat" style="margin-top:var(--s-8)">
+{{ ui.toc([{ id: "tr-what", label: "What it is" }, { id: "tr-steps", label: "Your appointment" }, { id: "tr-prices", label: "Prices" }, { id: "tr-faq", label: "Questions" }]) }}
+<div class="sg-treat__body">
+<section aria-labelledby="tr-what">
+<div class="sg-accent">
+<div class="stack">
+<h3 id="tr-what">What it is</h3>
+<p class="lead">{{ "[[TODO: two-sentence description of dermaplaning, written in Stage 5 and checked by the practitioner]]" | todo | safe }}</p>
+<p>This paragraph shows body text beside a pampas-grass accent crop. The in-page contents on the left stays in view on desktop and marks the section you are reading with a small Champagne dot, while a 1px Champagne line along the bottom of the header shows how far down the page you are.</p>
+{{ ui.person("[[TODO: practitioner first name]]", "[[TODO: role and training]]") }}
+</div>
+<figure data-reveal><div class="frame">{{ ui.picture("reception-desk-detail", sizes="30rem", ratio="45", alt="Pampas grass in a white vase on the reception desk", position="14% 12%", zoom=2.2) }}</div><figcaption>Pampas accent crop</figcaption></figure>
+</div>
+</section>
+<section aria-labelledby="tr-steps">
+<h3 id="tr-steps" style="margin-bottom:var(--s-4)">Your appointment</h3>
+{{ ui.steps([
+  { title: "Choose your treatment", text: "Browse the menu and pick a time that suits you." },
+  { title: "Book online", text: "Use any Book now button, or call " + site.phone.display + " during opening hours." },
+  { title: "Your visit", text: "[[TODO: what happens on arrival and in the consultation]]" },
+  { title: "Aftercare", text: "[[TODO: aftercare advice and how to reach us afterwards]]" }
+], level=4) }}
+</section>
+<section aria-labelledby="tr-prices">
+<h3 id="tr-prices" style="margin-bottom:var(--s-4)">Prices</h3>
+{{ ui.pricelist(services | pageServices("dermaplaning")) }}
+<p class="small soft" style="margin-top:var(--s-2)">Live prices and times from the Phorest export (services.json).</p>
+</section>
+<section aria-labelledby="tr-faq">
+<h3 id="tr-faq" style="margin-bottom:var(--s-4)">Questions</h3>
+{{ ui.faq([
+  { q: "How do I book?", a: "Book online at any time with the Book now button, or call us on " + site.phone.display + " during opening hours." },
+  { q: "When are you open?", a: "Tuesday and Thursday 10:00–20:00, Wednesday and Friday 10:00–18:00, and Saturday 09:00–15:00. We are closed on Sunday and Monday." },
+  { q: "Is there parking?", a: "Yes, there is free parking." },
+  { q: "How long does it take?", a: derma.name + " takes about " + (derma.mins | duration) + "." }
+]) }}
+</section>
+</div>
+</div>
+</div>
+</section>
+
+<div class="pause" role="img" aria-label="Image pause: the relaxation room">{{ ui.picture("relaxation-room-wide", sizes="100vw", alt="", position="50% 55%") }}</div>
+
+{#- ===== Treatment cards ===== -#}
+<section class="section" aria-labelledby="cards">
+<div class="wrap">
+{{ ui.sectionHead("Treatment cards", eyebrow="Components · 09", word="Beauty", id="cards", lead="At most three to a row. On hover the room photo cross-fades to a detail and the price and time appear; on phones they always show.") }}
+<div class="grid grid--3" data-stagger="110">
+{{ ui.tcard("Dermaplaning", "#treatment", "treatment-room", detail="product-shelf-skincare", eyebrow="Facials", text="On its own or with a glycolic peel.", from=derma.price, mins=derma.mins) }}
+{{ ui.tcard("Lashes and brows", "#prices", "lash-print", detail="reception-flowers-products", eyebrow="Beauty", text="Lash lifts, tints and extensions, and brow lamination.", from=lashLift.price, mins=lashLift.mins) }}
+{{ ui.tcard("Nails and pedicures", "#prices", "polish-wall", detail="nail-stations", eyebrow="Beauty", text="Gel colour, manicures and pedicures.", from=pedicure.price, mins=pedicure.mins) }}
+</div>
+</div>
+</section>
+
+{#- ===== Prices ===== -#}
+<section class="section section--deep" aria-labelledby="prices" style="--bg:var(--c-ivory-deep)">
+<div class="wrap">
+<div class="split split--flip">
+<div>
+{{ ui.sectionHead("Lashes and brows", eyebrow="Luxury menu styling · 10", id="prices", lead="Dot leaders and hairline separators, like a fine-dining menu. “From” in small tracked caps, a smaller £ and light numerals.") }}
+{{ ui.pricelist([services | service("Korean Lash Lift"), services | service("Brow Lamination"), services | service("Eyebrow Wax & Tint"), services | service("Eyelash Tint"), services | service("LVL & Brow Lamination Package")]) }}
+</div>
+<figure data-reveal><div class="frame">{{ ui.picture("lash-print", sizes="(min-width: 64em) 30vw, 100vw", ratio="45") }}</div><figcaption>Small tracked-caps caption</figcaption></figure>
+</div>
+</div>
+</section>
+
+{#- ===== Reviews ===== -#}
+<section class="section" aria-labelledby="reviews">
+<div class="wrap">
+{{ ui.sectionHead("Reviews", eyebrow="Components · 11", id="reviews") }}
+{{ ui.stat(site.reviews.count, "Five-star reviews on " + site.reviews.source + " since " + site.reviews.since.slice(0, 4)) }}
+<div class="grid grid--3" style="margin-top:var(--s-6)" data-stagger="110">
+{{ ui.review("[[TODO: full review text from Phorest]]", "[[TODO: first name and surname initial]]", "[[TODO: month and year]]") }}
+{{ ui.review("[[TODO: full review text from Phorest]]", "[[TODO: first name and surname initial]]", "[[TODO: month and year]]") }}
+{{ ui.review("[[TODO: full review text from Phorest]]", "[[TODO: first name and surname initial]]", "[[TODO: month and year]]") }}
+</div>
+</div>
+</section>
+
+{#- ===== Visit ===== -#}
+<section class="section section--deep" aria-labelledby="visit" style="--bg:var(--c-ivory-deep)">
+<div class="wrap">
+{{ ui.sectionHead("Visit and contact", eyebrow="Components · 12", id="visit", lead="Live opening status, today’s hours highlighted, tap to call, tap the address to copy it, and a map that opens Google Maps.") }}
+<div class="sg-visit">
+<div class="stack">
+<h3 class="h4">Opening hours</h3>
+<p>{{ ui.openStatus() }}</p>
+{{ ui.hours() }}
+</div>
+<div class="stack">
+<h3 class="h4">Find us</h3>
+{{ ui.address() }}
+<p><a class="link tnum" href="tel:{{ site.phone.tel }}">{{ site.phone.display }}</a></p>
+<p class="soft small">{{ site.parking }}</p>
+</div>
+<div class="stack">
+{{ ui.map() }}
+<p class="small soft"><span class="todo">[[TODO: brand-coloured static map image]]</span> Until then the map shows a quiet pattern; it already links to Google Maps.</p>
+</div>
+</div>
+</div>
+</section>

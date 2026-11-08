@@ -1,0 +1,16 @@
+<dialog class="menu" id="menu" aria-label="Menu">
+<div class="menu__top">
+<a class="brand" href="/" aria-label="{{ site.tradingName }}, home">{{ ui.logo("tertiary") }}</a>
+<button class="menu__close" type="button" data-menu-close aria-label="Close menu" autofocus>{{ ui.icon("close") }}</button>
+</div>
+<nav aria-label="Main">
+<ol class="menu__list" role="list">
+{%- for item in nav.main %}<li style="--i:{{ loop.index0 }}"><a href="{{ item.url }}"{% if page.url and page.url.startsWith(item.url) %} aria-current="page"{% endif %}>{{ item.label }}</a></li>{% endfor -%}
+</ol>
+</nav>
+<div class="menu__foot on-dark" style="--i:{{ nav.main | length }}">
+{{ ui.button("Book now", book=true, cls="btn--block") }}
+<p>{{ ui.openStatus() }}</p>
+<p><a href="{{ site.address.oneLine | mapsUrl }}">{{ site.address.oneLine }}</a><br><a href="tel:{{ site.phone.tel }}">{{ site.phone.display }}</a> · {{ site.parking }}</p>
+</div>
+</dialog>

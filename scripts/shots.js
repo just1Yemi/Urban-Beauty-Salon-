@@ -77,6 +77,7 @@ async function scrollThrough(page) {
   });
   await page.evaluate(() => document.fonts?.ready);
   await page.waitForLoadState("networkidle").catch(() => {});
+  await page.waitForTimeout(400); // let scroll-driven header state and SVG repaints settle
 }
 
 async function contactSheet(shots, file) {

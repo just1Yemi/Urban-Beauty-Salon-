@@ -1,0 +1,185 @@
+{#- =========================================================================
+  ui.njk: component macros. Use in any template with
+    {% import "ui.njk" as ui with context %}
+  Reference: COMPONENTS.md. Never type facts here: they come from src/_data.
+========================================================================= -#}
+
+{#- Thin-line icon. name: a key of src/_data/icons.js. label: only when the icon stands alone. -#}
+{% macro icon(name, cls="", label="") -%}
+<svg class="icon icon--{{ name }}{% if cls %} {{ cls }}{% endif %}" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="butt" stroke-linejoin="miter"{% if label %} role="img" aria-label="{{ label }}"{% else %} aria-hidden="true" focusable="false"{% endif %}>{{ icons[name] | safe }}</svg>
+{%- endmacro %}
+
+{#- Logo from the logo pack. variant: primary | secondary | tertiary | icon.
+    draw=true traces it in once per visit (ONE per page: the header; the mask id is fixed). -#}
+{% macro logo(variant="tertiary", draw=false, cls="", label="") -%}
+{%- set L = logos[variant] -%}
+<svg class="logo logo--{{ variant }}{% if draw %} logo--draw{% endif %}{% if cls %} {{ cls }}{% endif %}" viewBox="{{ L.viewBox }}" width="{{ L.w }}" height="{{ L.h }}" fill="currentColor"{% if label %} role="img" aria-label="{{ label }}"{% else %} aria-hidden="true" focusable="false"{% endif %}>
+{%- if draw %}<mask id="logo-draw-mask" class="logo__mask" maskUnits="userSpaceOnUse" x="0" y="0" width="{{ L.w }}" height="{{ L.h }}"><g fill="none" stroke="#fff" stroke-linecap="butt" stroke-linejoin="round">{{ L.mask | safe }}</g></mask>{% endif -%}
+<g class="logo__ink">{{ L.inner | safe }}</g></svg>
+{%- endmacro %}
+
+{#- Heritage seal: THE URBAN BEAUTY SALON · EST. 2013 · PENKETH on a circle around the UB icon -#}
+{% macro seal(cls="", id="seal-ring") -%}
+{%- set L = logos.icon -%}
+<svg class="seal{% if cls %} {{ cls }}{% endif %}" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="{{ site.tradingName }}, established {{ site.established }}, {{ site.address.locality }}">
+<defs><path id="{{ id }}" d="M22 100a78 78 0 1 1 156 0a78 78 0 1 1 -156 0"/></defs>
+<circle cx="100" cy="100" r="95" fill="none" stroke="currentColor" stroke-width=".6" opacity=".55"/>
+<text><textPath href="#{{ id }}" textLength="489" lengthAdjust="spacing">{{ site.tradingName | upper }} · EST. {{ site.established }} · {{ site.address.locality | upper }} ·&#160;</textPath></text>
+<g transform="translate(31.2 31.2) scale(.42)" fill="currentColor">{{ L.inner | safe }}</g>
+</svg>
+{%- endmacro %}
+
+{#- Buttons: two styles only. style: solid | outline. book=true uses the ONE booking setting. -#}
+{% macro button(label, href="", style="solid", book=false, size="", arrow=true, sheen=false, cls="") -%}
+<a class="btn{% if style == 'outline' %} btn--outline{% endif %}{% if size %} btn--{{ size }}{% endif %}{% if cls %} {{ cls }}{% endif %}" href="{{ site.booking.url if book else href }}"{% if book %} data-book{% endif %}{% if sheen %} data-sheen{% endif %}><span>{{ label }}</span>{% if arrow %}{{ icon("arrow", "icon--arrow") }}{% endif %}</a>
+{%- endmacro %}
+
+{#- Quiet link with arrow: "Discover", "Get directions" -#}
+{% macro more(label, href) -%}
+<a class="more link-draw" href="{{ href }}">{{ label }}{{ icon("arrow", "icon--arrow") }}</a>
+{%- endmacro %}
+
+{#- Eyebrow: AESTHETICS · 01 -#}
+{% macro eyebrow(text, num="") -%}
+<p class="eyebrow">{{ text }}{% if num %} · {{ num | pad2 }}{% endif %}</p>
+{%- endmacro %}
+
+{#- Section heading with optional faint oversized background word -#}
+{% macro sectionHead(title, eyebrow="", word="", lead="", level=2, align="left", id="") -%}
+<header class="section-head{% if align == 'center' %} section-head--center{% endif %}" data-reveal>
+{%- if word %}<span class="section-head__word" aria-hidden="true">{{ word }}</span>{% endif %}
+{%- if eyebrow %}<p class="eyebrow">{{ eyebrow }}</p>{% endif %}
+<h{{ level }}{% if id %} id="{{ id }}"{% endif %}>{{ title | amp | safe }}</h{{ level }}>
+{%- if lead %}<p class="lead">{{ lead }}</p>{% endif %}
+</header>
+{%- endmacro %}
+
+{#- Hairline divider. type: line | short | icon (UB circle motif) -#}
+{% macro rule(type="line") -%}
+{%- if type == "icon" -%}<div class="rule--icon" role="separator">{{ logo("icon") }}</div>
+{%- else -%}<hr class="rule{% if type == 'short' %} rule--short{% endif %}">{%- endif -%}
+{%- endmacro %}
+
+{#- Responsive photo from src/_data/photos.json: AVIF/WebP, fixed dimensions, blurred preview.
+    ratio: 45 | 32 | 11 | wide (or "" for the photo's own). priority=true for the hero only. -#}
+{% macro picture(name, sizes="100vw", ratio="", cls="", loading="lazy", priority=false, alt=false, position="", zoom=0) -%}
+{%- set p = photos[name] -%}
+{%- if p -%}
+<picture class="pic{% if ratio %} pic--{{ ratio }}{% endif %}{% if cls %} {{ cls }}{% endif %}" style="--lqip:url({{ p.preview }})">
+{%- for fmt in p.formats %}<source type="image/{{ fmt }}" srcset="{% for w in p.widths %}{{ p.path }}-{{ w }}.{{ fmt }} {{ w }}w{% if not loop.last %}, {% endif %}{% endfor %}" sizes="{{ sizes }}">{% endfor -%}
+<img src="{{ p.path }}-960.webp" alt="{{ p.alt if alt === false else alt }}" width="{{ p.width }}" height="{{ p.height }}"{% if priority %} fetchpriority="high"{% else %} loading="{{ loading }}" decoding="async"{% endif %}{% if position or zoom %} style="{% if position %}object-position:{{ position }};{% endif %}{% if zoom %}scale:{{ zoom }};transform-origin:{{ position or '50% 50%' }}{% endif %}"{% endif %}>
+</picture>
+{%- else -%}{{ placeholder("[[TODO: photo: " ~ name ~ "]]", ratio) }}{%- endif -%}
+{%- endmacro %}
+
+{#- Placeholder for a photo we do not have yet. label should say what is needed. -#}
+{% macro placeholder(label, ratio="45", cls="") -%}
+<div class="placeholder{% if ratio %} pic--{{ ratio }}{% endif %}{% if cls %} {{ cls }}{% endif %}" role="img" aria-label="Photo to come: {{ label | replace('[[TODO:', '') | replace(']]', '') | trim }}">
+{{ logo("icon", cls="placeholder__icon") }}<span class="placeholder__label">{{ label | todo | safe }}</span>
+</div>
+{%- endmacro %}
+
+{#- Price: "From" in small tracked caps, smaller £, light numerals. Amount from services.json. -#}
+{% macro price(amount, from=true, cls="") -%}
+<span class="price{% if cls %} {{ cls }}{% endif %}">{% if from %}<span class="price__from">From</span>&nbsp;{% endif %}<span class="price__amt"><span class="price__cur">£</span>{{ amount }}</span></span>
+{%- endmacro %}
+
+{#- Luxury menu list with dot leaders. items: [{ name, price, mins }] (use the service filter) -#}
+{% macro pricelist(items) -%}
+<ul class="pricelist" role="list">
+{%- for it in items %}{% if it %}<li><span class="pricelist__name">{{ it.name }}{% if it.mins %}<span class="pricelist__dur">{{ it.mins | duration }}</span>{% endif %}</span><span class="pricelist__lead" aria-hidden="true"></span>{{ price(it.price) }}</li>{% endif %}{% endfor -%}
+</ul>
+{%- endmacro %}
+
+{#- Quick-facts strip. items: [{ icon, label, value }] or { icon, label, price } -#}
+{% macro facts(items) -%}
+<dl class="facts" data-reveal>
+{%- for f in items %}<div class="facts__item">{{ icon(f.icon) }}<dt>{{ f.label }}</dt><dd>{% if f.price %}{{ price(f.price) }}{% else %}{{ f.value | todo | safe }}{% endif %}</dd></div>{% endfor -%}
+</dl>
+{%- endmacro %}
+
+{#- Treatment card. photo: room photo, detail: second photo shown on hover. from/mins from services.json -#}
+{% macro tcard(title, href, photo, detail="", eyebrow="", text="", from=false, mins=false, level=3) -%}
+{%- set sizes = "(min-width: 64em) 30vw, (min-width: 40em) 45vw, 100vw" -%}
+<article class="tcard" data-reveal>
+<div class="tcard__media">{{ picture(photo, sizes=sizes, ratio="45") }}{% if detail %}{{ picture(detail, sizes=sizes, ratio="45", alt="") }}{% endif %}</div>
+<div class="tcard__body">
+{%- if eyebrow %}<p class="eyebrow">{{ eyebrow }}</p>{% endif %}
+<h{{ level }} class="tcard__title"><a class="tcard__link" href="{{ href }}">{{ title }}</a></h{{ level }}>
+{%- if text %}<p class="tcard__text">{{ text | todo | safe }}</p>{% endif %}
+{%- if from or mins %}<p class="tcard__meta">{% if from %}{{ price(from) }}{% endif %}{% if from and mins %}<span class="sep" aria-hidden="true">·</span>{% endif %}{% if mins %}<span>{{ mins | duration }}</span>{% endif %}</p>{% endif %}
+</div>
+</article>
+{%- endmacro %}
+
+{#- Review card. Reviews: first name and surname initial only; none that mention prescription medicines. -#}
+{% macro review(text, name, date="") -%}
+<figure class="review" data-reveal>
+<svg class="review__mark" viewBox="0 0 48 36" width="48" height="36" aria-hidden="true" focusable="false"><g fill="currentColor"><circle cx="9.5" cy="27.5" r="5.5"/><circle cx="31.5" cy="27.5" r="5.5"/></g><g fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4.2 27.5C4.2 17 8.5 8.5 16.5 3.5"/><path d="M26.2 27.5C26.2 17 30.5 8.5 38.5 3.5"/></g></svg>
+<blockquote><p>{{ text | todo | safe }}</p></blockquote>
+<figcaption><span class="review__name">{{ name | todo | safe }}</span><span class="review__meta">{% if date %}<span>{{ date | todo | safe }}</span><span aria-hidden="true">·</span>{% endif %}<span>{{ icon("check") }}</span><span>Verified Phorest client</span></span></figcaption>
+</figure>
+{%- endmacro %}
+
+{#- Review count that counts up once. Number from site.json reviews. -#}
+{% macro stat(number, label) -%}
+<p class="stat" data-reveal><span class="stat__num"><span class="visually-hidden">{{ number | thousands }}</span><span aria-hidden="true" data-count="{{ number }}">{{ number | thousands }}</span></span><span class="stat__label">{{ label }}</span></p>
+{%- endmacro %}
+
+{#- FAQ accordion. items: [{ q, a }] (a may contain simple HTML) -#}
+{% macro faq(items) -%}
+<div class="faq">
+{%- for it in items %}<details class="faq__item" data-accordion><summary class="faq__q"><span>{{ it.q }}</span>{{ icon("plus") }}</summary><div class="faq__a"><div><p>{{ it.a | todo | safe }}</p></div></div></details>{% endfor -%}
+</div>
+{%- endmacro %}
+
+{#- Numbered steps (01, 02) linked by a thin vertical line. items: [{ title, text }] -#}
+{% macro steps(items, level=3) -%}
+<ol class="steps" data-stagger="120">
+{%- for s in items %}<li data-reveal><div><h{{ level }} class="h4">{{ s.title }}</h{{ level }}><p>{{ s.text | todo | safe }}</p></div></li>{% endfor -%}
+</ol>
+{%- endmacro %}
+
+{#- Sticky in-page contents. items: [{ id, label }] -#}
+{% macro toc(items, label="On this page") -%}
+<nav class="toc" aria-label="{{ label }}" data-toc><p class="eyebrow" aria-hidden="true">{{ label }}</p><ol role="list">
+{%- for it in items %}<li><a href="#{{ it.id }}">{{ it.label }}</a></li>{% endfor -%}
+</ol></nav>
+{%- endmacro %}
+
+{#- "Your practitioner" mini card. photo: a photos.json name, or empty for a placeholder. -#}
+{% macro person(name, role, photo="", text="") -%}
+<div class="person">
+{%- if photo and photos[photo] %}<div class="person__photo">{{ picture(photo, sizes="88px", ratio="45", cls="arch") }}</div>
+{%- else %}<div class="person__photo placeholder" role="img" aria-label="Portrait to come">{{ logo("icon", cls="placeholder__icon") }}</div>{% endif %}
+<div class="person__body"><p class="eyebrow">Your practitioner</p><p class="person__name">{{ name | todo | safe }}</p><p class="small soft">{{ role | todo | safe }}</p>{% if text %}<p class="small">{{ text | todo | safe }}</p>{% endif %}</div>
+</div>
+{%- endmacro %}
+
+{#- Opening hours table (today's row highlighted by site.js) -#}
+{% macro hours(caption="Opening hours") -%}
+<table class="hours" data-hours><caption class="visually-hidden">{{ caption }}</caption><tbody>
+{%- for day in site.hours.days %}<tr data-day="{{ day.day }}"><th scope="row">{{ day.label }}</th><td>{{ day | timeRange }}</td></tr>{% endfor -%}
+</tbody></table>
+{%- endmacro %}
+
+{#- Live "Open now · closes 8pm" (static fallback without JS) -#}
+{% macro openStatus() -%}
+<span class="status" data-open-status>Open {{ site.hours.days | openDays }}</span>
+{%- endmacro %}
+
+{#- Address; site.js turns it into a tap-to-copy button with a quiet "Copied" note -#}
+{% macro address() -%}
+<address class="addr" data-copy="{{ site.address.oneLine }}">{{ site.address.line1 }}<br>{{ site.address.locality }}, {{ site.address.town }}<br>{{ site.address.postcode }}</address>
+{%- endmacro %}
+
+{#- Static brand-coloured map linking to Google Maps (no embed, no Google cookies).
+    image: path to the static map image when it exists; until then a placeholder pattern. -#}
+{% macro map(image="") -%}
+<a class="map" href="{{ site.address.oneLine | mapsUrl }}">
+{%- if image %}<img class="map__img" src="{{ image }}" alt="" width="1200" height="800" loading="lazy" decoding="async">{% else %}<span class="map__art" aria-hidden="true"></span>{% endif -%}
+<span class="map__pin" aria-hidden="true">{{ logo("icon") }}</span>
+<span class="map__label"><span>{{ site.address.line1 }}, {{ site.address.locality }}<br><span class="soft">{{ site.parking }}</span></span><span class="more">Directions{{ icon("arrow", "icon--arrow") }}</span></span>
+<span class="visually-hidden"> (opens Google Maps)</span>
+</a>
+{%- endmacro %}
