@@ -101,11 +101,12 @@ metaDescription: Advanced skin and aesthetics, facials and everyday beauty in Pe
 {%- if teamCount %}{% for id, p in practitioners.people | dictsort %}<div data-reveal>{{ ui.person(p.name, p.role, p.photo or "", p.text or "") }}</div>{% endfor %}
 {%- else %}{% for i in range(0, 3) %}<div data-reveal>{{ ui.person("[[TODO: practitioner name]]", "[[TODO: role and training]]") }}</div>{% endfor %}{% endif %}
 </div>
-<div class="stack" style="margin-top:var(--s-6)" data-reveal>
-{%- if showTodo %}
-<h3 class="h4">Results</h3>
-<p class="small">{{ "[[TODO: results the clients have agreed to share, for treatments that are not prescription-only]]" | todo | safe }}</p>
-{%- endif %}
+<div class="stack" style="margin-top:var(--s-6)">
+<h3 class="h4" data-reveal>Recent work</h3>
+<p class="small soft" data-reveal>Real nails by our team, photographed in the salon.</p>
+<ul class="grid work-grid" role="list" data-stagger="90">
+{%- for n in ["nails-soft-pink", "nails-pink-sparkle", "nails-teal", "nails-turquoise", "nails-purple", "nails-green"] %}<li data-reveal><div class="frame">{{ ui.picture(n, sizes="(min-width: 64em) 30vw, 50vw", ratio="45") }}</div></li>{% endfor %}
+</ul>
 <p>{{ ui.more("Meet the team", "/about/") }}</p>
 </div>
 </div>

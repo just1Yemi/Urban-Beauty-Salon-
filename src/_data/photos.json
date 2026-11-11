@@ -457,6 +457,76 @@
     "path": "/assets/img/salon/nails-chocolate",
     "preview": "data:image/webp;base64,UklGRrAAAABXRUJQVlA4IKQAAACwBQCdASoYAB4APt1gp04opaMiKA1REBuJZACdMoSCmA0oN4N4eSs4SC/3h2FNvYQKkqShygAA/rNC1SA0YARDu3DCckG/y6X2Nm3TUVhl8WyMyn2fp2dxkq7eOTUkYQ7XiNIWYCiSYGSFjcq2ra/vADsvVhL0u0EXwBSJA+nnGEXXHQCYo1X2PHv5/0WaXwLlBCv8k8PfuVLKWz1baIe/3HgAAA=="
   },
+  "nails-pink-sparkle": {
+    "name": "nails-pink-sparkle",
+    "alt": "A pale pink gel manicure with one silver glitter accent nail, hands resting on a white towel.",
+    "use": "detail",
+    "ratio": "4:5",
+    "width": 960,
+    "height": 1200,
+    "widths": [
+      480,
+      960
+    ],
+    "formats": [
+      "avif",
+      "webp"
+    ],
+    "path": "/assets/img/salon/nails-pink-sparkle",
+    "preview": "data:image/webp;base64,UklGRqAAAABXRUJQVlA4IJQAAACQBQCdASoYAB4APt1apUyopSOiMBgMARAbiWoAnTKDyugLNn77x+5EhB6Dcr/+GoNFDfNzAAD+VAg75trg3RtR1navk14RPHvfxhUO6kslcPJeSDjrP3QfG0XZGwNfcxfaNGiIjJVkOHqymZUn1iwPFQxfpkUyL+nk13G/MXiS8hKVQusDJSBp2uzYgEhPu/JnDIAA"
+  },
+  "nails-turquoise": {
+    "name": "nails-turquoise",
+    "alt": "A bright turquoise gel manicure with patterned accent nails, hands resting on a white towel.",
+    "use": "detail",
+    "ratio": "4:5",
+    "width": 960,
+    "height": 1200,
+    "widths": [
+      480,
+      960
+    ],
+    "formats": [
+      "avif",
+      "webp"
+    ],
+    "path": "/assets/img/salon/nails-turquoise",
+    "preview": "data:image/webp;base64,UklGRpoAAABXRUJQVlA4II4AAAAQBQCdASoYAB4APtFUpkyoJKOiMAwBABoJbACdMtU8CB4Jy+bmqEjlMrQFs46baoYQAP62hF0819HXrbQeno2x+dnp92GJqB8WHNu8d7subq7GO27jfe1bWhVqyqjz3ILtOvDDnaAkZcDWFZhHwkOE9lPoO2ApNOPrTzmCrF2Oz59lhPt+jVSeOIo89YAA"
+  },
+  "nails-purple": {
+    "name": "nails-purple",
+    "alt": "A purple glitter gel manicure, hands resting on a white towel.",
+    "use": "detail",
+    "ratio": "4:5",
+    "width": 480,
+    "height": 600,
+    "widths": [
+      480
+    ],
+    "formats": [
+      "avif",
+      "webp"
+    ],
+    "path": "/assets/img/salon/nails-purple",
+    "preview": "data:image/webp;base64,UklGRrIAAABXRUJQVlA4IKYAAAAQBgCdASoYAB4APt1WqEyopCQiMBgMARAbiWIArDlBVX5KAHFlv0Nf6SPVni3Q6loeW5pcMPE4hAAA9UHkwsENbPbYO87FFKtXCehjQxvwPd56sImCF6RyIogTZJ/3gpULnn4IQj4EyULPSK1uNucAefkyIGM1Nxxkl7+G55I/sH/Sby5barr81DeSOo7LhfaUOkhos/Ok4BFOnQdvNxnJbQ9wAAAA"
+  },
+  "nails-green": {
+    "name": "nails-green",
+    "alt": "A deep green gel manicure, hands resting on a white towel.",
+    "use": "detail",
+    "ratio": "4:5",
+    "width": 480,
+    "height": 600,
+    "widths": [
+      480
+    ],
+    "formats": [
+      "avif",
+      "webp"
+    ],
+    "path": "/assets/img/salon/nails-green",
+    "preview": "data:image/webp;base64,UklGRrgAAABXRUJQVlA4IKwAAACQBQCdASoYAB4APt1cqU6opKOiMBgIARAbiWYAnQAR8BxQ4vCT4yDr77qFeJRpWoYq0e5wAAD94Ck5RS0kYEeRLWd/sE8Nq3Z0bUZlSfhDRHjCY/q522ioDfl48Z2ogU1UyhPgs7lh5uf8H59EASUabHOGbJOcaSityRWJO6ly1hVgL7h3RB4jEUmmOAdAjQukIGZ89GlGAX1sP/xLVmJAuWLPdf/1wlYXgAAA"
+  },
   "team-rachel": {
     "name": "team-rachel",
     "alt": "Portrait of Rachel Crookes, Salon Manager.",

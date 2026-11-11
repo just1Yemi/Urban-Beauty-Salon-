@@ -266,6 +266,42 @@ const PHOTOS = [
     use: "detail",
     alt: "A glossy chocolate-brown gel manicure, hands resting on a white towel.",
   },
+  {
+    name: "nails-pink-sparkle",
+    source: "nails-91.jpg",
+    ratio: "4:5",
+    crop: { x: 0, y: 0.03, w: 1 },
+    rotate: 0,
+    use: "detail",
+    alt: "A pale pink gel manicure with one silver glitter accent nail, hands resting on a white towel.",
+  },
+  {
+    name: "nails-turquoise",
+    source: "nails-115.jpg",
+    ratio: "4:5",
+    crop: { x: 0, y: 0.02, w: 1 },
+    rotate: 0,
+    use: "detail",
+    alt: "A bright turquoise gel manicure with patterned accent nails, hands resting on a white towel.",
+  },
+  {
+    name: "nails-purple",
+    source: "nails-114.jpg",
+    ratio: "4:5",
+    crop: { x: 0, y: 0.2, w: 1 },
+    rotate: 0,
+    use: "detail",
+    alt: "A purple glitter gel manicure, hands resting on a white towel.",
+  },
+  {
+    name: "nails-green",
+    source: "nails-119.jpg",
+    ratio: "4:5",
+    crop: { x: 0, y: 0.2, w: 1 },
+    rotate: 0,
+    use: "detail",
+    alt: "A deep green gel manicure, hands resting on a white towel.",
+  },
 ];
 
 function rad(deg) {

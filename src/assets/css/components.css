@@ -574,3 +574,7 @@ html .ob-widget-container button:focus-visible { outline: 2px solid var(--c-espr
 
 /* Heritage seal, large (About page) */
 .seal--lg { width: min(100%, 18rem); color: var(--c-espresso); }
+
+/* Recent work gallery (home): two across on phones, three on desktop. */
+.work-grid { list-style: none; padding: 0; margin: var(--s-4) 0 0; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+@media (min-width: 64em) { .work-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }

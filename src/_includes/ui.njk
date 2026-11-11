@@ -75,7 +75,7 @@
 <picture class="pic{% if ratio %} pic--{{ ratio }}{% endif %}{% if cls %} {{ cls }}{% endif %}" style="--lqip:url({{ p.preview }})">
 {%- if pp %}{% for fmt in pp.formats %}<source media="(orientation: portrait)" type="image/{{ fmt }}" srcset="{% for w in pp.widths %}{{ pp.path }}-{{ w }}.{{ fmt }} {{ w }}w{% if not loop.last %}, {% endif %}{% endfor %}" sizes="{{ portraitSizes }}" width="{{ pp.width }}" height="{{ pp.height }}">{% endfor %}{% endif -%}
 {%- for fmt in p.formats %}<source type="image/{{ fmt }}" srcset="{% for w in p.widths %}{{ p.path }}-{{ w }}.{{ fmt }} {{ w }}w{% if not loop.last %}, {% endif %}{% endfor %}" sizes="{{ sizes }}">{% endfor -%}
-<img src="{{ p.path }}-960.webp" alt="{{ p.alt if alt === false else alt }}" width="{{ p.width }}" height="{{ p.height }}"{% if priority %} fetchpriority="high"{% else %} loading="{{ loading }}" decoding="async"{% endif %}{% if position or zoom %} style="{% if position %}object-position:{{ position }};{% endif %}{% if zoom %}scale:{{ zoom }};transform-origin:{{ position or '50% 50%' }}{% endif %}"{% endif %}>
+<img src="{{ p.path }}-{{ 960 if (p.widths.indexOf(960) > -1) else p.widths[p.widths.length - 1] }}.webp" alt="{{ p.alt if alt === false else alt }}" width="{{ p.width }}" height="{{ p.height }}"{% if priority %} fetchpriority="high"{% else %} loading="{{ loading }}" decoding="async"{% endif %}{% if position or zoom %} style="{% if position %}object-position:{{ position }};{% endif %}{% if zoom %}scale:{{ zoom }};transform-origin:{{ position or '50% 50%' }}{% endif %}"{% endif %}>
 </picture>
 {%- else -%}{{ placeholder("[[TODO: photo: " ~ name ~ "]]", ratio) }}{%- endif -%}
 {%- endmacro %}
