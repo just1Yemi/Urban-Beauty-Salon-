@@ -35,7 +35,10 @@ related:
   - body-and-tanning
   - crystal-clear
   - nails-and-pedicures
-reviews: []
+reviews:
+  - "jackie-m-2026-09"
+  - "liz-p-2026-08"
+  - "julie-d-2026-04"
 ---
 
 ## What it is

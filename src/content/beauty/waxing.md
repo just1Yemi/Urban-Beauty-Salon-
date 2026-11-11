@@ -46,7 +46,9 @@ related:
   - lashes-and-brows
   - body-and-tanning
   - men
-reviews: []
+reviews:
+  - "joanne-h-2026-10"
+  - "annabelle-j-2026-11"
 ---
 
 ## What it is

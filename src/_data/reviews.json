@@ -1,4 +1,28 @@
 {
-  "note": "Real Phorest reviews only, keyed by id (used by the reviews field on treatment pages). Rules (CLAUDE.md): first name and surname initial only; month and year; exclude any review that mentions a prescription medicine. Fields: text, name (\"Sarah K.\"), date (\"2026-03\"), page (treatment slug). Empty until Yemi supplies review texts.",
-  "items": {}
+  "note": "Real Phorest reviews only (exported 11 Nov 2026), keyed by id. Rules (CLAUDE.md): first name and surname initial only; month and year; wording as the client wrote it (line breaks kept; shown with white-space: pre-line); never a review that mentions a prescription medicine, a client's health, or a former staff member. The first three items appear on the home page. Fields: text, name, date, page, practitioner.",
+  "items": {
+    "alison-f-2026-09": { "text": "Fantastic treatments with Rach today, as always. She takes such care to deliver exactly what works - she questions, listens and makes brilliant recommendations. Fabulous!", "name": "Alison F.", "date": "2026-09", "page": "home", "practitioner": "Rachel" },
+    "sarah-r-2026-08": { "text": "Rachel is always 5*. She is professional and takes a real pride in her work. I always leave feeling relaxed and pampered", "name": "Sarah R.", "date": "2026-08", "page": "home", "practitioner": "Rachel" },
+    "norma-t-2026-09": { "text": "Very friendly and put me completely at ease. Felt totally relaxed afterwards", "name": "Norma T.", "date": "2026-09", "page": "home", "practitioner": "Jill" },
+
+    "crispian-w-2026-11": { "text": "Thank you so much to Rachel for my lovely gel nails! It was a wonderful little pamper and they look absolutely marvellous.", "name": "Crispian W.", "date": "2026-11", "page": "nails-and-pedicures", "practitioner": "Rachel" },
+    "janet-d-2026-10": { "text": "I am absolutely delighted with my autumnal nails Jo was very patient & helped me select the colours and sequence Fantastic service as always x", "name": "Janet D.", "date": "2026-10", "page": "nails-and-pedicures", "practitioner": "Joanne" },
+    "rebecca-c-2026-07": { "text": "Felt comfortable Isla was lovely really love my nails thank you!!", "name": "Rebecca C.", "date": "2026-07", "page": "nails-and-pedicures", "practitioner": "Isla" },
+
+    "jackie-m-2026-09": { "text": "Gorgeous full body massage Feel so chilled and relaxed Joanne has magic hands", "name": "Jackie M.", "date": "2026-09", "page": "massage", "practitioner": "Joanne" },
+    "liz-p-2026-08": { "text": "An amazing back massage from Rachel! Thank you!", "name": "Liz P.", "date": "2026-08", "page": "massage", "practitioner": "Rachel" },
+    "julie-d-2026-04": { "text": "Thanks Jill I feel so relaxed and chilled. Amazing massage xx", "name": "Julie D.", "date": "2026-04", "page": "massage", "practitioner": "Jill" },
+
+    "kelly-d-2026-10": { "text": "The crystal clear facial was out of this world\nI will be back\nThank you", "name": "Kelly D.", "date": "2026-10", "page": "crystal-clear", "practitioner": "Joanne" },
+    "patsy-b-2026-11": { "text": "A great experience. Very knowledgable staff.", "name": "Patsy B.", "date": "2026-11", "page": "crystal-clear", "practitioner": "Rachel" },
+
+    "joanne-t-2026-09": { "text": "Great service by Joanne\nHad my brows tinted and waxed , very professional and very pleased with the results", "name": "Joanne T.", "date": "2026-09", "page": "lashes-and-brows", "practitioner": "Joanne" },
+    "laura-g-2026-10": { "text": "Brilliant! Great service, super happy with results and quick and efficient :)", "name": "Laura G.", "date": "2026-10", "page": "lashes-and-brows", "practitioner": "Isla" },
+    "rebecca-c-2026-07-brows": { "text": "Felt at ease as first visit really love the results of my brows! Thank you", "name": "Rebecca C.", "date": "2026-07", "page": "lashes-and-brows", "practitioner": "Rachel" },
+
+    "joanne-h-2026-10": { "text": "Rachel is so lovely and professional\nI had an eyebrow wax and they looked great\nReally pleased with the treatment", "name": "Joanne H.", "date": "2026-10", "page": "waxing", "practitioner": "Rachel" },
+    "annabelle-j-2026-11": { "text": "the service was lovely and i felt comfortable", "name": "Annabelle J.", "date": "2026-11", "page": "waxing", "practitioner": "Joanne" },
+
+    "christine-g-2026-09": { "text": "Very impressed with my spray tan, Joanne was really friendly and professional.\nThank you for a lovely experience", "name": "Christine G.", "date": "2026-09", "page": "body-and-tanning", "practitioner": "Joanne" }
+  }
 }

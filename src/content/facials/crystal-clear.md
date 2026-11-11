@@ -32,7 +32,9 @@ related:
   - glycolic-peel
   - dermaplaning
   - caci
-reviews: []
+reviews:
+  - "kelly-d-2026-10"
+  - "patsy-b-2026-11"
 ---
 
 ## What it is

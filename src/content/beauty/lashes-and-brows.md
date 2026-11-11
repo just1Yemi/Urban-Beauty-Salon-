@@ -42,7 +42,10 @@ related:
   - waxing
   - crystal-clear
   - nails-and-pedicures
-reviews: []
+reviews:
+  - "joanne-t-2026-09"
+  - "laura-g-2026-10"
+  - "rebecca-c-2026-07-brows"
 ---
 
 ## What it is

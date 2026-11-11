@@ -59,7 +59,10 @@ related:
   - massage
   - lashes-and-brows
   - little-miss-urban
-reviews: []
+reviews:
+  - "crispian-w-2026-11"
+  - "janet-d-2026-10"
+  - "rebecca-c-2026-07"
 ---
 
 ## What it is
