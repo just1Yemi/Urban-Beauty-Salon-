@@ -6,7 +6,7 @@ section: beauty
 metaTitle: Waxing in Penketh, Warrington
 metaDescription: Strip and hot wax for brows, lip, chin, underarms, arms, legs, bikini and intimate areas at The Urban Beauty Salon in Penketh, Warrington. Book online.
 lead: Strip and hot wax for face, underarms, arms, legs, bikini and intimate areas in Penketh, Warrington, with clear times and prices.
-heroPhoto: treatment-room
+heroPhoto: relaxation-room-wide
 facts:
   resultsLast: "Typically 3–6 weeks"
   downtime: "Typically none"

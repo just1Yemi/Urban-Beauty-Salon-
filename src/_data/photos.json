@@ -79,100 +79,75 @@
   },
   "polish-wall": {
     "name": "polish-wall",
-    "alt": "Rows of gel nail polish bottles in a wall-mounted white ornate frame, arranged by colour.",
+    "alt": "Rows of gel nail polish bottles on white wall shelves, arranged by colour.",
     "use": "accent",
     "ratio": "4:5",
-    "width": 1600,
-    "height": 2000,
+    "width": 960,
+    "height": 1200,
     "widths": [
       480,
-      960,
-      1600
+      960
     ],
     "formats": [
       "avif",
       "webp"
     ],
     "path": "/assets/img/salon/polish-wall",
-    "preview": "data:image/webp;base64,UklGRpIAAABXRUJQVlA4IIYAAABwBQCdASoYAB4APt1gqE4opaOiMBgIARAbiWUAtOgQpRdUDAPpKH8ZJM5rH8uck71JvOs4AP6UeRIbQpK/hM85t+5Zu/QJ510po0Wewy2AwsjohBrvVeDGrHMDg//c4pN52Ka3gp+IT5wlokHB0Stua/+W6SBV/VpQvqwanAhpqdKGMGeAAA=="
+    "preview": "data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAADQBACdASoYAB4APt1io0yopiMiMBgMARAbiWcAxvQQ7DxnbEdFYFEfhwXa6sTHAAD8Ua1HO6u9xOJ6i6eJYT6F9vpz8jYYIpYwTbgGTeXybuNuzw8T7kgQc03pFsLSuPrClAAA"
   },
   "nail-stations": {
     "name": "nail-stations",
-    "alt": "The nail area: white manicure desks with grey chairs, framed prints on the wall and a grey floor.",
+    "alt": "The open-plan nail area: white manicure desks with grey chairs, a wall of polish shelves and a dark floor.",
     "use": "room",
     "ratio": "3:2",
-    "width": 2400,
-    "height": 1600,
+    "width": 960,
+    "height": 640,
     "widths": [
       480,
-      960,
-      1600,
-      2400
+      960
     ],
     "formats": [
       "avif",
       "webp"
     ],
     "path": "/assets/img/salon/nail-stations",
-    "preview": "data:image/webp;base64,UklGRoAAAABXRUJQVlA4IHQAAAAwBACdASoYABAAPt1apkyopSOiMAgBEBuJQBOgAqEJdDosactUmrj22AAA/ufWK4EW/439OUcPtUrreqxvfvSEa6SNLrLCRuPSq3Vj3m5oHAFP94ObcDBO5KuT0hEur5RrNAIRKr4OUiuvTM/N7XePp3KAAA=="
-  },
-  "treatment-room": {
-    "name": "treatment-room",
-    "alt": "A treatment room: a white basin on a dark worktop above wood cabinets, the head of a couch dressed in white paper roll, and a magnifying lamp over a trolley of skincare products.",
-    "use": "room",
-    "ratio": "3:2",
-    "width": 1600,
-    "height": 1067,
-    "widths": [
-      480,
-      960,
-      1600
-    ],
-    "formats": [
-      "avif",
-      "webp"
-    ],
-    "path": "/assets/img/salon/treatment-room",
-    "preview": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAACQAwCdASoYABAAPt1cpkyopSOiMAgBEBuJQBdgBFVRrnt5bs0QAP5gKGNvsvu0I1Hh7paYwBVuiJ6tTVX3wIQPrJR+xQH6wiFMYpai5In79GnTuvI3sGKwE57QAAAA"
+    "preview": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAADQAwCdASoYABAAPt1eqU2opSQiMAgBEBuJZQCsAAtVb4GIJeg198AA9c2m05f10g9l5o2q6x0LTKbHKnhu6MdOr/WZSrUOAUEAXJqjpudqPVqecSje0oD9/k9AgAAA"
   },
   "relaxation-room": {
     "name": "relaxation-room",
-    "alt": "The relaxation room: a grey sofa with silver cushions, a low dark table with a plant, a framed mirror on a dark feature wall and a light wood floor.",
+    "alt": "The relaxation room: two grey sofas with silver cushions either side of a low table with candles and a plant, a framed mirror on a dark feature wall and a light wood floor.",
     "use": "room",
     "ratio": "4:5",
-    "width": 1600,
-    "height": 2000,
+    "width": 960,
+    "height": 1200,
     "widths": [
       480,
-      960,
-      1600
+      960
     ],
     "formats": [
       "avif",
       "webp"
     ],
     "path": "/assets/img/salon/relaxation-room",
-    "preview": "data:image/webp;base64,UklGRroAAABXRUJQVlA4IK4AAAAwBQCdASoYAB4APt1mq1EopSOiqAgBEBuJZACdAFX7Y3NVNzc7NxXhEPxzy4LxCxHEuAD+8gO0seL2sMkUsufgddxjbH0JOFRaRCB+MRun+/o2+rhl2b/xaD7LE9IOH4TjBx0VstH42XrvmN4RfiYEWHWb98zETsR50M56N+K/tYHxJJpUbDsArvvTcl+yOgUDMJwqlcvEy2+1+t/nKjIRmM4dXF0Uf98UTO4AAAA="
+    "preview": "data:image/webp;base64,UklGRqwAAABXRUJQVlA4IKAAAAAwBQCdASoYAB4APtlWpEyoJKOiN/VYAQAbCUAWnQbzi0Ww0m5ZDiS0fbyAb7eat5C7wADyVDBV0c1jQMGk7YNNEPI2uxedaLbBBA6xOMkUFjFtQzXte3jZdlt+LORLhomdrGkfNnHm/az7CsoiEE4wszE+dRTtgvjK9kttLQPB1ACfGzyy4B5+D1ZCTmM6G7dI/y62qXu9JSHiHnayAAAA"
   },
   "relaxation-room-wide": {
     "name": "relaxation-room-wide",
-    "alt": "The relaxation room from the doorway: two grey sofas either side of a low table with a plant, a mirror on the dark wall and a light wood floor.",
+    "alt": "The relaxation room: two grey sofas either side of a low table with a lamp and a plant, and a light wood floor.",
     "use": "room",
     "ratio": "3:2",
-    "width": 2400,
-    "height": 1600,
+    "width": 960,
+    "height": 640,
     "widths": [
       480,
-      960,
-      1600,
-      2400
+      960
     ],
     "formats": [
       "avif",
       "webp"
     ],
     "path": "/assets/img/salon/relaxation-room-wide",
-    "preview": "data:image/webp;base64,UklGRn4AAABXRUJQVlA4IHIAAABQBACdASoYABAAPt1cp00opSOiMAgBEBuJQBWA7wAMxTYfipNUeLRhIjfwAP7qlxrNMFL01D6F4x98TZGK6qSCv8jsg4V0MC+EEbB3AK+cxWdxgjL+m7jy+Yq1mmLRX5wRIdzqBwpEV/HoB3MgAKxsgAA="
+    "preview": "data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAAAwBACdASoYABAAPt1eqU2opSQiMAgBEBuJZAAAReiyoo6PliUCMyHLKgAA+et2xIE91WvWdKfL/hcpWA+22oHNLQ7HXwNdu0rxO9lXmHGO7+nWl/SYF8rTHCHhuzA0RMXW6LlYf5OukbFgiAA="
   },
   "hero-desk": {
     "name": "hero-desk",
@@ -254,23 +229,22 @@
   },
   "polish-band": {
     "name": "polish-band",
-    "alt": "Rows of gel nail polish bottles in white ornate frames, arranged by colour.",
+    "alt": "Long white wall shelves lined with gel nail polish bottles, arranged by colour.",
     "use": "image pause",
     "ratio": "2:1",
-    "width": 2400,
-    "height": 1200,
+    "width": 1600,
+    "height": 800,
     "widths": [
       480,
       960,
-      1600,
-      2400
+      1600
     ],
     "formats": [
       "avif",
       "webp"
     ],
     "path": "/assets/img/salon/polish-band",
-    "preview": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAAAQBACdASoYAAwAPt1apkyopSOiMAgBEBuJZQCdACPcKLNENDIVNI/NAAD+a0YvkbbOGlArnmJ3SgFrYaM5iHk9o0GVCp+h5DYK7pv9FKuOW/EHnx2UEkMpyFti+f4cq+RFO1GrgAA="
+    "preview": "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAABwAwCdASoYAAwAPt1gqU2opaQiMAgBEBuJZwDE2B5o2m7KswAA/dFFznDtrGmqOSq1r3Y5bZkTSUMUUOEEuTRGAAA="
   },
   "pampas": {
     "name": "pampas",

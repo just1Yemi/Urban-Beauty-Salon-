@@ -62,7 +62,7 @@
         "slug": "hair-loss",
         "name": "Hair loss",
         "text": "Scalp treatments for people concerned about thinning hair.",
-        "photo": "treatment-room",
+        "photo": "pampas",
         "detail": "relaxation-room"
       }
     ]
@@ -145,7 +145,7 @@
       {
         "slug": "waxing",
         "name": "Waxing",
-        "photo": "treatment-room",
+        "photo": "relaxation-room-wide",
         "detail": "desk-flowers"
       },
       {
