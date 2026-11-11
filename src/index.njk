@@ -116,11 +116,11 @@ metaDescription: Advanced skin and aesthetics, facials and everyday beauty in Pe
 {#- ===== Instagram: a static grid of salon photos ===== -#}
 <section class="section" aria-labelledby="instagram">
 <div class="wrap">
-{{ ui.sectionHead("From the salon", eyebrow="Instagram", id="instagram", lead="A look around the salon. Follow us for what we have been doing lately.") }}
+{{ ui.sectionHead("From the salon", eyebrow="Instagram · Facebook", id="instagram", lead="A look around the salon. Follow us on Instagram and Facebook for what we have been doing lately.") }}
 <div class="igrid" data-stagger="80">
 {%- for p in igPhotos %}<a href="{{ site.social.instagram }}" tabindex="-1" aria-hidden="true" target="_blank" rel="noopener" data-reveal><span class="zoom">{{ ui.picture(p, sizes="(min-width: 64em) 15vw, 33vw", ratio="11", alt="") }}</span></a>{% endfor %}
 </div>
-<div class="btn-row" style="margin-top:var(--s-5)">{{ ui.button("Follow on Instagram", href=site.social.instagram, style="outline", arrow=false) }}</div>
+<div class="btn-row" style="margin-top:var(--s-5)">{{ ui.button("Follow on Instagram", href=site.social.instagram, style="outline", arrow=false) }}{{ ui.button("Follow on Facebook", href=site.social.facebook, style="outline", arrow=false) }}</div>
 </div>
 </section>
 
