@@ -1,10 +1,11 @@
 # Netlify settings (Stage 8). Hosting: Netlify free tier; DNS stays at one.com (never touch MX, SPF, DKIM or DMARC).
 [build]
-  command = "npm run build"
+  command = "node scripts/check.js"  # build + contrast, compliance, links, SEO; on the live deploy also the TODO gate, so nothing unfinished can publish
   publish = "_site"
 
 [build.environment]
   NODE_VERSION = "22"
+  PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD = "1"
 
 # www to apex (the apex theurbanbeautysalon.co.uk is the canonical domain). HTTP to HTTPS is automatic on Netlify.
 [[redirects]]
