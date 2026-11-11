@@ -28,7 +28,7 @@ const GRADE = { gain: [1.0, 0.985, 0.955], offset: [5, 4, 3], saturation: 0.97 }
 const TARGET_LUMA = 124; // every portrait is brought towards the same overall brightness
 
 const TEAM = [
-  { name: "team-rachel", file: "Rachel.jpg", crop: { x: 120, y: 62, w: 680 }, alt: "Portrait of Rachel Crookes, Salon Manager and Beauty Therapist." },
+  { name: "team-rachel", file: "Rachel.jpg", crop: { x: 120, y: 62, w: 680 }, alt: "Portrait of Rachel Crookes, Salon Manager." },
   { name: "team-jill", file: "Jill.png", crop: { x: 100, y: 0, w: 400 }, alt: "Portrait of Jill Taylor, Beauty Therapist." },
   // The original is a collage-app export: crop inside the photo, clear of the blurred border and watermark.
   { name: "team-joanne", file: "Joanne.jpg", crop: { x: 80, y: 450, w: 760 }, alt: "Portrait of Joanne Prior, Beauty Therapist." },
