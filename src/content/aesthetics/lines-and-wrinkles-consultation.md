@@ -33,7 +33,7 @@ faqs:
   - q: Do I have to decide on the day?
     a: "No. You can take as long as you need to think things over, ask more questions or simply decide that nothing is right for you at the moment."
   - q: Who will I see?
-    a: "Rania Alrayas, our aesthetic practitioner. Rania is a dentist with a Level 7 postgraduate qualification in non-surgical facial aesthetics, and runs our aesthetics consultations."
+    a: "Your consultation is with Rania Alrayas, our aesthetic practitioner, who holds a Level 7 postgraduate qualification in non-surgical facial aesthetics. If a treatment that needs a prescription may suit you, you will also be assessed in person by an independent prescriber before anything goes ahead."
   - q: Is there an age limit?
     a: "Yes. Consultations are for adults aged 18 and over."
 related:

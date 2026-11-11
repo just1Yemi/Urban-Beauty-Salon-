@@ -28,9 +28,10 @@
     "05-rania": {
       "name": "Rania Alrayas",
       "role": "Aesthetic Practitioner",
-      "training": "Dentist with a Level 7 postgraduate qualification in Non-surgical Facial Aesthetics (ICE Postgraduate Dental Institute) and advanced aesthetics training. Immediate Life Support trained.",
+      "registration": { "body": "GDC", "number": "321588 (Dental Care Professional)", "url": "https://olr.gdc-uk.org/SearchRegister" },
+      "training": "Level 7 postgraduate qualification in Non-surgical Facial Aesthetics (ICE Postgraduate Dental Institute), with advanced aesthetics training. Immediate Life Support trained.",
       "treatments": "Aesthetics consultations, dermal fillers, skin boosters, polynucleotides and PRP",
-      "verify": "LAUNCH GATE: confirm on the GDC register (olr.gdc-uk.org) that Rania is registered as a Dentist, add the number as registration {body: 'GDC', number, url}, confirm the treatment list, insurance and Rania's consent."
+      "verify": "GDC register checked 11 Nov 2026: Dental Care Professional, no. 321588 (NOT a dentist: never use the title dentist; not a prescriber). Still to confirm: treatment list, insurance, consent, and the independent prescriber for any prescription treatment."
     },
     "04-isla": {
       "name": "Isla Duffy",
