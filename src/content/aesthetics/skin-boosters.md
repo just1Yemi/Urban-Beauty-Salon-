@@ -20,7 +20,7 @@ services:
   - "22058952036211"
   - "22076131905395"
 bookLabel: Book skin boosters
-practitioner: "[[TODO: practitioner name]]"
+practitioner: "05-rania"
 faqs:
   - q: What is the difference between skin boosters and fillers?
     a: "Fillers add volume or shape to a particular area. Skin boosters spread a thin layer of hyaluronic acid within the skin to improve hydration and texture, so they are not designed to change the shape of your face."

@@ -26,7 +26,7 @@ services:
   - "22522808504179"
   - "22539988373363"
 bookLabel: Book dermal fillers
-practitioner: "[[TODO: practitioner name]]"
+practitioner: "05-rania"
 faqs:
   - q: Will it look natural?
     a: "The aim is a result in proportion with your face. Your practitioner will talk through how much product is suitable and will tell you honestly if they think a treatment is not right for you."

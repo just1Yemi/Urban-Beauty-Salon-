@@ -20,7 +20,7 @@ services:
   - "22265110466419"
   - "22282290335603"
 bookLabel: Book a consultation
-practitioner: "[[TODO: practitioner name]]"
+practitioner: "05-rania"
 faqs:
   - q: Is fat dissolving a weight-loss treatment?
     a: No. It is designed for small, specific areas of fat in people who are already close to a stable, healthy weight. It does not replace a healthy diet and exercise, and it does not tighten loose skin.

@@ -16,7 +16,7 @@ services:
   - "22385369550707"
   - "22402549419891"
 bookLabel: Book microneedling
-practitioner: "[[TODO: practitioner name]]"
+practitioner: "05-rania"
 faqs:
   - q: How much does microneedling cost?
     # remove if price published

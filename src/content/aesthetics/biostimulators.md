@@ -15,7 +15,7 @@ services:
   - "22230750728051"
   - "22247930597235"
 bookLabel: Book biostimulators
-practitioner: "[[TODO: practitioner name]]"
+practitioner: "05-rania"
 faqs:
   - q: Is a biostimulator the same as dermal filler?
     a: Not quite. Hyaluronic acid filler adds volume where it is placed. Biostimulators are designed to prompt your skin to make new collagen, so the change is more gradual. Radiesse also gives some lift on the day. Unlike hyaluronic acid filler, neither product can be dissolved once placed, which is one reason a thorough consultation matters.

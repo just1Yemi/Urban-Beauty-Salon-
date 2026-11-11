@@ -22,7 +22,7 @@ services:
   - "22196390989683"
   - "22213570858867"
 bookLabel: Book polynucleotides
-practitioner: "[[TODO: practitioner name]]"
+practitioner: "05-rania"
 faqs:
   - q: What are polynucleotides made from?
     a: "Polynucleotides are purified DNA fragments, typically taken from salmon or trout. If you have a fish allergy, please tell us, as treatment is not suitable."

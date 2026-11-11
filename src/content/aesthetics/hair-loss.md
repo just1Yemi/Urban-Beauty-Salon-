@@ -20,7 +20,7 @@ services:
   - "22351009812339"
   - "22333829943155"
 bookLabel: Book a consultation
-practitioner: "[[TODO: practitioner name]]"
+practitioner: "05-rania"
 faqs:
   - q: Do I need a consultation?
     a: Yes. Your practitioner needs to understand the type and likely cause of your hair loss before suggesting any treatment. If your hair loss is sudden, patchy or comes with other symptoms, we will suggest you see your GP before going ahead.
