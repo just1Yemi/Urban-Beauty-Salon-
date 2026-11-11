@@ -73,15 +73,3 @@ progress: true
 </div>
 </section>
 {%- endif %}
-
-<section class="section section--deep" aria-labelledby="company" style="--bg:var(--c-ivory-deep)">
-<div class="wrap wrap--narrow">
-{{ ui.sectionHead("Business details", eyebrow="Registered company", id="company") }}
-<dl class="pcard__facts" data-reveal>
-<div><dt>Company</dt><dd>{{ site.legalName }}, trading as {{ site.tradingName }}</dd></div>
-<div><dt>Registered in</dt><dd>England and Wales, company number {{ site.companyNumber | todo | safe }}</dd></div>
-<div><dt>Registered office</dt><dd>{{ site.registeredOffice | todo | safe }}</dd></div>
-<div><dt>Salon address</dt><dd>{{ site.address.oneLine }}</dd></div></dl>
-<div class="btn-row" style="margin-top:var(--s-5)">{{ ui.button("Visit and contact", href="/contact/", style="outline") }}{{ ui.button("Your first visit", href="/consultation/", style="outline") }}</div>
-</div>
-</section>
