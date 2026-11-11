@@ -276,10 +276,12 @@
 <p class="small soft">{{ (p.role or "[[TODO: role]]") | todo | safe }}</p>
 </div>
 <dl class="pcard__facts">
-<div><dt>Registration</dt><dd>{% if reg.number %}{{ reg.body | todo | safe }} {{ reg.number }}{% if reg.url %} · <a class="link" href="{{ reg.url }}" target="_blank" rel="noopener">Check the register<span class="visually-hidden"> (opens in a new tab)</span></a>{% endif %}{% else %}{{ "[[TODO: registering body and registration number]]" | todo | safe }} {{ "[[TODO: link to the register entry]]" | todo | safe }}{% endif %}</dd></div>
-<div><dt>Training</dt><dd>{{ (p.training or "[[TODO: qualifications and training]]") | todo | safe }}</dd></div>
-<div><dt>Insurance</dt><dd>{{ (p.insurance or "[[TODO: professional indemnity insurer and cover]]") | todo | safe }}</dd></div>
-<div><dt>Treatments</dt><dd>{{ (p.treatments or "[[TODO: treatments performed or prescribed by this practitioner]]") | todo | safe }}</dd></div>
+{#- Rows show only when the data exists: beauty therapists have no professional register or separate indemnity entry. -#}
+{%- if reg.number %}<div><dt>Registration</dt><dd>{{ reg.body | todo | safe }} {{ reg.number }}{% if reg.url %} · <a class="link" href="{{ reg.url }}" target="_blank" rel="noopener">Check the register<span class="visually-hidden"> (opens in a new tab)</span></a>{% endif %}</dd></div>{% endif %}
+{%- if p.experience %}<div><dt>Experience</dt><dd>{{ p.experience }}</dd></div>{% endif %}
+{%- if p.training %}<div><dt>Training</dt><dd>{{ p.training | todo | safe }}</dd></div>{% endif %}
+{%- if p.insurance %}<div><dt>Insurance</dt><dd>{{ p.insurance | todo | safe }}</dd></div>{% endif %}
+{%- if p.treatments %}<div><dt>Treatments</dt><dd>{{ p.treatments | todo | safe }}</dd></div>{% endif %}
 </dl>
 </article>
 {%- endmacro %}

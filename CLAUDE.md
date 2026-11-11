@@ -16,6 +16,11 @@ Working rules and agreed decisions for every Claude Code session on this repo. R
 | Legal entity | Urban Beauty Salon Ltd |
 | Trading name | The Urban Beauty Salon |
 | Company number | 17031560 (England and Wales). Registered office: 40 Kipling Avenue, Tilbury RM18 8HF |
+| VAT | VAT registered: all prices include VAT |
+| ICO | Registered; Yemi does not want the number shown on the site |
+| Cancellation | 24 hours' notice; up to 50% charge for late cancellation or no-show; deposits on some bookings (moved or refunded with 24h notice) |
+| Payment | Card and cash; gift cards online (Phorest) or in salon. Do not promote Klarna on the site (consumer credit promotion rules) |
+| Team (11 Nov 2026) | Rachel Crookes, Jill Taylor, Joanne Prior, Isla Duffy: all Beauty Therapists (src/_data/practitioners.json). Macey Ryder and Daisy Edwards have left: never show their names or reviews naming them. Aesthetics: Rania Alrayas (dentist, Level 7 aesthetics), added only after the GDC register check and Rania's consent and copy sign-off |
 | Contact form reply promise | "We usually reply within an hour during opening hours." |
 | Established | 2013 |
 | Address | 5 Honiton Way, Penketh, Warrington WA5 2EY |

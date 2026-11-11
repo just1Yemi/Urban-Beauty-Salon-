@@ -18,23 +18,23 @@ These terms are from **{{ site.legalName }}**, trading as The Urban Beauty Salon
 
 ## How booking works
 
-You can book online through our booking system, provided by Phorest, or by phone on [{{ site.phone.display }}](tel:{{ site.phone.tel }}). Your booking is confirmed when you receive a confirmation from us. [[TODO: confirm how confirmation is sent]]
+You can book online through our booking system, provided by Phorest, or by phone on [{{ site.phone.display }}](tel:{{ site.phone.tel }}). Your booking is confirmed when you receive a confirmation from us by text message or email.
 
 Please check the treatment, the time and your contact details before you confirm. If something looks wrong, tell us as soon as you can.
 
 ## Prices
 
-The prices in our booking system are the prices that apply on the day you book. Where a treatment page says "Price on consultation", your practitioner confirms the price at your consultation, before anything goes ahead. Consultations for lines and wrinkles are free. [[TODO: confirm whether prices include VAT and whether any treatment has extra charges]]
+The prices in our booking system are the prices that apply on the day you book. Where a treatment page says "Price on consultation", your practitioner confirms the price at your consultation, before anything goes ahead. Our aesthetics consultations are free. All our prices include VAT. If anything would cost extra, we will tell you before your treatment begins.
 
 ## Payment
 
-[[TODO: how and when payment is taken, which payment methods are accepted, and how gift vouchers are used]]
+Payment is due on the day of your treatment, less any deposit you have already paid. We accept card and cash. Gift cards can be bought online through our booking system or in the salon, and used towards any treatment.
 
 ## Health information and consultation
 
-For your safety, we ask about your health, your medicines and your allergies. Please answer honestly and tell us about any change before your visit. Your practitioner may change, delay or decline a treatment if they think it is not right for you. If they do, we will explain why. [[TODO: Yemi to confirm whether a charge applies if a treatment cannot go ahead for health reasons]]
+For your safety, we ask about your health, your medicines and your allergies. Please answer honestly and tell us about any change before your visit. Your practitioner may change, delay or decline a treatment if they think it is not right for you. If they do, we will explain why, and there is no charge for a treatment that does not go ahead for health reasons.
 
-For aesthetics treatments, your appointment starts with a consultation. You can decide not to go ahead after the consultation. [[TODO: confirm whether any charge applies if a client decides not to go ahead]]
+For aesthetics treatments, your appointment starts with a free consultation. You can decide not to go ahead after the consultation, and there is no charge if you do.
 
 ## Patch tests
 
@@ -42,7 +42,7 @@ Some treatments need a patch test first. We will tell you when you book, or you 
 
 ## Age
 
-Aesthetics treatments are for adults aged 18 and over. [[TODO: Yemi and the prescriber to confirm the age policy for every aesthetics treatment]] For Little Miss Urban, a parent or guardian must attend with the child for the whole visit.
+Aesthetics treatments are for adults aged 18 and over. By law, injectable cosmetic treatments cannot be given to anyone under 18. For Little Miss Urban, a parent or guardian must attend with the child for the whole visit.
 
 ## Changes and cancellations
 

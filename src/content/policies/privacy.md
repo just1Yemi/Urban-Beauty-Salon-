@@ -17,7 +17,7 @@ The Urban Beauty Salon is the trading name of **{{ site.legalName }}**, a compan
 
 We are the "controller" of your personal information, which means we decide how and why it is used. To contact us about your information, email [{{ site.email.general }}](mailto:{{ site.email.general }}) or call [{{ site.phone.display }}](tel:{{ site.phone.tel }}).
 
-We are registered with the Information Commissioner's Office (ICO), registration number {{ site.icoNumber }}.
+We are registered with the Information Commissioner's Office (ICO).
 
 ## What we collect and why
 

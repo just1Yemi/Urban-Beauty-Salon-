@@ -14,29 +14,33 @@ draft: true
 
 ## Changing or cancelling
 
-You can change or cancel your appointment by phone on [{{ site.phone.display }}](tel:{{ site.phone.tel }}), by email at [{{ site.email.bookings }}](mailto:{{ site.email.bookings }}), or through your booking confirmation. [[TODO: confirm whether clients can change or cancel online through Phorest, and how]]
+You can change or cancel your appointment by phone on [{{ site.phone.display }}](tel:{{ site.phone.tel }}), by email at [{{ site.email.bookings }}](mailto:{{ site.email.bookings }}), or through your booking confirmation.
 
 ## Notice we ask for
 
-[[TODO: from Phorest settings, the notice period required to change or cancel without a charge, and whether it differs for aesthetics or longer treatments]]
+Please give us **at least 24 hours' notice** if you need to change or cancel. That gives us time to offer your appointment to someone else.
+
+If you cancel or change with less than 24 hours' notice, we may charge **up to 50% of the treatment price**.
 
 We understand that life gets in the way, and illness or emergencies happen. If that happens, please call us as soon as you can and we will do our best to help.
 
 ## Deposits
 
-[[TODO: from Phorest settings, whether a deposit or prepayment is taken, for which treatments, how much, and whether it is refundable or can be moved to a new date]]
+We may ask for a deposit to secure some appointments. If we do, we will tell you the amount when you book, and it comes off the price of your treatment.
+
+If you give at least 24 hours' notice, we will move your deposit to your new appointment or refund it. If you cancel with less notice or do not attend, we may keep your deposit towards the charge above.
 
 ## Late arrival
 
-[[TODO: how late a client can be before the treatment is shortened or rebooked, and whether a charge applies]]
+If you are running late, please call us. We will do our best to fit you in, but we may need to shorten your treatment so that the next client is not kept waiting, and the full price applies. If there is not enough time left to carry out your treatment safely, we may need to rebook you, and this counts as a late cancellation.
 
 ## If you do not attend
 
-[[TODO: what happens if a client does not attend without notice, including any charge and how it is explained when booking]]
+If you miss your appointment without letting us know, we may charge up to 50% of the treatment price or keep your deposit, and we may ask for a deposit for future bookings.
 
 ## If we need to change your appointment
 
-Sometimes we have to change or cancel an appointment, for example because a practitioner is unwell. We will contact you as soon as we know, offer you another time, and refund any deposit you paid if you cannot make the new time. [[TODO: Yemi to confirm]]
+Sometimes we have to change or cancel an appointment, for example because a practitioner is unwell. We will contact you as soon as we know, offer you another time, and refund any deposit you paid if you cannot make the new time.
 
 ## Treatments for children
 

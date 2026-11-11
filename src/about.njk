@@ -35,7 +35,7 @@ progress: true
 {{ ui.eyebrow("Our story") }}
 <h2 class="h3" id="story">Penketh since {{ site.established }}</h2>
 <p>{{ "[[TODO: the salon story from Yemi: how it began, what it stands for and what has changed, in two or three short paragraphs]]" | todo | safe }}</p>
-<p>{{ "[[TODO: a short quote or line from Yemi, if she would like one on the page]]" | todo | safe }}</p>
+<p>{{ "[[TODO: a short quote or line from Yemi, if Yemi would like one on the page]]" | todo | safe }}</p>
 <div class="stack-s" style="margin-top:var(--s-5)">
 {{ ui.stat(site.reviews.count, "Five-star reviews on " ~ site.reviews.source ~ " since " ~ site.reviews.since.slice(0, 4)) }}
 </div>
@@ -59,7 +59,7 @@ progress: true
 {%- if people.length or showTodo %}
 <section class="section" id="team" aria-labelledby="team-title">
 <div class="wrap">
-{{ ui.sectionHead("Your practitioners", eyebrow="The team", word="Team", id="team-title", lead="Each practitioner is listed with their registration, training, insurance and the treatments they perform or prescribe, so you can check before you book.") }}
+{{ ui.sectionHead("Your practitioners", eyebrow="The team", word="Team", id="team-title", lead="Meet the team, with their training and the treatments they offer.") }}
 <div class="grid grid--3" data-stagger="110">
 {%- if people.length %}
 {%- for id, p in people %}<div data-reveal>{{ ui.pcard(p) }}</div>{% endfor %}
@@ -81,9 +81,7 @@ progress: true
 <div><dt>Company</dt><dd>{{ site.legalName }}, trading as {{ site.tradingName }}</dd></div>
 <div><dt>Registered in</dt><dd>England and Wales, company number {{ site.companyNumber | todo | safe }}</dd></div>
 <div><dt>Registered office</dt><dd>{{ site.registeredOffice | todo | safe }}</dd></div>
-<div><dt>Salon address</dt><dd>{{ site.address.oneLine }}</dd></div>
-<div><dt>ICO registration</dt><dd>{{ site.icoNumber | todo | safe }}</dd></div>
-</dl>
+<div><dt>Salon address</dt><dd>{{ site.address.oneLine }}</dd></div></dl>
 <div class="btn-row" style="margin-top:var(--s-5)">{{ ui.button("Visit and contact", href="/contact/", style="outline") }}{{ ui.button("Your first visit", href="/consultation/", style="outline") }}</div>
 </div>
 </section>

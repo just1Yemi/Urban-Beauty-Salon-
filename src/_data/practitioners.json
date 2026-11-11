@@ -1,4 +1,31 @@
 {
-  "note": "Practitioners, keyed by id (used by the practitioner field on treatment pages). Only real, confirmed details: name, role, registrations and photo come from Yemi (Stage 7). Never invent names or credentials. Fields: name, role, photo (photos.json name), text (one line), registration. Empty until Yemi supplies details.",
-  "people": {}
+  "note": "Practitioners, keyed by id; keys are prefixed with a number to set display order. Only confirmed details: names and roles from Yemi (11 Nov 2026); training from the certificates in the salon data room; experience from those certificates and the staff schedule. Each person's consent to appear is required before launch. Rania Alrayas (aesthetics) is added only after the GDC register check. Never invent names or credentials.",
+  "people": {
+    "01-rachel": {
+      "name": "Rachel Crookes",
+      "role": "Beauty Therapist",
+      "experience": "With the salon since 2011",
+      "training": "Level 3 NVQ in Beauty Therapy and Level 3 NVQ in Nail Services (City & Guilds). COMCIT trained (Crystal Clear). Lycon advanced waxing.",
+      "treatments": "Facials including COMCIT, nails, waxing, lashes and brows"
+    },
+    "02-jill": {
+      "name": "Jill Taylor",
+      "role": "Beauty Therapist",
+      "experience": "Qualified since 2005",
+      "training": "NVQ Level 2 in Beauty Therapy and Level 2 in Nail Technology (VTCT), with massage, aromatherapy and electrotherapy units. Dermalogica trained.",
+      "treatments": "Nails, facials, waxing and massage"
+    },
+    "03-joanne": {
+      "name": "Joanne Prior",
+      "role": "Beauty Therapist",
+      "experience": "More than 35 years",
+      "training": "City & Guilds Beauty Therapist's Certificate and IHBC International Beauty Therapist's Diploma, with remedial camouflage and epilation.",
+      "treatments": "Facials, manicures and pedicures, waxing and massage"
+    },
+    "04-isla": {
+      "name": "Isla Duffy",
+      "role": "Beauty Therapist",
+      "treatments": "Back massage and Crystal Clear facials"
+    }
+  }
 }
