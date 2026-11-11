@@ -14,6 +14,10 @@ notSure:
   title: Not sure what to book?
   text: Tell us what you have in mind, whether it is a regular lash or nail appointment or a treat for a special occasion, and we will help you choose. Call the salon during opening hours or send us a message.
   photo: product-shelf-mixed
+reviews:
+  - "crispian-w-2026-11"
+  - "jackie-m-2026-09"
+  - "victoria-b-2026-05"
 ---
 
 Whether you come every few weeks to keep your nails, lashes and brows looking neat or you are planning something for a special occasion, you will find the full beauty menu here. Each treatment has its own page, with what it involves, how long it takes and what to do afterwards.

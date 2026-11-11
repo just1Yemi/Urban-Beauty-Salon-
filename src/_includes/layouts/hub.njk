@@ -40,6 +40,19 @@ layout: layouts/base.njk
 </div>
 </section>
 
+{#- Reviews strip: real Phorest reviews listed in the hub's front matter (reviews: [ids]); nothing renders without them. -#}
+{%- set hubReviews = reviews | reviewItems %}
+{%- if hubReviews.length %}
+<section class="section section--deep" aria-labelledby="hub-reviews" style="--bg:var(--c-ivory-deep)">
+<div class="wrap">
+{{ ui.sectionHead("What clients say", eyebrow="Reviews", id="hub-reviews") }}
+<div class="grid grid--3" data-stagger="110">
+{%- for r in hubReviews %}{{ ui.review(r.text, r.name, r.date | monthYear) }}{% endfor %}
+</div>
+</div>
+</section>
+{%- endif %}
+
 {%- if pause %}
 {%- set pp = photos[pause] %}
 <div class="pause{% if pp and pp.ratio == '4:1' %} pause--band{% endif %}" aria-hidden="true">{{ ui.picture(pause, sizes="100vw", alt="") }}</div>

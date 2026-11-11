@@ -46,6 +46,9 @@ reviews:
   - "joanne-t-2026-09"
   - "laura-g-2026-10"
   - "rebecca-c-2026-07-brows"
+  - "janet-d-2026-08"
+  - "victoria-b-2026-05"
+  - "kathy-l-2026-06"
 ---
 
 ## What it is
