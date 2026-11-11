@@ -83,7 +83,7 @@
         "slug": "glycolic-peel",
         "name": "Glycolic peel",
         "photo": "pampas-vase",
-        "text": "A glycolic peel facial, also paired with dermaplaning.",
+        "text": "A glycolic peel facial, on its own or with dermaplaning.",
         "detail": "glitter-wall"
       }
     ]
@@ -110,7 +110,8 @@
         "slug": "little-miss-urban",
         "name": "Little Miss Urban",
         "photo": "polish-wall",
-        "detail": "cuticle-oils"
+        "detail": "cuticle-oils",
+        "text": "Gentle nail and toe treats for children aged 4 to 12, with a parent or guardian."
       },
       {
         "slug": "massage",
@@ -123,19 +124,22 @@
         "slug": "body-and-tanning",
         "name": "Body and tanning",
         "photo": "tan-bottles",
-        "detail": "desk-blooms"
+        "detail": "desk-blooms",
+        "text": "Spray tans, body exfoliation and body wraps."
       },
       {
         "slug": "waxing",
         "name": "Waxing",
         "photo": "velvet-detail",
-        "detail": "glitter-wall"
+        "detail": "glitter-wall",
+        "text": "Strip and hot wax for face and body, including intimate areas."
       },
       {
         "slug": "men",
         "name": "Treatments for men",
         "photo": "nail-stations",
-        "detail": "cuticle-oils"
+        "detail": "cuticle-oils",
+        "text": "Gentleman’s manicure and pedicure, and chest and back waxing."
       }
     ]
   }

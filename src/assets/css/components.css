@@ -260,14 +260,16 @@ html:has(.menu[open]) { overflow: hidden; }
 .tcard__media { position: relative; aspect-ratio: 4 / 5; overflow: hidden; border-radius: var(--radius); }
 .tcard__media .pic { position: absolute; inset: 0; border-radius: 0; }
 .tcard__media .pic + .pic { opacity: 0; transition: opacity 0.9s var(--ease-out); }
+.tcard__body { flex: 1; display: flex; flex-direction: column; }
 .tcard__body > * + * { margin-top: var(--s-1); }
+.tcard__body > .tcard__meta { margin-top: auto; }
 .tcard__title { font-size: var(--step-2); }
 .tcard__link { text-decoration: none; }
 .tcard__link::after { content: ""; position: absolute; inset: 0; z-index: 2; }
 .tcard__link:focus-visible { outline: none; }
 .tcard:has(.tcard__link:focus-visible) { outline: 2px solid var(--c-espresso); outline-offset: 6px; }
 .tcard__text { color: var(--text-soft); font-size: var(--step--1); }
-.tcard__meta { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.5rem; padding-top: var(--s-1); font-size: var(--step--1); }
+.tcard__meta { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.5rem; padding-top: var(--s-2); font-size: var(--step--1); }
 .tcard__meta .sep { color: var(--c-text-soft); }
 .tcard:focus-within .tcard__media .pic + .pic { opacity: 1; }
 @media (hover: hover) {
@@ -321,8 +323,9 @@ html:has(.menu[open]) { overflow: hidden; }
 .review blockquote p { line-height: 1.7; }
 .review figcaption { margin-top: auto; padding-top: var(--s-3); border-top: 1px solid var(--line-soft); display: grid; gap: 0.25rem; }
 .review__name { font-size: var(--step--1); font-weight: 500; letter-spacing: 0.04em; }
-.review__meta { display: flex; flex-wrap: wrap; align-items: center; gap: 0.25rem 0.5rem; font: 500 var(--step--2)/1.5 var(--font-body); letter-spacing: 0.14em; text-transform: uppercase; color: var(--text-soft); }
+.review__meta { display: grid; justify-items: start; gap: 0.25rem; font: 500 var(--step--2)/1.5 var(--font-body); letter-spacing: 0.14em; text-transform: uppercase; color: var(--text-soft); }
 .review__meta .icon { width: 0.875rem; height: 0.875rem; }
+.review__verified { display: inline-flex; align-items: center; gap: 0.5rem; }
 .stat { display: grid; gap: var(--s-1); }
 .stat__num { font: 300 var(--step-5)/1 var(--font-display); letter-spacing: 0.02em; font-variant-numeric: tabular-nums lining-nums; }
 .stat__label { font: 500 var(--step--2)/1.6 var(--font-body); letter-spacing: var(--track-label); text-transform: uppercase; color: var(--text-soft); max-width: 30ch; }
@@ -519,7 +522,8 @@ select.field__input { padding-right: 2rem; cursor: pointer; background: url("dat
 /* Contact: form beside the details */
 .contact { display: grid; gap: var(--s-6); align-items: start; }
 @media (min-width: 64em) { .contact { grid-template-columns: 7fr 5fr; gap: var(--s-7); } }
-.contact__list { display: grid; gap: var(--s-3); list-style: none; padding: 0; margin: 0; }
+.contact__list { display: grid; gap: var(--s-3); list-style: none; padding: 0; }
+.stack-l > .contact__list { margin-top: var(--s-3); }
 .contact__list li { display: grid; grid-template-columns: 1.5rem minmax(0, 1fr); gap: var(--s-2); align-items: start; padding-top: var(--s-2); border-top: 1px solid var(--line-soft); }
 .contact__list .icon { width: 1.25rem; height: 1.25rem; margin-top: 0.2rem; color: var(--c-espresso); }
 .contact__list small { display: block; font: 500 var(--step--2)/1.4 var(--font-body); letter-spacing: var(--track-label); text-transform: uppercase; color: var(--c-text-soft); }
@@ -578,6 +582,9 @@ html .ob-widget-container button:focus-visible { outline: 2px solid var(--c-espr
 /* Recent work gallery (home): two across on phones, three on desktop. */
 .work-grid { list-style: none; padding: 0; margin: var(--s-4) 0 0; grid-template-columns: repeat(2, minmax(0, 1fr)); }
 @media (min-width: 64em) { .work-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+/* Team grids (home, About): an incomplete last row is centred, not left hanging */
+@media (min-width: 40em) and (max-width: 63.99em) { .team-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); } .team-grid > * { grid-column: span 2; } .team-grid > :nth-child(odd):last-child { grid-column: 2 / span 2; } }
+@media (min-width: 64em) { .team-grid.grid--3 { grid-template-columns: repeat(6, minmax(0, 1fr)); } .team-grid.grid--3 > * { grid-column: span 2; } .team-grid.grid--3 > :nth-child(3n+1):nth-last-child(2) { grid-column: 2 / span 2; } .team-grid.grid--3 > :nth-child(3n+1):last-child { grid-column: 3 / span 2; } }
 
 /* Reviews keep the client's own line breaks. */
 .review blockquote p { white-space: pre-line; }
@@ -597,3 +604,5 @@ html .ob-widget-container button:focus-visible { outline: 2px solid var(--c-espr
 .bpanel--light .bpanel__watermark { opacity: 0.12; }
 .bpanel--light .bpanel__sub { color: var(--c-text-soft); }
 .tcard__media .bpanel + .bpanel { display: none; }
+/* A panel draws its own Champagne inset line: drop the white photo frame line that would sit on top of it */
+.frame:has(> .bpanel)::after { display: none; }

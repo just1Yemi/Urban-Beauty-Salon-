@@ -141,7 +141,7 @@
 <figure class="review" data-reveal>
 <svg class="review__mark" viewBox="0 0 48 36" width="48" height="36" aria-hidden="true" focusable="false"><g fill="currentColor"><circle cx="9.5" cy="27.5" r="5.5"/><circle cx="31.5" cy="27.5" r="5.5"/></g><g fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4.2 27.5C4.2 17 8.5 8.5 16.5 3.5"/><path d="M26.2 27.5C26.2 17 30.5 8.5 38.5 3.5"/></g></svg>
 <blockquote><p>{{ text | todo | safe }}</p></blockquote>
-<figcaption><span class="review__name">{{ name | todo | safe }}</span><span class="review__meta">{% if date %}<span>{{ date | todo | safe }}</span><span aria-hidden="true">·</span>{% endif %}<span>{{ icon("check") }}</span><span>Verified Phorest client</span></span></figcaption>
+<figcaption><span class="review__name">{{ name | todo | safe }}</span><span class="review__meta">{% if date %}<span>{{ date | todo | safe }}</span>{% endif %}<span class="review__verified">{{ icon("check") }}<span>Verified Phorest client</span></span></span></figcaption>
 </figure>
 {%- endmacro %}
 
@@ -179,11 +179,11 @@
 {%- endmacro %}
 
 {#- "Your practitioner" mini card. photo: a photos.json name, or empty for a placeholder. -#}
-{% macro person(name, role, photo="", text="") -%}
+{% macro person(name, role, photo="", text="", label="Your practitioner") -%}
 <div class="person">
 {%- if photo and photos[photo] %}<div class="person__photo">{{ picture(photo, sizes="88px", ratio="45", cls="arch") }}</div>
 {%- else %}<div class="person__photo placeholder" role="img" aria-label="Portrait to come">{{ logo("icon", cls="placeholder__icon") }}</div>{% endif %}
-<div class="person__body"><p class="eyebrow">Your practitioner</p><p class="person__name">{{ name | todo | safe }}</p><p class="small soft">{{ role | todo | safe }}</p>{% if text %}<p class="small">{{ text | todo | safe }}</p>{% endif %}</div>
+<div class="person__body">{% if label %}<p class="eyebrow">{{ label }}</p>{% endif %}<p class="person__name">{{ name | todo | safe }}</p><p class="small soft">{{ role | todo | safe }}</p>{% if text %}<p class="small">{{ text | todo | safe }}</p>{% endif %}</div>
 </div>
 {%- endmacro %}
 

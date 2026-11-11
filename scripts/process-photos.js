@@ -334,7 +334,7 @@ const PHOTOS = [
     name: "glitter-wall",
     source: "20260309_140735.jpg",
     ratio: "4:5",
-    crop: { x: 0.74, y: 0.2, w: 0.25 },
+    crop: { x: 0.74, y: 0.24, w: 0.25 },
     rotate: 0,
     use: "detail",
     alt: "The glittered feature wall behind reception, in soft taupe and silver.",

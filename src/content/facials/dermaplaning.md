@@ -55,4 +55,4 @@ It is not suitable if you have active acne or inflamed spots, a skin infection, 
 
 ## Aftercare
 
-Use a gentle moisturiser and a daily sun protection product, as freshly exfoliated skin is more sensitive to the sun. For a few days, avoid strong exfoliating products, retinol or active skincare, and hot treatments such as saunas, unless your therapist advises otherwise. Do not pick or scrub the skin. If it feels sore or looks unusually red, contact the salon. Our safety and aftercare page will have more advice once it is published.
+Use a gentle moisturiser and a daily sun protection product, as freshly exfoliated skin is more sensitive to the sun. For a few days, avoid strong exfoliating products, retinol or active skincare, and hot treatments such as saunas, unless your therapist advises otherwise. Do not pick or scrub the skin. If it feels sore or looks unusually red, contact the salon. There is more advice on our [safety and aftercare page](/aftercare/).

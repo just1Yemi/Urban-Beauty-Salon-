@@ -59,4 +59,4 @@ It may not be suitable if your skin is sunburnt, broken, inflamed or infected, o
 
 ## Aftercare
 
-Apply a gentle moisturiser and a daily sun protection product, as newly exfoliated skin is more sensitive to the sun. For a few days, avoid hot baths, saunas, heavy make-up and strong exfoliating products unless your therapist advises otherwise. If your skin feels sore or looks unusually red, contact the salon. Our safety and aftercare page will have more advice once it is published.
+Apply a gentle moisturiser and a daily sun protection product, as newly exfoliated skin is more sensitive to the sun. For a few days, avoid hot baths, saunas, heavy make-up and strong exfoliating products unless your therapist advises otherwise. If your skin feels sore or looks unusually red, contact the salon. There is more advice on our [safety and aftercare page](/aftercare/).

@@ -56,4 +56,4 @@ Results typically last a few weeks, and a course builds on them.
 
 ## Aftercare
 
-Sun protection is essential, as newly peeled skin is more sensitive to the sun. Apply a daily sun protection product and avoid strong sun for a few days. Moisturise gently and avoid exfoliating products, retinol and other active skincare, as well as waxing, saunas and hot baths, until your skin has settled or your therapist says otherwise. Do not pick flaking skin. If your skin feels sore, blisters or looks unusually red, contact the salon. Our safety and aftercare page will have more advice once it is published.
+Sun protection is essential, as newly peeled skin is more sensitive to the sun. Apply a daily sun protection product and avoid strong sun for a few days. Moisturise gently and avoid exfoliating products, retinol and other active skincare, as well as waxing, saunas and hot baths, until your skin has settled or your therapist says otherwise. Do not pick flaking skin. If your skin feels sore, blisters or looks unusually red, contact the salon. There is more advice on our [safety and aftercare page](/aftercare/).

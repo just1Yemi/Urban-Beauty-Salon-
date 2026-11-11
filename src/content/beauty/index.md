@@ -9,7 +9,7 @@ heroPhoto: polish-band
 bookLabel: Book beauty
 cardsTitle: Our beauty treatments
 cardsLead: Every beauty treatment on the menu, with its starting price and time.
-pause: polish-band
+pause: velvet-band
 notSure:
   title: Not sure what to book?
   text: Tell us what you have in mind, whether it is a regular lash or nail appointment or a treat for a special occasion, and we will help you choose. Call the salon during opening hours or send us a message.

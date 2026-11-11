@@ -59,7 +59,7 @@ body:not(.has-hero) main { padding-top: var(--header-h); }
 /* Lists in page copy: hairline separators instead of bullets (luxury menu styling, like the price list). */
 .prose ol { padding-left: 1.25em; }
 .prose li + li { margin-top: var(--s-1); }
-.prose ul { list-style: none; padding-left: 0; }
+.prose ul { list-style: none; padding-left: 0; max-width: 38rem; }
 .prose ul > li { padding-block: var(--s-1); border-top: 1px solid var(--line-soft); }
 .prose ul > li + li { margin-top: 0; }
 .prose li::marker { color: var(--c-text-soft); }

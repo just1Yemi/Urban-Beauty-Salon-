@@ -23,4 +23,4 @@ reviews:
 
 Our facials range from gentle exfoliation to microcurrent and advanced skin rejuvenation. Some are short enough for a lunch break, others are longer sessions that combine more than one step.
 
-If you are choosing between them, a simple guide helps. CACI and COMCIT are our technology-led facials. Crystal Clear, dermaplaning and glycolic peels focus on smoothing and refreshing the surface of the skin. Your therapist will ask about your skin, any products you use and any medication before you begin, and will tell you if a treatment is not right for you on the day.
+If you are choosing between them, here is a simple guide. CACI and COMCIT are our technology-led facials. Crystal Clear, dermaplaning and glycolic peels focus on smoothing and refreshing the surface of the skin. Your therapist will ask about your skin, any products you use and any medication before you begin, and will tell you if a treatment is not right for you on the day.

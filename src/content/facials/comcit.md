@@ -59,4 +59,4 @@ Results typically build over a course, and top-up sessions help keep them going.
 
 ## Aftercare
 
-Use a gentle moisturiser and a daily sun protection product, and avoid strong exfoliating or active products for a few days unless your therapist advises otherwise. Keep out of strong sun and avoid hot treatments such as saunas on the day. If your skin feels sore or looks unusually red, contact the salon. Our safety and aftercare page will have more advice once it is published.
+Use a gentle moisturiser and a daily sun protection product, and avoid strong exfoliating or active products for a few days unless your therapist advises otherwise. Keep out of strong sun and avoid hot treatments such as saunas on the day. If your skin feels sore or looks unusually red, contact the salon. There is more advice on our [safety and aftercare page](/aftercare/).

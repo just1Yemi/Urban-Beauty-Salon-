@@ -17,6 +17,6 @@ notSure:
   photo: hero-desk
 ---
 
-Every aesthetics treatment starts with a consultation. Your practitioner asks about your health, listens to what you would like to change and explains what each option involves, what it can and cannot do, and the risks, before any treatment goes ahead. There is never any pressure to go ahead.
+Every aesthetics treatment starts with a consultation. Your practitioner asks about your health, listens to what you would like to change and explains what each option involves, what it can and cannot do, and the risks, before any treatment begins. There is never any pressure to go ahead.
 
-Aesthetic treatments are for adults aged 18 and over, and are carried out by Rania Alrayas, our aesthetic practitioner, who holds a Level 7 postgraduate qualification in non-surgical facial aesthetics and is registered with the General Dental Council as a dental care professional.
+Aesthetic treatments are for adults aged 18 and over, and are carried out by Rania Alrayas, our aesthetic practitioner, who holds a Level 7 postgraduate qualification in non-surgical facial aesthetics and is registered with the General Dental Council as a dental care professional.

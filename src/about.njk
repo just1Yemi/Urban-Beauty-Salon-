@@ -22,7 +22,7 @@ progress: true
 <p class="eyebrow">About · Est. {{ site.established }}</p>
 <h1 style="--d:80ms">About the salon</h1>
 </div>
-<p class="lead" style="--d:160ms">The Urban Beauty Salon has looked after clients in Penketh, Warrington since {{ site.established }}.</p>
+<p class="lead" style="--d:160ms">The Urban Beauty Salon has looked after clients in Penketh, Warrington, since {{ site.established }}.</p>
 <div class="btn-row" style="--d:240ms">{{ ui.button("Book now", book=true) }}{% if people.length or showTodo %}{{ ui.more("Meet the practitioners", "#team") }}{% endif %}</div>
 </div>
 <div class="page-head__media" style="--d:120ms"><div class="frame">{{ ui.picture("pampas", sizes="(min-width: 64em) 36vw, (min-width: 40em) 90vw, 100vw", ratio="45", priority=true) }}</div></div>
@@ -35,7 +35,7 @@ progress: true
 <div class="stack" data-reveal>
 {{ ui.eyebrow("Our story") }}
 <h2 class="h3" id="story">Penketh since {{ site.established }}</h2>
-<p>The Urban Beauty Salon has been part of {{ site.address.locality }} since {{ site.established }}. Our team of qualified beauty therapists is led by our salon manager, Rachel Crookes, who has been with the salon since it opened. Aesthetics treatments are carried out by Rania Alrayas, our aesthetic practitioner.</p>
+<p>The Urban Beauty Salon opened in {{ site.address.locality }} in {{ site.established }}. Our team of qualified beauty therapists is led by our salon manager, Rachel Crookes, who has been with the salon since it opened. Aesthetics treatments are carried out by Rania Alrayas, our aesthetic practitioner.</p>
 <p>Since {{ site.reviews.since.slice(0, 4) }}, clients have left {{ site.reviews.count | thousands }} five-star reviews on {{ site.reviews.source }}.</p>
 <div class="stack-s" style="margin-top:var(--s-5)">
 {{ ui.stat(site.reviews.count, "Five-star reviews on " ~ site.reviews.source ~ " since " ~ site.reviews.since.slice(0, 4)) }}
@@ -61,7 +61,7 @@ progress: true
 <section class="section" id="team" aria-labelledby="team-title">
 <div class="wrap">
 {{ ui.sectionHead("Your practitioners", eyebrow="The team", word="Team", id="team-title", lead="Meet the team, with their training and the treatments they offer.") }}
-<div class="grid grid--{{ 2 if people.length == 4 else 3 }}" data-stagger="110">
+<div class="grid grid--{{ 2 if people.length == 4 else 3 }} team-grid" data-stagger="110">
 {%- if people.length %}
 {%- for id, p in people %}<div data-reveal>{{ ui.pcard(p) }}</div>{% endfor %}
 {%- elif showTodo %}
