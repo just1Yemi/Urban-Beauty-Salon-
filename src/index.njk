@@ -96,9 +96,9 @@ metaDescription: Advanced skin and aesthetics, facials and everyday beauty in Pe
 {%- if teamCount or showTodo %}
 <section class="section section--deep" aria-labelledby="team" style="--bg:var(--c-ivory-deep)">
 <div class="wrap">
-{{ ui.sectionHead("Your practitioners", eyebrow="The team", id="team", lead="[[TODO: two sentences on the team and how a visit works, once Yemi supplies practitioner details]]" | todo | safe) }}
-<div class="grid grid--3" data-stagger="110">
-{%- if teamCount %}{% for id, p in practitioners.people | dictsort %}{% if loop.index <= 3 %}<div data-reveal>{{ ui.person(p.name, p.role, p.photo or "", p.text or "") }}</div>{% endif %}{% endfor %}
+{{ ui.sectionHead("Your practitioners", eyebrow="The team", id="team", lead="A small, experienced team of qualified beauty therapists, led by our salon manager Rachel, who has been with us since 2011. Every visit starts with a conversation about what you would like, so your treatment fits you.") }}
+<div class="grid grid--{{ 4 if teamCount == 4 else 3 }}" data-stagger="110">
+{%- if teamCount %}{% for id, p in practitioners.people | dictsort %}<div data-reveal>{{ ui.person(p.name, p.role, p.photo or "", p.text or "") }}</div>{% endfor %}
 {%- else %}{% for i in range(0, 3) %}<div data-reveal>{{ ui.person("[[TODO: practitioner name]]", "[[TODO: role and training]]") }}</div>{% endfor %}{% endif %}
 </div>
 <div class="stack" style="margin-top:var(--s-6)" data-reveal>

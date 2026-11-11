@@ -20,8 +20,8 @@
 
 /* Grids: never more than 3 cards per row */
 .grid { display: grid; gap: var(--gap, var(--s-5) var(--s-4)); }
-@media (min-width: 40em) { .grid--2, .grid--3 { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
-@media (min-width: 64em) { .grid--3 { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@media (min-width: 40em) { .grid--2, .grid--3, .grid--4 { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (min-width: 64em) { .grid--3 { grid-template-columns: repeat(3, minmax(0, 1fr)); } .grid--4 { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
 
 /* Editorial split: image and text, asymmetric (7/5) */
 .split { display: grid; gap: var(--s-5); align-items: center; }
