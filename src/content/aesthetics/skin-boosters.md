@@ -8,7 +8,7 @@ section: aesthetics
 metaTitle: Skin boosters and Profhilo, Warrington
 metaDescription: "Skin boosters including Profhilo at The Urban Beauty Salon in Penketh, Warrington, designed to improve hydration and skin quality. Book online."
 lead: "Skin boosters place hyaluronic acid within the skin and are designed to improve hydration and skin quality, without changing the shape of your face."
-heroPhoto: pampas
+heroPhoto: "panel:Skin boosters"
 facts:
   resultsLast: "Typically about 6 months"
   downtime: "Typically a day or two"

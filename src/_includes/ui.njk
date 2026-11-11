@@ -69,6 +69,9 @@
     ratio: 45 | 32 | 11 | wide (or "" for the photo's own). priority=true for the hero only.
     portrait: a second photos.json crop served to portrait screens (art direction), with portraitSizes. -#}
 {% macro picture(name, sizes="100vw", ratio="", cls="", loading="lazy", priority=false, alt=false, position="", zoom=0, portrait="", portraitSizes="100vw") -%}
+{#- "panel:Label" or "panel-light:Label" draws a branded panel instead of a photo (used where no suitable photo exists yet). -#}
+{%- set nm = (name or "") | string -%}
+{%- if nm.indexOf("panel") == 0 -%}{{ brandPanel(nm.split(":")[1] or "", ratio, cls, nm.indexOf("panel-light") == 0) }}{%- else -%}
 {%- set p = photos[name] -%}
 {%- set pp = photos[portrait] if portrait else false -%}
 {%- if p -%}
@@ -78,6 +81,16 @@
 <img src="{{ p.path }}-{{ 960 if (p.widths.indexOf(960) > -1) else p.widths[p.widths.length - 1] }}.webp" alt="{{ p.alt if alt === false else alt }}" width="{{ p.width }}" height="{{ p.height }}"{% if priority %} fetchpriority="high"{% else %} loading="{{ loading }}" decoding="async"{% endif %}{% if position or zoom %} style="{% if position %}object-position:{{ position }};{% endif %}{% if zoom %}scale:{{ zoom }};transform-origin:{{ position or '50% 50%' }}{% endif %}"{% endif %}>
 </picture>
 {%- else -%}{{ placeholder("[[TODO: photo: " ~ name ~ "]]", ratio) }}{%- endif -%}
+{%- endif -%}
+{%- endmacro %}
+
+{#- Branded panel: Espresso (or Ivory with light=true) with the UB mark, a tracked-caps label, a Champagne hairline and a faint watermark.
+    An intentional stand-in for treatment photography, never a fake photo. -#}
+{% macro brandPanel(label="", ratio="45", cls="", light=false) -%}
+<div class="bpanel{% if light %} bpanel--light{% endif %}{% if ratio %} pic--{{ ratio }}{% endif %}{% if cls %} {{ cls }}{% endif %}" role="img" aria-label="{{ label or site.tradingName }}">
+{{ logo("icon", cls="bpanel__watermark") }}
+<span class="bpanel__inner">{{ logo("icon", cls="bpanel__icon") }}{% if label %}<span class="bpanel__label">{{ label }}</span>{% endif %}<span class="bpanel__rule" aria-hidden="true"></span><span class="bpanel__sub">{{ site.tradingName }}</span></span>
+</div>
 {%- endmacro %}
 
 {#- Placeholder for a photo we do not have yet. label should say what is needed. -#}

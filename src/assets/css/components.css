@@ -581,3 +581,19 @@ html .ob-widget-container button:focus-visible { outline: 2px solid var(--c-espr
 
 /* Reviews keep the client's own line breaks. */
 .review blockquote p { white-space: pre-line; }
+
+/* Branded panel: an intentional stand-in for treatment photography (aesthetics pages until the shoot). */
+.bpanel { position: relative; display: grid; place-items: center; width: 100%; overflow: hidden; color: var(--c-ivory);
+  background: radial-gradient(120% 90% at 28% 18%, color-mix(in srgb, var(--c-espresso) 82%, var(--c-champagne)) 0%, var(--c-espresso) 58%, var(--c-espresso-deep) 100%); }
+.bpanel::after { content: ""; position: absolute; inset: clamp(0.5rem, 3%, 1rem); border: 1px solid color-mix(in srgb, var(--c-champagne) 55%, transparent); pointer-events: none; }
+.bpanel__watermark { position: absolute; right: -14%; bottom: -16%; width: 72%; height: auto; color: var(--c-champagne); opacity: 0.07; pointer-events: none; }
+.bpanel__inner { position: relative; display: grid; justify-items: center; gap: var(--s-3); padding: var(--s-5); text-align: center; }
+.bpanel__icon { width: clamp(2.5rem, 7vw, 3.75rem); height: auto; color: var(--c-champagne); }
+.bpanel__label { max-width: 16ch; font: 300 var(--step-1)/1.3 var(--font-display); letter-spacing: 0.22em; text-transform: uppercase; text-wrap: balance; }
+.bpanel__rule { width: 2.5rem; height: 1px; background: var(--c-champagne); }
+.bpanel__sub { font: 500 var(--step--2)/1.4 var(--font-body); letter-spacing: 0.2em; text-transform: uppercase; color: color-mix(in srgb, var(--c-ivory) 78%, transparent); }
+.bpanel--light { color: var(--c-espresso); background: radial-gradient(120% 90% at 28% 18%, var(--c-white) 0%, var(--c-ivory) 60%, var(--c-ivory-deep) 100%); }
+.bpanel--light::after { border-color: color-mix(in srgb, var(--c-champagne) 70%, transparent); }
+.bpanel--light .bpanel__watermark { opacity: 0.12; }
+.bpanel--light .bpanel__sub { color: var(--c-text-soft); }
+.tcard__media .bpanel + .bpanel { display: none; }

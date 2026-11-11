@@ -10,7 +10,7 @@ section: aesthetics
 metaTitle: Hair loss treatments in Warrington
 metaDescription: Scalp treatments including PRP and Plinest Hair at The Urban Beauty Salon in Penketh, Warrington. Every plan starts with a consultation.
 lead: Scalp treatments, including PRP and Plinest Hair, for people concerned about thinning hair. Every plan starts with a consultation, because hair loss has many causes and many types do not respond to treatment.
-heroPhoto: pampas
+heroPhoto: "panel-light:Hair loss treatments"
 facts:
   resultsLast: "Varies by person"
   downtime: "Typically 1–2 days"

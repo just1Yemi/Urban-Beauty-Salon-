@@ -6,7 +6,7 @@ section: facials
 metaTitle: Crystal Clear in Penketh, Warrington
 metaDescription: Crystal Clear express, luxury and microdermabrasion (MDA) facials in Penketh, Warrington. See prices and times for each option, then book online.
 lead: Crystal Clear facials focus on cleansing and refreshing the surface of the skin. Choose an express or luxury facial, or add microdermabrasion (MDA) for deeper exfoliation.
-heroPhoto: product-shelf-skincare
+heroPhoto: reception-flowers-products
 facts:
   resultsLast: "Typically a few weeks"
   downtime: "Typically none"

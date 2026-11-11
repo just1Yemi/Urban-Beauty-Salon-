@@ -6,7 +6,7 @@ section: beauty
 metaTitle: Massage in Penketh, Warrington
 metaDescription: Back, deep tissue, hot stone, head, foot and full body massage at The Urban Beauty Salon in Penketh, Warrington. See prices and times, and book online.
 lead: Back, deep tissue, hot stone, head, foot and full body massage in Penketh, Warrington, in a calm setting with free parking outside.
-heroPhoto: relaxation-room
+heroPhoto: relaxation-room-wide
 facts:
   resultsLast: "Varies by person"
   downtime: "Typically none"

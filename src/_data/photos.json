@@ -501,6 +501,139 @@
     "path": "/assets/img/salon/nails-green",
     "preview": "data:image/webp;base64,UklGRrgAAABXRUJQVlA4IKwAAACQBQCdASoYAB4APt1cqU6opKOiMBgIARAbiWYAnQAR8BxQ4vCT4yDr77qFeJRpWoYq0e5wAAD94Ck5RS0kYEeRLWd/sE8Nq3Z0bUZlSfhDRHjCY/q522ioDfl48Z2ogU1UyhPgs7lh5uf8H59EASUabHOGbJOcaSityRWJO6ly1hVgL7h3RB4jEUmmOAdAjQukIGZ89GlGAX1sP/xLVmJAuWLPdf/1wlYXgAAA"
   },
+  "flowers-peony": {
+    "name": "flowers-peony",
+    "alt": "Pale pink and white flowers in a glass vase on the reception desk.",
+    "use": "detail",
+    "ratio": "4:5",
+    "width": 1600,
+    "height": 2000,
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "formats": [
+      "avif",
+      "webp"
+    ],
+    "path": "/assets/img/salon/flowers-peony",
+    "preview": "data:image/webp;base64,UklGRrQAAABXRUJQVlA4IKgAAACwBQCdASoYAB4APt1kpk8opaMiKA1REBuJYgC06EXfh0R/7Vbzl8osHYRcyGptvarFZNjErswA/rms7SytBpJRdmtoeaexvPfjqO+/aqoXpzlAwWjSJpfZtUTgOhdnB8hEfb0LYpaIdUqRQ39CzVpkFQ37W1j3brt5zBuJM9ySho4j0JneA3/T4VPsmyMZKLigntqiZcIyEVdU3mevLqaEXHQwC/0v8AA="
+  },
+  "desk-blooms": {
+    "name": "desk-blooms",
+    "alt": "Small pink and orange paper roses scattered on the grey velvet reception desk.",
+    "use": "detail",
+    "ratio": "3:2",
+    "width": 1600,
+    "height": 1067,
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "formats": [
+      "avif",
+      "webp"
+    ],
+    "path": "/assets/img/salon/desk-blooms",
+    "preview": "data:image/webp;base64,UklGRpIAAABXRUJQVlA4IIYAAABQBACdASoYABAALqVut1ujKKioiICkS0AE6ZQFwACcKWDuAxugigT5mk1AAP4dJdnbFV7mq7WzMrjUqhGlke9E0+9HsSynPcxQPpPaU6hZzLlz0I1pcSi4D2w5zIYT5F09lYEzgA+Lr1pqDUdO4ornMfFiXlvHC+VKMd/H4a/1MLCFCRwAAA=="
+  },
+  "pampas-vase": {
+    "name": "pampas-vase",
+    "alt": "Tall pampas grass plumes in a white ribbed vase against the glittered wall.",
+    "use": "detail",
+    "ratio": "2:3",
+    "width": 1600,
+    "height": 2400,
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "formats": [
+      "avif",
+      "webp"
+    ],
+    "path": "/assets/img/salon/pampas-vase",
+    "preview": "data:image/webp;base64,UklGRpYAAABXRUJQVlA4IIoAAABQBQCdASoYACQAPtleokyoJaMiMBqtUQAbCWMAsOwKAbV/hjjrnLyMcBtsvIL+OS7C9QAA3dTqDCTedzAjBhUpPBEO9ac2UfkRDkoTsIxz+JbGP+RWvND8m1aH7PiQHrPg2TMv6KjVUBhn6QH32JnWOFseTIBcXS5yxQhSr5nki0bGGDMvVPTAAAA="
+  },
+  "velvet-detail": {
+    "name": "velvet-detail",
+    "alt": "Close view of the tufted grey crushed velvet on the reception desk.",
+    "use": "detail",
+    "ratio": "4:5",
+    "width": 1600,
+    "height": 2000,
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "formats": [
+      "avif",
+      "webp"
+    ],
+    "path": "/assets/img/salon/velvet-detail",
+    "preview": "data:image/webp;base64,UklGRooAAABXRUJQVlA4IH4AAADQBACdASoYAB4APtFOokyoJCMiN/qoAQAaCWcAyrQPTDLaf94I95B4syLKYCEyYADKAGiOFkHpm1pqwUESZrsa/DekgKiADGY7TzQ56qzf/s1sxNrnqu4rltzrFVlu0iPJGZLCZ+hZtfxlTHydzK+0vuMY+aETr5AZxxCMQAA="
+  },
+  "glitter-wall": {
+    "name": "glitter-wall",
+    "alt": "The glittered feature wall behind reception, in soft taupe and silver.",
+    "use": "detail",
+    "ratio": "4:5",
+    "width": 1600,
+    "height": 2000,
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "formats": [
+      "avif",
+      "webp"
+    ],
+    "path": "/assets/img/salon/glitter-wall",
+    "preview": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAABwBACdASoYAB4APtVaokyoJSMisAwBABqJZwC7ACP+zP/Y6z7u2zSbX5d0AAD9eCFyaeieAFJdRGaLMnuU6mqtNWQUDRC9L8FLnHL1dmgAAA=="
+  },
+  "cuticle-oils": {
+    "name": "cuticle-oils",
+    "alt": "Small bottles of cuticle oil lined up on a white shelf.",
+    "use": "detail",
+    "ratio": "4:5",
+    "width": 1600,
+    "height": 2000,
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "formats": [
+      "avif",
+      "webp"
+    ],
+    "path": "/assets/img/salon/cuticle-oils",
+    "preview": "data:image/webp;base64,UklGRqgAAABXRUJQVlA4IJwAAABwBQCdASoYAB4APt1gp04opaOiKA1REBuJZAC7AHKpE2WqmKJigmRY/Bw3APwstL7ToAR8AOiIfvzPGAtUdkBgQqhlWPmHqMOb/u590API03IW+q2sb0d+4ybuT5JaSkF8lZw5br/vdi6b701wVi7MKQc6y450bOTInPSkdOTO+TTTVQnnkZOXvYmCuvOOISX1CH1r/NiEoT9PuAA="
+  },
+  "tan-bottles": {
+    "name": "tan-bottles",
+    "alt": "Bronze tanning mousse and lotion bottles on a white shelf.",
+    "use": "detail",
+    "ratio": "4:5",
+    "width": 1600,
+    "height": 2000,
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "formats": [
+      "avif",
+      "webp"
+    ],
+    "path": "/assets/img/salon/tan-bottles",
+    "preview": "data:image/webp;base64,UklGRqIAAABXRUJQVlA4IJYAAABwBQCdASoYAB4APt1kp02opaOiMBgIARAbiWMAnTNMRSP/CN9VDy0jTm3nnXRcAhJ2mlCAAP7b5YcmkCXS3r2X1y7alFioi6A0i7bcmSEyNNw6z0Jd765Q4bu+UpjlzndnG4bDCdXG0pX8lSoaQLwX0pDHjmZuWMjfggd+WuUSCSX9Y8QYl656n31cscaWqZuyHuUAAAA="
+  },
   "team-rachel": {
     "name": "team-rachel",
     "alt": "Portrait of Rachel Crookes, Salon Manager.",

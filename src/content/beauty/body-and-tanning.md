@@ -6,7 +6,7 @@ section: beauty
 metaTitle: Spray Tan and Body Wraps, Warrington
 metaDescription: Sienna X spray tan, body exfoliation, Shrinking Violet wrap, signature body treatments and CACI Bum Lift in Penketh, Warrington. Book online.
 lead: Spray tans, body exfoliation, the Shrinking Violet wrap and signature body treatments in Penketh, Warrington, for smooth skin and a relaxing hour.
-heroPhoto: product-shelf-mixed
+heroPhoto: tan-bottles
 facts:
   resultsLast: "Spray tan: 5–10 days"
   downtime: "No water for 6–8 hours"

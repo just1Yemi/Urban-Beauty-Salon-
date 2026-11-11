@@ -12,7 +12,7 @@ section: aesthetics
 metaTitle: Fat dissolving in Penketh, Warrington
 metaDescription: Fat dissolving injections in Penketh, Warrington, for small, stubborn areas of fat on the face and body. Find out what to expect and book a consultation.
 lead: Fat dissolving is a course of injections for small pockets of stubborn fat, such as under the chin or around the tummy, that have not shifted with a healthy diet and exercise.
-heroPhoto: desk-flowers
+heroPhoto: "panel:Fat dissolving"
 facts:
   resultsLast: "Discussed at consultation"
   downtime: "Typically 3–7 days"

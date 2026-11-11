@@ -7,7 +7,7 @@ section: aesthetics
 metaTitle: Biostimulators in Penketh, Warrington
 metaDescription: Sculptra and Radiesse biostimulator treatments in Penketh, Warrington, to support your skin’s own collagen. See prices and times, and book.
 lead: Biostimulators are injectable treatments designed to encourage your skin to make more of its own collagen, for a gradual change that builds over weeks rather than an instant one.
-heroPhoto: reception-flowers-products
+heroPhoto: "panel:Biostimulators"
 facts:
   resultsLast: "Typically 12–24 months"
   downtime: "Typically a few days"

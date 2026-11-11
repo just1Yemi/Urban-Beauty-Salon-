@@ -9,7 +9,7 @@ section: aesthetics
 metaTitle: Dermal and lip fillers in Warrington
 metaDescription: "Dermal and lip fillers at The Urban Beauty Salon in Penketh, Warrington: lips, chin, jawline, mid-face and lines. Consultation first. See prices and book."
 lead: "Dermal fillers add subtle volume, shape or support to areas such as the lips, chin and jawline, planned with you at a consultation so the result suits your face."
-heroPhoto: desk-flowers
+heroPhoto: "panel-light:Dermal fillers"
 facts:
   resultsLast: "Typically 6–18 months"
   downtime: "Typically a few days"

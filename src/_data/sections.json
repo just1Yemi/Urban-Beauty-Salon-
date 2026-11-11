@@ -13,57 +13,49 @@
         "slug": "lines-and-wrinkles-consultation",
         "name": "Lines and wrinkles consultation",
         "text": "A free, private consultation, with no obligation to go ahead.",
-        "photo": "relaxation-room",
-        "detail": "pampas"
+        "photo": "panel:Lines and wrinkles consultation"
       },
       {
         "slug": "dermal-fillers",
         "name": "Dermal fillers",
         "text": "Lip, chin, jawline and mid-face treatments.",
-        "photo": "desk-flowers",
-        "detail": "pampas"
+        "photo": "panel-light:Dermal fillers"
       },
       {
         "slug": "skin-boosters",
         "name": "Skin boosters",
         "text": "Designed to improve hydration and skin quality.",
-        "photo": "pampas",
-        "detail": "desk-flowers"
+        "photo": "panel:Skin boosters"
       },
       {
         "slug": "polynucleotides",
         "name": "Polynucleotides",
         "text": "Skin-quality treatments for the face and the under-eye area.",
-        "photo": "relaxation-room-wide",
-        "detail": "relaxation-room"
+        "photo": "panel-light:Polynucleotides"
       },
       {
         "slug": "biostimulators",
         "name": "Biostimulators",
         "text": "Designed to encourage your skin’s own collagen, for a gradual change.",
-        "photo": "reception-flowers-products",
-        "detail": "pampas"
+        "photo": "panel:Biostimulators"
       },
       {
         "slug": "microneedling",
         "name": "Microneedling",
         "text": "A gradual treatment for texture, scarring, pigmentation and glow.",
-        "photo": "hero-desk-portrait",
-        "detail": "desk-flowers"
+        "photo": "panel-light:Microneedling"
       },
       {
         "slug": "fat-dissolving",
         "name": "Fat dissolving",
         "text": "For small areas of stubborn fat, such as under the chin.",
-        "photo": "desk-flowers",
-        "detail": "pampas"
+        "photo": "panel:Fat dissolving"
       },
       {
         "slug": "hair-loss",
         "name": "Hair loss",
         "text": "Scalp treatments for people concerned about thinning hair.",
-        "photo": "pampas",
-        "detail": "relaxation-room"
+        "photo": "panel-light:Hair loss treatments"
       }
     ]
   },
@@ -74,34 +66,37 @@
       {
         "slug": "caci",
         "name": "CACI",
-        "photo": "reception-flowers-products",
-        "text": "Microcurrent facials for the face, eyes and jowls, plus microdermabrasion."
+        "photo": "desk-flowers",
+        "text": "Microcurrent facials for the face, eyes and jowls, plus microdermabrasion.",
+        "detail": "flowers-peony"
       },
       {
         "slug": "comcit",
         "name": "COMCIT",
-        "photo": "desk-flowers",
-        "text": "A skin-focused facial, on its own or with CACI or microdermabrasion."
+        "photo": "flowers-peony",
+        "text": "A skin-focused facial, on its own or with CACI or microdermabrasion.",
+        "detail": "velvet-detail"
       },
       {
         "slug": "crystal-clear",
         "name": "Crystal Clear",
-        "photo": "product-shelf-skincare",
-        "detail": "hero-desk-portrait",
+        "photo": "reception-flowers-products",
+        "detail": "desk-flowers",
         "text": "Express, luxury and MDA facials."
       },
       {
         "slug": "dermaplaning",
         "name": "Dermaplaning",
-        "photo": "hero-desk-portrait",
-        "detail": "reception-flowers-products",
+        "photo": "relaxation-room",
+        "detail": "pampas-vase",
         "text": "On its own or with a glycolic peel."
       },
       {
         "slug": "glycolic-peel",
         "name": "Glycolic peel",
-        "photo": "pampas",
-        "text": "A glycolic peel facial, also paired with dermaplaning."
+        "photo": "pampas-vase",
+        "text": "A glycolic peel facial, also paired with dermaplaning.",
+        "detail": "glitter-wall"
       }
     ]
   },
@@ -126,33 +121,33 @@
       {
         "slug": "little-miss-urban",
         "name": "Little Miss Urban",
-        "photo": "product-shelf-nail-care",
-        "detail": "polish-wall"
+        "photo": "polish-wall",
+        "detail": "cuticle-oils"
       },
       {
         "slug": "massage",
         "name": "Massage",
-        "photo": "relaxation-room",
-        "detail": "relaxation-room-wide",
+        "photo": "relaxation-room-wide",
+        "detail": "relaxation-room",
         "text": "Back, head, hot stone and full body massage."
       },
       {
         "slug": "body-and-tanning",
         "name": "Body and tanning",
-        "photo": "relaxation-room-wide",
-        "detail": "product-shelf-mixed"
+        "photo": "tan-bottles",
+        "detail": "desk-blooms"
       },
       {
         "slug": "waxing",
         "name": "Waxing",
-        "photo": "relaxation-room-wide",
-        "detail": "desk-flowers"
+        "photo": "velvet-detail",
+        "detail": "glitter-wall"
       },
       {
         "slug": "men",
         "name": "Treatments for men",
         "photo": "nail-stations",
-        "detail": "product-shelf-nail-care"
+        "detail": "cuticle-oils"
       }
     ]
   }

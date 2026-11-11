@@ -6,7 +6,7 @@ section: facials
 metaTitle: COMCIT Facials in Penketh, Warrington
 metaDescription: COMCIT advanced skin rejuvenation facials in Penketh, Warrington, alone or with CACI, microdermabrasion or Prime & Peel. See prices and times, then book.
 lead: COMCIT is our advanced skin rejuvenation facial. Have it on its own, or add CACI, microdermabrasion or Prime & Peel for a longer, more thorough session.
-heroPhoto: reception-flowers-products
+heroPhoto: flowers-peony
 facts:
   resultsLast: "Builds over a course"
   downtime: "None, or mild pinkness"

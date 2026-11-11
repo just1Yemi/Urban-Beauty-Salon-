@@ -7,7 +7,7 @@ section: aesthetics
 metaTitle: Aesthetics in Penketh, Warrington
 metaDescription: "Dermal fillers, skin boosters, polynucleotides and more at The Urban Beauty Salon in Penketh, Warrington. Every treatment starts with a consultation."
 lead: "Considered aesthetic treatments in Penketh, Warrington, planned around you and always starting with a conversation."
-heroPhoto: pampas
+heroPhoto: glitter-wall
 cardsTitle: Our aesthetics treatments
 cardsLead: "Every aesthetics treatment on our menu. Where a price is not shown, it is confirmed at your consultation."
 pause: velvet-band
