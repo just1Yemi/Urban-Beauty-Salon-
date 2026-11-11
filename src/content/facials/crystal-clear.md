@@ -16,7 +16,7 @@ services:
   - "19859928780659"
   - "21371757268851"
 bookLabel: Book Crystal Clear
-practitioner: "[[TODO: practitioner name]]"
+practitioner: ""   # no individual named: the "Your practitioner" card is hidden (Yemi, 11 Nov 2026)
 faqs:
   - q: Which Crystal Clear facial should I choose?
     a: The express facial suits a short appointment and a quick refresh. The luxury facial is a longer, more relaxed treatment. MDA is the choice if you would like deeper exfoliation, and the longest option adds Prime & Peel. If you are unsure, your therapist will recommend one at your appointment.
@@ -43,7 +43,7 @@ Crystal Clear is a range of facials for cleansing, exfoliating and refreshing th
 
 The express facial is a short treatment for a quick refresh. The luxury facial is a longer, more thorough session. MDA, short for microdermabrasion, uses a gentle exfoliating tip to lift away dead skin cells and leave the skin looking smoother. The longest option, MDA including Prime & Peel, adds a peel step to the same appointment.
 
-All four are designed to leave the skin feeling clean, soft and ready for your usual skincare. [[TODO: practitioner to confirm what each Crystal Clear facial includes, step by step]]
+All four are designed to leave the skin feeling clean, soft and ready for your usual skincare. Your therapist will talk you through each step as they go.
 
 ## Who it suits
 

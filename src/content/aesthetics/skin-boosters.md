@@ -67,4 +67,4 @@ Your practitioner will give you aftercare advice in writing. Typical advice for 
 - avoid alcohol, strenuous exercise, saunas, steam rooms and sunbeds
 - protect your skin from the sun with a high-factor sunscreen
 
-Skin boosters usually work best as a course, so keep to the session plan your practitioner recommends. Contact us if you notice increasing pain, spreading redness, heat or any other change that worries you. [[TODO: aftercare contact hours and how out-of-hours concerns are escalated]]
+Skin boosters usually work best as a course, so keep to the session plan your practitioner recommends. Contact us if you notice increasing pain, spreading redness, heat or any other change that worries you: call the salon on [{{ site.phone.display }}](tel:{{ site.phone.tel }}) during opening hours. In an emergency, call 999.

@@ -3,6 +3,7 @@
 // launch gate: no [[TODO]] placeholder may be left in _site.
 // Prints failures only; exits non-zero if any step fails.
 import { spawnSync } from "node:child_process";
+import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -17,6 +18,9 @@ const steps = [
 if (process.argv.includes("--production")) process.env.ELEVENTY_ENV = "production";
 const production = process.env.CONTEXT === "production" || process.env.ELEVENTY_ENV === "production";
 if (production) steps.push(["todo-gate", [path.join(root, "scripts/todo-gate.js")]]);
+// Start from an empty _site, so pages taken off the site (permalink: false) or the dev-only style guide
+// left over from an earlier build are never checked or reported.
+fs.rmSync(path.join(root, "_site"), { recursive: true, force: true });
 let failed = false;
 for (const [name, args] of steps) {
   const r = spawnSync(process.execPath, args, { cwd: root, encoding: "utf8" });

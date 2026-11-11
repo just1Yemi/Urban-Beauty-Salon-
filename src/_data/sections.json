@@ -10,12 +10,6 @@
     "url": "/aesthetics/",
     "pages": [
       {
-        "slug": "lines-and-wrinkles-consultation",
-        "name": "Lines and wrinkles consultation",
-        "text": "A free, private consultation, with no obligation to go ahead.",
-        "photo": "panel:Lines and wrinkles consultation"
-      },
-      {
         "slug": "dermal-fillers",
         "name": "Dermal fillers",
         "text": "Lip, chin, jawline and mid-face treatments.",
@@ -46,16 +40,10 @@
         "photo": "panel-light:Microneedling"
       },
       {
-        "slug": "fat-dissolving",
-        "name": "Fat dissolving",
-        "text": "For small areas of stubborn fat, such as under the chin.",
-        "photo": "panel:Fat dissolving"
-      },
-      {
         "slug": "hair-loss",
         "name": "Hair loss",
         "text": "Scalp treatments for people concerned about thinning hair.",
-        "photo": "panel-light:Hair loss treatments"
+        "photo": "panel:Hair loss treatments"
       }
     ]
   },

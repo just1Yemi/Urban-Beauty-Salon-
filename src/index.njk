@@ -42,9 +42,6 @@ metaDescription: Advanced skin and aesthetics, facials and everyday beauty in Pe
 <div class="stack">
 {{ ui.stat(site.reviews.count, "Five-star reviews on " ~ site.reviews.source ~ " since " ~ site.reviews.since.slice(0, 4)) }}
 <p class="small soft">Source: {{ site.reviews.source }}, verified client reviews, {{ site.reviews.since | dateLong }} to {{ site.reviews.asOf | dateLong }}.</p>
-{%- if showTodo %}
-<p class="small">{{ "[[TODO: average rating and Google rating, once Yemi confirms them]]" | todo | safe }}</p>
-{%- endif %}
 {{ ui.reviewsLink() }}
 </div>
 {%- if reviewCount or showTodo %}

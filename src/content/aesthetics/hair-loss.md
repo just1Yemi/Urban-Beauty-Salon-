@@ -52,7 +52,7 @@ Plinest Hair is a polynucleotide treatment. Polynucleotides are purified DNA fra
 
 ### Hair filler
 
-Hair filler is a scalp injection treatment. [[TODO: confirm the hair filler product, what it contains and how it works, for the practitioner to describe accurately]]
+Hair filler is a scalp injection treatment, given as a series of small injections across the thinning area. At your consultation, your practitioner explains what the product contains, how it works and whether it is right for you.
 
 ## Who it suits
 
@@ -77,4 +77,4 @@ Results vary from person to person. Once your course is complete, maintenance se
 - Avoid hair colouring, perming and other chemical treatments for 48 to 72 hours.
 - Avoid strenuous exercise, saunas, steam rooms and swimming pools for 24 hours.
 - Ask your practitioner whether to pause any medicines or supplements around your treatment, and do not stop a prescribed medicine without advice.
-- Contact us if you notice pain that is getting worse, spreading redness, heat or other signs of infection. [[TODO: aftercare contact hours and the out-of-hours route, from Yemi]]
+- Contact us if you notice pain that is getting worse, spreading redness, heat or other signs of infection: call the salon on [{{ site.phone.display }}](tel:{{ site.phone.tel }}) during opening hours.

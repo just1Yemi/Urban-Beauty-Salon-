@@ -1,4 +1,11 @@
 ---
+# OFF THE SITE FOR LAUNCH (Yemi, 11 Nov 2026): there is no lawful independent prescriber yet, and Rania Alrayas
+# (GDC Dental Care Professional) is not a prescriber. This page is not built (permalink: false), not in any
+# collection, and its card is removed from src/_data/sections.json. It returns once an independent prescriber's
+# details are confirmed: remove the two lines below, add the card back to sections.json (top of the aesthetics list)
+# and re-add the links (aesthetics hub, consultation page, related lists).
+permalink: false
+eleventyExcludeFromCollections: true
 # Stage 4 copy. Consultation only: never name or hint at a medicine, no euphemisms, no prices,
 # no results imagery (CLAUDE.md compliance rules). Needs prescriber sign-off before launch.
 layout: layouts/treatment.njk

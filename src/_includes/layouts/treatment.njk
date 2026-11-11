@@ -60,7 +60,8 @@ progress: true
 <section class="treatment__section" aria-labelledby="{{ s.id }}" data-reveal>
 <h2 class="h3" id="{{ s.id }}">{{ s.label }}</h2>
 <div class="prose">{{ s.html | safe }}</div>
-{%- if loop.first and (who or showTodo) %}
+{#- No card when practitioner is empty (beauty and facials: no individual named). A [[TODO]] id shows the placeholder card in local builds only. -#}
+{%- if loop.first and (who or (showTodo and practitioner)) %}
 <div class="treatment__person">{{ ui.person(who.name if who else (practitioner if isTodo.test(practitioner) else "[[TODO: practitioner name]]"), who.role if who else "[[TODO: role, training and registration]]", who.photo if who else "", who.text if who else "") }}</div>
 {%- endif %}
 </section>

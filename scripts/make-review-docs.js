@@ -30,7 +30,7 @@ for (const [key, label] of Object.entries(SECTIONS)) {
   const pages = files.map((f) => {
     const { data, content } = matter(fs.readFileSync(path.join(dir, f), "utf8"));
     return { file: f, slug: data.slug ?? f.replace(/\.md$/, ""), data, body: content.trim() };
-  });
+  }).filter((p) => p.data.permalink !== false); // pages taken off the site are left out
   const pos = order(key);
   pages.sort((a, b) => (a.file === "index.md" ? -1 : b.file === "index.md" ? 1 : pos(a.slug) - pos(b.slug)));
 

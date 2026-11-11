@@ -1,6 +1,6 @@
 ---
 # Stage 7 copy. General guidance for practitioner and prescriber sign-off. Treatment-specific advice stays on each treatment page.
-# Escalation, contact hours and complaints details are placeholders until Yemi confirms them.
+# Contact, escalation and complaints wording confirmed by Yemi, 11 Nov 2026 (no out-of-hours route; no external body named).
 layout: layouts/trust.njk
 title: Safety and aftercare
 slug: aftercare
@@ -49,15 +49,13 @@ If you have any change to your vision, call 999 or go to A&E first, then let us 
 
 Call the salon on [{{ site.phone.display }}](tel:{{ site.phone.tel }}) or email [{{ site.email.general }}](mailto:{{ site.email.general }}). Our opening hours are on the [contact page](/contact/#hours). We usually reply within an hour during opening hours.
 
-[[TODO: aftercare contact hours, and whether they differ from the opening hours]]
-
-[[TODO: out-of-hours route, for example an on-call number or the 111 and emergency advice to give]]
+If you have a concern after a treatment, call us on the salon number during opening hours. In an emergency, call 999.
 
 ## If something goes wrong
 
 Tell us as early as you can. The sooner we know, the sooner we can give you advice and, where needed, arrange a review.
 
-[[TODO: how complications are escalated: who assesses you, how urgent review is arranged, the role of the prescriber, and where records of the event are kept. Practitioner and prescriber to confirm before launch.]]
+If you contact us with a concern, your practitioner will review it with you as soon as possible during opening hours and advise on next steps. In an emergency, call 999.
 
 ## Aftercare for each treatment
 
@@ -71,4 +69,4 @@ Beauty: [lashes and brows](/beauty/lashes-and-brows/#aftercare), [nails and pedi
 
 We want to hear if something was not right, so we can put it right. Please tell us by phone, by email at [{{ site.email.general }}](mailto:{{ site.email.general }}), or in person.
 
-[[TODO: complaints procedure: who handles complaints, how quickly we acknowledge and reply, and what happens if the complaint is not resolved, including any professional body or independent route that applies]]
+To make a complaint, email [{{ site.email.general }}](mailto:{{ site.email.general }}) or ask for the manager. We acknowledge complaints within 2 working days and aim to resolve them within 14 days.

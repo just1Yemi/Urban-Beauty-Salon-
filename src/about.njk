@@ -3,11 +3,12 @@ layout: layouts/base.njk
 permalink: /about/index.html
 title: About the salon
 metaTitle: About us and our practitioners, Penketh
-metaDescription: Meet The Urban Beauty Salon in Penketh, Warrington, open since 2013. Our practitioners, their registrations, training and insurance, and how we work.
+metaDescription: Meet The Urban Beauty Salon in Penketh, Warrington, open since 2011. Our practitioners, their registrations, training and insurance, and how we work.
 progress: true
 ---
-{#- About (Stage 7). Facts from site.json and practitioners.json. The salon story, practitioner names, registrations, training,
-    insurance and treatments are placeholders until Yemi supplies them: never invent them (CLAUDE.md). -#}
+{#- About (Stage 7). Facts from site.json and practitioners.json. The story uses only confirmed facts (open since site.established,
+    Rachel with the salon since it opened, Rania for aesthetics, the Phorest review count). No quote from Yemi (11 Nov 2026).
+    Never invent names, registrations or history (CLAUDE.md). -#}
 {%- import "ui.njk" as ui with context -%}
 {%- set people = practitioners.people | dictsort -%}
 {#- Production hides the placeholder cards and the TODO note until practitioners.json has confirmed entries. -#}
@@ -34,8 +35,8 @@ progress: true
 <div class="stack" data-reveal>
 {{ ui.eyebrow("Our story") }}
 <h2 class="h3" id="story">Penketh since {{ site.established }}</h2>
-<p>{{ "[[TODO: the salon story from Yemi: how it began, what it stands for and what has changed, in two or three short paragraphs]]" | todo | safe }}</p>
-<p>{{ "[[TODO: a short quote or line from Yemi, if Yemi would like one on the page]]" | todo | safe }}</p>
+<p>The Urban Beauty Salon has been part of {{ site.address.locality }} since {{ site.established }}. Our team of qualified beauty therapists is led by our salon manager, Rachel Crookes, who has been with the salon since it opened. Aesthetics treatments are carried out by Rania Alrayas, our aesthetic practitioner.</p>
+<p>Since {{ site.reviews.since.slice(0, 4) }}, clients have left {{ site.reviews.count | thousands }} five-star reviews on {{ site.reviews.source }}.</p>
 <div class="stack-s" style="margin-top:var(--s-5)">
 {{ ui.stat(site.reviews.count, "Five-star reviews on " ~ site.reviews.source ~ " since " ~ site.reviews.since.slice(0, 4)) }}
 </div>

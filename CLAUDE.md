@@ -20,9 +20,9 @@ Working rules and agreed decisions for every Claude Code session on this repo. R
 | ICO | Registered; Yemi does not want the number shown on the site |
 | Cancellation | 24 hours' notice; up to 50% charge for late cancellation or no-show; deposits on some bookings (moved or refunded with 24h notice) |
 | Payment | Card and cash; gift cards online (Phorest) or in salon. Do not promote Klarna on the site (consumer credit promotion rules) |
-| Team (11 Nov 2026) | Rachel Crookes, Jill Taylor, Joanne Prior, Isla Duffy: all Beauty Therapists (src/_data/practitioners.json). Macey Ryder and Daisy Edwards have left: never show their names or reviews naming them. Aesthetics: Rania Alrayas (dentist, Level 7 aesthetics), added only after the GDC register check and Rania's consent and copy sign-off |
+| Team (11 Nov 2026) | Rachel Crookes, Jill Taylor, Joanne Prior, Isla Duffy: all Beauty Therapists (src/_data/practitioners.json). Macey Ryder and Daisy Edwards have left: never show their names or reviews naming them. Aesthetics: Rania Alrayas, GDC-registered Dental Care Professional (321588; NOT a dentist and NOT a prescriber), Level 7 aesthetics. Lines and wrinkles consultation and fat dissolving are off the site until an independent prescriber (and, for fat dissolving, the product) is confirmed |
 | Contact form reply promise | "We usually reply within an hour during opening hours." |
-| Established | 2013 |
+| Established | 2011 (corrected from 2013 by Yemi, 11 Nov 2026) |
 | Address | 5 Honiton Way, Penketh, Warrington WA5 2EY |
 | Phone | 01925 726688 |
 | Hours | Tue 10:00–20:00, Wed 10:00–18:00, Thu 10:00–20:00, Fri 10:00–18:00, Sat 09:00–15:00, closed Sun and Mon |

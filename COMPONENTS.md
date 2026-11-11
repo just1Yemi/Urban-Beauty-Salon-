@@ -62,7 +62,7 @@ Reveals: `data-reveal` is for **below-the-fold content only** (it waits for site
 | `faq(items)` | `[{q, a}]` | details/summary; smooth height; "+" turns to "×" |
 | `steps(items, level)` | `[{title, text}]` | 01, 02 numerals in circles linked by a thin line |
 | `toc(items, label)` | `[{id, label}]` | Treatment pages: sticky on desktop, current section marked with a Champagne dot |
-| `person(name, role, photo, text)` | `photo` from photos.json or empty for placeholder | "Your practitioner" mini card; never invent names or registrations |
+| `person(name, role, photo, text)` | `photo` from photos.json or empty for placeholder | "Your practitioner" mini card; never invent names or registrations. On treatment pages it shows only when `practitioner` is an id in practitioners.json (or, in local builds, a `[[TODO]]`); `practitioner: ""` hides it (beauty and facials: no individual named) |
 | `hours(caption)` | | Hours table from site.json; today's row highlighted (Europe/London) |
 | `openStatus()` | | Live "Open now · closes 8pm" / "Closed now · opens Tuesday 10am"; no-JS fallback "Open Tuesday to Saturday" |
 | `address()` | | Tap the address to copy it, with a quiet "Copied" note (plain text without JS) |

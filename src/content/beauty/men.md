@@ -17,7 +17,7 @@ services:
   - "18966575583091"
   - "20907900800883"
 bookLabel: Book for men
-practitioner: "[[TODO: practitioner name]]"
+practitioner: ""   # no individual named: the "Your practitioner" card is hidden (Yemi, 11 Nov 2026)
 faqs:
   - q: Is a gentleman’s manicure just for men?
     a: Our menu is written with men in mind, and everyone is welcome to book. Your therapist will talk you through the finish you would like.
@@ -36,7 +36,7 @@ reviews: []
 
 ## What it is
 
-Our men's menu keeps things simple. The **gentleman's manicure** and **gentleman's pedicure** tidy and shape the nails and look after the cuticles and skin of the hands or feet, leaving a clean, natural finish. [[TODO: what the gentleman's manicure and pedicure include, from the practitioner.]]
+Our men's menu keeps things simple. The **gentleman's manicure** and **gentleman's pedicure** tidy and shape the nails and look after the cuticles and skin of the hands or feet, leaving a clean, natural finish.
 
 **Waxing for men** removes hair from the root, so skin stays smooth for longer than shaving. You can choose chest, back, or chest and back together. A men's brow wax is also available, listed on the waxing page.
 

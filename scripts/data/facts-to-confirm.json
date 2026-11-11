@@ -94,7 +94,7 @@
       "PRP: blood sample spun in a centrifuge to concentrate platelets, then injected into the scalp; platelets contain growth factors; 'thought to support hair follicles; research is still developing and results vary'. Needs prescriber sign-off given the PRP consultation",
       "PRP: the blood sample is taken and prepared during the appointment",
       "Plinest Hair: a polynucleotide treatment of purified DNA fragments derived from fish, injected into the scalp; not suitable with a fish allergy",
-      "Hair filler: product, contents and how it works (visible TODO)",
+      "Hair filler: described generically (no product named; Yemi, 11 Nov 2026). Practitioner to confirm the wording",
       "A course is typically 3 or 4 sessions about 4–6 weeks apart, then maintenance; changes are judged over 3–6 months",
       "Suits early to moderate thinning (including pattern hair loss in men and women) where follicles are still active; not for completely bald areas or scarring hair loss",
       "Sudden, patchy or rapid hair loss, or hair loss with other symptoms, should be checked by a GP first; possible causes include iron, thyroid, hormones and stress",
@@ -212,9 +212,9 @@
       "Aftercare advice for tan, exfoliation and wraps",
       "A patch test may be suggested for sensitive skin",
       "Pregnancy, allergies, medication and recent surgery may mean adjusting or postponing a wrap or CACI",
-      "Shrinking Violet wrap is described as a pampering treatment with no inch-loss, weight-loss or body-shape claims. Its steps and products are a TODO",
-      "CACI Bum Lift is described as using CACI microcurrent technology on the bottom area. The steps and the usual number of sessions are a TODO",
-      "Signature Back and Body Treatments are described only as longer, unhurried treatments. Their contents are a TODO"
+      "Shrinking Violet wrap is described as a pampering treatment with no inch-loss, weight-loss or body-shape claims. Its steps are described generally (therapist talks you through each step)",
+      "CACI Bum Lift is described as using CACI microcurrent technology on the bottom area. No needles; number of sessions discussed at the appointment (general wording)",
+      "Signature Back and Body Treatments are described only as longer, unhurried treatments. Contents: therapist talks you through what is included (general wording)"
     ],
     "waxing": [
       "Hair typically regrows in 3 to 6 weeks",
@@ -231,7 +231,7 @@
     "men": [
       "Manicure and pedicure typically last 2 to 3 weeks; hair typically regrows in 3 to 6 weeks",
       "Downtime is typically none; redness after waxing typically settles within a few hours",
-      "The gentleman's manicure and pedicure are described as tidying and shaping nails and caring for cuticles and skin, leaving a clean, natural finish. Contents are a TODO",
+      "The gentleman's manicure and pedicure are described as tidying and shaping nails and caring for cuticles and skin, leaving a clean, natural finish. Contents not listed further (general wording)",
       "The FAQ says the menu is written with men in mind and everyone is welcome to book. Please confirm",
       "Wax hair length of about 5 mm, roughly 2 to 3 weeks of growth, and aftercare as for waxing",
       "The men's brow wax is booked from the waxing page, not the men's page, because that is where it sits in services.json",

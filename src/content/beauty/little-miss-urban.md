@@ -14,7 +14,7 @@ services:
   - "18829136629619"
   - "20547123548019"
 bookLabel: Book Little Miss Urban
-practitioner: "[[TODO: practitioner name]]"
+practitioner: ""   # no individual named: the "Your practitioner" card is hidden (Yemi, 11 Nov 2026)
 faqs:
   - q: What ages is Little Miss Urban for?
     a: Little Miss Urban is for children aged 4 to 12.
@@ -34,7 +34,7 @@ reviews: []
 
 Little Miss Urban is a gentle pamper for children aged 4 to 12. Little Miss Nails is for fingers, and Little Miss Toes is for toes. Each appointment is short, calm and kept simple, so that it is a fun, relaxed experience for a child trying a salon treat.
 
-[[TODO: what each Little Miss treatment includes (for example shaping, buffing and which polish) and the products used, from the practitioner.]]
+Your therapist will talk your child through each step and help them choose a colour.
 
 **A parent or guardian must attend.** They stay with their child for the whole appointment.
 

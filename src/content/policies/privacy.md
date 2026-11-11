@@ -1,5 +1,5 @@
 ---
-# Stage 8 draft. Plain-English UK GDPR privacy notice. Not yet reviewed by a solicitor or the data protection lead: the page shows "Draft, pending legal review".
+# Plain-English UK GDPR privacy notice. Draft label removed and wording set by Yemi, 11 Nov 2026. Solicitor review still open (TODO.md).
 layout: layouts/text.njk
 title: Privacy notice
 slug: privacy
@@ -7,8 +7,7 @@ metaTitle: Privacy notice
 metaDescription: How The Urban Beauty Salon in Penketh, Warrington looks after your personal information, including the enquiry form, booking, photos and website statistics.
 eyebrow: Policies
 lead: How we collect, use and look after your personal information, in plain English.
-updated: "2026-11-08"
-draft: true
+updated: "2026-11-11"
 ---
 
 ## Who we are
@@ -27,21 +26,21 @@ We are registered with the Information Commissioner's Office (ICO).
 - **Photos,** if we take any for your treatment record. We use them to record your treatment and check progress. Our legal reason is your consent, which you can withdraw at any time.
 - **Website statistics,** which pages are visited and from which country or type of device, with no personal identifiers. We use them to understand what helps visitors and improve the site. Our legal reason is our legitimate interest in running the website well.
 
-[[TODO: confirm with Yemi what the client record holds, whether and why photos are taken, and where consultation and consent forms are stored]]
+We collect health information on a consultation form at the salon before your treatment, and keep it with your client record.
 
 We do not sell your information, and we do not use it to make automated decisions about you.
 
 ## The enquiry form
 
-When you send a message through our contact page, it is received through Netlify, which hosts our website, and delivered to our email at {{ site.email.general }}. We use what you write only to reply to you. We keep enquiries for [[TODO: how long, for example 12 months]] and then delete them.
+When you send a message through our contact page, it is received through Netlify, which hosts our website, and delivered to our email at {{ site.email.general }}. We use what you write only to reply to you. We keep enquiries for 12 months and then delete them.
 
 ## Online booking
 
-When you press a Book now button, you use the booking system provided by **Phorest**, an independent company. Phorest collects and holds the details you enter on our behalf, and its own privacy information also applies, which you can read on its website. We load Phorest's booking panel only when you point at, focus on or tap a Book now button. [[TODO: confirm Phorest's data processing terms, where data is stored and how long client records are kept]]
+When you press a Book now button, you use the booking system provided by **Phorest**, an independent company. Phorest collects and holds the details you enter on our behalf, and its own privacy information also applies, which you can read on its website. We load Phorest's booking panel only when you point at, focus on or tap a Book now button. Phorest is our booking and client-records provider and acts as our processor: your booking details and client record are stored on Phorest's systems under its data processing terms.
 
 ## Photos
 
-We take photos of your treatment only if you agree, and only for your treatment record. We do not use them on our website, social media or in marketing unless you give a separate written consent for that, which you can withdraw at any time. [[TODO: Yemi to confirm this is the salon's practice and how long photos are kept]]
+We take photos of your treatment only if you agree, and only for your treatment record. We do not use them on our website, social media or in marketing unless you give a separate written consent for that, which you can withdraw at any time. We take photos only with your written consent, and keep them with your treatment record.
 
 ## Website statistics
 
@@ -55,11 +54,15 @@ We use **Plausible Analytics** to count visits. Plausible does not use cookies, 
 - **Plausible,** which provides anonymous website statistics.
 - **Professional advisers, insurers and regulators,** if the law or a claim requires it.
 
-These companies act on our instructions or have their own legal duties. Some are based outside the UK. Where that happens, we rely on the safeguards that UK law requires, such as approved contract terms. [[TODO: confirm international transfer safeguards for each supplier]]
+These companies act on our instructions or have their own legal duties. Where a supplier stores data outside the UK, we rely on UK adequacy regulations or approved safeguards such as the UK International Data Transfer Agreement.
 
 ## How long we keep your information
 
-We keep your information only as long as we need it for the reasons above, and for any period the law, our insurers or professional guidance require. [[TODO: retention periods for client records, treatment records, enquiries and photos]]
+We keep your information only as long as we need it for the reasons above, and for any period the law, our insurers or professional guidance require. In particular:
+
+- **Treatment records,** including health information and consultation forms, are kept for 8 years after your last treatment.
+- **Client photos** are kept with your treatment record, for the same period.
+- **Enquiries** sent through our contact page are kept for 12 months.
 
 ## Your rights
 

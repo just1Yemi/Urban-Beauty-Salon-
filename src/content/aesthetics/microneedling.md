@@ -72,4 +72,4 @@ Results typically last several months, with maintenance sessions to keep them go
 - Wear SPF 30 or higher every day and avoid direct sun while your skin recovers.
 - Avoid exercise, swimming pools, saunas and steam rooms for 24 to 48 hours.
 - Let any flaking come away naturally; do not pick or peel the skin.
-- Contact us if you notice spreading redness, heat, swelling or other signs of infection. [[TODO: aftercare contact hours and the out-of-hours route, from Yemi]]
+- Contact us if you notice spreading redness, heat, swelling or other signs of infection: call the salon on [{{ site.phone.display }}](tel:{{ site.phone.tel }}) during opening hours.

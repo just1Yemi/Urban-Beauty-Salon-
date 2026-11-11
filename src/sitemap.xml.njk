@@ -2,7 +2,7 @@
 permalink: /sitemap.xml
 eleventyExcludeFromCollections: true
 ---
-{#- Every indexable page. Excluded: pages marked sitemap: false (style guide, 404), noindex pages (fat dissolving until its product is confirmed) and anything outside the content collections. -#}
+{#- Every indexable page. Excluded: pages marked sitemap: false (style guide, 404), noindex pages and anything outside the content collections. -#}
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 {%- for p in collections.all | sort(false, false, "url") %}{% if p.url and p.url.endsWith("/") and p.data.sitemap !== false and not p.data.noindex %}

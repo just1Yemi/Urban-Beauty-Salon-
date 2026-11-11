@@ -9,7 +9,7 @@ metaDescription: "Dermal fillers, skin boosters, polynucleotides and more at The
 lead: "Considered aesthetic treatments in Penketh, Warrington, planned around you and always starting with a conversation."
 heroPhoto: glitter-wall
 cardsTitle: Our aesthetics treatments
-cardsLead: "Every aesthetics treatment on our menu. Where a price is not shown, it is confirmed at your consultation."
+cardsLead: "Where a price is not shown, it is confirmed at your consultation."
 pause: velvet-band
 notSure:
   title: Not sure which treatment is right for you?

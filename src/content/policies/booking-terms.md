@@ -1,5 +1,5 @@
 ---
-# Stage 8 draft. Plain-English booking terms. Not yet reviewed by a solicitor: the page shows "Draft, pending legal review".
+# Plain-English booking terms. Draft label removed by Yemi, 11 Nov 2026. Solicitor review still open (TODO.md).
 # Items in yellow need Yemi to confirm.
 layout: layouts/text.njk
 title: Booking terms
@@ -8,8 +8,7 @@ metaTitle: Booking terms
 metaDescription: "The terms for booking at The Urban Beauty Salon in Penketh, Warrington: how booking works, health information, patch tests, prices, payment and age limits."
 eyebrow: Policies
 lead: What to expect when you book with us, in plain English.
-updated: "2026-11-08"
-draft: true
+updated: "2026-11-11"
 ---
 
 ## Who these terms are from
@@ -58,7 +57,7 @@ We give aftercare advice and explain what to do if you have a concern. See our [
 
 ## Your rights
 
-Nothing in these terms limits your legal rights as a consumer. [[TODO: legal review of limitation of liability and consumer-rights wording]]
+Nothing in these terms limits your legal rights as a consumer.
 
 ## Privacy and cookies
 

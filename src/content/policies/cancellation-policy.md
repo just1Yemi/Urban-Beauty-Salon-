@@ -1,6 +1,5 @@
 ---
-# Stage 8 draft. The notice period, deposit and late-arrival terms come from Phorest settings and Yemi: placeholders until confirmed.
-# The page shows "Draft, pending legal review".
+# Notice period, deposit and late-arrival terms from Yemi (CLAUDE.md). Draft label removed by Yemi, 11 Nov 2026. Solicitor review still open (TODO.md).
 layout: layouts/text.njk
 title: Cancellation policy
 slug: cancellation-policy
@@ -8,13 +7,12 @@ metaTitle: Cancellation policy
 metaDescription: How to change or cancel an appointment at The Urban Beauty Salon in Penketh, Warrington, including notice, deposits and late arrival.
 eyebrow: Policies
 lead: How to change or cancel an appointment, and what we ask in return.
-updated: "2026-11-08"
-draft: true
+updated: "2026-11-11"
 ---
 
 ## Changing or cancelling
 
-You can change or cancel your appointment by phone on [{{ site.phone.display }}](tel:{{ site.phone.tel }}), by email at [{{ site.email.bookings }}](mailto:{{ site.email.bookings }}), or through your booking confirmation.
+You can change or cancel your appointment by phone on [{{ site.phone.display }}](tel:{{ site.phone.tel }}), by email at [{{ site.email.bookings }}](mailto:{{ site.email.bookings }}), or through the link in your booking confirmation where available.
 
 ## Notice we ask for
 

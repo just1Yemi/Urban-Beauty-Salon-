@@ -32,7 +32,7 @@ services:
   - "20255065771891"
   - "20272245641075"
 bookLabel: Book waxing
-practitioner: "[[TODO: practitioner name]]"
+practitioner: ""   # no individual named: the "Your practitioner" card is hidden (Yemi, 11 Nov 2026)
 faqs:
   - q: What is the difference between strip wax and hot wax?
     a: Strip wax is spread thinly and removed with a cloth strip. Hot wax is applied thicker, sets, and is lifted off without a strip. Hot wax is often chosen for delicate or sensitive areas, but your therapist will recommend the right option for your skin and hair.

@@ -28,7 +28,7 @@ services:
   - "17540646440819"
   - "20667382632307"
 bookLabel: Book lashes and brows
-practitioner: "[[TODO: practitioner name]]"
+practitioner: ""   # no individual named: the "Your practitioner" card is hidden (Yemi, 11 Nov 2026)
 faqs:
   - q: Do I need a sensitivity test?
     a: We recommend one before a tint, lash lift, LVL or brow lamination, and your therapist may suggest one before lash extensions. It is a quick appointment, usually done at least 24 to 48 hours before your treatment, so we can check how your skin reacts. You will find it in the price list on this page.

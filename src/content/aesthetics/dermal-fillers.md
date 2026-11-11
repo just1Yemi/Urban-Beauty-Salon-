@@ -51,7 +51,7 @@ Dermal fillers are soft gels, most often made from hyaluronic acid, a substance 
 
 Our menu covers lip filler, chin and mid-face enhancement, jawline definition, smile lines (nasolabial folds), marionette lines, upper lip lines and the tear trough area under the eyes. Your practitioner will help you decide which areas, and how much product, make sense for you. Hyaluronic acid fillers break down gradually over time, so they are not permanent.
 
-If you are unhappy with filler, including filler from another clinic, book a free filler review consultation. Your practitioner will assess the area and explain your options. [[TODO: Yemi and the prescriber to confirm the filler review consultation is offered, and to create it as a service in Phorest]]
+If you are unhappy with filler, including filler from another clinic, book a free filler review consultation. Your practitioner will assess the area and explain your options.
 
 ## Who it suits
 
@@ -74,4 +74,4 @@ Your practitioner will give you aftercare advice in writing. Typical advice for 
 - avoid alcohol, strenuous exercise, saunas, steam rooms and sunbeds
 - sleep with your head slightly raised on the first night
 
-If you notice any change to your vision, call 999 or go to A&E straight away, then let us know. Contact us straight away if you notice severe or increasing pain, a pale, dusky or blotchy patch of skin, or signs of infection such as heat, spreading redness or fever. [[TODO: aftercare contact hours and how out-of-hours concerns are escalated]]
+If you notice any change to your vision, call 999 or go to A&E straight away, then let us know. Contact us straight away if you notice severe or increasing pain, a pale, dusky or blotchy patch of skin, or signs of infection such as heat, spreading redness or fever: call the salon on [{{ site.phone.display }}](tel:{{ site.phone.tel }}) during opening hours. In an emergency, call 999.

@@ -70,4 +70,4 @@ They are not suitable if you are under 18, pregnant or breastfeeding, or have a 
 - After Sculptra, you are typically asked to massage the area for five minutes, five times a day, for five days. Your practitioner shows you how.
 - Wear a high-factor sunscreen and avoid other facial treatments for about two weeks unless your practitioner advises otherwise.
 - If you notice any change to your vision, call 999 or go to A&E straight away, then let us know.
-- Contact us straight away if you notice pain that is getting worse, a pale, dusky or blotchy patch of skin, or signs of infection such as heat, spreading redness or fever. [[TODO: aftercare contact hours and the urgent out-of-hours route, from Yemi]]
+- Contact us straight away if you notice pain that is getting worse, a pale, dusky or blotchy patch of skin, or signs of infection such as heat, spreading redness or fever: call the salon on [{{ site.phone.display }}](tel:{{ site.phone.tel }}) during opening hours. In an emergency, call 999.

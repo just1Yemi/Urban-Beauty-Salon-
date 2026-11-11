@@ -1,6 +1,6 @@
 ---
 # Stage 7 copy. Generic guidance only: no treatment results, no prices, no medicine names (CLAUDE.md).
-# Practitioner sign-off needed on the patch test lead time and the health information steps.
+# Patch test lead time (48 hours), consultation form, guests and step-free entrance confirmed by Yemi, 11 Nov 2026.
 layout: layouts/trust.njk
 title: Your consultation and first visit
 slug: consultation
@@ -35,7 +35,7 @@ faqs:
   - q: What if I am unwell on the day?
     a: Please call the salon as soon as you can. See our cancellation policy for how changes to appointments work.
   - q: Can I bring someone with me?
-    a: "[[TODO: Yemi to confirm the salon policy on guests in the treatment room and waiting area]]"
+    a: "You are welcome to bring someone with you. They can wait for you in reception, but for privacy and safety they cannot come into the treatment room. For Little Miss Urban, a parent or guardian stays with the child for the whole appointment."
 related: []
 ---
 
@@ -43,27 +43,27 @@ related: []
 
 1. **Choose your treatment.** Browse the treatment pages, or call the salon if you would like help choosing. Each page shows what to expect and, where a price is shown, how much it costs.
 2. **Book online.** Use any Book now button to choose a time in our booking system, at any hour of the day. You can also call us during opening hours.
-3. **Tell us about your health.** We ask a few questions about your health and any medicines you take, so your practitioner can plan safely. [[TODO: confirm how health information is collected, for example a form before your visit or on arrival]]
+3. **Tell us about your health.** We ask a few questions about your health and any medicines you take, so your practitioner can plan safely. You fill in a short consultation form at the salon before your treatment.
 4. **Arrive and settle in.** Park right outside, come in and relax in the reception. Your practitioner welcomes you and goes through what will happen.
 5. **Your treatment.** Aesthetics treatments always start with a consultation. For other treatments your practitioner checks your skin and your needs before they begin.
 6. **Aftercare.** You leave knowing what to expect in the following days and who to call. For aesthetics treatments you also get written advice. More is on our [safety and aftercare page](/aftercare/).
 
 ## Your consultation
 
-A consultation is a private conversation with your practitioner. It is not a sales pitch. Our free aesthetics consultations take place by phone; some treatments also need an in-person assessment by a qualified prescriber at the salon before they can begin.
+A consultation is a private conversation with your practitioner. It is not a sales pitch. Our free aesthetics consultations take place by phone.
 
 - Your practitioner asks about your health, your medicines and what you would like to change.
 - They ask about your skin or the area in question, and look at it in person where needed.
 - They explain the options that may suit you, what each involves, what it can and cannot do, the possible risks and the cost.
 - You have time to ask questions and to decide. Sometimes the honest answer is that no treatment is needed.
 
-Our lines and wrinkles consultation is free, with no obligation. Aesthetics treatments are for adults aged 18 and over. [[TODO: Yemi and the prescriber to confirm the 18+ policy applies to every aesthetics treatment]]
+Aesthetics consultations are free, with no obligation. Aesthetics treatments are for adults aged 18 and over.
 
 ## Patch tests
 
 Some treatments need a patch test, also called a sensitivity test, before your first appointment. We use a small amount of the product on a small area of skin to check how your skin reacts. Patch tests are usually advised before tints, lash lifts, lamination and some skin treatments, and you can book one from the [lashes and brows price list](/beauty/lashes-and-brows/#prices).
 
-Please have the patch test at least [[TODO: practitioner to confirm the lead time, for example 48 hours]] before your treatment. If your skin reacts, or you are unsure, please tell us before you come, and do not go ahead with the treatment until we have spoken.
+Please have the patch test at least 48 hours before your treatment. If your skin reacts, or you are unsure, please tell us before you come, and do not go ahead with the treatment until we have spoken.
 
 ## Preparing for your visit
 
@@ -72,4 +72,4 @@ Please have the patch test at least [[TODO: practitioner to confirm the lead tim
 - **Wear comfortable clothes** that are easy to adjust, and arrive without heavy make-up if you are having a facial or an eye treatment.
 - **Follow any instructions we send** for your treatment. Your practitioner tells you if anything specific applies, such as pausing certain skincare products.
 - **Little Miss Urban:** a parent or guardian must stay with the child for the whole visit.
-- **Parking and access:** free parking is right outside, in front of the shops. [[TODO: step-free access details for the salon entrance]]
+- **Parking and access:** free parking is right outside, in front of the shops, and the salon entrance is step-free.

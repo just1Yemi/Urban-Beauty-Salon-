@@ -1,5 +1,5 @@
 ---
-# Stage 8 draft. Not yet reviewed by a solicitor: the page shows "Draft, pending legal review".
+# Draft label removed by Yemi, 11 Nov 2026. Solicitor review still open (TODO.md).
 layout: layouts/text.njk
 title: Cookies
 slug: cookies
@@ -7,8 +7,7 @@ metaTitle: Cookies
 metaDescription: The Urban Beauty Salon website sets no cookies of its own and uses cookie-free statistics. Find out what Phorest's online booking panel may set.
 eyebrow: Policies
 lead: Our website sets no cookies. This page explains what that means, and what to expect if you use online booking.
-updated: "2026-11-08"
-draft: true
+updated: "2026-11-11"
 ---
 
 ## Our website
@@ -24,7 +23,7 @@ Our statistics come from **Plausible Analytics**, which is designed to work with
 
 ## Online booking with Phorest
 
-When you press a Book now button, you use the booking panel run by **Phorest**, an independent company. Phorest's panel is loaded only when you point at, focus on or tap a Book now button, and it may show its own cookie notice and set its own cookies. Those cookies are controlled by Phorest, and its own policies apply. [[TODO: check on the live site which cookies Phorest's booking panel sets, and list the categories here]]
+When you press a Book now button, you use the booking panel run by **Phorest**, an independent company. Phorest's panel is loaded only when you point at, focus on or tap a Book now button, and it may show its own cookie notice and set its own cookies. Those cookies are controlled by Phorest, and its own policies apply.
 
 ## Maps and social links
 

@@ -16,16 +16,16 @@ services:
   - "19842748911475"
   - "21337397530483"
 bookLabel: Book a COMCIT facial
-practitioner: "[[TODO: practitioner name]]"
+practitioner: ""   # no individual named: the "Your practitioner" card is hidden (Yemi, 11 Nov 2026)
 faqs:
   - q: What is the difference between COMCIT and CACI?
     a: Both are technology-led facials, but they work differently. CACI uses microcurrent to tone the facial muscles. COMCIT is a skin rejuvenation treatment aimed at the look and feel of the skin itself. Your therapist can help you choose, and you can combine them in one visit.
   - q: Which COMCIT option should I choose?
     a: Start with COMCIT on its own if you are new to it. If you would like more, the longer options add CACI for facial toning, microdermabrasion for exfoliation, or Prime & Peel. Your therapist will recommend one after looking at your skin.
   - q: Do I need a course of COMCIT?
-    a: "A course is typically recommended for a visible change, and the number of sessions depends on your skin. Your therapist will suggest a plan at your appointment. [[TODO: course length and total course price, if the salon offers one]]"
+    a: "A course is typically recommended for a visible change, and the number of sessions depends on your skin. Your therapist will suggest a plan at your appointment. We’ll talk you through the number of sessions and the cost before you start."
   - q: Does it hurt?
-    a: "[[TODO: how COMCIT typically feels, from the practitioner]]"
+    a: "It should not be painful. Your therapist will explain what you may feel as the treatment goes along, and you can ask them to pause or adjust it at any point."
   - q: Can I have COMCIT if I am pregnant?
     a: We would not recommend it. Please tell your therapist if you are pregnant or think you might be, and they will suggest a suitable alternative.
 related:
@@ -37,7 +37,7 @@ reviews: []
 
 ## What it is
 
-COMCIT is an advanced skin rejuvenation facial. It is designed to refresh the look and feel of the skin, and it is built around a professional treatment device rather than products alone. [[TODO: practitioner to describe in one or two plain sentences how COMCIT works and what it does for the skin]]
+COMCIT is an advanced skin rejuvenation facial. It is designed to refresh the look and feel of the skin, and it is built around a professional treatment device rather than products alone. Your therapist will explain how it works and what to expect for your skin at your appointment.
 
 The menu has four options. COMCIT Advanced Skin Rejuvenation is the core treatment. The three longer options add a second step to the same session: CACI, microdermabrasion or Prime & Peel. This lets us tailor the facial to your skin rather than offering one fixed treatment.
 
@@ -45,9 +45,9 @@ Like all our facials, COMCIT begins with a conversation, so the therapist unders
 
 ## Who it suits
 
-COMCIT suits adults who would like to refresh their skin, for example if it looks dull, uneven or tired. [[TODO: practitioner to confirm the concerns COMCIT is suited to]]
+COMCIT suits adults who would like to refresh their skin, for example if it looks dull, uneven or tired. Your therapist will look at your skin first and tell you honestly whether COMCIT is the right choice.
 
-It is not suitable for everyone. Your therapist will ask about pregnancy, medication, skin conditions, recent injectable treatments and any history of reactions before starting. If your skin is sunburnt, broken or inflamed on the day, we may suggest rebooking. [[TODO: practitioner to confirm the full list of reasons COMCIT may not be suitable]]
+It is not suitable for everyone. Your therapist will ask about pregnancy, medication, skin conditions, recent injectable treatments and any history of reactions before starting. If your skin is sunburnt, broken or inflamed on the day, we may suggest rebooking.
 
 ## What to expect
 

@@ -43,7 +43,7 @@ services:                           # service ids from src/_data/services.json, 
   - "20306605379443"
   - "20323785248627"
 bookLabel: Book dermaplaning        # 22 characters or fewer; prescription pages: Book a free consultation
-practitioner: "[[TODO: practitioner name]]"   # an id from practitioners.json once Yemi supplies details
+practitioner: "05-rania"            # an id from practitioners.json, or "" for no "Your practitioner" card
 faqs:                               # plain text answers (no Markdown)
   - q: How do I book?
     a: Book online at any time with any Book button, or call the salon during opening hours.
@@ -74,7 +74,7 @@ Plain advice. Link to the safety and aftercare page when it exists.
 
 A numbered list becomes the numbered steps (01, 02 on a thin line): start each item with a short bold title ending in a full stop. The template then adds Prices and times, Questions (`faqs`), reviews (or a `[[TODO]]`), related treatments and the closing "See you soon." band.
 
-Consultation-only pages (every listed service is prescription) use `facts: { duration, format }` and no `resultsLast` or `downtime`; list only the consultation services you want shown. A YAML comment `# remove if price published` marks FAQs that mention a held-back price. `noindex: true` keeps a page out of search and the sitemap.
+Consultation-only pages (every listed service is prescription) use `facts: { duration, format }` and no `resultsLast` or `downtime`; list only the consultation services you want shown. A YAML comment `# remove if price published` marks FAQs that mention a held-back price. `noindex: true` keeps a page out of search and the sitemap. `permalink: false` plus `eleventyExcludeFromCollections: true` takes a page off the site but keeps its file (lines and wrinkles consultation, fat dissolving); also remove its card from `sections.json`.
 
 ## Trust page
 
@@ -114,7 +114,7 @@ metaDescription: 70 to 160 characters, unique.
 eyebrow: Policies                  # optional
 lead: ""                           # optional
 updated: "2026-11-08"              # optional, quoted: shows "Last updated 8 November 2026"
-draft: true                        # shows the "Draft, pending legal review" note
+draft: false                       # true shows the "Draft, pending legal review" note (removed from all policies 11 Nov 2026)
 ```
 
 Body: Markdown with `##` and `###` headings, lists and links. It prints cleanly.

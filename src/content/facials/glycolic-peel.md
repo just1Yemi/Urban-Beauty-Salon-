@@ -13,7 +13,7 @@ facts:
 services:
   - "19636590481267"
 bookLabel: Book a glycolic peel
-practitioner: "[[TODO: practitioner name]]"
+practitioner: ""   # no individual named: the "Your practitioner" card is hidden (Yemi, 11 Nov 2026)
 faqs:
   - q: Does a glycolic peel hurt?
     a: You will typically feel a warm tingling for a minute or two while the peel is on your skin. Your therapist watches your skin closely and removes the peel when it has done its job. Tell them straight away if it becomes uncomfortable.
@@ -22,7 +22,7 @@ faqs:
   - q: How many peels do I need?
     a: One peel can leave skin looking fresher, and many people have a series of peels spaced a few weeks apart. Your therapist will suggest a plan that suits your skin.
   - q: Can I have a peel if I use retinol?
-    a: "Tell your therapist what you use. You may be asked to pause retinol or other active products for a few days before your peel. [[TODO: practitioner to confirm how long to pause retinol and other actives]]"
+    a: "Tell your therapist what you use. You may be asked to pause retinol or other active products for a few days before your peel. Your therapist will tell you exactly what to pause and for how long."
   - q: Can I combine a peel with dermaplaning?
     a: Yes. Dermaplaning and Glycolic Peel is a combined treatment on our dermaplaning page.
 related:
@@ -36,13 +36,13 @@ reviews: []
 
 Glycolic acid is an alpha hydroxy acid. In a glycolic peel, your therapist applies it to the skin for a short, timed period. It loosens the bonds between dead skin cells so they can be removed from the surface. This can leave the skin looking brighter, feeling smoother and more even in tone.
 
-Our Glycolic Peel Facial typically includes a cleanse, the peel itself, then soothing and protecting products. The strength and timing are chosen to suit your skin. [[TODO: practitioner to confirm the steps and peel strength used]]
+Our Glycolic Peel Facial typically includes a cleanse, the peel itself, then soothing and protecting products. The strength and timing are chosen to suit your skin.
 
 If you would like dermaplaning as well, the combined Dermaplaning and Glycolic Peel treatment is on our dermaplaning page.
 
 ## Who it suits
 
-A glycolic peel suits adults whose skin looks dull, uneven or rough, or who would like a regular exfoliating treatment. [[TODO: practitioner to confirm the concerns a glycolic peel is suited to]]
+A glycolic peel suits adults whose skin looks dull, uneven or rough, or who would like a regular exfoliating treatment. Your therapist will check your skin first and tell you honestly whether a peel is right for you.
 
 It is not suitable if your skin is sunburnt, broken, inflamed or infected, or if you have a cold sore. Please tell your therapist if you are pregnant, are breastfeeding, take certain medications, have used strong skincare actives recently, or have reacted badly to acids before. Your therapist may suggest a patch test or a gentler option if your skin is sensitive.
 

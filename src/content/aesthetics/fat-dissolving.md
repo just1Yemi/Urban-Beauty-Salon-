@@ -1,4 +1,10 @@
 ---
+# OFF THE SITE FOR LAUNCH (Yemi, 11 Nov 2026): the product is not confirmed, so this page is not built
+# (permalink: false), not in any collection, and its card is removed from src/_data/sections.json.
+# It returns once the product (and, if it is a prescription medicine, an independent prescriber) is confirmed:
+# remove the two lines below, add the card back to sections.json and resolve the TODOs in this file.
+permalink: false
+eleventyExcludeFromCollections: true
 # Stage 4 copy, drafted for prescriber and practitioner sign-off. Prices held back until Yemi decides.
 # Product not named: the product type is unconfirmed. If it is a prescription medicine, this page
 # must be reworked to the prescription rules in CLAUDE.md before launch. Schema: CONTENT_GUIDE.md.

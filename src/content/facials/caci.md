@@ -18,18 +18,18 @@ services:
   - "19189913882483"
   - "21406117007219"
 bookLabel: Book a CACI facial
-practitioner: "[[TODO: practitioner name]]"
+practitioner: ""   # no individual named: the "Your practitioner" card is hidden (Yemi, 11 Nov 2026)
 faqs:
   - q: What does CACI feel like?
     a: Most clients describe a gentle tingling or light pulsing as the therapist moves small probes over the skin. It should not be painful, and you can ask the therapist to adjust the level at any point.
   - q: Do I need a course of CACI?
-    a: "CACI is typically recommended as a course of sessions, with the number depending on your skin and what you would like to change. Your therapist will suggest a plan at your appointment. [[TODO: course length and total course price, if the salon offers one]]"
+    a: "CACI is typically recommended as a course of sessions, with the number depending on your skin and what you would like to change. Your therapist will suggest a plan at your appointment. We’ll talk you through the number of sessions and the cost before you start."
   - q: Is CACI the same as microneedling?
     a: No. CACI uses microcurrent applied to the surface of the skin, with no needles. Microneedling is a different treatment that makes tiny controlled channels in the skin.
   - q: Who should not have CACI?
     a: Microcurrent is not suitable for everyone, for example if you have a pacemaker or other implanted electrical device, epilepsy, or are pregnant. Your therapist will go through a full list with you before you begin.
   - q: Can I wear make-up afterwards?
-    a: "[[TODO: the practitioner’s advice on make-up after CACI]]"
+    a: "Your therapist will advise when you can wear make-up again, usually after a short break to let your skin settle."
 related:
   - comcit
   - crystal-clear

@@ -150,7 +150,7 @@ const PRESCRIPTION = /^(anti wrinkles injection|hyperhidrosis|teeth grinding|der
 // Names shown on price lists (Aesthetics only): no "Category: " prefix, sentence case.
 const MENU = {
   "22419729289075": "Lip filler, 0.5ml",
-  "22436909158259": "Dermal filler, 1ml [[TODO: which area the 1ml filler is for]]",
+  "22436909158259": "Dermal filler, 1ml, used where your practitioner recommends",
   "22454089027443": "Chin and mid-face enhancement",
   "22471268896627": "Chin enhancement",
   "22557168242547": "Jawline, 1ml",

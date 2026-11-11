@@ -21,7 +21,7 @@ services:
   - "18176301600627"
   - "20839181324147"
 bookLabel: Book a massage
-practitioner: "[[TODO: practitioner name]]"
+practitioner: ""   # no individual named: the "Your practitioner" card is hidden (Yemi, 11 Nov 2026)
 faqs:
   - q: Which massage should I choose?
     a: For a short, targeted treat, a back, head or foot, leg and ankle massage works well. A hot stone back massage adds warmth, and deep tissue uses firmer pressure. For a full hour or more of relaxation, choose a full body massage. Tell your therapist what you would like and they will guide you.

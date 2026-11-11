@@ -14,7 +14,7 @@ services:
   - "20306605379443"
   - "20323785248627"
 bookLabel: Book dermaplaning
-practitioner: "[[TODO: practitioner name]]"
+practitioner: ""   # no individual named: the "Your practitioner" card is hidden (Yemi, 11 Nov 2026)
 faqs:
   - q: Does dermaplaning hurt?
     a: Most people find it comfortable. The blade is held at an angle and moved in light, short strokes, which can feel like a soft scraping or tickling sensation.
@@ -23,7 +23,7 @@ faqs:
   - q: How often can I have dermaplaning?
     a: Many people have it every three to four weeks, in line with the skin's natural renewal cycle. Your therapist will advise what suits your skin.
   - q: Can I wear make-up afterwards?
-    a: "[[TODO: the practitioner’s advice on make-up after dermaplaning]]"
+    a: "Your therapist will advise when you can wear make-up again, usually after a short break, as freshly exfoliated skin can be more sensitive."
   - q: Should I choose dermaplaning on its own or with a glycolic peel?
     a: Dermaplaning Luxury is a good place to start. Adding a glycolic peel gives a deeper exfoliation as well, so it suits skin that feels dull or uneven. Your therapist will recommend one after looking at your skin.
 related:

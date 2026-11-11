@@ -1,7 +1,7 @@
 {
   "legalName": "Urban Beauty Salon Ltd",
   "tradingName": "The Urban Beauty Salon",
-  "established": 2013,
+  "established": 2011,
   "companyNumber": "17031560",
   "registeredOffice": "40 Kipling Avenue, Tilbury RM18 8HF",
   "icoNumber": "[[TODO]]",
@@ -51,7 +51,7 @@
     "overlayOnPhones": true,
     "consultationVia": "phorest",
     "widgetScript": "https://booking-widget.phorestcdn.com/obwidget.bundle.js",
-    "consultationViaNote": "LAUNCH GATE. While \"contact\", the Book button on consultation-only pages (lines and wrinkles consultation) opens the contact form instead of Phorest, because Phorest still lists those services under their old names and prices. Set to \"phorest\" only after the Phorest services are renamed (see BUILD_PLAN.md, Waiting on Yemi).",
+    "consultationViaNote": "LAUNCH GATE. While \"contact\", the Book button on consultation-only pages (none at launch: the lines and wrinkles consultation is off the site) opens the contact form instead of Phorest, because Phorest still lists those services under their old names and prices. Set to \"phorest\" only after the Phorest services are renamed (see BUILD_PLAN.md, Waiting on Yemi).",
     "note": "mode is the ONE setting for every Book button. \"overlay\" (agreed in CLAUDE.md; panel tested loading on localhost, desktop and phone, 8 Nov 2026): Phorest's booking panel slides in on the page, on phones too while overlayOnPhones is true; without JavaScript, or if the panel cannot load, the button opens the booking page instead. \"newTab\": every Book button opens the Phorest booking page in a new tab. Stage 10 makes a test booking on the live domain (desktop and a real iPhone); if booking fails inside the panel, set overlayOnPhones false (phones only) or mode \"newTab\". See COMPONENTS.md, Booking."
   },
   "social": {

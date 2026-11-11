@@ -45,7 +45,7 @@ services:
   - "19585050873715"
   - "21595095568243"
 bookLabel: Book nails
-practitioner: "[[TODO: practitioner name]]"
+practitioner: ""   # no individual named: the "Your practitioner" card is hidden (Yemi, 11 Nov 2026)
 faqs:
   - q: How do I know which nail treatment to choose?
     a: If you want colour that lasts, gel colour is a popular choice. If you would like extra strength or length, BIAB, Bio Sculpture, acrylic and Acrygel are the enhancement options. Tell your therapist how you use your hands and the look you want, and they will guide you.

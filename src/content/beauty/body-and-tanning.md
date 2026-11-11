@@ -19,7 +19,7 @@ services:
   - "18846316498803"
   - "18863496367987"
 bookLabel: Book body and tanning
-practitioner: "[[TODO: practitioner name]]"
+practitioner: ""   # no individual named: the "Your practitioner" card is hidden (Yemi, 11 Nov 2026)
 faqs:
   - q: How should I prepare for a spray tan?
     a: Exfoliate and shave or wax at least 24 hours beforehand, then arrive with clean, dry skin and no moisturiser, deodorant or perfume. Wear loose, dark clothing afterwards. Your therapist will talk you through the rest.
@@ -43,11 +43,11 @@ This page covers our treatments for the body and a spray tan.
 
 **Spray tans** give you a tan without sun exposure. We offer the Sienna X spray tan for the full body and a half body option.
 
-**Body exfoliation** removes dead skin cells from across the body, leaving the skin feeling smooth. It is a good preparation for a spray tan. The **signature back and body treatments** are longer, unhurried treatments for the back or the whole body. [[TODO: what the Signature Back Treatment and Signature Body Treatment include, from the practitioner.]]
+**Body exfoliation** removes dead skin cells from across the body, leaving the skin feeling smooth. It is a good preparation for a spray tan. The **signature back and body treatments** are longer, unhurried treatments for the back or the whole body. Your therapist will talk you through what is included when you book.
 
-The **Shrinking Violet wrap** is a body wrap treatment. [[TODO: what the Shrinking Violet wrap involves and the products used, from the practitioner.]] It is a pampering treatment. We do not make claims about inches lost, weight loss or body shape.
+The **Shrinking Violet wrap** is a body wrap treatment, and your therapist will talk you through each step. It is a pampering treatment. We do not make claims about inches lost, weight loss or body shape.
 
-The **CACI Bum Lift** uses CACI microcurrent technology on the bottom area. [[TODO: what the treatment involves and the usual number of sessions, from the practitioner.]]
+The **CACI Bum Lift** uses CACI microcurrent technology on the bottom area. It uses no needles. We’ll talk you through the number of sessions at your appointment.
 
 ## Who it suits
 
