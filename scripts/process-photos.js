@@ -229,6 +229,43 @@ const PHOTOS = [
     use: "detail",
     alt: "A white shelf with small bottles of nail oil, boxed nail products and a pink manicure set.",
   },
+  // Salon nail work, from the team's WhatsApp group (11 Nov 2026). Hands only, no faces; genuine and unedited apart from crop and grade.
+  {
+    name: "nails-soft-pink",
+    source: "nails-89.jpg",
+    ratio: "4:5",
+    crop: { x: 0, y: 0.03, w: 1 },
+    rotate: 0,
+    use: "detail",
+    alt: "A soft pink gel manicure on short, rounded nails, hands resting on a white towel.",
+  },
+  {
+    name: "nails-french",
+    source: "nails-97.jpg",
+    ratio: "3:2",
+    crop: { x: 0, y: 0.12, w: 1 },
+    rotate: 0,
+    use: "detail",
+    alt: "A French gel manicure with natural pink bases and white tips, hands resting on a white towel.",
+  },
+  {
+    name: "nails-teal",
+    source: "nails-117.jpg",
+    ratio: "4:5",
+    crop: { x: 0, y: 0.05, w: 1 },
+    rotate: 0,
+    use: "detail",
+    alt: "A teal shimmer gel manicure, hands resting on a white towel.",
+  },
+  {
+    name: "nails-chocolate",
+    source: "nails-118.jpg",
+    ratio: "4:5",
+    crop: { x: 0, y: 0.06, w: 1 },
+    rotate: 0,
+    use: "detail",
+    alt: "A glossy chocolate-brown gel manicure, hands resting on a white towel.",
+  },
 ];
 
 function rad(deg) {
@@ -395,6 +432,8 @@ async function main() {
   // Keep the file in the order of the PHOTOS list.
   const ordered = {};
   for (const p of PHOTOS) if (result[p.name]) ordered[p.name] = result[p.name];
+  // Keep entries written by other scripts (for example team portraits from process-team.js).
+  for (const [k, v] of Object.entries(existing)) if (!ordered[k] && !PHOTOS.some((p) => p.name === k)) ordered[k] = v;
   fs.writeFileSync(DATA, JSON.stringify(ordered, null, 2) + "\n");
 
   if (wantSheet) await contactSheet(pairs);

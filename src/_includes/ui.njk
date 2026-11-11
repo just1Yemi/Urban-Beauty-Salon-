@@ -104,7 +104,7 @@
     reveal=false when it sits above the fold (page heads). -#}
 {% macro facts(items, reveal=true) -%}
 <dl class="facts"{% if reveal %} data-reveal{% endif %}>
-{%- for f in items %}<div class="facts__item">{{ icon(f.icon) }}<dt>{{ f.label }}</dt><dd>{% if f.price %}{{ price(f.price) }}{% else %}{{ f.value | replace(r/(\d)–(\d)/g, "$1&#8288;–&#8288;$2") | todo | safe }}{% endif %}</dd></div>{% endfor -%}
+{%- for f in items %}<div class="facts__item">{{ icon(f.icon) }}<dt>{{ f.label }}</dt><dd>{% if f.price %}{{ price(f.price) }}{% else %}{{ f.value | replace(r/(\d)–(\d)/g, "$1⁠–⁠$2") | todo | safe }}{% endif %}</dd></div>{% endfor -%}
 </dl>
 {%- endmacro %}
 

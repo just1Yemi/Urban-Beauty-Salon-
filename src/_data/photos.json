@@ -385,6 +385,78 @@
     "path": "/assets/img/salon/product-shelf-nail-care",
     "preview": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAADwAwCdASoYABAAPt1iqUyopiQiMAgBEBuJYwC2yGYOXzT5kiVxHeQAAP62k2XNKB8fqvLqMwTlI/A5cTMHYoUCahCoMd1z1PjFTwHp4X9Ldv7R2xB4ufmysAA="
   },
+  "nails-soft-pink": {
+    "name": "nails-soft-pink",
+    "alt": "A soft pink gel manicure on short, rounded nails, hands resting on a white towel.",
+    "use": "detail",
+    "ratio": "4:5",
+    "width": 960,
+    "height": 1200,
+    "widths": [
+      480,
+      960
+    ],
+    "formats": [
+      "avif",
+      "webp"
+    ],
+    "path": "/assets/img/salon/nails-soft-pink",
+    "preview": "data:image/webp;base64,UklGRqAAAABXRUJQVlA4IJQAAACwBQCdASoYAB4APt1apkyopSOiMBgMARAbiWYAnTlBVhVuYQPOCj7acFyTqHlC9fNPSKMEAWAA97nrIPPHP641yba84kD+JckuVXPxSquDhFsxrGwb44eawiF5dPAL/QpYaKya5RnWYCzBQ2zkGz1vpW4OCVd+YEnW/+Z8Uf43gYAa6Rox7gK1QVTHi56pMxwDAAAA"
+  },
+  "nails-french": {
+    "name": "nails-french",
+    "alt": "A French gel manicure with natural pink bases and white tips, hands resting on a white towel.",
+    "use": "detail",
+    "ratio": "3:2",
+    "width": 1600,
+    "height": 1067,
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "formats": [
+      "avif",
+      "webp"
+    ],
+    "path": "/assets/img/salon/nails-french",
+    "preview": "data:image/webp;base64,UklGRoIAAABXRUJQVlA4IHYAAABwBACdASoYABAAPt1cp0yopSOiMAgBEBuJZgCxG1yBsKo8OZt4uCuabjB4AAD+t6JAC3Gg3hz8oYTmAYjMXitSozLveRFh9+KMDksqhEDtVaXewN3ye2GKX5wlLQgJhKamo1aa1CEzMDgIcHVpYY5TLpBjXUAA"
+  },
+  "nails-teal": {
+    "name": "nails-teal",
+    "alt": "A teal shimmer gel manicure, hands resting on a white towel.",
+    "use": "detail",
+    "ratio": "4:5",
+    "width": 960,
+    "height": 1200,
+    "widths": [
+      480,
+      960
+    ],
+    "formats": [
+      "avif",
+      "webp"
+    ],
+    "path": "/assets/img/salon/nails-teal",
+    "preview": "data:image/webp;base64,UklGRqQAAABXRUJQVlA4IJgAAAAQBgCdASoYAB4APs1SoUynpKMiN/qoAPAZiWoAnTKEgQjSghI3BaqPmLwZ8e3XTrHTVnOeK2g/OCAA/fTJnlSH5rb5KGeKj5dzsBxb1dPoAuBgWA/LZgXj31tTURuMCj9tUu0nIBNOO6PP7s4lhHYqDkO9efUJ8R0gtsa19hLsO9uRE5vfzd8fT50KpijUk1nxtIfvLxwAAA=="
+  },
+  "nails-chocolate": {
+    "name": "nails-chocolate",
+    "alt": "A glossy chocolate-brown gel manicure, hands resting on a white towel.",
+    "use": "detail",
+    "ratio": "4:5",
+    "width": 480,
+    "height": 600,
+    "widths": [
+      480
+    ],
+    "formats": [
+      "avif",
+      "webp"
+    ],
+    "path": "/assets/img/salon/nails-chocolate",
+    "preview": "data:image/webp;base64,UklGRrAAAABXRUJQVlA4IKQAAACwBQCdASoYAB4APt1gp04opaMiKA1REBuJZACdMoSCmA0oN4N4eSs4SC/3h2FNvYQKkqShygAA/rNC1SA0YARDu3DCckG/y6X2Nm3TUVhl8WyMyn2fp2dxkq7eOTUkYQ7XiNIWYCiSYGSFjcq2ra/vADsvVhL0u0EXwBSJA+nnGEXXHQCYo1X2PHv5/0WaXwLlBCv8k8PfuVLKWz1baIe/3HgAAA=="
+  },
   "team-rachel": {
     "name": "team-rachel",
     "alt": "Portrait of Rachel Crookes, Salon Manager.",

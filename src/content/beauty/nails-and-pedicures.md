@@ -6,7 +6,7 @@ section: beauty
 metaTitle: BIAB and Gel Nails in Warrington
 metaDescription: Gel colour, BIAB, Bio Sculpture, acrylic and Acrygel nails, manicures and pedicures at The Urban Beauty Salon in Penketh, Warrington. Book online.
 lead: Manicures, pedicures, gel colour, BIAB, Bio Sculpture, acrylic and Acrygel nails in Penketh, Warrington, from a simple polish to a full set.
-heroPhoto: polish-wall
+heroPhoto: nails-soft-pink
 facts:
   resultsLast: "Typically 2–3 weeks"
   downtime: "Typically none"

@@ -12,42 +12,58 @@
       {
         "slug": "lines-and-wrinkles-consultation",
         "name": "Lines and wrinkles consultation",
-        "text": "A free, private consultation, with no obligation to go ahead."
+        "text": "A free, private consultation, with no obligation to go ahead.",
+        "photo": "relaxation-room",
+        "detail": "pampas"
       },
       {
         "slug": "dermal-fillers",
         "name": "Dermal fillers",
-        "text": "Lip, chin, jawline and mid-face treatments."
+        "text": "Lip, chin, jawline and mid-face treatments.",
+        "photo": "desk-flowers",
+        "detail": "pampas"
       },
       {
         "slug": "skin-boosters",
         "name": "Skin boosters",
-        "text": "Designed to improve hydration and skin quality."
+        "text": "Designed to improve hydration and skin quality.",
+        "photo": "pampas",
+        "detail": "desk-flowers"
       },
       {
         "slug": "polynucleotides",
         "name": "Polynucleotides",
-        "text": "Skin-quality treatments for the face and the under-eye area."
+        "text": "Skin-quality treatments for the face and the under-eye area.",
+        "photo": "relaxation-room-wide",
+        "detail": "relaxation-room"
       },
       {
         "slug": "biostimulators",
         "name": "Biostimulators",
-        "text": "Designed to encourage your skin’s own collagen, for a gradual change."
+        "text": "Designed to encourage your skin’s own collagen, for a gradual change.",
+        "photo": "reception-flowers-products",
+        "detail": "pampas"
       },
       {
         "slug": "microneedling",
         "name": "Microneedling",
-        "text": "A gradual treatment for texture, scarring, pigmentation and glow."
+        "text": "A gradual treatment for texture, scarring, pigmentation and glow.",
+        "photo": "hero-desk-portrait",
+        "detail": "desk-flowers"
       },
       {
         "slug": "fat-dissolving",
         "name": "Fat dissolving",
-        "text": "For small areas of stubborn fat, such as under the chin."
+        "text": "For small areas of stubborn fat, such as under the chin.",
+        "photo": "desk-flowers",
+        "detail": "pampas"
       },
       {
         "slug": "hair-loss",
         "name": "Hair loss",
-        "text": "Scalp treatments for people concerned about thinning hair."
+        "text": "Scalp treatments for people concerned about thinning hair.",
+        "photo": "treatment-room",
+        "detail": "relaxation-room"
       }
     ]
   },
@@ -103,13 +119,15 @@
       {
         "slug": "nails-and-pedicures",
         "name": "Nails and pedicures",
-        "photo": "polish-wall",
-        "detail": "nail-stations",
+        "photo": "nails-soft-pink",
+        "detail": "nails-french",
         "text": "Gel colour, manicures, pedicures and nail enhancements."
       },
       {
         "slug": "little-miss-urban",
-        "name": "Little Miss Urban"
+        "name": "Little Miss Urban",
+        "photo": "product-shelf-nail-care",
+        "detail": "polish-wall"
       },
       {
         "slug": "massage",
@@ -120,15 +138,21 @@
       },
       {
         "slug": "body-and-tanning",
-        "name": "Body and tanning"
+        "name": "Body and tanning",
+        "photo": "relaxation-room-wide",
+        "detail": "product-shelf-mixed"
       },
       {
         "slug": "waxing",
-        "name": "Waxing"
+        "name": "Waxing",
+        "photo": "treatment-room",
+        "detail": "desk-flowers"
       },
       {
         "slug": "men",
-        "name": "Treatments for men"
+        "name": "Treatments for men",
+        "photo": "nail-stations",
+        "detail": "product-shelf-nail-care"
       }
     ]
   }

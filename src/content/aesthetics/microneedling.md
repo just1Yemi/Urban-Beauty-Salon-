@@ -7,7 +7,7 @@ section: aesthetics
 metaTitle: Microneedling in Penketh, Warrington
 metaDescription: Microneedling in Penketh, Warrington, for skin texture, acne scarring, pigmentation and glow. Find out what to expect and book a consultation.
 lead: Microneedling uses very fine needles to create tiny channels in the skin, prompting its natural repair process. It is a gradual, course-based treatment for texture, scarring, pigmentation and glow.
-heroPhoto: "[[TODO: aesthetics room photo, from the professional shoot]]"
+heroPhoto: hero-desk-portrait
 facts:
   resultsLast: "Typically several months"
   downtime: "Typically 1–3 days"

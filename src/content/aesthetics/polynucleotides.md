@@ -8,7 +8,7 @@ section: aesthetics
 metaTitle: Polynucleotides in Penketh, Warrington
 metaDescription: "Polynucleotide skin treatments for the face and under-eye area at The Urban Beauty Salon in Penketh, Warrington. Consultation first. See prices and book."
 lead: "Polynucleotide treatments are designed to support the skin’s own repair processes, for the face and the delicate under-eye area."
-heroPhoto: "[[TODO: aesthetics room photo, from the professional shoot]]"
+heroPhoto: relaxation-room-wide
 facts:
   resultsLast: "Typically 6–12 months"
   downtime: "Typically a day or two"
