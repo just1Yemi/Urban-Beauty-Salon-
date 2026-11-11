@@ -15,7 +15,7 @@ const assetVersion = () => {
 export default function (eleventyConfig) {
   // Copy published assets folder by folder. src/assets/img/source (full-size originals and
   // source videos) is git-ignored and must never be copied into _site. CSS is bundled, not copied.
-  for (const dir of ["js", "fonts", "video", "img/brand", "img/salon", "img/share"]) {
+  for (const dir of ["js", "fonts", "video", "img/brand", "img/salon", "img/team", "img/share"]) {
     eleventyConfig.addPassthroughCopy({ [`src/assets/${dir}`]: `assets/${dir}` });
   }
   eleventyConfig.ignores.add("src/assets/img/source/**");

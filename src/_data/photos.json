@@ -384,5 +384,81 @@
     ],
     "path": "/assets/img/salon/product-shelf-nail-care",
     "preview": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAADwAwCdASoYABAAPt1iqUyopiQiMAgBEBuJYwC2yGYOXzT5kiVxHeQAAP62k2XNKB8fqvLqMwTlI/A5cTMHYoUCahCoMd1z1PjFTwHp4X9Ldv7R2xB4ufmysAA="
+  },
+  "team-rachel": {
+    "name": "team-rachel",
+    "alt": "Portrait of Rachel Crookes, Salon Manager and Beauty Therapist.",
+    "use": "portrait",
+    "ratio": "4:5",
+    "width": 960,
+    "height": 1200,
+    "widths": [
+      240,
+      480,
+      960
+    ],
+    "formats": [
+      "avif",
+      "webp"
+    ],
+    "path": "/assets/img/team/team-rachel",
+    "preview": "data:image/webp;base64,UklGRoQAAABXRUJQVlA4IHgAAAAwBQCdASoUABkAPu1mp02ppaOiMBgMATAdiUAXYAHh2D7++z+PDUGncOgWW+v4LOubYAD+sOI+SAD8J7/+sX/6kLr7PeTABPK/Ue35T+ZZETcBKhdvA8NHgvC1lQlqu/gcoTu9zjCnsF1V4SfJeKPVzcZzD3QFyAA="
+  },
+  "team-jill": {
+    "name": "team-jill",
+    "alt": "Portrait of Jill Taylor, Beauty Therapist.",
+    "use": "portrait",
+    "ratio": "4:5",
+    "width": 960,
+    "height": 1200,
+    "widths": [
+      240,
+      480,
+      960
+    ],
+    "formats": [
+      "avif",
+      "webp"
+    ],
+    "path": "/assets/img/team/team-jill",
+    "preview": "data:image/webp;base64,UklGRpAAAABXRUJQVlA4IIQAAAAwBQCdASoUABkAPu1oqk+ppiOiKA1RMB2JbACdMzQ+ABTcZa62U/EhWHCQLVB1TiYdQAD+M8BKW50pZxr7dn9MiIvW791FNDIJ+pfYcE3Nx+bIcG02Usk6GaXmmZUAWT+0jDCI3ZNySeuqJkHsDpxCfkH5yFOjQhBOF5F9XgTd/V7QAAA="
+  },
+  "team-joanne": {
+    "name": "team-joanne",
+    "alt": "Portrait of Joanne Prior, Beauty Therapist.",
+    "use": "portrait",
+    "ratio": "4:5",
+    "width": 960,
+    "height": 1200,
+    "widths": [
+      240,
+      480,
+      960
+    ],
+    "formats": [
+      "avif",
+      "webp"
+    ],
+    "path": "/assets/img/team/team-joanne",
+    "preview": "data:image/webp;base64,UklGRooAAABXRUJQVlA4IH4AAAAQBQCdASoUABkAPu1krE4ppaSiKA1RMB2JQBUegjZdpjxkWPeGCAxE5tB3fztNL2MAAP7mYDP1JkD/zPxuQMDDgAnsp2FEg92qhxyJns5wFrBSFhlvqgb/lqpCST4n48uaNvLbk/8bcVmJ2scWvoxn/3FBVZYjdhqGgvrFAAA="
+  },
+  "team-isla": {
+    "name": "team-isla",
+    "alt": "Portrait of Isla Duffy, Beauty Therapist.",
+    "use": "portrait",
+    "ratio": "4:5",
+    "width": 960,
+    "height": 1200,
+    "widths": [
+      240,
+      480,
+      960
+    ],
+    "formats": [
+      "avif",
+      "webp"
+    ],
+    "path": "/assets/img/team/team-isla",
+    "preview": "data:image/webp;base64,UklGRogAAABXRUJQVlA4IHwAAADwBACdASoUABkAPu1wsFIppiSiqAgBMB2JQBajbIAk8c948elYu3wkitE6XjjztAAA/rfAxvge7PioZZ0FcSmPUqp4yhSGybpi3Nq15oJOmQEWjWE86i7/9BfVklaW4n2s9++ebC3bxV2eRoZXNdlPv2JWl5cyYAAdgAAA"
   }
 }

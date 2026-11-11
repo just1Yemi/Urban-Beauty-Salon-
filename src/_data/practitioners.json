@@ -3,13 +3,15 @@
   "people": {
     "01-rachel": {
       "name": "Rachel Crookes",
-      "role": "Beauty Therapist",
+      "photo": "team-rachel",
+      "role": "Salon Manager and Beauty Therapist",
       "experience": "With the salon since 2011",
-      "training": "Level 3 NVQ in Beauty Therapy and Level 3 NVQ in Nail Services (City & Guilds). COMCIT trained (Crystal Clear). Lycon advanced waxing.",
-      "treatments": "Facials including COMCIT, nails, waxing, lashes and brows"
+      "training": "Level 3 NVQ in Beauty Therapy and Level 3 NVQ in Nail Services (City & Guilds). COMCIT trained (Crystal Clear). Lycon advanced intimate waxing.",
+      "treatments": "Nails, facials including COMCIT, deep tissue massage and advanced intimate waxing"
     },
     "02-jill": {
       "name": "Jill Taylor",
+      "photo": "team-jill",
       "role": "Beauty Therapist",
       "experience": "Qualified since 2005",
       "training": "NVQ Level 2 in Beauty Therapy and Level 2 in Nail Technology (VTCT), with massage, aromatherapy and electrotherapy units. Dermalogica trained.",
@@ -17,6 +19,7 @@
     },
     "03-joanne": {
       "name": "Joanne Prior",
+      "photo": "team-joanne",
       "role": "Beauty Therapist",
       "experience": "More than 35 years",
       "training": "City & Guilds Beauty Therapist's Certificate and IHBC International Beauty Therapist's Diploma, with remedial camouflage and epilation.",
@@ -24,6 +27,7 @@
     },
     "04-isla": {
       "name": "Isla Duffy",
+      "photo": "team-isla",
       "role": "Beauty Therapist",
       "treatments": "Back massage and Crystal Clear facials"
     }
