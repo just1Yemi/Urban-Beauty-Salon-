@@ -22,7 +22,7 @@ Updated by hand on 11 Nov 2026 after Yemi's decisions (see BUILD_PLAN.md, Stage 
 - [ ] **Professional photo shoot:** aesthetics room (all aesthetics heroes and cards use the branded panel), Rania's portrait, exterior, people and treatments in progress, and card photos for treatments for men, waxing, Little Miss Urban, body and tanning.
 - [ ] **Shop window lettering** (physical signage to match the brand).
 - [ ] Practitioner sign-off on the general wording used where specifics were not supplied (COMCIT, glycolic peel, Crystal Clear, CACI and dermaplaning make-up advice, signature back and body, Shrinking Violet, CACI Bum Lift, Little Miss Urban, gentleman's manicure and pedicure, hair filler). Add specifics later only from the practitioner.
-- [ ] Phorest public reviews link (`site.reviews.url`): the "Read our Phorest reviews" link appears once it is set.
+- [ ] (Optional) Phorest public reviews link (`site.reviews.url`): the "Read our Phorest reviews" link appears once it is set. No placeholder shows meanwhile.
 - [ ] Real Phorest reviews for treatment pages that have none (reviews.json; first name and surname initial; none naming Macey or Daisy, none about medicines).
 - [ ] Profhilo, microneedling and skin booster price decision (currently "Price on consultation").
 - [ ] Service name questions in `scripts/services-review.md`; Phorest booking colours (optional).

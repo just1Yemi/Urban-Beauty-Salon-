@@ -145,11 +145,10 @@
 </figure>
 {%- endmacro %}
 
-{#- "Read our Phorest reviews" link (site.reviews.url). Until the link is known: a [[TODO]] in local and preview builds,
-    nothing in production. Used wherever there are no review texts yet, so the count never sits above empty cards. -#}
+{#- "Read our Phorest reviews" link (site.reviews.url). Shows nothing until the link is set.
+    Used wherever there are no review texts yet, so the count never sits above empty cards. -#}
 {% macro reviewsLink() -%}
-{%- if site.reviews.url %}<p>{{ more("Read our Phorest reviews", site.reviews.url) }}</p>
-{%- elif not env.production %}<p class="small">{{ "[[TODO: link to the salon’s public Phorest reviews page, for a “Read our Phorest reviews” link (site.json reviews.url)]]" | todo | safe }}</p>{% endif %}
+{%- if site.reviews.url %}<p>{{ more("Read our Phorest reviews", site.reviews.url) }}</p>{% endif %}
 {%- endmacro %}
 
 {#- Review count that counts up once. Number from site.json reviews. -#}

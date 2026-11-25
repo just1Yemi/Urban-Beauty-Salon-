@@ -58,7 +58,7 @@ Reveals: `data-reveal` is for **below-the-fold content only** (it waits for site
 | `tcard(title, href, photo, detail, eyebrow, text, from, mins, level, note)` | `detail` = second photo for hover cross-fade; `from`/`mins` from services; `note` in place of the price ("Free consultation") | Max 3 per row. Price and time show on hover/focus (always on touch). The body fills the card and the price/time line sits at its foot, so meta lines align across a row whatever the text length; every card in sections.json has a one-line `text` |
 | `review(text, name, date)` | | First name + surname initial only; month and year; never reviews mentioning prescription medicines. Adds "Verified Phorest client". Caption is always three lines (name, date, verified) at the foot of the card, so the hairlines and names line up across a row |
 | `stat(number, label)` | number from `site.reviews.count` | Counts up once; screen readers get the final number |
-| `reviewsLink()` | none | "Read our Phorest reviews" link from `site.reviews.url` (not set yet: a `[[TODO]]` in local and preview builds, nothing in production). Shown beside the count wherever there are no review texts |
+| `reviewsLink()` | none | "Read our Phorest reviews" link from `site.reviews.url` (not set yet, so nothing shows). Shown beside the count wherever there are no review texts |
 | `faq(items)` | `[{q, a}]` | details/summary; smooth height; "+" turns to "×" |
 | `steps(items, level)` | `[{title, text}]` | 01, 02 numerals in circles linked by a thin line |
 | `toc(items, label)` | `[{id, label}]` | Treatment pages: sticky on desktop, current section marked with a Champagne dot |
