@@ -47,7 +47,7 @@ Working rules and agreed decisions for every Claude Code session on this repo. R
 | Logo | Always the SVG files from the logo pack, never recreated in a font |
 | Prices | "From £X" line on treatment pages only. No full Prices page (Phorest holds the menu). Held back until Yemi decides: Profhilo, microneedling, fat dissolving |
 | Memberships | Phase 2 |
-| Analytics | Plausible (no cookies) and Google Search Console at launch |
+| Analytics | Plausible (no cookies) and Google Search Console at launch. Meta Pixel (ID in site.json `metaPixelId`) on every production page, loaded on every visit with no consent banner: Yemi's decision, 28 Nov 2026, after being told the PECR risk. Cookies and privacy pages describe it |
 | Contact form | Netlify Forms, sending to hello@ |
 | Book Now behaviour | Phorest booking overlay on the page where the widget works (desktop and mobile); otherwise open the Phorest booking page in a new tab, with an accessible "opens in a new tab" label and a small arrow icon |
 | Legal line | "Registered in England and Wales No. [[TODO]]" (England and Wales is the Companies House jurisdiction) |

@@ -4,10 +4,10 @@ layout: layouts/text.njk
 title: Privacy notice
 slug: privacy
 metaTitle: Privacy notice
-metaDescription: How The Urban Beauty Salon in Penketh, Warrington looks after your personal information, including the enquiry form, booking, photos and website statistics.
+metaDescription: "How The Urban Beauty Salon in Penketh looks after your personal information: the enquiry form, booking, photos, website statistics and the Meta Pixel."
 eyebrow: Policies
 lead: How we collect, use and look after your personal information, in plain English.
-updated: "2026-11-11"
+updated: "2026-11-28"
 ---
 
 ## Who we are
@@ -25,6 +25,7 @@ We are registered with the Information Commissioner's Office (ICO).
 - **Your client record at the salon.** This holds health information you give us for your safety, the treatments you have, patch test results and aftercare advice. We use it to treat you safely and keep a record of your care. Our legal reasons are our contract with you, and your explicit consent for health information.
 - **Photos,** if we take any for your treatment record. We use them to record your treatment and check progress. Our legal reason is your consent, which you can withdraw at any time.
 - **Website statistics,** which pages are visited and from which country or type of device, with no personal identifiers. We use them to understand what helps visitors and improve the site. Our legal reason is our legitimate interest in running the website well.
+- **Advertising with the Meta Pixel.** Meta collects the pages you visit on our website, your IP address, browser details and an identifier from its cookies. We use this to measure our Facebook and Instagram adverts and to show our adverts to people who have visited our website. Our legal reason is our legitimate interest in advertising our salon.
 
 We collect health information on a consultation form at the salon before your treatment, and keep it with your client record.
 
@@ -46,12 +47,21 @@ We take photos of your treatment only if you agree, and only for your treatment 
 
 We use **Plausible Analytics** to count visits. Plausible does not use cookies, does not collect personal information and does not track you across other websites. It records anonymous totals, such as page views, where visitors arrive from and a rough country. See our [cookies page](/cookies/) for more.
 
+## The Meta Pixel
+
+Every page of our website loads the **Meta Pixel** from Meta Platforms Ireland Limited, the company behind Facebook and Instagram. When you open a page, it sends Meta the address of the page, your IP address, details of your browser and device, and an identifier stored in a cookie. If you are logged in to Facebook or Instagram, Meta can link this to your account.
+
+We and Meta are joint controllers for collecting this information and sending it to Meta. Meta decides how it then uses the information, including for its own advertising, under [Meta's privacy policy](https://www.facebook.com/privacy/policy/). Meta may transfer it to the United States and other countries, under its own safeguards.
+
+You can control how Meta uses activity from other websites in your [Meta ad preferences](https://www.facebook.com/adpreferences/), and block or delete cookies in your browser settings. See our [cookies page](/cookies/) for more.
+
 ## Who else sees your information
 
 - **Phorest,** which runs our booking and client records.
 - **Netlify,** which hosts our website and receives enquiry form messages.
 - **Google Workspace,** which provides our email.
 - **Plausible,** which provides anonymous website statistics.
+- **Meta,** which receives information through the Meta Pixel on our website (see above).
 - **Professional advisers, insurers and regulators,** if the law or a claim requires it.
 
 These companies act on our instructions or have their own legal duties. Where a supplier stores data outside the UK, we rely on UK adequacy regulations or approved safeguards such as the UK International Data Transfer Agreement.
