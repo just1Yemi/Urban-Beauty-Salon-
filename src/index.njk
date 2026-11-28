@@ -40,9 +40,7 @@ metaDescription: Advanced skin and aesthetics, facials and everyday beauty in Pe
 <h2 id="reviews">{{ ("Trusted in Penketh since " ~ site.established) | amp | safe }}</h2>
 </div>
 <div class="stack">
-{{ ui.stat(site.reviews.count, "Five-star reviews on " ~ site.reviews.source ~ " since " ~ site.reviews.since.slice(0, 4)) }}
-<p class="small soft">Source: {{ site.reviews.source }}, verified client reviews, {{ site.reviews.since | dateLong }} to {{ site.reviews.asOf | dateLong }}.</p>
-{{ ui.reviewsLink() }}
+{{ ui.stat(site.reviews.count, "Five-star reviews on " ~ site.reviews.source ~ " since " ~ site.reviews.since.slice(0, 4)) }}{{ ui.reviewsLink() }}
 </div>
 {%- if reviewCount or showTodo %}
 <div class="grid grid--3" data-stagger="110">
